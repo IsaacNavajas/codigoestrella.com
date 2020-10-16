@@ -31,7 +31,7 @@ class htmlyCss extends React.Component{
                     <h2  className="bigtitle">Estructura global</h2>
                     <br/>
   
-  
+  <a href="hola">hey</a>
   
                     <p><strong>header:</strong> Se usa para definir el encabezado.</p>
                     <p><strong>body:</strong> Es donde se almacena todo el contenido visible.</p>
