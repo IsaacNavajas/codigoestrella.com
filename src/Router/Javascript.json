@@ -1,0 +1,69 @@
+{
+  "titles":{"title_one": "Atributos de Javascript", "title_two": "Atributos para trabajar con arrays en Javascript", "title_three": "Atributos para mapear en Javascript", "title_four": "Instalar javascript en html"},
+
+  "results":{
+  
+      "results_atributosjavascript":[
+        {"name": "variable.touppercase(): ", "id":1, "description": "para transformar la fuente en mayusculas."}, 
+        {"name": "variable.Tolowercase(): ", "id":2, "description": "para transformar la fuente en minusculas. "},
+        {"name": "variable.charAt(0): ", "id":3, "description": "el caracter en posicion que queremos mostrar, la v en este caso. "},
+        {"name": "variable.lenght(): ", "id":4, "description": "nos recorre la cantidad de letras del nombre, o de elementos de un array."}, 
+        {"name": "math.round(): ", "id":5, "description": "nos redondea un numero. "},
+        {"name": "total.tofixed(2): ", "id":6, "description": "nos redondea un numero. "},
+        {"name": "parseint(): ", "id":7, "description": " transforma una cadena y lo devuelve en un entero de la base especificada. "}, 
+        {"name": "parsefloat(): ", "id":8, "description": " transforma de string a decimal."},
+        {"name": ".replace(): ", "id":9, "description": " cuando queremos reemplazar un valor por otro, primeros damos el valor que queremos reemplazar y despues por el que queramos cambiarlo. "},
+        {"name": ".fail(): ", "id":10, "description": " es por si falla lo que queremos hacer."}, 
+        {"name": ".all(): ", "id":11, "description": " todos."},
+        {"name": ".onerror: ", "id":12, "description": " que queremos hacer si hay un error. "},
+        {"name": ".onclick: ", "id":13, "description": " cuando se acciona un boton."}, 
+        {"name": ".onchange:", "id":14, "description": "cuando se cambia de elemento por ejemplo de un input a otro, se utiliza en React para guardar los valores, (this.setState(...this.state.form,[e.target.name]: e.target.value). "}, 
+        {"name": ".onsubmit: ", "id":15, "description": " cuando se quiere enviar un formulario por ejemplo. "},
+        {"name": ".includes: ", "id":16, "description": " resuele si incluye un elemento especifico. "},
+        {"name": "document.getelementbyid(): ", "id":17, "description": " para concatenar un id del html, tambien existe <strong>getelmentbyclassname()</strong> para agregarle una clase de css."}, 
+        {"name": "classlist.contains(): ", "id":18, "description": " si contiene el css de dentro del parentesis entonces... "},
+        {"name": "classlist.add():", "id":19, "description": "para agregar una clase css. "},
+        {"name": "classlist.remove(): ", "id":20, "description": "  eliminar una clase css."}, 
+        {"name": "math.floor():", "id":21, "description": " para redondear un numero. "},
+        {"name": "addeventlistener('click', ()=>):", "id":22, "description": " adjuntar un evento de click, que queremos que haga cuando pulsamo un click. Hay muchos addeventlistener(). "},
+        {"name": "document.createElement('h1'): ", "id":23, "description": " crear un elemento tipo html."}, 
+        {"name": ".innertext(): ", "id":24, "description": " para escribir un valor o llamar al valor escrito. "},
+        {"name": ".document.write(): ", "id":25, "description": " hola hola "},
+        {"name": ".textcontext: ", "id":26, "description": " obtener el texto de un elemento."}, 
+        {"name": ".nextelementsibling:", "id":27, "description": "  obtener el contenido html del proxicmo hermano de un elemento de la lista. "},
+        {"name": ".appenchild():", "id":28, "description": " agrega un elemento a una lista. "},
+        {"name": "... : ", "id":29, "description": " (spread) devuelve los valores antiguos."}, 
+        {"name": "Typeof :", "id":30, "description": " es para saber que tipo de variable es. "},
+        {"name": ".preventdefault: ", "id":31, "description": " para anular la accion por defecto."}
+
+      ],
+
+      "results_arrayenjavascript":[
+        {"name": "variable.filter(()=> ...): ", "id":1, "description": " Nos va a filtrar lo que necesitamos y nos devuelve un array."}, 
+        {"name": "variable.map(()=> ...): ", "id":2, "description": " Ejecuta los elementos de un array y devuelve un array con los elementos modificados. "},
+        {"name": "variable.reduce(()=> ... ,0): ", "id":3, "description": " Sirve para reducir a un valor. Hay que darle una function y un valor inicial. "},
+        {"name": ".push() : ", "id":4, "description": " Añade un elemento al final del array."},
+        {"name": ".pop() : ", "id":4, "description": " Elimina el ultimo elemento del array."},
+        {"name": ".unshift() : ", "id":4, "description": " Agrega un elemento al principio del array."},
+        {"name": ".shift() : ", "id":4, "description": " borra el primer elemento del array."},
+        {"name": ".indexOf() : ", "id":4, "description": " Nos dice la posicion del elemento del array."}
+        
+
+
+      ],
+
+      "results_mapjavascript":[
+        {"name": ".bind(): ", "id":1, "description": " enviamos la referencia a la funcion sin ejecutarla. pasando el contexto por parametro."}, 
+        {"name": ".call(): ", "id":2, "description": " ejecuta inmediatamente la funcion con el contexto indicado. "},
+        {"name": ".apply(): ", "id":3, "description": " es similar a .call() pero los parametros adicionales se pasan como un arreglo de valores. (array)."}
+
+      ],
+      "results_installjavascript":[
+        {"name": "<script src=''js/myscript.js''></script>: ", "id":1, "description": " se pasa la ruta del javascript con el que se va a concatenar en el html principal que sera el layout. Es recomendable enlazarlo al final del body."},
+        {"name": "npm init ", "id":1, "description": " para instalar el package.json en tu app javascript"}
+      
+      ]
+      
+  }
+}
+
