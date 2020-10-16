@@ -30,7 +30,7 @@ class Laravel extends React.Component{
         
 
           <br/>
-
+<Link to="hola"><button>hola</button></Link>
 
           <h2  className="bigtitle font">Instalacion</h2><br/>
   
