@@ -39,7 +39,7 @@ function Router() {
             <Route exact path="/wordpress" component={Wordpress}/>
             
             
-            <Route component={Error}/>
+            <Route path="/a" component={Error}/>
   
           </Switch>
         </Layout>
