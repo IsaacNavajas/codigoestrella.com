@@ -26,7 +26,7 @@ function Router() {
         <Layout>
           <Switch>
           
-            <Route exact path="/inicio" component={Inicio}/>
+            <Route exact path="/" component={Inicio}/>
             <Route exact path="/git" component={Git}/>
             <Route exact path="/javascript" component={Javascript}/>
             <Route exact path="/react" component={Pagereact}/>
