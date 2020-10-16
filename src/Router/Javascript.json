@@ -60,7 +60,7 @@
       ],
       "results_installjavascript":[
         {"name": "<script src=''js/myscript.js''></script>: ", "id":1, "description": " se pasa la ruta del javascript con el que se va a concatenar en el html principal que sera el layout. Es recomendable enlazarlo al final del body."},
-        {"name": "npm init ", "id":1, "description": " para instalar el package.json en tu app javascript"}
+        {"name": "npm install ", "id":1, "description": " para instalar el package.json en tu app javascript"}
       
       ]
       

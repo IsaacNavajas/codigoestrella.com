@@ -122,6 +122,22 @@ function Mysql(){
           <p><strong>HAVING: </strong>los filtros que quiero que tengan mis datos, son dependientes del ORDER BY, se pone despues de group by.</p>
           <br/>
           <br/>
+
+          <br/>
+          <hr></hr><br/>
+ 
+
+          <h2  className="bigtitle font">Exportar la base de datos</h2><br/>
+  
+
+          <p><strong>Diagrama fisico: </strong>para hacer la Normalizacion, tienen que tener todas las tablas una cardinalidad de uno a muchos. la normalizacion nos ayuda a dejar todo de una forma normal, hay cuatro reglas de Cold para lograr esto;</p>
+          
+          <span className="subrayado">En la parte derecha de Workbench buscamos Administrador, a la izquierda de schemas y le damos a <strong>Data Export</strong> y buscamos la base de datos que quermos exportar.</span>
+          <p><strong>Export to self-contained File: </strong>Aqui vamos a elegir el nombre y la ruta donde queremos guardar nuestra base de datos exportada. <span className="subrayado"> Es recomendable utilizar esta opcion ya que nos lo exporta en un archivo SQL.</span></p>
+          <p><strong>Include Create Schema: </strong>Para crear un esquema que nos permita crear la base de datos, si queremos insertar la base de datos antes de insertar los valores de la base de datos. <span className="subrayado"> Es recomnedable utilizarla si vamos a exportar para crear esa base de datos, NO para cuando queramos agregar esos valores a una base de datos ya creada.</span></p>
+          <p>* Error --> Para poder exportar la base de datos en Workbench es necesario tener una version especifica para esto nos vamos a descargar la version que nos especifica. Vamo a Edit - Preferences - Administration y en el Path to mysqldump Tool entramos dentro de la carpeta descargada de la version indicada /bin/mysqldump</p>
+          <br/>
+          <hr></hr><br/>
           <br/>
           <br/>
           <br/>

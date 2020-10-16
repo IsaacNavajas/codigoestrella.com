@@ -42,7 +42,8 @@ html, body {
   font-size: 50px;
   padding-right:80px;
   color:#a8a9a5;
-  text-shadow: 2px 2px #5a5b5e
+  text-shadow: 2px 2px #5a5b5e;
+
 }
 
 .Navbar{
@@ -182,7 +183,7 @@ a{
   font-size: 50px;
   color:transparent;
   font-family: 'Fredericka the Great', cursive;
-  background-image: url(source/star 2.jpg);
+  background-image: url(source/star2.jpg);
   background-position: center;
   -webkit-background-clip: text;
 

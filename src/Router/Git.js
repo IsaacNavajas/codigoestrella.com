@@ -49,7 +49,7 @@ function Git(){
           <p><strong>git branch -d:</strong> para borrar la rama.</p>
           <p><strong>git merge:</strong> para juntar mas de una rama. primero posicionarte en la ramaque queremos juntar las ramas y despues llamar a la otra rama; $master: git marge supercabecera</p>
           <br/>
-          <p><strong><code>--help</code></strong> podemos agregar el parametro help para buscar un comando o interpretar su funcionamiento.</p>
+          <p><span className="subrayado"><strong>--help</strong> podemos agregar el parametro help para buscar un comando o interpretar su funcionamiento.</span></p>
           <p><strong>gitk:</strong> nos TODOS los detalles de los commits con una interfaz grafica.</p>
           <p><strong>git rebase:</strong> es una mala practica. agarra toda la rama y la agrega a la otra rama, al hacer rebase se solapan TODOS los archivos. Siempre es mejor hacer un git merge.</p>
           <p>Directorio ---------------------------- Staging ---------------------------- Repositorio</p>
