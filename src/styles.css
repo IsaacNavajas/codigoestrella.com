@@ -149,9 +149,6 @@ font-size: 40px;
 
 .menubuttons ul li{
   display: inline;
-
-
-
 }
 
 .menubuttons ul li {
@@ -182,9 +179,12 @@ a{
 }
 
 .bigtitle{
-  font-size: 45px;
+  font-size: 50px;
+  color:transparent;
   font-family: 'Fredericka the Great', cursive;
-  color: #a11f9d;
+  background-image: url(source/star 2.jpg);
+  background-position: center;
+  -webkit-background-clip: text;
 
 }
 

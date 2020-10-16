@@ -22,8 +22,7 @@ class htmlyCss extends React.Component{
               <div className="col-5 ">
                             
   
-                    <div  className=" bigtitle font"><center><strong>Html</strong></center></div><br/>
-  
+
 
   
                     <br/>

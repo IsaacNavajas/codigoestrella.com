@@ -27,7 +27,6 @@ class Laravel extends React.Component{
       <React.Fragment>
         <div className="container">
 
-        
 
           <br/>
 
