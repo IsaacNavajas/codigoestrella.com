@@ -27,7 +27,7 @@ function Mysql(){
           <li><p><strong>-Segunda forma nomral: cada campo de la tabla debe depender de una id unica. (Primary key) </strong></p></li>
           <li><p><strong>-Tercera forma nomral: campos que no son clave no deben de tener dependencias. </strong></p></li>
           <li> <p><strong>-Cuarta forma nomral: los campos multivaluados se identifican por una llave unica. (Foreign key) </strong></p></li>
-          <li> <code><i>En la normalizacion la tabla que tiene muchos es donde se meten las llaves foraneas. (se concatena con la otra tabla. ej; Usuario_id).</i></code></li>
+          <li> <span className="subrayado"> En la normalizacion la tabla que tiene muchos es donde se meten las llaves foraneas. (se concatena con la otra tabla. ej; Usuario_id).</span></li>
           </ul>
           <br/>
           <hr></hr><br/>
@@ -48,7 +48,7 @@ function Mysql(){
           <hr></hr><br/>
           <h2  className="bigtitle">Diagramas de Venn</h2><br/>
           <br/>
-          <code>Toma como ejemplo las imagenes como tabla de la izquierda -> Usuario y la de la derecha -> Post</code><br/><br/>
+          <span className="subrayado"> Toma como ejemplo las imagenes como tabla de la izquierda -> Usuario y la de la derecha -> Post</span><br/><br/>
           <img src={imageone} className="Vendiagram"></img>
 
           <p><strong>SELECT * FROM Usuarios LEFT JOIN Post ON usuarios_id = Post.Usuario_id: </strong></p>
@@ -94,7 +94,7 @@ function Mysql(){
 
           <h2  className="bigtitle">Metodos de un query</h2><br/>
           <br/>
-          <code>El orden de colocar los metodos son los siguientes.</code><br/><br/>
+          <span className="subrayado"> El orden de colocar los metodos son los siguientes.</span><br/><br/>
           <p><strong>SELECT: </strong>lo que quieres mostrar.</p>
           <li><p><strong>-AS: para poner un subnombre. </strong></p></li>
           <li><p><strong>-* : un atajo para seleccionar todos los atributos. </strong></p></li>

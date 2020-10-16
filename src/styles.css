@@ -30,7 +30,6 @@ html, body {
 .container-fluid{
   padding: 0px !important;
   margin: 0px !important;
-  
 
 }
 
@@ -185,6 +184,12 @@ a{
 .bigtitle{
   font-size: 45px;
   font-family: 'Fredericka the Great', cursive;
+  color: #a11f9d;
+
+}
+
+.subrayado{
+  background: #fdff6f;
 
 }
 

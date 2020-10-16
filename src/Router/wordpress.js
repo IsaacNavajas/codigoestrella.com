@@ -49,7 +49,7 @@ class Wordpress extends React.Component{
 
           <h2  className="bigtitle">Entradas:</h2>
           <br/><br/>
-          <code>Las entradas en diferencia con las paginas son dinamicas esto quiere decir que el SEO en posicionamiento va variando dependiendo de la fecha de publicacion</code>
+          <span className="subrayado"> Las entradas en diferencia con las paginas son dinamicas esto quiere decir que el SEO en posicionamiento va variando dependiendo de la fecha de publicacion </span> 
           <p><strong>Todas las entradas:</strong> Muestra las entradas.</p>
           <p><strong>Añadir nueva:</strong> Para crear nuevos post.</p>
           <p><strong>Categorias:</strong> Para encapsular en categorias.</p>
@@ -68,7 +68,7 @@ class Wordpress extends React.Component{
           <h2  className="bigtitle">Paginas</h2>
           <br/>
           <br/>
-          <code>Las paginas en diferencia con las entradas son estaticas esto quiere decir que el SEO en posicionamiento no varia dependiendo de la fecha de publicacion</code>
+          <span className="subrayado"> Las paginas en diferencia con las entradas son estaticas esto quiere decir que el SEO en posicionamiento no varia dependiendo de la fecha de publicacion</span> 
           <p><strong>Todas las paginas:</strong> Funciona de igual manera que en biblioteca para las entradas.</p>
           <p><strong>Añadir nueva:</strong> Funciona de igual manera que en añadir nueva para las entradas.</p>
           

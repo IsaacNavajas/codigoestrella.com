@@ -56,7 +56,7 @@ class Pagereact extends React.Component{
 
           <h2  className="bigtitle">Componentes de React</h2><br/>
           <br/>
-          <code>La forma de pasar un componente dentro de otro es en forma de elemento, si le damos parametros a estos elementos podemos pasarlos a esos componentes a traves de <strong>this.props</strong>. Tambien podemos heredar los props con <strong>this.props.children</strong>. </code>
+          <span className="subrayado"> La forma de pasar un componente dentro de otro es en forma de elemento, si le damos parametros a estos elementos podemos pasarlos a esos componentes a traves de <strong>this.props</strong>. Tambien podemos heredar los props con <strong>this.props.children</strong>. </span> 
           <br/><br/>
           <p><strong>ReactDom.render(__que__, __donde__):</strong> nos va a renderizar un dom virtual donde le vamos a dar dos argumentos, el primero que queremos renderizar y el segundo donde.</p>
           <p><strong>import confLogo from '../../images/image.png':</strong> es la forma en la que vamos a llamar a los documentos y para desglosarlo seria entre llaves usando la palabra de subnombre en este caso confLogo.</p>
@@ -75,7 +75,7 @@ class Pagereact extends React.Component{
 
           <h2  className="bigtitle">Ciclo de vida de un componente</h2><br/>
           <br/>
-          <code>Nota; es recomendable utilizar <strong>arrows functions</strong> cuando estamos trabajando en React en general, por eso los usaremos en su ciclo de vida.</code>
+          <span className="subrayado"> Nota; es recomendable utilizar <strong>arrows functions</strong> cuando estamos trabajando en React en general, por eso los usaremos en su ciclo de vida.</span> 
           <br/><br/>
         
           <p><strong>componentDidMount() :</strong> Nos va a cargar lo que queremos que se despliegue en la pagina</p>
@@ -92,11 +92,11 @@ class Pagereact extends React.Component{
 
           <h2  className="bigtitle">Llamadas a api y json</h2><br/>
           <br/>
-          <code>hay varias formas de trabajar con apis. Todos los inicios de las api se realizaran desde el componentdidmount(). Para llamar a una api pasa por tres estados, el data, error y loading.</code>
+          <span className="subrayado"> hay varias formas de trabajar con apis. Todos los inicios de las api se realizaran desde el componentdidmount(). Para llamar a una api pasa por tres estados, el data, error y loading.</span>
           <br/>
-          <code>Si queremos simular un error usando ayunc podemos hacerlo enviando throw new error('500: server error'), con el metodo <strong>throw</strong> colocandolo en el lugar de la peticion.  </code>
+          <span className="subrayado"> Si queremos simular un error usando ayunc podemos hacerlo enviando throw new error('500: server error'), con el metodo <strong>throw</strong> colocandolo en el lugar de la peticion.  </span> 
           <br/>
-          <code>El metodo error tiene por defecto un atributo llamado <strong>error.message</strong> para devolvernos el mensaje del error.</code>
+          <span className="subrayado"> El metodo error tiene por defecto un atributo llamado <strong>error.message</strong> para devolvernos el mensaje del error.</span>
           <br/>
           <br/>
           
@@ -106,16 +106,16 @@ class Pagereact extends React.Component{
             /></div>
        
           <br/>
-          <p><strong>- Api externa "primera imagen":</strong> para trabajar con un api externo, lo haremos a traves de un <code>fetch()</code>, despues usaremos un <code>.json()</code> y con un metodo asincrono. Para trabajar con apis debemos desplegar en el state: el mismo diagrama de valores que estemos usando en la api para mantener un state controlado, para finalizar el proyecto y desplegar su visualizacion en el return() debemos usar .map si la api se depliega en esa misma estancia en arrays, si usamos .map su primer valor de descomposicion debera ser el key= que nos sirve como metodo de estructuracion en la api.</p>
+          <p><strong>- Api externa "primera imagen":</strong> para trabajar con un api externo, lo haremos a traves de un <span className="subrayado"> fetch()</span>, despues usaremos un <span className="subrayado"> .json()</span> y con un metodo asincrono. Para trabajar con apis debemos desplegar en el state: el mismo diagrama de valores que estemos usando en la api para mantener un state controlado, para finalizar el proyecto y desplegar su visualizacion en el return() debemos usar .map si la api se depliega en esa misma estancia en arrays, si usamos .map su primer valor de descomposicion debera ser el key= que nos sirve como metodo de estructuracion en la api.</p>
         
-          <p><strong>- Api interna con import (json) "segunda imagen":</strong> para trabajar con un api interno importaremos el api a nuestro componente del proyecto; <code>(import proyecto from '../proyecto.json).</code> De esta forma tendremos guardado el json con la palabra clave proyecto. en este caso servira con crear una funcion dandole la condicion de al recibir el proyecto que se guarde en memoria dentro del state. desglosaremos el state siguiendo la jerarquia del json con el que estamos trabajando, para mantener un state controlado.'<br/><code> La diferencia con la api interna es que hay que importarla, no se utiliza un metodo asyncrono sino que una function en el componentdidmount() que desglose los datos; <strong>this.setState(data:proyecto)</strong>. y despues se desglosa de igual forma porque esta guardado en menoria state:.</code></p>
+          <p><strong>- Api interna con import (json) "segunda imagen":</strong> para trabajar con un api interno importaremos el api a nuestro componente del proyecto; <span className="subrayado"> (import proyecto from '../proyecto.json).</span> De esta forma tendremos guardado el json con la palabra clave proyecto. en este caso servira con crear una funcion dandole la condicion de al recibir el proyecto que se guarde en memoria dentro del state. desglosaremos el state siguiendo la jerarquia del json con el que estamos trabajando, para mantener un state controlado.'<br/><span className="subrayado"> La diferencia con la api interna es que hay que importarla, no se utiliza un metodo asyncrono sino que una function en el componentdidmount() que desglose los datos; <strong>this.setState(data:proyecto)</strong>. y despues se desglosa de igual forma porque esta guardado en menoria state:.</span></p>
           <br/>
           
 
           <p><strong>- Api interna con fetch (json):</strong> se usan dos comandos el <strong>npx json-server --watch archivo.json</strong> y <strong>json-server archivo.json</strong> y se guarda el url del servidor json en el fetch.</p>
           
           <p><strong>- Api CRUD:</strong> haremos la llamada de igual forma que una api externa, utilizando imports pero para llamarla dentro de la logica lo haremos de la misma forma que al desglosarla es decir concatenando con puntos. Ejemplo; await <strong>api.badges.list()</strong></p>
-          <code>Vamos a utilizar fetch() en el momento de llamar a las apis, por defecto tiene un metodo html get pero podemos implementarle mas opciones agregando un request al fetch().</code>
+          <span className="subrayado"> Vamos a utilizar fetch() en el momento de llamar a las apis, por defecto tiene un metodo html get pero podemos implementarle mas opciones agregando un request al fetch().</span>
           
           <br/><br/>
 
@@ -136,7 +136,7 @@ class Pagereact extends React.Component{
 
           <h2  className="bigtitle">Hooks</h2><br/>
           <br/>
-          <code>Los hooks en react son recomendables utilizarlos cuando queramos trabajar con los estados y tengamos que trabajar sobre <strong>funciones</strong> en vez de clases. Para importarlos se usa<strong> import React, useState from 'react';</strong></code>
+          <span className="subrayado"> Los hooks en react son recomendables utilizarlos cuando queramos trabajar con los estados y tengamos que trabajar sobre <strong>funciones</strong> en vez de clases. Para importarlos se usa<strong> import React, useState from 'react';</strong></span>
           <br/><br/>
           <p><strong>const [count, setCount] = useState(0); :</strong> count es como si fuera el state donde vamos a ir guardando los valores y el setCount es como si fuera el setState donde vamos a ir actualizando los valores. useState(0) es el hook que vamos a utilizar y el valor por defecto con el que vamso a comenzar es 0 aunque podemos inicializar valores tambien entre llamves como latitud: null. El useState es el hook mas usado que es para el manejo de estado.</p>
           <p><strong>useEffect():</strong> Para suscribir el componente a su ciclo de vida. Con useEffect le indica que el componente tiene que hacer algo despues de renderizarse, este hook equivale a la combinacion de componentdidmount, componentdidupdate y componentwillunmount.</p>
@@ -149,7 +149,7 @@ class Pagereact extends React.Component{
           <br/>
           <p><strong>ReactDom.createPortal( __que__, __donde__ ): </strong>se genera para crear un portal que difiere del dom en el que estamos trabajando, es lo mas usado para trabajar con modales. Recibe dos argumentos el que y el donde.</p>
           <br/>
-          <code>Imagen uno : Pagina, imagen dos : Css, imagen tres : Modal;</code>
+          <span className="subrayado"> Imagen uno : Pagina, imagen dos : Css, imagen tres : Modal;</span>
           <br/>
           <br/>
           <div className=" col-6"><img src={imagecarbon4} className="imagecarbon"></img></div>

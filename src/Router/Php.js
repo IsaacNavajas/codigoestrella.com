@@ -10,7 +10,7 @@ function Pagereact(){
         <div>
         <h2>P.O.O</h2>    
           <hr></hr>      
-          <p><strong>Herencia :</strong> para crear hijos entre clases, usaremos la palabra extends en la clase hija para heredar la clase padre, en php solo se puede heredar de un padre. Una vez echa la herencia vamos a compartir sus metodos o a sobreescribirlos. Para heredar vamos a utilizar la palabra reservada <code>extends</code> entre clases.</p>
+          <p><strong>Herencia :</strong> para crear hijos entre clases, usaremos la palabra extends en la clase hija para heredar la clase padre, en php solo se puede heredar de un padre. Una vez echa la herencia vamos a compartir sus metodos o a sobreescribirlos. Para heredar vamos a utilizar la palabra reservada <span className="subrayado"> extends</span> entre clases.</p>
           <p><strong>Abstracción :</strong> para aislar la clase en diferentes metodos.</p>
           <p><strong>Polimorfismo :</strong> la habilidad que tienen los metodos para dar distintos resultados entre clases.</p>
           <p><strong>Encapsulamiento :</strong> es el alcance; y puede ser public private y protected. Public habilitado para cualquier clase, private con un alcance unico de la clase en la que se define y protected con un alcance de su clase y sus hijas.</p>
@@ -21,7 +21,7 @@ function Pagereact(){
           <hr></hr>     
           
           <p><strong>Abstract :</strong> los metodos abstract van al principio de una function o una clase y no se definen solo se declarar para poder definirlos en la herencia.</p>
-          <p><strong>Interface :</strong> vamos a crear una interfaz completamente separada y para implementarla usaremos la palabra reservada <code>implements</code> en la clase, no se pueden definir solo se declarar para poder definirlo en la clase llamada como por ejemplo utilizando type hinting.</p>
+          <p><strong>Interface :</strong> vamos a crear una interfaz completamente separada y para implementarla usaremos la palabra reservada <span className="subrayado"> implements</span> en la clase, no se pueden definir solo se declarar para poder definirlo en la clase llamada como por ejemplo utilizando type hinting.</p>
           <hr></hr> 
           <p><strong>final :</strong> Si utilizamos la palabra reservada final al principio de una function o una clase no vamos a poder heredarla.</p>
           <hr></hr> 

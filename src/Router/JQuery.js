@@ -19,7 +19,7 @@ function Pagereact(){
           <hr></hr><br/>
           <div  className="bigtitle">Funcionalidad</div><br/>
 
-          <code>JQuery funciona agregando el simbolo <strong>$</strong> y concatenando el id o class sobre el que queremos trabajar y el metodo de la libreria.</code>
+          <span className="subrayado"> JQuery funciona agregando el simbolo <strong>$</strong> y concatenando el id o class sobre el que queremos trabajar y el metodo de la libreria.</span>
           <br/><br/>
         
           <strong>$('li.hot').addClass('complete') :</strong> vamos a trabajar sobre lso elementos li que tengan la clase hot (.hot), y ademas vamos a agregarle la clase complete. (si querriamos trabajar sobre un id seria = $(#hot)).<br/>

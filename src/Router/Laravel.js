@@ -30,7 +30,7 @@ class Laravel extends React.Component{
         
 
           <br/>
-<Link to="hola"><button>hola</button></Link>
+
 
           <h2  className="bigtitle font">Instalacion</h2><br/>
   
@@ -69,7 +69,7 @@ class Laravel extends React.Component{
           <p>php artisan es un comando de la consola que se puede iniciar desde dentro del proyecto de laravel y nos va a servir para las instalaciones de sus dependencias</p>
           <p><strong>php artisan --help:</strong> Nos desplega una lista con todos los comandos de artisan.</p>
           <p><strong>php artisan make:migration:</strong> Es el comando que vamos a utilizar para la creacion/modificacion de las tablas, php artisan make:migration --create para crear la tabla, php artisan make:migration --table lo vamos a usar para modificar una tabla creada, es una buena practica modificar desde --table las talblas debido a los controles de versiones. Deberemos utilizar php artisan migrate para actualizar lass migraciones del proyecto. Usaremos php artisan migrate:rollback para volver un valor atras en memoria de las migraciones. </p>
-          <code><strong>Las tablas deben de estar siempre en mayusculas</strong> y el Model que concatena a esa misma tabla lo crearemos en minusculas, los dos con el mismo valor.</code>
+          <span className="subrayado"> <strong>Las tablas deben de estar siempre en mayusculas</strong> y el Model que concatena a esa misma tabla lo crearemos en minusculas, los dos con el mismo valor.</span> 
           <br/>
           <hr></hr><br/><br/>
 
@@ -89,7 +89,7 @@ class Laravel extends React.Component{
           <h2  className="bigtitle">Model</h2>
           <br/>
           <br/>
-          <code>Las tablas deben de estar siempre en mayusculas y el <strong>Model que concatena a esa misma tabla lo crearemos en minusculas</strong>, los dos con el mismo valor.</code>
+          <span className="subrayado"> Las tablas deben de estar siempre en mayusculas y el <strong>Model que concatena a esa misma tabla lo crearemos en minusculas</strong>, los dos con el mismo valor. </span>
 
           <p><strong>protected $table = '__nombre_de_la_tabla__'; :</strong> Para definir la tabla que queremos concatenar con ese Model.</p>
           <br/>
