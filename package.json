@@ -1,5 +1,5 @@
 {
-  "homepage": "https://isaacnavajas.github.io/pruebacodigoestrella/",
+  "homepage": "https://codigoestrella.com",
   "name": "codigoestres",
   "version": "0.1.0",
   "private": true,
@@ -17,7 +17,7 @@
     "react-scroll": "^1.8.1"
   },
   "scripts": {
-    "predeploy": "npm run build && echo 'codigoestrella.com' > ./build/CNAME",
+    "predeploy": "npm run build && echo codigoestrella.com > ./prueba codigoestrella/CNAME",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
