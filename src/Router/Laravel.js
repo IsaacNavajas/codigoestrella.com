@@ -31,7 +31,7 @@ class Laravel extends React.Component{
           <br/>
 
 
-          <h2  className="bigtitle font">Instalacion</h2><br/>
+          <h2  className="bigtitle font">Instalación</h2><br/>
   
 
           <p><strong>composer global require laravel/installer: </strong> Para instalar el instalador de laravel. </p>
@@ -66,9 +66,9 @@ class Laravel extends React.Component{
           <br/><br/>
         
           <p>php artisan es un comando de la consola que se puede iniciar desde dentro del proyecto de laravel y nos va a servir para las instalaciones de sus dependencias</p>
-          <p><strong>php artisan --help:</strong> Nos desplega una lista con todos los comandos de artisan.</p>
-          <p><strong>php artisan make:migration:</strong> Es el comando que vamos a utilizar para la creacion/modificacion de las tablas, php artisan make:migration --create para crear la tabla, php artisan make:migration --table lo vamos a usar para modificar una tabla creada, es una buena practica modificar desde --table las talblas debido a los controles de versiones. Deberemos utilizar php artisan migrate para actualizar lass migraciones del proyecto. Usaremos php artisan migrate:rollback para volver un valor atras en memoria de las migraciones. </p>
-          <span className="subrayado"> <strong>Las tablas deben de estar siempre en mayusculas</strong> y el Model que concatena a esa misma tabla lo crearemos en minusculas, los dos con el mismo valor.</span> 
+          <p><strong>php artisan --help:</strong> Nos despliega una lista con todos los comandos de artisan.</p>
+          <p><strong>php artisan make:migration:</strong> Es el comando que vamos a utilizar para la creación/modificación de las tablas, php artisan make:migration --create para crear la tabla, php artisan make:migration --table lo vamos a usar para modificar una tabla creada, es una buena practica modificar desde --table las talblas debido a los controles de versiones. Deberemos utilizar php artisan migrate para actualizar las migraciones del proyecto. Usaremos php artisan migrate:rollback para volver un valor atras en memoria de las migraciones. </p>
+          <span className="subrayado"> <strong>Las tablas deben de estar siempre en mayúsculas</strong> y el Model que concatena a esa misma tabla lo crearemos en minúsculas, los dos con el mismo valor.</span> 
           <br/>
           <hr></hr><br/><br/>
 
@@ -77,9 +77,9 @@ class Laravel extends React.Component{
           <br/>
           <br/>
 
-          <p><strong>Route::resource('/rutaloremipsum/opcioloremipsum', 'resource'):</strong> El metodo resource es para desplegar el controlador crud y reorganizar sus rutas, para conocerlas lanzaremos el comando php artisan route:list. Para generar un controlador CRUD en laravel lanzaremos php artisan make:controller _nombredelcontrolador_ --resource. Haciendo un resource podemos aceptar las rutas por defecto y concatenar el controlador solo llamandolo, sin unirlo a ninguna function.</p>
+          <p><strong>Route::resource('/rutaloremipsum/opcioloremipsum', 'resource'):</strong> El método resource es para desplegar el controlador crud y reorganizar sus rutas, para conocerlas lanzaremos el comando php artisan route:list. Para generar un controlador CRUD en laravel lanzaremos php artisan make:controller _nombredelcontrolador_ --resource. Haciendo un resource podemos aceptar las rutas por defecto y concatenar el controlador solo llamándolo, sin unirlo a ninguna function.</p>
         
-          <p><strong>Route::get('/rutaloremipsum', 'pageone@index'):</strong> Para generar una ruta lo primero que tenemos que especificarle sera el metodo HTTP; get, post, put, patch o podemos utilizar any, luego definiremos la ruta a la que queremos enlazarlo en este caso es /rutaloremipsum, podemos meter tantos slash como queramos /rutauno/rutados/rutatres, si la ruta viene enlazada con un parametro especifico como puede ser un <strong>id</strong> lo definiremos <strong>entre parentesis</strong>, cada parametro entre parentesis debe tener el mismo valor siempre que venga de la misma tabla, en el caso de hacer dos cruds cada curd deben ser diferenciados entre distintos valores. Por ultimo metermos el nombre del controlador y con un arroba concatenamos la funcion que queremos habilitar de ese controlador a esa ruta. </p>
+          <p><strong>Route::get('/rutaloremipsum', 'pageone@index'):</strong> Para generar una ruta lo primero que tenemos que especificarle sera el método HTTP; get, post, put, patch o podemos utilizar any, luego definiremos la ruta a la que queremos enlazarlo en este caso es /rutaloremipsum, podemos meter tantos slash como queramos /rutauno/rutados/rutatres, si la ruta viene enlazada con un parámetro especifico como puede ser un <strong>id</strong> lo definiremos <strong>entre paréntesis</strong>, cada parámetro entre paréntesis debe tener el mismo valor siempre que venga de la misma tabla, en el caso de hacer dos cruds cada curd deben ser diferenciados entre distintos valores. Por ultimo metemos el nombre del controlador y con una arroba concatenamos la funcion que queremos habilitar de ese controlador a esa ruta. </p>
           <br/>
           <hr></hr>
           <br/><br/>
@@ -88,7 +88,7 @@ class Laravel extends React.Component{
           <h2  className="bigtitle">Model</h2>
           <br/>
           <br/>
-          <span className="subrayado"> Las tablas deben de estar siempre en mayusculas y el <strong>Model que concatena a esa misma tabla lo crearemos en minusculas</strong>, los dos con el mismo valor. </span>
+          <span className="subrayado"> Las tablas deben de estar siempre en mayúsculas y el <strong>Model que concatena a esa misma tabla lo crearemos en minúsculas</strong>, los dos con el mismo valor. </span>
 
           <p><strong>protected $table = '__nombre_de_la_tabla__'; :</strong> Para definir la tabla que queremos concatenar con ese Model.</p>
           <br/>
@@ -118,7 +118,7 @@ class Laravel extends React.Component{
           <h2  className="bigtitle">.Env</h2>
         
           <br/><br/>
-          <p>Las variables de entorno sirven para especificar los valores retenidos en esas variables hacia tu proyecto de paravel. Hay que asegurarse de tener todos los valores bien escritos porque si no se escribe uno como la contraseña no se crearan las migraciones.</p>
+          <p>Las variables de entorno sirven para especificar los valores retenidos en esas variables hacia tu proyecto de laravel. Hay que asegurarse de tener todos los valores bien escritos porque si no se escribe uno como la contraseña no se crearan las migraciones.</p>
           <p><strong>utf8mb4:</strong>Al crear las tablas hay que crear el charset/collation en utf8mb4 porque por defecto Laravel esta configurado para trabajar con las tablas con ese caracter.</p>
           
           <br/>

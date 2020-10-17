@@ -18,24 +18,24 @@ function Mysql(){
       <React.Fragment>
         <div className="container">
 
-          <h2  className="bigtitle font">Normalizacion</h2><br/>
+          <h2  className="bigtitle font">Normalización</h2><br/>
   
 
-          <p><strong>Diagrama fisico: </strong>para hacer la Normalizacion, tienen que tener todas las tablas una cardinalidad de uno a muchos. la normalizacion nos ayuda a dejar todo de una forma normal, hay cuatro reglas de Cold para lograr esto;</p>
+          <p><strong>Diagrama físico: </strong>para hacer la Normalización, tienen que tener todas las tablas una cardinalidad de uno a muchos. La normalización nos ayuda a dejar todo de una forma normal, hay cuatro reglas de Cold para lograr esto;</p>
           <ul>
-          <li><p><strong>-Primera forma nomral: sin campos repetidos. </strong></p></li>
-          <li><p><strong>-Segunda forma nomral: cada campo de la tabla debe depender de una id unica. (Primary key) </strong></p></li>
-          <li><p><strong>-Tercera forma nomral: campos que no son clave no deben de tener dependencias. </strong></p></li>
-          <li> <p><strong>-Cuarta forma nomral: los campos multivaluados se identifican por una llave unica. (Foreign key) </strong></p></li>
-          <li> <span className="subrayado"> En la normalizacion la tabla que tiene muchos es donde se meten las llaves foraneas. (se concatena con la otra tabla. ej; Usuario_id).</span></li>
+          <li><p><strong>-Primera forma normal: sin campos repetidos. </strong></p></li>
+          <li><p><strong>-Segunda forma normal: cada campo de la tabla debe depender de un id único. (Primary key) </strong></p></li>
+          <li><p><strong>-Tercera forma normal: campos que no son clave no deben de tener dependencias. </strong></p></li>
+          <li> <p><strong>-Cuarta forma normal: los campos multivaluados se identifican por una llave única. (Foreign key) </strong></p></li>
+          <li> <span className="subrayado"> En la normalización la tabla que tiene muchos es donde se meten las llaves foráneas. (se concatena con la otra tabla. ej; Usuario_id).</span></li>
           </ul>
           <br/>
           <hr></hr><br/>
           <h2  className="bigtitle">Ddl</h2><br/>
           <br/>
-          <p><strong>Create :</strong> se pulsa el boton derecho y se crea.</p>
-          <p><strong>Alter :</strong> se pulsa el boton derecho y se modifica.</p>
-          <p><strong>Drop:</strong> se pulsa el boton derecho y se elimina.</p>
+          <p><strong>Create :</strong> se pulsa el botón derecho y se crea.</p>
+          <p><strong>Alter :</strong> se pulsa el botón derecho y se modifica.</p>
+          <p><strong>Drop:</strong> se pulsa el botón derecho y se elimina.</p>
           <br/>
           <hr></hr><br/>
           <h2  className="bigtitle">Dml</h2><br/>
@@ -48,24 +48,24 @@ function Mysql(){
           <hr></hr><br/>
           <h2  className="bigtitle">Diagramas de Venn</h2><br/>
           <br/>
-          <span className="subrayado"> Toma como ejemplo las imagenes como tabla de la izquierda -> Usuario y la de la derecha -> Post</span><br/><br/>
+          <span className="subrayado"> Toma como ejemplo las imágenes como tabla de la izquierda -> Usuario y la de la derecha -> Post</span><br/><br/>
           <img src={imageone} className="Vendiagram"></img>
 
           <p><strong>SELECT * FROM Usuarios LEFT JOIN Post ON usuarios_id = Post.Usuario_id: </strong></p>
-          <p><strong>Left join:</strong> es para tomar la tabla que esta a la izquierda (Usuario) y es la primera que metimos. Tambien se puede usar right join.</p>
-          <p><strong>Post: </strong>es para indicar que vamos a unirla con esa tala. Pero recuerda que no se unen por arte de magia, vamos a utilizar las llaves foraneas.</p>
-          <p><strong>ON: </strong>es la sentencia que vamos a utilizar para saber que campo pertenece a cual, en este caso decimos que la tabla usuarios usuarios la concatenamos la llave primaria (id) con la llave foranea (usuario_id) de la tabla post.</p>
+          <p><strong>Left join:</strong> es para tomar la tabla que esta a la izquierda (Usuario) y es la primera que metimos. También se puede usar right join.</p>
+          <p><strong>Post: </strong>es para indicar que vamos a unirla con esa tala. Pero recuerda que no se unen por arte de magia, vamos a utilizar las llaves foráneas.</p>
+          <p><strong>ON: </strong>es la sentencia que vamos a utilizar para saber que campo pertenece a cual, en este caso decimos que la tabla usuarios la concatenamos la llave primaria (id) con la llave foránea (usuario_id) de la tabla post.</p>
           <br/><br/><br/><br/><br/>
           <img src={imagetwo} className="Vendiagram"></img>
           <p><strong>SELECT * FROM Usuarios INNER JOIN Post ON usuarios_id = Post.Usuario_id WHERE post.usuario_id IS NULL: </strong></p>
-          <p><strong>WHERE post.usuario_id IS NULL:</strong> trae solo los usuarios que no tengan ningun post.</p>
+          <p><strong>WHERE post.usuario_id IS NULL:</strong> trae solo los usuarios que no tengan ningún post.</p>
           
           <br/><br/><br/><br/><br/>
 
 
           <img src={imagethree} className="Vendiagram"></img>
           <p><strong>SELECT * FROM Usuarios INNER JOIN Post ON usuarios_id = Post.Usuario_id: </strong></p>
-          <p><strong>INNER JOIN:</strong> nos trae solo lo que esta ligado, trae solo los que tienen dependencias de ambos lados, (los que no estan huerfanos).</p>
+          <p><strong>INNER JOIN:</strong> nos trae solo lo que esta ligado, trae solo los que tienen dependencias de ambos lados, (los que no están huérfanos).</p>
           
           <br/><br/><br/><br/><br/>
 
@@ -92,18 +92,18 @@ function Mysql(){
 
 
 
-          <h2  className="bigtitle">Metodos de un query</h2><br/>
+          <h2  className="bigtitle">Métodos de un query</h2><br/>
           <br/>
-          <span className="subrayado"> El orden de colocar los metodos son los siguientes.</span><br/><br/>
+          <span className="subrayado"> El orden de colocar los métodos son los siguientes.</span><br/><br/>
           <p><strong>SELECT: </strong>lo que quieres mostrar.</p>
-          <li><p><strong>-AS: para poner un subnombre. </strong></p></li>
+          <li><p><strong>-AS: para poner un sub-nombre. </strong></p></li>
           <li><p><strong>-* : un atajo para seleccionar todos los atributos. </strong></p></li>
           <li><p><strong>-AVG: calcula el promedio. </strong></p></li>
           <li><p><strong>-COUNT: cuenta los registros de un campo. </strong></p></li>
           <li><p><strong>-SUM: suma los valores de un campo. </strong></p></li>
-          <li><p><strong>-MAX: devuelve el maximo de un campo. </strong></p></li>
-          <li> <p><strong>-MIN: devuelve el minimo de un campo. </strong></p></li>
-          <li> <p><strong>-GROUP_CONCAT: devuelve su resultado separandolos por comas. </strong></p></li>
+          <li><p><strong>-MAX: devuelve el máximo de un campo. </strong></p></li>
+          <li> <p><strong>-MIN: devuelve el mínimo de un campo. </strong></p></li>
+          <li> <p><strong>-GROUP_CONCAT: devuelve su resultado separándolos por comas. </strong></p></li>
   
           
           <p><strong>FROM:</strong> de donde voy a tomar los datos.</p>
@@ -112,14 +112,14 @@ function Mysql(){
           <li><p><strong>-BETWEEN: donde esten entre dos valores, where fecha_publicacion between '2020-01-01' an '2020-12-13'. </strong></p></li>
           <li><p><strong>-IS NULL: donde el valor es nulo. </strong></p></li>
           <li><p><strong>-IS NOT NULL: donde el valor no es nulo. </strong></p></li>
-          <li><p><strong>-AND: (y) para agregar mas valores al metodo IS NULL or IS NOT NULL. </strong></p></li>
-          <p><strong>ORDER BY: </strong>el orden en el que quiero presentar la informacion.</p>
+          <li><p><strong>-AND: (y) para agregar mas valores al método IS NULL or IS NOT NULL. </strong></p></li>
+          <p><strong>ORDER BY: </strong>el orden en el que quiero presentar la información.</p>
           <li><p><strong>-ASC: sirve para ordenar de forma ascendente. </strong></p></li>
           <li><p><strong>-DESC: sirve para ordenar de forma descendente. </strong></p></li>
           <li><p><strong>-LIMIT: se usa para limitar la cantidad de resultados que arroja el query. </strong></p></li>
-          <p><strong>GROUP BY: </strong>los grupos por los que me interesa agrupar la informacion. por ejemplo; SELECT apellido, avg(nota) FROM alumnos GROUP BY apellido -> haz una media de las notas agrupando los que se apelliden igual.</p>
+          <p><strong>GROUP BY: </strong>los grupos por los que me interesa agrupar la información. por ejemplo; SELECT apellido, avg(nota) FROM alumnos GROUP BY apellido -> haz una media de las notas agrupando los que se apelliden igual.</p>
           
-          <p><strong>HAVING: </strong>los filtros que quiero que tengan mis datos, son dependientes del ORDER BY, se pone despues de group by.</p>
+          <p><strong>HAVING: </strong>los filtros que quiero que tengan mis datos, son dependientes del ORDER BY, se pone después de group by.</p>
           <br/>
           <br/>
 
@@ -130,12 +130,12 @@ function Mysql(){
           <h2  className="bigtitle font">Exportar la base de datos</h2><br/>
   
 
-          <p><strong>Diagrama fisico: </strong>para hacer la Normalizacion, tienen que tener todas las tablas una cardinalidad de uno a muchos. la normalizacion nos ayuda a dejar todo de una forma normal, hay cuatro reglas de Cold para lograr esto;</p>
+          <p><strong>Diagrama físico: </strong>para hacer la Normalización, tienen que tener todas las tablas una cardinalidad de uno a muchos. la normalización nos ayuda a dejar todo de una forma normal, hay cuatro reglas de Cold para lograr esto;</p>
           
-          <span className="subrayado">En la parte derecha de Workbench buscamos Administrador, a la izquierda de schemas y le damos a <strong>Data Export</strong> y buscamos la base de datos que quermos exportar.</span>
-          <p><strong>Export to self-contained File: </strong>Aqui vamos a elegir el nombre y la ruta donde queremos guardar nuestra base de datos exportada. <span className="subrayado"> Es recomendable utilizar esta opcion ya que nos lo exporta en un archivo SQL.</span></p>
-          <p><strong>Include Create Schema: </strong>Para crear un esquema que nos permita crear la base de datos, si queremos insertar la base de datos antes de insertar los valores de la base de datos. <span className="subrayado"> Es recomnedable utilizarla si vamos a exportar para crear esa base de datos, NO para cuando queramos agregar esos valores a una base de datos ya creada.</span></p>
-          <p>* Error --> Para poder exportar la base de datos en Workbench es necesario tener una version especifica para esto nos vamos a descargar la version que nos especifica. Vamo a Edit - Preferences - Administration y en el Path to mysqldump Tool entramos dentro de la carpeta descargada de la version indicada /bin/mysqldump</p>
+          <span className="subrayado">En la parte derecha de Workbench buscamos Administrador, a la izquierda de schemas y le damos a <strong>Data Export</strong> y buscamos la base de datos que queramos exportar.</span>
+          <p><strong>Export to self-contained File: </strong>Aquí vamos a elegir el nombre y la ruta donde queremos guardar nuestra base de datos exportada. <span className="subrayado"> Es recomendable utilizar esta opcion, ya que nos lo exporta en un archivo SQL.</span></p>
+          <p><strong>Include Create Schema: </strong>Para crear un esquema que nos permita crear la base de datos, si queremos insertar la base de datos antes de insertar los valores de la base de datos. <span className="subrayado"> Es recomnendable utilizarla si vamos a exportar para crear esa base de datos, NO para cuando queramos agregar esos valores a una base de datos ya creada.</span></p>
+          <p>* Error --> Para poder exportar la base de datos en Workbench es necesario tener una vérsion especifica para esto nos vamos a descargar la vérsion que nos especifica. Vamos a Edit - Preferences - Administration y en el Path to mysqldump Tool entramos dentro de la carpeta descargada de la versión indicada /bin/mysqldump</p>
           <br/>
           <hr></hr><br/>
           <br/>
