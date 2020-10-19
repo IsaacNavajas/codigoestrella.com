@@ -31,10 +31,11 @@ class Wordpress extends React.Component{
           
           <p><strong>Colibri WP:</strong> Tema recomendado para editar por su gran extensión para editar.</p>
           <p><strong>themeforest.net:</strong> Para comprar temas de pago.</p>
-          <p><strong>Crear un tema hijo:</strong> Para modificar a nivel código es bueno crear un tema hijo sino no es necesario crear un hijo, vamos a crear desntro de la carpeta theme una nueva carpeta con el nombre del tema hijo y dentro el siguiente archivo style.css;</p>
+          <p><strong>Crear un tema hijo / Pluyin:</strong> Para modificar a nivel código es bueno crear un tema hijo sino no es necesario crear un hijo, vamos a crear desntro de la carpeta theme una nueva carpeta con el nombre del tema hijo y dentro el siguiente archivo style.css;</p>
           
           <img src={imageone} alt="imagen del modal" className="imagewordpress"></img>
-          <p>en el import llamamos al style.css del tema padre en este caso colibri-wp.</p>
+          <p>En el import llamamos al style.css del tema padre en este caso colibri-wp.</p>
+          <p>- Se puede agregar código de otras formas; como instalando un theme con la opción de modificar código desde él apariencia -> Editor, utilizando el pluyin code snippets o haciendo un require desde el archivo functions.php del proyecto. También podemos ayudarnos a trabajar con Hooks para inyectar codigo sin modificar los archivos, podemos ver los hooks en <strong>hookr.io</strong>. </p>
           <br/>
           <hr></hr><br/><br/>
 
