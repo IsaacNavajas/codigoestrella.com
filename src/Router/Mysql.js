@@ -6,7 +6,6 @@ import imagethree from "../source/diagramadevenn3.png";
 import imagefour from "../source/diagramadevenn4.png";
 import imagefive from "../source/diagramadevenn5.png";
 
-import $ from "jquery";
 
 
 
@@ -109,7 +108,7 @@ function Mysql(){
           <p><strong>FROM:</strong> de donde voy a tomar los datos.</p>
           <p><strong>WHERE:</strong> los filtros de los datos que quieres mostrar.</p>
           <li><p><strong>-LIKE %algo%: para los que contengan el valor algo. </strong></p></li>
-          <li><p><strong>-BETWEEN: donde esten entre dos valores, where fecha_publicacion between '2020-01-01' an '2020-12-13'. </strong></p></li>
+          <li><p><strong>-BETWEEN: donde estén entre dos valores, where fecha_publicacion between '2020-01-01' an '2020-12-13'. </strong></p></li>
           <li><p><strong>-IS NULL: donde el valor es nulo. </strong></p></li>
           <li><p><strong>-IS NOT NULL: donde el valor no es nulo. </strong></p></li>
           <li><p><strong>-AND: (y) para agregar mas valores al método IS NULL or IS NOT NULL. </strong></p></li>
@@ -117,7 +116,7 @@ function Mysql(){
           <li><p><strong>-ASC: sirve para ordenar de forma ascendente. </strong></p></li>
           <li><p><strong>-DESC: sirve para ordenar de forma descendente. </strong></p></li>
           <li><p><strong>-LIMIT: se usa para limitar la cantidad de resultados que arroja el query. </strong></p></li>
-          <p><strong>GROUP BY: </strong>los grupos por los que me interesa agrupar la información. por ejemplo; SELECT apellido, avg(nota) FROM alumnos GROUP BY apellido -> haz una media de las notas agrupando los que se apelliden igual.</p>
+          <p><strong>GROUP BY: </strong>los grupos por los que me interesa agrupar la información. Por ejemplo; SELECT apellido, avg(nota) FROM alumnos GROUP BY apellido -> haz una media de las notas agrupando los que se apelliden igual.</p>
           
           <p><strong>HAVING: </strong>los filtros que quiero que tengan mis datos, son dependientes del ORDER BY, se pone después de group by.</p>
           <br/>

@@ -2,6 +2,7 @@
 import React from 'react';
 import Modal from './Modal';
 import imageone from "../source/codezen 7.png";
+import imagetwo from "../source/image html.png";
 
 
 
@@ -26,24 +27,33 @@ class htmlyCss extends React.Component{
   
 
   
-                    <br/>
+              
                     <hr></hr><br/>
                     <h2  className="bigtitle">Estructura global</h2>
                     <br/>
   
+                    <img src={imagetwo} className="imagehtml col-12"></img>
+
+                    <br/>
   
                     <p><strong>header:</strong> Se usa para definir el encabezado.</p>
                     <p><strong>body:</strong> Es donde se almacena todo el contenido visible.</p>
                     <p><strong>footer:</strong> Es donde se almacena el pie de pagina.</p>
                     <p><strong>nav:</strong> Sirve para poner los enlaces de navegación de dentro de la pila o fuera como menús...</p>
+                    <p><strong>main:</strong> Representa la parte principal del cuerpo.</p>
                     <p><strong>article:</strong> Sirve para un solo uso o ser reusada como articulo, una entrada, un blog, un widget ...</p>
                     <p><strong>aside:</strong> Sirve para contener información indispuesta a la pagina como un biografía, publicidad, cosas relacionadas...</p>
-                    <p><strong>section:</strong> Sirve para elegir una sección de un elemento, por ejemplo el despliegue de un navegador en varios niveles.</p>
+                    <p><strong>section:</strong> Sirve para elegir una sección de un elemento, por ejemplo el despliegue de un navegador en varios niveles, o el despliegue de un h1 y un p.</p>
                     <p><strong>hgroup:</strong> Sirve para concatenar títulos secundarios sin perjudicar el documento, se engloba siempre dentro de los h1, h2, h3, h4, h5, h6.</p>
                     <p><strong>figure y figcaption:</strong> Sirve para colocar imágenes de forma profesional.</p>
                     <p><strong>div:</strong> Sirve para seleccionar una división.</p>
                     
                     <br/>
+
+                    
+
+                    <br/>
+
                     <hr></hr><br/>
                     <h2  className="bigtitle">Etiquetas</h2>
                     <br/>

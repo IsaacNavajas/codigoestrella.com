@@ -39,10 +39,10 @@ html, body {
   text-align: right;
   font-family: 'Open Sans Condensed', sans-serif;
   font-family: 'Pacifico', cursive;
-  font-size: 50px;
+  font-size: 49px;
   padding-right:80px;
   color:#a8a9a5;
-  text-shadow: 2px 2px #5a5b5e;
+  text-shadow: 2px 2px #525252;
 
 }
 
@@ -65,7 +65,7 @@ font-size: 40px;
 .imag{  
   position:relative;
   height:300px;
-  background-color: #a84ba5;
+  background-image: url(source/fondo.png);
   font-size: 50px;
 
 
@@ -105,13 +105,14 @@ font-size: 40px;
 
 .imagen{  
   position:absolute;
-  height:297px;
-  width: 300px;;
-  background-color: #a84ba5;
+  
+  width: 380px;
+
 
   margin:auto;
   margin-right:30%;
-  padding-bottom: 13px;
+  margin-top: 57px;
+
 
 }
 
@@ -249,6 +250,14 @@ font{  font-family: englisht;
   width: 50%;
   padding-top: 2%;
   padding-bottom:  2%;;
+}
+
+.imagehtml{
+  display:block;
+  margin:auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  
 }
 
 .imagejavascript{

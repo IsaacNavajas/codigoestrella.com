@@ -5,10 +5,6 @@ import image from '../source/image 1.png';
 
 import {Link} from "react-router-dom";
 
-import $ from "jquery";
-
-import * as Scroll from 'react-scroll';
-import { Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
  
 
 class Navbar extends React.Component{
@@ -16,10 +12,10 @@ class Navbar extends React.Component{
 
   render(){
 
-    window.addEventListener("scroll", function(){
-      var body= document.querySelector("body");
-      body.classList.toggle("sticky", window.scrollY > 0);
-    })
+    //window.addEventListener("scroll", function(){
+    //  var body= document.querySelector("body");
+     // body.classList.toggle("sticky", window.scrollY > 0);
+    //})
 
     //$(window).scroll(function() {        
       //var scroll = $(window).scrollTop();    
