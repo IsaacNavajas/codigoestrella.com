@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.3cd262ba.chunk.css",
-    "main.js": "/static/js/main.e018eaf8.chunk.js",
-    "main.js.map": "/static/js/main.e018eaf8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.988440a7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.988440a7.js.map",
+    "main.css": "/static/css/main.0d51095c.chunk.css",
+    "main.js": "/static/js/main.944e84d7.chunk.js",
+    "main.js.map": "/static/js/main.944e84d7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2ec26966.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2ec26966.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.6d924e72.chunk.js": "/static/js/2.6d924e72.chunk.js",
-    "static/js/2.6d924e72.chunk.js.map": "/static/js/2.6d924e72.chunk.js.map",
+    "static/js/2.813308ae.chunk.js": "/static/js/2.813308ae.chunk.js",
+    "static/js/2.813308ae.chunk.js.map": "/static/js/2.813308ae.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2185d1c639a1c8ddae49dd80e3483e9c.js": "/precache-manifest.2185d1c639a1c8ddae49dd80e3483e9c.js",
+    "precache-manifest.c414cd559ddb9359d440c7ca867bc2d7.js": "/precache-manifest.c414cd559ddb9359d440c7ca867bc2d7.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.3cd262ba.chunk.css.map": "/static/css/main.3cd262ba.chunk.css.map",
-    "static/js/2.6d924e72.chunk.js.LICENSE.txt": "/static/js/2.6d924e72.chunk.js.LICENSE.txt",
+    "static/css/main.0d51095c.chunk.css.map": "/static/css/main.0d51095c.chunk.css.map",
+    "static/js/2.813308ae.chunk.js.LICENSE.txt": "/static/js/2.813308ae.chunk.js.LICENSE.txt",
     "static/media/codezen 1.png": "/static/media/codezen 1.49b3fc8c.png",
     "static/media/codezen 10.png": "/static/media/codezen 10.82931b6d.png",
     "static/media/codezen 2.png": "/static/media/codezen 2.36528f3f.png",
@@ -30,16 +30,17 @@
     "static/media/diagramadevenn3.png": "/static/media/diagramadevenn3.4f86454c.png",
     "static/media/diagramadevenn4.png": "/static/media/diagramadevenn4.b91209a1.png",
     "static/media/diagramadevenn5.png": "/static/media/diagramadevenn5.169d627c.png",
-    "static/media/image 1.png": "/static/media/image 1.4f6cd08c.png",
+    "static/media/image 1.png": "/static/media/image 1.3796b6ee.png",
+    "static/media/image html.png": "/static/media/image html.bd41e66a.png",
     "static/media/image javascript.png": "/static/media/image javascript.a38f56e0.png",
     "static/media/spam.png": "/static/media/spam.60734fdd.png",
     "static/media/styles.css": "/static/media/star2.861feecc.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.988440a7.js",
+    "static/js/runtime-main.2ec26966.js",
     "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.6d924e72.chunk.js",
-    "static/css/main.3cd262ba.chunk.css",
-    "static/js/main.e018eaf8.chunk.js"
+    "static/js/2.813308ae.chunk.js",
+    "static/css/main.0d51095c.chunk.css",
+    "static/js/main.944e84d7.chunk.js"
   ]
 }
