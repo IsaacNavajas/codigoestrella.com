@@ -8,7 +8,7 @@ function Pagereact(){
 
       <React.Fragment>
         <div>
-        <h2>P.O.O</h2>    
+        <h2 className="bigtitle font">P.O.O</h2>    
           <hr></hr>      
           <p><strong>Herencia :</strong> para crear hijos entre clases, usaremos la palabra extends en la clase hija para heredar la clase padre, en php solo se puede heredar de un padre. Una vez echa la herencia vamos a compartir sus métodos o a sobreescribirlos. Para heredar vamos a utilizar la palabra reservada <span className="subrayado"> extends</span> entre clases.</p>
           <p><strong>Abstracción :</strong> para aislar la clase en diferentes métodos.</p>
@@ -17,7 +17,7 @@ function Pagereact(){
           <p><strong>Modularidad :</strong> dividir todo el sistema en diferentes módulos para simplificar el código.</p>
           <hr></hr>
 
-          <h4>métodos de p.o.o</h4> 
+          <h4 className="bigtitle font">métodos de p.o.o</h4> 
           <hr></hr>     
           
           <p><strong>Abstract :</strong> los métodos abstract van al principio de una function o una clase y no se definen solo se declarar para poder definirlos en la herencia.</p>
@@ -36,15 +36,15 @@ function Pagereact(){
           </ul>
          <hr></hr>
                
-         <h4>P.o.o</h4>
+         <h4 className="bigtitle font">P.o.o</h4>
           <div className=" col-12"><img src={imagecarbon1} className="imagecarbon"></img></div>
           <hr></hr>
-          <h4>Constructor, get y set</h4>
+          <h4 className="bigtitle font">Constructor, get y set</h4>
           <div className=" col-12"><img src={imagecarbon2} className="imagecarbon"></img></div>
           <hr></hr>
         </div>
         <div>
-          <h2>Sintaxis</h2>    
+          <h2 className="bigtitle font">Sintaxis</h2>    
           <hr></hr>      
           <p><strong>substr($post, 0, 20) :</strong> para substraer cuantos caracteres se quiere coger de dentro del parentesis.</p>
           <p><strong>explode(', ', $data) :</strong> pasa de un texto a un array directamente. Cada vez que tengas un espacio en $data transfórmalo en un array.</p>

@@ -30,7 +30,7 @@ class Inicio extends React.Component{
           <center>
             {!this.state.image && (<Loading/>)}
             {this.state.image && (<img src={this.state.image} className="imagestart"></img>)}
-            
+           
           </center>
 
         </React.Fragment>

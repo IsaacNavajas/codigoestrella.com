@@ -45,7 +45,7 @@ function Git(){
           <p><strong>git push:</strong> envía el archivo a un repositorio remoto.</p>
           <p><strong>git pull:</strong> nos permite borrar un archivo.</p>
           <br/>
-          <p><strong>git branch: </strong>para crear una rama nueva.</p>
+          <p><strong>git branch: </strong>para crear una rama nueva. Podemos agregar una rama de pruebas como fix-typo.</p>
           <p><strong>git branch -d:</strong> para borrar la rama.</p>
           <p><strong>git merge:</strong> para juntar mas de una rama. Primero posicionarte en la ramaque queremos juntar las ramas y después llamar a la otra rama; $master: git marge supercabecera</p>
           <br/>
@@ -69,7 +69,7 @@ function Git(){
           <hr></hr><br/>
           <h2  className="bigtitle">GitHub</h2><br/>
 
-
+          <p><strong>PULL REQUEST: </strong>Se accede desde github y es un merge de pruebas, en el que el dueño del proyecto decide si hacer el mergue o devolver los fallos.</p>
           <p><strong>npm install: </strong>cuando clonas un proyecto de github hay que volver a descargar las dependencias para que funcione la aplicación correctamente.</p>
           <p><strong>git remote add origin "URL_DEL_REPOSITORIO": </strong>crea un origen remoto de nuestros archivos.</p>
           <p><strong>git remote: </strong>para ver lo git remotos.</p>

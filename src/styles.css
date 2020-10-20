@@ -80,7 +80,7 @@ font-size: 40px;
   opacity: 0.6;
   background-image: url(source/star.jpg);
   transition: 800ms;
-  filter: drop-shadow(0px 0px 4px rgb(255, 238, 6));
+  filter: drop-shadow(0px 0px 7px rgb(255, 238, 6));
 }
 
 
@@ -159,7 +159,6 @@ font-size: 40px;
 
 }
 
-
 a{
   color:white;
   justify-content:center;
@@ -184,7 +183,7 @@ a{
   font-size: 50px;
   color:transparent;
   font-family: 'Fredericka the Great', cursive;
-  background-image: url(source/star2.jpg);
+  background-image: url("https://i.ibb.co/mq7vPkz/star-3.jpg");
   background-position: center;
   -webkit-background-clip: text;
 
@@ -221,7 +220,7 @@ font{  font-family: englisht;
 
 
 .imagestart{
-  width: 30%;
+  width: 10%;
 }
 
 .buttonphp{

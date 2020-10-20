@@ -35,7 +35,9 @@ class Wordpress extends React.Component{
           
           <img src={imageone} alt="imagen del modal" className="imagewordpress"></img>
           <p>En el import llamamos al style.css del tema padre en este caso colibri-wp.</p>
-          <p>- Se puede agregar código de otras formas; como instalando un theme con la opción de modificar código desde él apariencia -> Editor, utilizando el pluyin code snippets o haciendo un require desde el archivo functions.php del proyecto. También podemos ayudarnos a trabajar con Hooks para inyectar codigo sin modificar los archivos, podemos ver los hooks en <strong>hookr.io</strong>. </p>
+          <p>- Se puede agregar código de otras formas; como instalando un theme con la opción de modificar código desde él, apariencia -> Editor, utilizando el pluyin code snippets o haciendo un require desde el archivo functions.php del proyecto. También podemos ayudarnos a trabajar con Hooks para inyectar codigo sin modificar los archivos, podemos ver los hooks en <strong>hookr.io</strong>. </p>
+          <span className="subrayado"> Instalaremos el pluyin en vidual studio code SFTP para poder ver los archivos del proyecto. </span> 
+          
           <br/>
           <hr></hr><br/><br/>
 

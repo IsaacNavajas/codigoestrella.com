@@ -1,0 +1,14 @@
+- vamos a la carpeta que tenemos en nuestra carpeta htdocs de xampp y la vamos a comprimir a parte
+- entramos en nuestra base de datos y exportamos toda la base de datos
+- metemos la carpeta comprimida y el archivo sql exportado dentro de la misma carpeta.
+
+- desde nuestro hosting vamos a subir el archivo comprimido y desde ahi lo vamos a descomprimir y la mobemos a la carpeta principal (en este caso public_html)
+- vamos a subir de forma independiente en la parte bases de datos el archivo de sql.
+- Entramos en Manage y PhpMyAdmin e introducimos el usuario y contraseña que nos dan, entramos a nuestra base de datos con el mismo nombre y una vez dentro le damos a importar y seleccionamos nuestro archivo sql.
+
++ buscamos en nuestra base de datos con wp_ config (el wp puede cambiar dependiendo como lo hayamos configurado) y clickamos al unico que nos aparece
+- en el primer valor que sera el siteurl lo cambiaremos por la url que nos da el hosting
+- en el segundo valor que sera home lo volveremos a cambiar por la misma url que nos da el hosting.
++ haora vamos dentro de la base de datos de nuestro hosting y buscamos tmabien wp_config
+- cambiamos el DB_NAME por el que nos da el hosting y lo mismo hacemos con DB_USER, PASSWORD, DB_HOST.
+- 
