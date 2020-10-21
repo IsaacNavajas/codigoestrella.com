@@ -111,10 +111,6 @@ class Javascript extends React.Component{
           </div>
         </ul>)}
 
-        <br/>
-        <hr></hr><br/>
-
-        <br/><br/><br/>
 
         </div>
 

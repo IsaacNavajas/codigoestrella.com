@@ -155,13 +155,7 @@ class Pagereact extends React.Component{
           <div className=" col-6"><img src={imagecarbon4} className="imagecarbon"></img></div>
           <div className=" col-6"><img src={imagecarbon5} className="imagecarbon"></img></div>
           <div className=" col-6"><img src={imagecarbon6} className="imagecarbon"></img></div>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          
+
         </div>
 
 

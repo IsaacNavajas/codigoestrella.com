@@ -136,15 +136,7 @@ class Laravel extends React.Component{
             className="Link">
               enlace_de_la_documentación
           </a>
-          <br/>
-          <br/>
-         <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          
+
         </div>
 
 

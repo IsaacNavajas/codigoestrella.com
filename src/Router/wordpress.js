@@ -201,13 +201,6 @@ class Wordpress extends React.Component{
           <p>- cambiamos el DB_NAME por el que nos da el hosting y lo mismo hacemos con DB_USER, PASSWORD, DB_HOST.</p>
           
 
-          <br/>
-         
-          <br/><br/>
-          <br/>
-          <br/>
-         <br/>
-          <br/>
 
           
         </div>

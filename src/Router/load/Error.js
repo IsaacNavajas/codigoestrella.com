@@ -11,11 +11,11 @@ class Error extends React.Component{
       <div>
         <center>
           <code>
-          <Link to="/inicio"><button type="submit" className="buttongetstart btn btn-secondary" >Inicio</button></Link>
+          <Link to="/"><button type="submit" className="buttongetstart btn btn-secondary" >Inicio</button></Link>
 
             <p>Error: 404</p>
             
-            <div class="spinner-grow text-danger" role="status">
+            <div class="spinner-grow text-danger  Loading" role="status">
               <span class="sr-only">Loading...</span>
             </div>
 

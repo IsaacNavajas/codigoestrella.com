@@ -31,7 +31,6 @@ class Navbar extends React.Component{
     return (
       <React.Fragment>
 
-
      
           <div className="imag col-12 container-fluid">
 
@@ -40,12 +39,11 @@ class Navbar extends React.Component{
 
                   <h1 className="title-codigoestrella col-12">Codigoestrella.com</h1>
 
-           
 
-       
                   <div className="position_button col-12">
+
                     <Link to="/javascript"><button type="submit" className="button btn btn-secondary" >Javascript</button></Link>
-                  </div>
+                    </div>
              
             </div>
   
