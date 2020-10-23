@@ -9,7 +9,8 @@ import ControllerLaravel from './controllerLaravel.js';
 class Laravel extends React.Component{
 
   state={
-    openModal: false
+    openModal: false,
+    verifyLanguage:this.props.verifyLanguage
   };
 
   closeModal = () => {this.setState({openModal: false})}
@@ -19,7 +20,7 @@ class Laravel extends React.Component{
 
 
   render(){
-
+console.log(this.props.verifyLanguage)
     
     return (
 
@@ -44,7 +45,7 @@ class Laravel extends React.Component{
           <button 
                       className="buttonphp btn btn-dark" 
                       onClick={this.openModal}
-                    >
+                      >
                      Php
           </button>
 

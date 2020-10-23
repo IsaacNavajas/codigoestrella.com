@@ -5,23 +5,29 @@ import Footer from './Footer';
 import image from "../source/spam.png";
 
 
-function Router(props){
+class Router extends React.Component{
+
+  render(){
 
     return (
       <React.Fragment>
 
-        <Navbar/>
+        <Navbar verifyLanguage={this.props.verifyLanguage}/>
 
         <img src={image} className="imagewaterdrop"></img>
         
-        <div className="childrens">{props.children}</div>
+        {this.props.children}
 
+        
+        {this.props.verifyLanguage}
 
         <Footer/>
         
       </React.Fragment>
     );
 
+  }
+   
 
 }
 

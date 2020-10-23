@@ -25,6 +25,7 @@ function Git(){
           <p><strong>history:</strong> nos muestra el historial de comandos.</p>
           <p><strong>cat:</strong> para abrir el archivo.</p>
           <p><strong>code:</strong> para abrir el archivo con nuestro editor de código.</p>
+          <p><strong>code . :</strong> para abrir todo el proyecto desde el editor de código seleccionado pro defecto.</p>
           <p><strong>vi:</strong> nos muestra el editor de código.</p>
           <p><strong>esc + i: </strong>para inicializar la escritura dentro de vi.</p>
           <p><strong>esc + sift + z + z:</strong> para salir y guardar el archivo vi.</p>

@@ -12,6 +12,13 @@ class Navbar extends React.Component{
 
   render(){
 
+
+
+
+      //  var body= document.querySelector("body");
+       // body.classList.toggle("sticky", window.scrollY > 0);
+      //})
+
     //window.addEventListener("scroll", function(){
     //  var body= document.querySelector("body");
      // body.classList.toggle("sticky", window.scrollY > 0);
@@ -35,19 +42,24 @@ class Navbar extends React.Component{
           <div className="imag col-12 container-fluid">
 
             <div className="position col-7">
-     
 
-                  <h1 className="title-codigoestrella col-12">Codigoestrella.com</h1>
+ 
+                    {
+                     this.props.verifyLanguage && <h1 className="title-codigoestrella-spanish col-12" id="title">Codigoestrella.com</h1>
+                      ||
+                      !this.props.verifyLanguage && <h1 className="title-codigoestrella-english col-12" id="title">Codigoestrella.com</h1>
+                    }
 
 
                   <div className="position_button col-12">
 
                     <Link to="/javascript"><button type="submit" className="button btn btn-secondary" >Javascript</button></Link>
+                    
                     </div>
-             
+
             </div>
   
-              <img src={image} className="imagen col-5" alt="k2"></img>
+              <img src={image} className="imagen col-5" alt="imagen robot"></img>
 
           </div>
 
@@ -64,20 +76,11 @@ class Navbar extends React.Component{
             </ul>
             
         </nav>
-     
-
-
-        
-
-
-
 
       </React.Fragment>
     );
     
   }
-
-
 
 }
 

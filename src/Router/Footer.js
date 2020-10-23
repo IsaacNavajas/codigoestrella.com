@@ -23,7 +23,7 @@ class Footer extends React.Component{
 
             <h1 className="footercodigoestrella col-12">Codigoestrella.com</h1>
             <p className="footertexto">Esta pagina ha sido diseñada para el estudio y producción del área de programación.</p>
-            <a href="mailto:codigoestrella@gmail.com"><button class="btn btn-secondary"> Contactanos ✉  </button></a>
+            <a href="mailto:codigoestrella7a@gmail.com"><button class="btn btn-secondary"> Contáctanos ✉  </button></a>
                   
 
           </div>

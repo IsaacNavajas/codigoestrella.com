@@ -10,6 +10,7 @@
   list-style:none;
   box-sizing:border-box;
   text-decoration: none;
+  zoom:97%;
   
 
 }
@@ -95,16 +96,16 @@ html, body {
 
 .imagefooter{
   margin:auto;
-  width: 150px;
+  width: 120px;
   
 }
 
 .Loading{
-  margin-bottom: 72.1vh;
+  margin-bottom: 100.1vh;
 }
 
 
-.title-codigoestrella{
+.title-codigoestrella-spanish{
   position:absolute;
   text-align: right;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -113,10 +114,27 @@ html, body {
   padding-right:80px;
   color:#a8a9a5;
   text-shadow: 2px 2px #525252;
+  transition:  0.8s linear 0.3s;
+}
 
+.title-codigoestrella-english{
+  position:absolute;
+  text-align: right;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-size: 49px;
+  padding-right:80px;
+  text-shadow: 2px 2px rgba(110, 110, 110, 0.349);
+  color:transparent;
+  background-image: url(https://i.postimg.cc/DfgsPnRp/40ab7a26c90ee682a23e2dd55f978a65.jpg);
+  height: 100px;
+  background-size: 49%;
+  -webkit-background-clip: text;
+  transition:  0.4s linear 0.2s;
 }
 
 .Navbar{
+
   position:relative;
   height:80px;
   background-color: #ffffff;
@@ -141,17 +159,50 @@ font-size: 40px;
 
 }
 
+
+.toggle{
+  float:right;
+  position:relative;
+  z-index:10;
+  display: block;
+  padding-right:270px;
+ 
+  margin-top:-165px;
+
+}
+.America{
+  width: 50px;
+  margin-top: -2px;
+  margin-left:10px;
+  cursor: pointer;
+}
+
 .button{
   width: 200px;
   float:right;
  
 }
 .button:hover{
-  opacity: 0.6;
-  background-image: url(source/star.jpg);
+  background-color: transparent;
   transition: 800ms;
   filter: drop-shadow(0px 0px 7px rgb(255, 238, 6));
+
 }
+.button:focus{
+  background-color: transparent;
+  filter: drop-shadow(0px 0px 7px rgb(255, 238, 6));
+  transition: 800ms;
+}
+
+.button:active{
+  background: rgba(253, 249, 0, 0);
+  transition: 900ms; 
+}
+.button:link{
+  background: rgba(253, 249, 0, 0);
+  transition: 9000ms; 
+}
+
 
 
 .position{
@@ -176,12 +227,12 @@ font-size: 40px;
 .imagen{  
   position:absolute;
   
-  width: 380px;
+  width: 400px;
 
 
   margin:auto;
   margin-right:30%;
-  margin-top: 57px;
+  margin-top: 53px;
 
 
 }
@@ -292,7 +343,8 @@ font{  font-family: englisht;
   display:block;
   margin:auto;
   width: 10%;
-  margin-bottom: 70vh;
+  margin-bottom: 90vh;
+
 
 }
 
@@ -301,11 +353,11 @@ font{  font-family: englisht;
   position:absolute;
   display:block;
 
-  width: 10%;
+  width: 80px;
   z-index:-150;
   margin-top: 409px;
   margin-left:45%;
-  opacity:0.2;
+  opacity:0.4;
 
 }
 
