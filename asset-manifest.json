@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.20791e3b.chunk.css",
+    "main.css": "/static/css/main.8f044fdf.chunk.css",
     "main.js": "/static/js/main.c204ae26.chunk.js",
     "main.js.map": "/static/js/main.c204ae26.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ec26966.js",
@@ -9,10 +9,10 @@
     "static/js/2.1d674e9b.chunk.js": "/static/js/2.1d674e9b.chunk.js",
     "static/js/2.1d674e9b.chunk.js.map": "/static/js/2.1d674e9b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bc6a90234630f186cd16310dc4add937.js": "/precache-manifest.bc6a90234630f186cd16310dc4add937.js",
+    "precache-manifest.a9ef6de199f4f390645ab474c494a5ac.js": "/precache-manifest.a9ef6de199f4f390645ab474c494a5ac.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.20791e3b.chunk.css.map": "/static/css/main.20791e3b.chunk.css.map",
+    "static/css/main.8f044fdf.chunk.css.map": "/static/css/main.8f044fdf.chunk.css.map",
     "static/js/2.1d674e9b.chunk.js.LICENSE.txt": "/static/js/2.1d674e9b.chunk.js.LICENSE.txt",
     "static/media/NASA.jpg": "/static/media/NASA.6dde4e8e.jpg",
     "static/media/codezen 1.png": "/static/media/codezen 1.49b3fc8c.png",
@@ -40,7 +40,7 @@
     "static/js/runtime-main.2ec26966.js",
     "static/css/2.8aa5a7f8.chunk.css",
     "static/js/2.1d674e9b.chunk.js",
-    "static/css/main.20791e3b.chunk.css",
+    "static/css/main.8f044fdf.chunk.css",
     "static/js/main.c204ae26.chunk.js"
   ]
 }
