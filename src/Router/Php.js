@@ -20,7 +20,7 @@ function Pagereact(){
           <h4 className="bigtitle font">métodos de p.o.o</h4> 
           <hr></hr>     
           
-          <p><strong>Abstract :</strong> los métodos abstract van al principio de una function o una clase y no se definen solo se declarar para poder definirlos en la herencia.</p>
+          <p><strong>Abstract :</strong> los métodos abstract van al principio de una function o una clase y no se definen solo se declaran para poder definirlos en la herencia.</p>
           <p><strong>Interface :</strong> vamos a crear una interfaz completamente separada y para implementarla usaremos la palabra reservada <span className="subrayado"> implements</span> en la clase, no se pueden definir solo se declarar para poder definirlo en la clase llamada como por ejemplo utilizando type hinting.</p>
           <hr></hr> 
           <p><strong>final :</strong> Si utilizamos la palabra reservada final al principio de una function o una clase no vamos a poder heredarla.</p>

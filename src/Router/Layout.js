@@ -14,14 +14,13 @@ class Router extends React.Component{
 
         <Navbar verifyLanguage={this.props.verifyLanguage}/>
 
-        <img src={image} className="imagewaterdrop"></img>
+        <img src={image} className="col-6 imagewaterdrop"></img>
         
         {this.props.children}
-
         
         {this.props.verifyLanguage}
 
-        <Footer/>
+        <Footer verifyLanguage={this.props.verifyLanguage}/>
         
       </React.Fragment>
     );

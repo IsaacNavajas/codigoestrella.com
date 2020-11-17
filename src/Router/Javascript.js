@@ -25,19 +25,15 @@ class Javascript extends React.Component{
     this.dataCharacters();
   }
 
-  dataCharacters = () => {
-
-    if(data){
-      this.setState({  data: data });
-    }else{
-      this.setState({  data: null });
-    }
-  };
-
+  dataCharacters = () => new Promise((resolve, reject) => {
+    resolve(this.setState({  data: data }))
+    reject('error')
+  }
+  
+  )  
   
   closeModal = () => {this.setState({openModal: false})}
   openModal = () => {this.setState({openModal: true})}
-
 
   render(){
 
@@ -50,7 +46,7 @@ class Javascript extends React.Component{
 
 
         <br/>
-
+     
         <div className="bigtitle">{this.state.data.titles.title_four}</div>
         <br/>
         {this.state.data.results.results_installjavascript.map(badge => 

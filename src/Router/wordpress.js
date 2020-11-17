@@ -18,7 +18,7 @@ class Wordpress extends React.Component{
           <h2  className="bigtitle font">Instalación</h2><br/>
 
           <p><strong>Instalar Wordpress desde XAMPP: </strong> entrar en www.word.press.org y descargar Get Wordpress, descomprimirlo en la carpeta de htdocs de XAMPP, y escribir la ruta /localhost/(nombre de la carpeta) y desde ahi comenzar la instalación. </p>
-          <p><strong>Utilizar interfaz antigua de wordpress:</strong> vamos a pluyins y buscamos - Editor clásico - lo activamos y automáticamente cambiara su interfaz.</p>
+          <p><strong>Utilizar interfaz antigua de wordpress:</strong> vamos a plugins y buscamos - Editor clásico - lo activamos y automáticamente cambiara su interfaz.</p>
    
 
           <br/>
@@ -31,12 +31,12 @@ class Wordpress extends React.Component{
           
           <p><strong>Colibri WP:</strong> Tema recomendado para editar por su gran extensión para editar.</p>
           <p><strong>themeforest.net:</strong> Para comprar temas de pago.</p>
-          <p><strong>Crear un tema hijo / Pluyin:</strong> Para modificar a nivel código es bueno crear un tema hijo sino no es necesario crear un hijo, vamos a crear desntro de la carpeta theme una nueva carpeta con el nombre del tema hijo y dentro el siguiente archivo style.css;</p>
+          <p><strong>Crear un tema hijo / plugin:</strong> Para modificar a nivel código es bueno crear un tema hijo sino no es necesario crear un hijo, vamos a crear desntro de la carpeta theme una nueva carpeta con el nombre del tema hijo y dentro el siguiente archivo style.css;</p>
           
           <img src={imageone} alt="imagen del modal" className="imagewordpress"></img>
           <p>En el import llamamos al style.css del tema padre en este caso colibri-wp.</p>
-          <p>- Se puede agregar código de otras formas; como instalando un theme con la opción de modificar código desde él, apariencia -> Editor, utilizando el pluyin code snippets o haciendo un require desde el archivo functions.php del proyecto. También podemos ayudarnos a trabajar con Hooks para inyectar codigo sin modificar los archivos, podemos ver los hooks en <strong>hookr.io</strong>. </p>
-          <span className="subrayado"> Instalaremos el pluyin en vidual studio code SFTP para poder ver los archivos del proyecto. </span> 
+          <p>- Se puede agregar código de otras formas; como instalando un theme con la opción de modificar código desde él, apariencia -> Editor, utilizando el plugin code snippets o haciendo un require desde el archivo functions.php del proyecto. También podemos ayudarnos a trabajar con Hooks para inyectar codigo sin modificar los archivos, podemos ver los hooks en <strong>hookr.io</strong>. </p>
+          <span className="subrayado"> Instalaremos el plugin en vidual studio code SFTP para poder ver los archivos del proyecto. </span> 
           
           <br/>
           <hr></hr><br/><br/>
@@ -71,10 +71,10 @@ class Wordpress extends React.Component{
           <hr></hr>
           <br/><br/>
 
-          <h2  className="bigtitle">Pluyins:</h2>
+          <h2  className="bigtitle">plugins:</h2>
           <br/><br/>
           <p><strong>widgets:</strong> Están en apariencia - widgets, son zonas de contenido que podemos agregar al rededor de distintas áreas de la pagina.</p>
-          <p><strong>Pluyins recomendables para instalar en nuestro proyecto:</strong> Funciona de igual manera que en biblioteca para las entradas.</p>
+          <p><strong>plugins recomendables para instalar en nuestro proyecto:</strong> Funciona de igual manera que en biblioteca para las entradas.</p>
 
           <ul>
               <li><p><strong>+ Contact Form 7 =</strong> Para crear formularios de contacto de forma rápida, para agregar un formulario lo haremos desde contacto - Añadir nuevo y lo meteremos en una nueva pagina con Essential Addons for Elementor.</p></li>
@@ -93,12 +93,12 @@ class Wordpress extends React.Component{
           <br/>
           <hr></hr><br/><br/>
 
-          <h2  className="bigtitle"><strong>Pluyin:</strong> Elementor Page Builder</h2>
+          <h2  className="bigtitle"><strong>plugin:</strong> Elementor Page Builder</h2>
           <br/>
           <br/>
 
-          <p><strong>Instalador :</strong> Vamos a pluyins, buscamos elementor page builder y lo activamos, a partir de ahora cada vez que queramos crear algo en nuestro wordpress tendremos una botonera de editar con Elementor y de esta forma entraremos desde el editor del pluyin.</p>
-          <p><strong>Essential Addons for Elementor :</strong> Es un pluyin independiente de Elementor pero que trabaja con él, Elementor solo te permite añadir post a tu sitio en versión de pago pero con este pluyin lo vamos hacer de forma gratuita, una vez activado dentro del editor de Elementor aparecerá una opción agregada a su menu : Essential Addons.</p>
+          <p><strong>Instalador :</strong> Vamos a plugins, buscamos elementor page builder y lo activamos, a partir de ahora cada vez que queramos crear algo en nuestro wordpress tendremos una botonera de editar con Elementor y de esta forma entraremos desde el editor del plugin.</p>
+          <p><strong>Essential Addons for Elementor :</strong> Es un plugin independiente de Elementor pero que trabaja con él, Elementor solo te permite añadir post a tu sitio en versión de pago pero con este plugin lo vamos hacer de forma gratuita, una vez activado dentro del editor de Elementor aparecerá una opción agregada a su menu : Essential Addons.</p>
           <p><strong>Lectura :</strong> Vamos a poder configurar el modo de lectura en que se van a leer los post.</p>
           <p><strong>Comentarios :</strong> Vamos a poder configurar los comentarios.</p>
           <p><strong>Medios :</strong> Vamos a poder configurar todos los multimedia, por ejemplo los tamaños prefijados de las imágenes.</p>
@@ -108,11 +108,11 @@ class Wordpress extends React.Component{
           <hr></hr>
           <br/><br/>
 
-          <h2  className="bigtitle"><strong>Pluyin:</strong> WooCommerce</h2>
+          <h2  className="bigtitle"><strong>plugin:</strong> WooCommerce</h2>
           <br/>
           <br/>
 
-          <p><strong>Instalador :</strong> Vamos a pluyins, buscamos WooCommerce y lo activamos, después de activarlo nos reconducirá para definir las preferencias, después de instalar sus preferencias tendremos instalada la tienda.</p>
+          <p><strong>Instalador :</strong> Vamos a plugins, buscamos WooCommerce y lo activamos, después de activarlo nos reconducirá para definir las preferencias, después de instalar sus preferencias tendremos instalada la tienda.</p>
           <p><strong>WooCommerce :</strong> tiene pedidos, cupones, informes, ajustes, estado y extensiones.</p>
           <p><strong>Productos :</strong> tiene todos los productos, añadir nuevo, categorías, etiquetas y atributos.</p>
           <br/>
@@ -121,25 +121,25 @@ class Wordpress extends React.Component{
 
 
           
-          <h2  className="bigtitle"><strong>Pluyin:</strong> Google Analytics</h2>
+          <h2  className="bigtitle"><strong>plugin:</strong> Google Analytics</h2>
           <br/>
           <br/>
 
-          <p><strong>GA Google Analytics :</strong>es un pluyin que vamos a utilizar para analizar cuanta gente entra, cuantas veces aparecemos en búsquedas de google, para poder aparecer en google...</p>
-          <p>Lo primero que vamos a hacer es googlear google analytics y crearnos una cuenta nueva, una vez registrados vamos a copiar el id de google analytics y pegarlo en el pluyin de wordpress en GA Tracking ID.</p>
-          <p><strong>Google Analytics Dashboard for WP by ExactMetrics :</strong> Una vez bien configurado google analytics vamos a instalar este pluyin para poder ver su interfaz desde wordpress sin tener que googlear google analytics, para activarlo validamos el código de acceso que nos muestre.</p>
+          <p><strong>GA Google Analytics :</strong>es un plugin que vamos a utilizar para analizar cuanta gente entra, cuantas veces aparecemos en búsquedas de google, para poder aparecer en google...</p>
+          <p>Lo primero que vamos a hacer es googlear google analytics y crearnos una cuenta nueva, una vez registrados vamos a copiar el id de google analytics y pegarlo en el plugin de wordpress en GA Tracking ID.</p>
+          <p><strong>Google Analytics Dashboard for WP by ExactMetrics :</strong> Una vez bien configurado google analytics vamos a instalar este plugin para poder ver su interfaz desde wordpress sin tener que googlear google analytics, para activarlo validamos el código de acceso que nos muestre.</p>
           <br/>
           <hr></hr>
           <br/><br/>
 
-          <h2  className="bigtitle"><strong>Pluyin:</strong> YoastSeo</h2>
+          <h2  className="bigtitle"><strong>plugin:</strong> YoastSeo</h2>
           <br/>
           <br/>
 
           
-          <p><strong>Instalar :</strong> Lo activaremos desde pluyins, es recomendable tener instalado y configurado google Analitics.</p>
+          <p><strong>Instalar :</strong> Lo activaremos desde plugins, es recomendable tener instalado y configurado google Analitics.</p>
          
-          <p>Lo primero que vamos a hacer es googlear google search y crearnos una cuenta nueva, una vez registrados vamos a crear una nueva propiedad y copiamos el url de nuestra web, verificamos la propiedad (podemos hacerlo a traves de google analytics), obtenemos el código de verificación desde wordpress y asi ya tendríamos el pluyin bien configurado.</p>
+          <p>Lo primero que vamos a hacer es googlear google search y crearnos una cuenta nueva, una vez registrados vamos a crear una nueva propiedad y copiamos el url de nuestra web, verificamos la propiedad (podemos hacerlo a traves de google analytics), obtenemos el código de verificación desde wordpress y asi ya tendríamos el plugin bien configurado.</p>
            <p>A partir de aquí ya solo queda configurar YOASTseo con nuestra configuración preferida.</p>
            <p>Si vamos a paginas y bajamos hasta abajo podremos configurar el cuadro de google de SEO (podemos configurar el SEO con emogis que no va a cambiar su posicionamiento y queda mas visible, es una buena practica poner un emogic de un stick por que queda mas profesional).</p>
 
@@ -147,18 +147,18 @@ class Wordpress extends React.Component{
           <hr></hr>
           <br/><br/>
 
-          <h2  className="bigtitle"><strong>Pluyin:</strong> WP Maintenance Mode</h2>
+          <h2  className="bigtitle"><strong>plugin:</strong> WP Maintenance Mode</h2>
           <br/><br/>
-          <p>Este pluyin lo vamos a utilizar cuando queramos entrar en producción, es decir trabajar en la pagina sin que se vea las actualizaciones que estamos haciendo.</p>
-          <p><strong>instalación:</strong> Vamos activar el pluyin desde pluyins, una vez dentro del pluyin accedemos a ajustes y dentro podremos cambiar el estado de encendido a pagado para trabajar en producción o no y muchas mas opciones como que pagina queremos que este en producción.</p>
+          <p>Este plugin lo vamos a utilizar cuando queramos entrar en producción, es decir trabajar en la pagina sin que se vea las actualizaciones que estamos haciendo.</p>
+          <p><strong>instalación:</strong> Vamos activar el plugin desde plugins, una vez dentro del plugin accedemos a ajustes y dentro podremos cambiar el estado de encendido a pagado para trabajar en producción o no y muchas mas opciones como que pagina queremos que este en producción.</p>
           <p><strong>Modulos:</strong> Podemos crear un temporizador que nos cuente el tiempo restante hasta el final del mantenimiento, crear botoneras, suscripción...</p>
           <br/>
           <hr></hr><br/><br/>
 
 
-          <h2  className="bigtitle"><strong>Pluyin:</strong> Rating-Widget: Star Review System (SEO)</h2>
+          <h2  className="bigtitle"><strong>plugin:</strong> Rating-Widget: Star Review System (SEO)</h2>
           <br/><br/>
-          <p>Este pluyin lo vamos a utilizar para SEO y nos va a contar las estrellas del cuadro de SEO de google, la única norma es que no podemos agregar mas de uno por pagina.</p>
+          <p>Este plugin lo vamos a utilizar para SEO y nos va a contar las estrellas del cuadro de SEO de google, la única norma es que no podemos agregar mas de uno por pagina.</p>
 
           <br/>
           <hr></hr><br/><br/>

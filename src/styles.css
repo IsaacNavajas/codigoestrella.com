@@ -10,7 +10,7 @@
   list-style:none;
   box-sizing:border-box;
   text-decoration: none;
-  zoom:97%;
+  zoom:98%;
   
 
 }
@@ -165,7 +165,7 @@ font-size: 40px;
   position:relative;
   z-index:10;
   display: block;
-  padding-right:270px;
+  padding-right:267.5px;
  
   margin-top:-165px;
 
@@ -204,7 +204,6 @@ font-size: 40px;
 }
 
 
-
 .position{
   display: block;
   padding-right:260px;
@@ -226,15 +225,10 @@ font-size: 40px;
 
 .imagen{  
   position:absolute;
-  
   width: 400px;
-
-
   margin:auto;
   margin-right:30%;
-  margin-top: 53px;
-
-
+  margin-top: 57px;
 }
 
 .h1{
@@ -259,7 +253,7 @@ font-size: 40px;
   box-sizing:border-box;
   text-decoration: none;
   margin-bottom: 70px;
-
+  cursor:pointer;
   z-index:100;
 }
 .menumarginbottom{
@@ -268,16 +262,52 @@ font-size: 40px;
 .menubuttons{
   width: 100%;
 
-}
 
+}
 .menubuttons ul li{
+  position:relative;
   display: inline;
 }
 
 .menubuttons ul li {
-  color:white;
-   
+  color:white; 
+}
 
+.hover{
+  position:absolute;
+  opacity:0;
+  height:37px;
+  z-index:999;
+  width: 100%;
+}
+.hover:hover{
+  opacity:1;
+  transition: 800ms; 
+}
+
+.drop-down-menubuttons-nivelone{
+  display:block;
+  position:absolute;
+  width: 95%;
+  margin-left:2%;
+  margin-top: 41px;
+  background: #474747ad;
+}
+.drop-down-menubuttons-niveltwo{
+  display:block;
+  position:absolute;
+  width: 95%;
+  margin-left:2%;
+  margin-top: 79px;;
+  background: #474747ad;
+}
+.drop-down-menubuttons-nivelthree{
+  display:block;
+  position:absolute;
+  width: 95%;
+  margin-left:2%;
+  margin-top: 117.5px;
+  background: #474747ad;
 }
 
 a{
@@ -322,41 +352,27 @@ font{  font-family: englisht;
 .laravel{
   color:#fd8888;
 }
-.laravel:hover{
-  color:#fd8888;
-}
-.laravel:focus{
-  color:#fa3a3a;
-}
+
 .react{
   color:rgb(138, 138, 255);
 }
-.react:hover{
-  color:rgb(138, 138, 255);
-}
-.react:focus{
-  color:rgb(53, 53, 255);
-}
+
 /*end botons */
 
 .imagestart{
   display:block;
   margin:auto;
-  width: 10%;
+  width: 80%;
   margin-bottom: 90vh;
-
-
 }
 
 .imagewaterdrop{
-  
   position:absolute;
   display:block;
-
   width: 80px;
   z-index:-150;
   margin-top: 409px;
-  margin-left:45%;
+  margin-left:10%;
   opacity:0.4;
 
 }

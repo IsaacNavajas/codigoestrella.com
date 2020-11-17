@@ -3,7 +3,7 @@ import React from 'react';
 import '../styles.css';
 
 
-import image from "../source/spam.png";
+import image from "../source/NASA.jpg";
 import Loading from "./load/Loading";
 
 
@@ -28,8 +28,11 @@ class Inicio extends React.Component{
         <React.Fragment>
 
           <center>
+            
             {!this.state.image && (<Loading/>)}
             {this.state.image && (<img src={this.state.image} className="imagestart"></img>)}
+
+            
            
           </center>
 

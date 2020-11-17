@@ -19,6 +19,8 @@ import Json from './Router/Json';
 import Wordpress from './Router/wordpress';
 import Reactrouter from './Router/Reactrouter';
 import BuildEnglish from './Router/English/buildEnglish';
+import ApiLumen from './Router/ApiLumen';
+import Docker from './Router/Docker';
 
 
 class Router extends React.Component {
@@ -30,18 +32,14 @@ class Router extends React.Component {
   }
 
   render(){
-    console.log(this.state.count)
-    console.log(this.state.language)
-    console.log(this.state.verifyLanguage)
 
     this.handleClick = () => {
 
+      
       this.setState(state => ({
         count : state.count +1,
         
       }));
-
-
 
       if(this.state.count === 0){
         this.setState(() => ({
@@ -67,16 +65,18 @@ class Router extends React.Component {
     }
   
     return (
-      <React.Fragment>
 
+
+      <React.Fragment>
+      
             <BrowserRouter>
-                <Layout verifyLanguage = {this.state.verifyLanguage}  >
+                <Layout verifyLanguage = {this.state.verifyLanguage} >
 
                   <React.Fragment>
                     <div className="col-12 ">
                       <div className="col-7">
                         <div className=" toggle custom-control custom-switch  ">
-                          <input onClick={this.handleClick} type="checkbox" class=" checkboxtoggle custom-control-input " id="customSwitches"></input>
+                          <input onClick={() => this.handleClick()} type="checkbox" class=" checkboxtoggle custom-control-input " id="customSwitches"></input>
                           <label class="custom-control-label " for="customSwitches"> <img className=" America" src="https://i.postimg.cc/s2Xz8CmJ/40ab7a26c90ee682a23e2dd55f978a65.jpg"></img></label>
                         </div>
                       </div>
@@ -86,25 +86,30 @@ class Router extends React.Component {
                     <Switch>
                       <Route exact path="/" component={Inicio}/>
                       
-                      {this.state.verifyLanguage && <Route exact path="/git" component={Git}/> || <Route exact path="/git" component={BuildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-cinco/git" component={Git}/> || <Route exact path="/ruta-cinco" component={BuildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-cinco/docker" component={Docker}/>}
+
+                      {this.state.verifyLanguage && <Route exact path="/ruta-siete" component={Javascript}/> || <Route exact path="/ruta-siete" component={BuildEnglish}/>}
                       
-                      {this.state.verifyLanguage && <Route exact path="/javascript" component={Javascript}/> || <Route exact path="/javascript" component={BuildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-cuatro/react" component={Pagereact}/> || <Route exact path="/ruta-cuatro" component={BuildEnglish}/>}
                       
-                      {this.state.verifyLanguage && <Route exact path="/react" component={Pagereact}/> || <Route exact path="/react" component={BuildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-tres/laravel" component={Laravel}/> || <Route exact path="/ruta-tres" component={BuildEnglish}/>}
+
+                      {this.state.verifyLanguage && <Route exact path="/ruta-tres/api-lumen" component={ApiLumen}/>}
+
+                      {this.state.verifyLanguage && <Route exact path="/ruta-dos" component={htmlyCss}/> || <Route exact path="/ruta-dos" component={BuildEnglish}/>}
+
+                      {this.state.verifyLanguage && <Route exact path="/ruta-seis" component={Mysql}/> || <Route exact path="/ruta-seis" component={BuildEnglish}/>}
                       
-                      {this.state.verifyLanguage && <Route exact path="/laravel" component={Laravel}/> || <Route exact path="/laravel" component={BuildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/jquery" component={JQuery}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/htmlycss" component={htmlyCss}/> || <Route exact path="/htmlycss" component={BuildEnglish}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/mysql" component={Mysql}/> || <Route exact path="/mysql" component={BuildEnglish}/>}
-                      
-                      {this.state.verifyLanguage && <Route exact path="/jquery" component={JQuery}/> || <Route exact path="/jquery" component={BuildEnglish}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/json" component={Json}/> || <Route exact path="/json" component={BuildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/json" component={Json}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/react-router" component={Reactrouter}/> || <Route path="/react-router" component={BuildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/react-router" component={Reactrouter}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/wordpress" component={Wordpress}/> || <Route exact path="/wordpress" component={BuildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-uno" component={Wordpress}/> || <Route exact path="/ruta-uno" component={BuildEnglish}/>}
 
                       
                       

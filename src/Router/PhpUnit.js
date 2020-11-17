@@ -1,0 +1,83 @@
+import React from 'react';
+import image1 from "../source/codezen 12.png";
+import image2 from "../source/codezen 13.png";
+import image3 from "../source/codezen 14.png";
+
+
+import Modal from './Modal';
+
+class PhpUnit extends React.Component{
+  state={ openModal: false,}
+
+  closeModal = () => {this.setState({openModal: false})}
+  openModal = () => {this.setState({openModal: true})}
+
+  render(){
+
+    
+    return (
+
+      <React.Fragment>
+
+                  <button 
+                      className="buttonphp btn btn-dark" 
+                      onClick={this.openModal}
+                    >
+                     p h p U n i t
+                  </button>
+
+
+
+
+                  <Modal
+                      isOpen={this.state.openModal}
+                      onClose={this.closeModal}
+                      title = 'P h p U n i t '
+                      >
+                       
+              <h2  className="bigtitle font">Instalación</h2><br/>
+   
+
+              <p><strong>composer require --dev phpunit/phpunit : </strong>para instalar phpunit a traves de composer.</p>
+              
+              <br/>
+              <hr></hr><br/>
+
+
+              <h2  className="bigtitle">Instalar composer.json</h2><br/>
+              <p>./composer.json</p>
+              <div className=" col-12"><img src={image1} className="imagecarbon"></img></div>
+              <p><strong>composer dump-autoload -o :</strong> sirve para actualizar composer, instalando los parametros que hemos incorporado.</p>
+              <br/>
+              <hr></hr><br/>
+
+
+              <h2  className="bigtitle">test</h2><br/>
+              <p>./tests/OperationsTest.php</p>
+              <div className=" col-12"><img src={image2} className="imagecarbon"></img></div>
+              <p><strong>./vendor/bin/phpunit tests :</strong> para comprobar los test en la consola y validar los tests los assertions.</p>
+              <br/>
+              <hr></hr><br/>
+
+
+              <h2  className="bigtitle">Function (ejemplo)</h2><br/>
+              <p>./Operations.php</p>
+              <div className=" col-12"><img src={image3} className="imagecarbon"></img></div>
+              <br/>
+              <hr></hr><br/>
+
+
+   
+          </Modal>
+
+        
+      </React.Fragment>
+
+    );
+
+  }
+
+
+}
+
+export default PhpUnit;

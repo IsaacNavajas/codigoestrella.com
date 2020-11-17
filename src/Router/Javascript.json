@@ -43,10 +43,10 @@
         {"name": "variable.map(()=> ...): ", "id":2, "description": " Ejecuta los elementos de un array y devuelve un array con los elementos modificados. "},
         {"name": "variable.reduce(()=> ... ,0): ", "id":3, "description": " Sirve para reducir a un valor. Hay que darle una function y un valor inicial. "},
         {"name": ".push() : ", "id":4, "description": " Añade un elemento al final del array."},
-        {"name": ".pop() : ", "id":4, "description": " Elimina el ultimo elemento del array."},
-        {"name": ".unshift() : ", "id":4, "description": " Agrega un elemento al principio del array."},
-        {"name": ".shift() : ", "id":4, "description": " borra el primer elemento del array."},
-        {"name": ".indexOf() : ", "id":4, "description": " Nos dice la posición del elemento del array."}
+        {"name": ".pop() : ", "id":5, "description": " Elimina el ultimo elemento del array."},
+        {"name": ".unshift() : ", "id":6, "description": " Agrega un elemento al principio del array."},
+        {"name": ".shift() : ", "id":7, "description": " borra el primer elemento del array."},
+        {"name": ".indexOf() : ", "id":8, "description": " Nos dice la posición del elemento del array."}
         
 
 
@@ -60,7 +60,7 @@
       ],
       "results_installjavascript":[
         {"name": "<script src=''js/myscript.js''></script>: ", "id":1, "description": " se pasa la ruta del javascript con el que se va a concatenar en el html principal que sera el layout. Es recomendable enlazarlo al final del body."},
-        {"name": "npm install ", "id":1, "description": " para instalar el package.json en tu app javascript"}
+        {"name": "npm install ", "id":2, "description": " para instalar el package.json en tu app javascript"}
       
       ]
       
