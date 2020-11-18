@@ -68,6 +68,22 @@ class PhpUnit extends React.Component{
 
 
    
+   
+              <h2  className="bigtitle">PhpUnit Laravel</h2><br/>
+              <p>En laravel phpUnit esta dividido en dos partes;</p>
+              
+              <p><strong> ./test/feature :</strong> Para escribir pruebas que van a simular peticiones HTTP al servidor.</p>
+              
+              <p><strong> ./test/Unit :</strong> Donde vamos a escribir pruebas que van a probar partes individuales de nuestra aplicacion (clases, metodos ...) pero no peticiones HTTP.</p>
+              
+              <p><strong> vendor/bin/phpunit :</strong> Para probar pruebas en consola.</p>
+              
+            
+              <div className=" col-12"><img src={image3} className="imagecarbon"></img></div>
+              <br/>
+              <hr></hr><br/>
+
+
           </Modal>
 
         

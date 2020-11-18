@@ -36,9 +36,10 @@ class Pagereact extends React.Component{
   
 
           <p><strong>npx create-react-app my-app: </strong>crear una aplicación react con el nombre my-app. </p>
-          <p><strong>npm run start:</strong> para conectarse al hosting virtual.</p>
+          <p><strong>npm run start:</strong> para conectarse al hosting virtual. Si tenemos problemas al cargar el puerto usaremos npx kill-port 3000, para "matar" el puerto necesario.</p>
           <p><strong>npm install --save react-router-dom:</strong> para instalar la aplicación react-router en react, ( soltar el comando dentro del proyecto de react ).</p>
           <br/>
+
           <p><strong>npm rm --save package-name:</strong> para desinstalar un paquete instalado en Node (npm), con --save lo elimina también del package.json .</p>
 
           

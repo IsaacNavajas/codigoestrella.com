@@ -43,6 +43,7 @@ html, body {
   color:white;
   margin-top:40px;
   width: 100%;
+  transition: all 2000ms;
 }
 
 .footer:hover{
@@ -180,6 +181,7 @@ font-size: 40px;
 .button{
   width: 200px;
   float:right;
+  transition: all 5000ms;
  
 }
 .button:hover{

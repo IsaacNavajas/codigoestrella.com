@@ -36,6 +36,7 @@ console.log(this.props.verifyLanguage)
   
 
           <p><strong>composer global require laravel/installer: </strong> Para instalar el instalador de laravel. </p>
+          <p><strong>composer: </strong> <strong>composer install </strong>Para instalar composer y <strong>composer update </strong>para actuallizar los paquetes. </p>
           <p><strong>laravel new blog:</strong> Para instalar un nuevo proyecto laravel con el nombre blog, antes de instalar un nuevo proyecto podemos ayudarnos de --help si queremos cubrir opciones como instalar un login con el proyecto u otras opciones.</p>
           <br/>
           <p><strong>php artisan serve:</strong> Para acceder al servidor virtual de laravel.</p>
@@ -70,7 +71,7 @@ console.log(this.props.verifyLanguage)
           <p>php artisan es un comando de la consola que se puede iniciar desde dentro del proyecto de laravel y nos va a servir para las instalaciones de sus dependencias</p>
           <p><strong>php artisan --help:</strong> Nos despliega una lista con todos los comandos de artisan.</p>
           <p><strong>php artisan make:migration:</strong> Es el comando que vamos a utilizar para la creación/modificación de las tablas, <strong>php artisan make:migration --create</strong> para crear la tabla, <strong>php artisan make:migration --table</strong> lo vamos a usar para modificar una tabla creada, es una buena practica modificar desde --table las talblas debido a los controles de versiones. Deberemos utilizar php artisan migrate para actualizar las migraciones del proyecto. Usaremos <strong>php artisan migrate:rollback</strong> para volver un valor atras en memoria de las migraciones. </p>
-          <span className="subrayado"> <strong>Las tablas deben de estar siempre en mayúsculas</strong> y el Model que concatena a esa misma tabla lo crearemos en minúsculas, los dos con el mismo valor.</span> 
+          <span className="subrayado"> <strong>Las tablas deben de estar siempre en plural</strong> y el Model que concatena a esa misma tabla lo crearemos en singular, los dos con el mismo valor.</span> 
           <br/>
           <hr></hr><br/><br/>
 
@@ -90,7 +91,7 @@ console.log(this.props.verifyLanguage)
           <h2  className="bigtitle">Model</h2>
           <br/>
           <br/>
-          <span className="subrayado"> Las tablas deben de estar siempre en mayúsculas y el <strong>Model que concatena a esa misma tabla lo crearemos en minúsculas</strong>, los dos con el mismo valor. </span>
+          <span className="subrayado"> Las tablas deben de estar siempre en plural y el <strong>Model que concatena a esa misma tabla lo crearemos en singular</strong>, los dos con el mismo valor. </span>
 
           <p><strong>protected $table = '__nombre_de_la_tabla__'; :</strong> Para definir la tabla que queremos concatenar con ese Model.</p>
           <br/>
