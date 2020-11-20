@@ -19,6 +19,7 @@ import Json from './Router/Json';
 import Wordpress from './Router/wordpress';
 import Reactrouter from './Router/Reactrouter';
 import BuildEnglish from './Router/English/buildEnglish';
+import InicioEnglish from './Router/English/InicioEnglish';
 import ApiLumen from './Router/ApiLumen';
 import Docker from './Router/Docker';
 
@@ -89,7 +90,8 @@ class Router extends React.Component {
                   </React.Fragment>
 
                     <Switch>
-                      <Route exact path="/" component={Inicio}/>
+                      
+                      {this.state.verifyLanguage && <Route exact path="/" component={Inicio}/> || <Route exact path="/" component={InicioEnglish}/>}
                       
                       {this.state.verifyLanguage && <Route exact path="/ruta-cinco/git" component={Git}/> || <Route exact path="/ruta-cinco" component={BuildEnglish}/>}
                       {this.state.verifyLanguage && <Route exact path="/ruta-cinco/docker" component={Docker}/>}

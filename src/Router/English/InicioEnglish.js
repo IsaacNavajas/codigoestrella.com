@@ -1,8 +1,8 @@
 import React from 'react';
-import Image from '../source/archivocomprimido.png';
-import Archivos from '../source/archivos.zip';
+import Image from '../../source/archivocomprimido.png';
+import Archivos from '../../source/archivos.zip';
 
-class Inicio extends React.Component{
+class InicioEnglish extends React.Component{
 
   render(){
 
@@ -19,7 +19,7 @@ class Inicio extends React.Component{
             <br/>
             <div className="row">
             <br/>
-              <a href={Archivos} download className="col-8"><input type="button" value="Descargar" className="col-12 btn btn-secondary bigtitle"/></a>
+              <a href={Archivos} download className="col-8"><input type="button" value="Download" className="col-12 btn btn-secondary bigtitle"/></a>
             </div>
 
 
@@ -36,4 +36,4 @@ class Inicio extends React.Component{
 
 }
 
-export default Inicio;
+export default InicioEnglish;
