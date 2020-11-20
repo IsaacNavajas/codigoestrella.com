@@ -1,44 +1,32 @@
 import React from 'react';
-
-import '../styles.css';
-
-
-import image from "../source/NASA.jpg";
-import Loading from "./load/Loading";
-
-
+import Image from '../source/archivocomprimido.png';
+import Archivos from '../source/archivos.zip';
 
 class Inicio extends React.Component{
-  state = {
-    image:null
-  }
-
-  componentDidMount(){
-    this.time= setTimeout(() => { { this.setState({image: image})} }, 1000);
-  }
-
-  componentWillUnmount(){
-    clearTimeout(this.time)
-  }
 
   render(){
+
     return (
       <React.Fragment>
+        <div className="container">
 
-        <React.Fragment>
+        <div className="col-12 imagestart">
+          <form>
 
-          <center>
-            
-            {!this.state.image && (<Loading/>)}
-            {this.state.image && (<img src={this.state.image} className="imagestart"></img>)}
-
-            
-           
-          </center>
-
-        </React.Fragment>
+            <img src={Image} className="col-3"></img>
 
 
+            <br/>
+            <div className="row">
+            <br/>
+              <a href={Archivos} download className="col-8"><input type="button" value="Descargar" className="col-12 btn btn-secondary bigtitle"/></a>
+            </div>
+
+
+          </form>
+
+        </div>
+        </div>
       </React.Fragment>
     );
     

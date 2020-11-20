@@ -111,7 +111,7 @@ class htmlyCss extends React.Component{
                     <p><strong>a:</strong> etiqueta para crear links.</p>
                     <p><strong>a href="mailto:ejemplo@gmail.com":</strong> El atributo mailto: lo utilizamos cuando queremos desglosar automáticamente por un modal el email.</p>
                     <p><strong>a target="/otro":</strong> El atributo target lo utilizamos cuando queremos abrir una pestaña nueva con la dirección que le enviemos.</p>
-   
+                    <p><strong>a href="hola.jpg" download="filename":</strong> Descarga el archivo con el nombre filename.jpg..</p>
   
   
                     <br/>

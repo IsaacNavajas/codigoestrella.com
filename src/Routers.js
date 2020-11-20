@@ -22,6 +22,10 @@ import BuildEnglish from './Router/English/buildEnglish';
 import ApiLumen from './Router/ApiLumen';
 import Docker from './Router/Docker';
 
+import Image from './source/archivocomprimido.png';
+import Archivos from './source/archivos.zip';
+
+
 
 class Router extends React.Component {
   
@@ -76,6 +80,7 @@ class Router extends React.Component {
                     <div className="col-12 ">
                       <div className="col-7">
                         <div className=" toggle custom-control custom-switch  ">
+                          <a href={Archivos} download><img src={Image} className="ImageDescarga"/></a>
                           <input onClick={() => this.handleClick()} type="checkbox" class=" checkboxtoggle custom-control-input " id="customSwitches"></input>
                           <label class="custom-control-label " for="customSwitches"> <img className=" America" src="https://i.postimg.cc/s2Xz8CmJ/40ab7a26c90ee682a23e2dd55f978a65.jpg"></img></label>
                         </div>

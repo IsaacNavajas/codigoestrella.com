@@ -135,20 +135,16 @@ html, body {
 }
 
 .Navbar{
-
   position:relative;
   height:80px;
   background-color: #ffffff;
   font-size: 50px;
-  display: flex;
-
- 
+  display: flex; 
 }
 
 .titulo{
 position:absolute;
 font-size: 40px;
- 
 }
 
 .imag{  
@@ -156,10 +152,19 @@ font-size: 40px;
   height:300px;
   background-image: url(source/fondo.png);
   font-size: 50px;
-
-
 }
 
+.ImageDescarga{
+  width: 80px;
+  margin-right:50px;
+  margin-top:-10px;
+  filter: grayscale(100%); 
+  transition:all 2s;
+}
+.ImageDescarga:hover{
+  filter: inherit; 
+  transition:all 1.5s;
+}
 
 .toggle{
   float:right;
@@ -167,9 +172,7 @@ font-size: 40px;
   z-index:10;
   display: block;
   padding-right:267.5px;
- 
   margin-top:-165px;
-
 }
 .America{
   width: 50px;
@@ -182,7 +185,6 @@ font-size: 40px;
   width: 200px;
   float:right;
   transition: all 5000ms;
- 
 }
 .button:hover{
   background-color: transparent;
@@ -366,6 +368,7 @@ font{  font-family: englisht;
   margin:auto;
   width: 80%;
   margin-bottom: 90vh;
+  margin-top: 90px;;
 }
 
 .imagewaterdrop{
@@ -373,9 +376,9 @@ font{  font-family: englisht;
   display:block;
   width: 80px;
   z-index:-150;
-  margin-top: 409px;
-  margin-left:10%;
-  opacity:0.4;
+  margin-top: 360px;
+  margin-left:45%;
+  opacity:0.2;
 
 }
 

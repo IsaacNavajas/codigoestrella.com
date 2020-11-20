@@ -52,7 +52,7 @@ function Docker(){
 
           <p><strong>docker pull redis:</strong> lo que va hacer docker pull es traerno una imagen que no tenemos. Por defecto nos va a instalar la ultima version pero podemos instalar una imagen con la version que elijamos de hub.docker; docker pull ubuntu:18.04</p>
           <p><strong>docker image ls:</strong> nos va a mostrar las imagenes que tenemos en nuestra computadora y las que podemos instalar, si necesitamoss alguna otra lo haremos con docker pull eligiendo la imagen existente del repositorio <a href="https://hub.docker.com/search?type=image" target="https://hub.docker.com/search?type=image" className="Link">Hub.docker</a></p>
-          <p><strong>Crear una imagen: </strong> touch docker-file para crear el archivo;
+          <p><strong>Crear una imagen: </strong> touch Dockerfile para crear el archivo;
           <br/>
           <img src={image} className="imagehtml col-12"></img> <br/>
           <ul>
