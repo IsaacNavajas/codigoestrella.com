@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "99aad0b64d7dc8e5c6aadd1e249020f8",
+    "revision": "8e15e89657942f68ad5d18bfa19f2172",
     "url": "/index.html"
   },
   {
-    "revision": "713fb34a7e0eea2ac77a",
+    "revision": "fd61287d6676fe8daa67",
     "url": "/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "c99232eb7bee020191fd",
-    "url": "/static/css/main.1de88efd.chunk.css"
+    "revision": "0a48432819fe886b377b",
+    "url": "/static/css/main.56f0dde7.chunk.css"
   },
   {
-    "revision": "713fb34a7e0eea2ac77a",
-    "url": "/static/js/2.eb72e67e.chunk.js"
+    "revision": "fd61287d6676fe8daa67",
+    "url": "/static/js/2.f60ff19b.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/static/js/2.eb72e67e.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.f60ff19b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c99232eb7bee020191fd",
-    "url": "/static/js/main.16aee106.chunk.js"
+    "revision": "0a48432819fe886b377b",
+    "url": "/static/js/main.d6536387.chunk.js"
   },
   {
     "revision": "3c3f1816a6eeafdc4489",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/archivocomprimido.b9863c69.png"
   },
   {
-    "revision": "fa4ac61c494cfeca8468099c39b89efa",
-    "url": "/static/media/archivos.fa4ac61c.zip"
+    "revision": "0993a334be5f9066e382482ded733b14",
+    "url": "/static/media/archivos.0993a334.zip"
   },
   {
     "revision": "49b3fc8cd83e09e9b1c8d1d35c30ae89",
@@ -96,6 +96,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/codezen codigo wordpress.5eccf871.png"
   },
   {
+    "revision": "57a21084e1d2d2cb49333e8b47aff9c3",
+    "url": "/static/media/codezen docker 1.57a21084.png"
+  },
+  {
+    "revision": "0adafa8441f94af91e08a741afbbbdfb",
+    "url": "/static/media/codezen docker 2.0adafa84.png"
+  },
+  {
     "revision": "d8ead7b05eabfe252bbae786beb4d92d",
     "url": "/static/media/diagramadevenn1.d8ead7b0.png"
   },
@@ -124,8 +132,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/image html.bd41e66a.png"
   },
   {
-    "revision": "a38f56e0564215cdfb8c399c2a4c0de1",
-    "url": "/static/media/image javascript.a38f56e0.png"
+    "revision": "3d9495be09aa221ee60dd1119c0e89d0",
+    "url": "/static/media/image javascript.3d9495be.png"
   },
   {
     "revision": "74c6bf105279be76b26fb5285a4385aa",
