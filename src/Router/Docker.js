@@ -1,5 +1,7 @@
 import React from 'react';
 import image from "../source/imagedocker.png";
+import image2 from "../source/codezen docker 2.png";
+import image3 from "../source/codezen docker 1.png";
 
 function Docker(){
 
@@ -25,11 +27,13 @@ function Docker(){
             <li><p><strong>+ exit:</strong> para salir del contenedor emulado.</p></li>
             <li><p><strong>+ uname -a:</strong> es un comando de linux para ver los detalles de la distribucion.</p></li>
           </ul>
-          <p><strong className="subrayado">docker exect -it "nombre o id del contenedor" bash: </strong> para entrar en la terminal de un contenedor ya creada, para su correcto funcionamiento tendremos que <strong>inicializar la imagen</strong> en otra consola.</p>
+          <p><strong className="subrayado">winpty docker run -it --name "nombre del contenedor" ubuntu bash: </strong> Para crear un ubuntu que se pueda acceder a la consola.</p>
+         
+          <p><strong className="subrayado">winpty docker exec -it "nombre o id del contenedor" bash: </strong> para entrar en la terminal de un contenedor ya creada, para su correcto funcionamiento tendremos que <strong>inicializar la imagen</strong>.</p>
           <ul>
             <li><p><strong>+ docker start "nombre o id del contenedor":</strong> para inicializar la imagen del contenedor.</p></li>
-            <li><p><strong>+ ps -fea:</strong> para poder ver todos los procesos que se estan corriendo. El proceso virtual del contenedor siempre se mostrara con un 1.</p></li>
-            <li><p><strong>+ docker kill "nombre o id del contenedor":</strong> para poder finalizar la inicializacion de una imagen/contenedor, esta es la unica forma de para la inicializacion.</p></li>
+            <li><p><strong>+ ps -fea:</strong> para poder ver todos los procesos que se estan corriendo. El proceso virtual del contenedor siempre se mostrara el PID con un 1.</p></li>
+            <li><p><strong>+ docker kill "nombre o id del contenedor":</strong> para poder finalizar la inicializacion de una imagen/contenedor, esta es la unica forma de para la inicializacion, también podemos utilizar docker stop "nombre o id del contenedor".</p></li>
           </ul>
           <p><strong>docker run -d --name server -p 8080:00 "nombre o id del contenedor":</strong> los contenedores por defecto ya tienen atribuido un host virtual desde dentro del contenedor, para redirigir los puertos del contenedor a los del pc, dos contenedores distintos no se podran redirigir a los mismos puertos .</p>      
 
@@ -66,44 +70,33 @@ function Docker(){
           <p><strong><a href="https://github.com/wagoodman/dive" target="https://github.com/wagoodman/dive" className="Link">--> dive</a>:</strong> dive es un plugin open source, <strong>dive ubuntu:hola-mundo</strong> para analizar en varias vistas como esta contruida esa imagen, si pulsamos <strong> cntrol + u</strong> podemos ver que archivos han cambiado.</p>
           <br/>
           <hr></hr><br/>
-          <h2  className="bigtitle">GitHub</h2><br/>
+          <h2  className="bigtitle">Docker-compose</h2><br/>
 
-          <p><strong>PULL REQUEST: </strong>Se accede desde github y es un merge de pruebas, en el que el dueño del proyecto decide si hacer el mergue o devolver los fallos.</p>
-          <p><strong>npm install: </strong>cuando clonas un proyecto de github hay que volver a descargar las dependencias para que funcione la aplicación correctamente.</p>
-          <p><strong>git remote add origin "URL_DEL_REPOSITORIO": </strong>crea un origen remoto de nuestros archivos.</p>
-          <p><strong>git remote: </strong>para ver lo git remotos.</p>
-          <p><strong>git remote -v: </strong>muestra los remotos de forma verbal.</p>
-          <p><strong>git pull origin master:</strong> para traer los datos de github al ordenador, es una buena practica primero hacer un git pull y después un git push.</p>
-          <p><strong>git push origin master: </strong>envía la rama master al origen remoto del repositorio.</p>
-          <p><strong>git push origin master --allow-unrelated-histories: </strong>la primera vez que hagamos un push a nuestro repositorio tenemos que enviar el --allow-unrelated-histories, nos entra en vi, para salir y guardar pulsamos esc+sift+z+z, después de hacer esto volvemos a hacer un git push origin master normal.</p>
-          <p><strong>git tag:</strong> para crear los tags.</p>
-          <p><strong>git tag -a NOMBRE-DEL-TAG -m"MENSAJE" HASH_DEL_COMMIT: </strong>la primera vez que hagamos un push a nuestro repositorio tenemos que enviar el --allow-unrelated-histories, nos entra en vi, para salir y guardar pulsamos esc+sift+z+z, después de hacer esto volvemos a hacer un git push origin master normal.</p>
-          <p><strong>Git tag -d "NOMBRE_DEL_TAG" / Git push origin :refs/tags"NOMBRE_DEL_TAG":</strong> borra un tag del repositorio, primero Git tag -d "NOMBRE_DEL_TAG" y después Git push origin :refs/tags"NOMBRE_DEL_TAG".</p>
-          <p><strong>git clone "PEGAR_URL_DEL_REPOSITORIO":</strong> cuando queremos clonar un repositorio. Se suele utilizar cuando no tenemos permisos del proyecto en github</p>
-          <p><strong>git reflog:</strong> es una buena practica, te va a resumir todos los detalles de tu proyecto.</p>
+          <p><strong>docker-compose.yml: </strong>creamos el archivo para declarar la arquitectura de docker.</p>
+          
+
+          <div className="col-12">
+            <div className="col-6">
+              <img src={image2} className="imagehtml col-12" title="imagen docker 1"></img> <br/>
+            </div>
+            <div className="col-6">
+              <img src={image3} className="imagehtml col-12" title="imagen docker 2"></img> <br/>
+            </div>
+          </div>
+
+          <p><strong>docker-compose up -d: </strong>nos va a correr el dockerfile pero no va a mostrar el output, nos lo va correr en segundo plano. Vamos a volver a escribir el codigo cada vez que queramos actualizarlo.</p>
+          <p><strong>docker netowrk ls: </strong>para mostrar la lista de docker compose.</p>
+          <p><strong>docker-compose logs "nombre del contenedor": </strong> el historia de ese contenedor.</p>
+          <p><strong>docker-compose exec "nombre del contenedor" bash: </strong> para entrar a la consola del docker-compose.</p>
+          <p><strong>docker-compose down: </strong> para eliminar los servicios.</p>
+          <p><strong>docker-compose logs -f "nombre del contenedor": </strong> para vel la salida del contenedor.</p>
+          <p><strong>docker netowrk ls: </strong>crea un origen remoto de nuestros archivos.</p>
+          <p><strong>docker netowrk ls: </strong>crea un origen remoto de nuestros archivos.</p>
+          <p><strong>docker netowrk ls: </strong>crea un origen remoto de nuestros archivos.</p>
+
           <br/>
           <hr></hr><br/>
-          <h2  className="bigtitle">GitHub (comandos elitistas)</h2><br/>
-          <br/>
-          <p><strong>git stash:</strong> crea un estado de memoria. Se utiliza por ejemplo cuando queremos ir a otro hash pero no queremos hacer commit.<p/>
-          <p><strong>git stash drop: </strong>para borrar un stash.</p>
-          <p><strong>git stash pop:</strong> abrimos el stash.</p>
-          <p><strong>git stash list:</strong> nos enseña nuestros stash.</p>
-          <p><strong>git clean: </strong>limpia tu proyecto de archivos no deseados.</p>
-          <p><strong>git clean --dry-run: </strong>simula lo que va a borrar sin borrarlo.</p>
-          <p><strong>git clean -f: </strong>borra todos los archivos listados.</p>
-          <p><strong>git cherry-pick:</strong> traer commits viejos al head de mi rama master. git cherry-pick HASH_DEL_COMMIT</p>
-          <p><strong>git commit --amend: </strong>para traernos lo que estábamos haciendo a nuestro commit anterior. Esto es una buena practica, ya que no tenemos por qué hacer otro commit nuevo.</p>
-          <p><strong>git shortlog -sn -all --no-merges: </strong>nos muestra las personas que han echo commits</p>
-          <p><strong>git config --global alias.stats "shortlog -sn --all --no-merges": </strong>le digo a git que me agregue en mi maquina actual un alias llamado stats y que haga shortlog -sn --all --no-merges.</p>
-          <p><strong>git blame css/estilos.css -l35,60:</strong> nos dice quien hizo los cambios del archivo css dese la linea 35 a la 60.</p>
-          <p><strong>git grep:</strong> sirve para buscar.</p>
-          <p><strong>git grep -n gato:</strong> aparecerá un output diciéndonos en que linea esta la palabra gato.</p>
-          <p><strong>git grep -c gato: </strong>aparecerá un output diciéndonos cuantas veces se repíte la palabra gato.</p>
 
-          </p>
-        
-          
         </div>
 
         

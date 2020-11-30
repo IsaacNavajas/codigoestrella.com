@@ -8,7 +8,7 @@ function Pagereact(){
 
       <React.Fragment>
         <div>
-        <h2 className="bigtitle font">P.O.O</h2>    
+    <h2 className="bigtitle font">P.O.O </h2>    
           <hr></hr>      
           <p><strong>Herencia :</strong> para crear hijos entre clases, usaremos la palabra extends en la clase hija para heredar la clase padre, en php solo se puede heredar de un padre. Una vez echa la herencia vamos a compartir sus métodos o a sobreescribirlos. Para heredar vamos a utilizar la palabra reservada <span className="subrayado"> extends</span> entre clases.</p>
           <p><strong>Abstracción :</strong> para aislar la clase en diferentes métodos.</p>
@@ -30,7 +30,7 @@ function Pagereact(){
 
           <ul>
             <li> <p><strong>- callable :</strong> Se pasa como parámetro de una function y pueden ser funciones declarativas.</p></li>
-            <li> <p><strong>- closure :</strong> Se pasa como parámetro de una function y debe ser funciones anónimas.</p></li>
+            <li> <p><strong>- closure :</strong> Se pasa como parámetro de una function y debe ser funciones anónimas (funciones expresivas).</p></li>
             <li> <p><strong>- Iterable :</strong> Se pasa como argumento de una function o retorno y sirve para recorrer sus valores en un bucle foreach().</p></li>
          
           </ul>
@@ -46,7 +46,7 @@ function Pagereact(){
         <div>
           <h2 className="bigtitle font">Sintaxis</h2>    
           <hr></hr>      
-          <p><strong>substr($post, 0, 20) :</strong> para substraer cuantos caracteres se quiere coger de dentro del parentesis.</p>
+          <p><strong>substr($post, 0, 20):</strong> para substraer cuantos caracteres se quiere coger de dentro del parentesis.</p>
           <p><strong>explode(', ', $data) :</strong> pasa de un texto a un array directamente. Cada vez que tengas un espacio en $data transfórmalo en un array.</p>
           <p><strong>implode(', ', $data) :</strong> pasa de un array a un texto directamente. Cada vez que tenga un array en el $data transfórmalo en un espacio.</p>
           <hr></hr>

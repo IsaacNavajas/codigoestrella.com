@@ -125,8 +125,8 @@ class Pagereact extends React.Component{
             <div  className="imagecarbon col-12">
  
 
-              <div className=" col-6"><img src={imagecarbon1} className="imagecarbon"></img></div>
-              <div className=" col-6"><img src={imagecarbon2} className="imagecarbon"></img></div>
+              <div className=" col-6"><img src={imagecarbon1} className="imagecarbon"  title="imagen api externa"></img></div>
+              <div className=" col-6"><img src={imagecarbon2} className="imagecarbon"  title="imagen api interna"></img></div>
 
           
             <br/>
@@ -153,9 +153,9 @@ class Pagereact extends React.Component{
           <span className="subrayado"> Imagen uno : Pagina, imagen dos : Css, imagen tres : Modal;</span>
           <br/>
           <br/>
-          <div className=" col-6"><img src={imagecarbon4} className="imagecarbon"></img></div>
-          <div className=" col-6"><img src={imagecarbon5} className="imagecarbon"></img></div>
-          <div className=" col-6"><img src={imagecarbon6} className="imagecarbon"></img></div>
+          <div className=" col-6"><img src={imagecarbon4} className="imagecarbon" title="imagen react 1"></img></div>
+          <div className=" col-6"><img src={imagecarbon5} className="imagecarbon" title="imagen react 2"></img></div>
+          <div className=" col-6"><img src={imagecarbon6} className="imagecarbon" title="imagen react 3"></img></div>
 
         </div>
 
