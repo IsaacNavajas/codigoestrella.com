@@ -162,7 +162,8 @@ class htmlyCss extends React.Component{
                     <p><strong>leyend:</strong> Para crear un titulo a un grupo asociado con fieldest, van dentro de la etiqueta fieldset.</p>
                     <br/>
   
-  
+          <br/>
+          <br/>
           </div>
           
           
@@ -252,7 +253,8 @@ class htmlyCss extends React.Component{
                     <p><strong>position:fixed:</strong> Para definir la posición por defecto y sin crear espacios entre el elemento consiguiente, su función es como un bloque contendor.</p>
                     <p><strong>clear:</strong> Para definir si un elemento podría estar cerca de un elemento flotante, sus valores pueden ser; none, left, right, both, inline-start, inline-end.</p>
   
-                    
+          <br/>
+          <br/>
           </div>
   
           </div>

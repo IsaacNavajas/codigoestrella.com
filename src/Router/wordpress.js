@@ -199,10 +199,9 @@ class Wordpress extends React.Component{
           <p>- en el segundo valor que sera home lo volveremos a cambiar por la misma url que nos da el hosting.</p>
           <p>+ haora vamos dentro de la base de datos de nuestro hosting y buscamos tmabién wp_config.</p>
           <p>- cambiamos el DB_NAME por el que nos da el hosting y lo mismo hacemos con DB_USER, PASSWORD, DB_HOST.</p>
-          
 
-
-          
+          <br/>
+          <br/>
         </div>
 
 

@@ -23,6 +23,7 @@ import InicioEnglish from './Router/English/InicioEnglish';
 import ApiLumen from './Router/ApiLumen';
 import Docker from './Router/Docker';
 import Vue from './Router/Vue';
+import Apple from './Router/Apple';
 
 import Image from './source/archivocomprimido.png';
 import Archivos from './source/archivos.zip';
@@ -84,8 +85,8 @@ class Router extends React.Component {
                         <div className=" toggle custom-control custom-switch  ">
                           <a href={Archivos} download><img src={Image} className="ImageDescarga"/></a>
                
-                          <input onClick={() => this.handleClick()} type="checkbox" class=" checkboxtoggle custom-control-input " id="customSwitches"></input>
-                          <label class="custom-control-label " for="customSwitches"> <img className=" America" src="https://i.postimg.cc/s2Xz8CmJ/40ab7a26c90ee682a23e2dd55f978a65.jpg"></img></label>
+                          <input onClick={() => this.handleClick()} type="checkbox" className=" checkboxtoggle custom-control-input " id="customSwitches"></input>
+                          <label className="custom-control-label " for="customSwitches"> <img className=" America" src="https://i.postimg.cc/s2Xz8CmJ/40ab7a26c90ee682a23e2dd55f978a65.jpg"></img></label>
                         </div>
                       </div>
                     </div>
@@ -115,6 +116,8 @@ class Router extends React.Component {
                       {this.state.verifyLanguage && <Route exact path="/jquery" component={JQuery}/>}
 
 
+       
+                      <Route exact path="/ruta-apple"><Apple lenguaje= {this.state.language}/></Route>
 
                       {this.state.verifyLanguage && <Route exact path="/json" component={Json}/>}
 

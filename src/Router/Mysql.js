@@ -135,7 +135,8 @@ function Mysql(){
           <p><strong>Export to self-contained File: </strong>Aquí vamos a elegir el nombre y la ruta donde queremos guardar nuestra base de datos exportada. <span className="subrayado"> Es recomendable utilizar esta opcion, ya que nos lo exporta en un archivo SQL.</span></p>
           <p><strong>Include Create Schema: </strong>Para crear un esquema que nos permita crear la base de datos, si queremos insertar la base de datos antes de insertar los valores de la base de datos. <span className="subrayado"> Es recomnendable utilizarla si vamos a exportar para crear esa base de datos, NO para cuando queramos agregar esos valores a una base de datos ya creada.</span></p>
           <p>* Error --> Para poder exportar la base de datos en Workbench es necesario tener una vérsion especifica para esto nos vamos a descargar la vérsion que nos especifica. Vamos a Edit - Preferences - Administration y en el Path to mysqldump Tool entramos dentro de la carpeta descargada de la versión indicada /bin/mysqldump</p>
-
+          <br/>
+          <br/>
           
         </div>
       </React.Fragment>

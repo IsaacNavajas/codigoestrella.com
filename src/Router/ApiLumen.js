@@ -59,8 +59,8 @@ console.log(this.props.verifyLanguage)
           <p><strong>php artisan make:migration badges --create:</strong> Nos creara la migracion que va a ser la tabla de la base de datos en el proyecto (siempre en plural).</p>
           <p><strong>php artisan make:model badge:</strong> Para crear el model para trabajar como un objeto de la tabla en el proyecto (siempre en singular). En el model insertaremos; <span className="subrayado">protected $guarded = ['id'];</span>.</p>
 
-          <br/>
-          <hr></hr><br/><br/>
+      
+          <br/><br/>
 
 
         </div>

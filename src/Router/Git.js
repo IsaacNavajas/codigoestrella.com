@@ -104,6 +104,9 @@ function Git(){
           <p><strong>git grep -c gato: </strong>aparecerá un output diciéndonos cuantas veces se repíte la palabra gato.</p>
 
           </p>
+          <br/>
+          <br/>
+          <br/>
         
           
         </div>

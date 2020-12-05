@@ -1,0 +1,110 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Pacifico&family=Sacramento&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+
+.apple {
+  max-width: 100%;
+  text-align: justify;
+  color:white;
+  background-color: black;
+  padding-bottom: 1000px;
+}
+
+.logoapple{
+  visibility: visible;
+  margin-top: 90px;
+  width: 120px;
+}
+
+.lineagris{
+  position:relative;
+  margin-top: 60px;
+  width: 400px;
+  height: 4px;
+
+  background-color: rgb(78, 78, 78);
+
+}
+
+.lineagrisdesaparecer{
+  position:relative;
+  margin-top: 0px;
+  width: 0px;
+  height: 0px;
+
+  background-color: rgb(78, 78, 78);
+
+}
+
+.lineablanca-primera{
+  position:relative;
+  float:left;
+  width: 40px;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  transition: all 2s;
+}
+
+.lineablanca-segunda{
+  position:relative;
+  float:left;
+  width: 150px;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  transition: all 2s;
+}
+
+.lineablanca-tercera{
+  position:relative;
+  float:left;
+  width: 250px;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  transition: all 2s;
+}
+
+.lineablanca-cuarta{
+  position:relative;
+  float:left;
+  width: 370px;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  transition: all 2s;
+}
+
+.lineablanca-quinta{
+  position:relative;
+  float:left;
+  width: 410px;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  transition: all 2s;
+}
+
+.lineablanca-sexta{
+  position:relative;
+  float:left;
+  width: 0px;
+  height: 0px;
+  transition: all 2s;
+}
+
+
+.desaparecer{
+  display:none;
+  transition: all 2s;
+  opacity: 0;
+
+}
+
+.desaparecerimagen{
+  opacity: 0;
+}
+
+.aparecer{
+  transition: all 2s;
+}
+

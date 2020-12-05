@@ -24,7 +24,7 @@
         {"name": "classlist.contains(): ", "id":18, "description": " si contiene el css de dentro del paréntesis entonces... "},
         {"name": "classlist.add():", "id":19, "description": "para agregar una clase css. "},
         {"name": "classlist.remove(): ", "id":20, "description": "  eliminar una clase css."}, 
-        {"name": "math.floor():", "id":21, "description": " para redondear un numero. "},
+        {"name": "math.floor():", "id":21, "description": " para redondear un numero hacia abajo, tambien podemos redondear un numero hacia arriba con math.ceil(). "},
         {"name": "addeventlistener('click', ()=>):", "id":22, "description": " adjuntar un evento de click, que queremos que haga cuando pulsamos un click. Hay muchos addeventlistener(). "},
         {"name": "document.createElement('h1'): ", "id":23, "description": " crear un elemento tipo html."}, 
         {"name": ".innertext(): ", "id":24, "description": " para escribir un valor o llamar al valor escrito. "},
@@ -34,8 +34,9 @@
         {"name": ".appenchild():", "id":28, "description": " agrega un elemento a una lista. "},
         {"name": "... : ", "id":29, "description": " (spread) devuelve los valores antiguos."}, 
         {"name": "Typeof :", "id":30, "description": " es para saber que tipo de variable es. "},
-        {"name": ".preventdefault: ", "id":31, "description": " para anular la acción por defecto."}
-
+        {"name": ".preventdefault: ", "id":31, "description": " para anular la acción por defecto."},
+        {"name": ".split(): ", "id":32, "description": " para transformar una cadena de strings en un mismo array. ej=> let valor = new string(hola, adios), valor.split(',') -> [hola, adios]"},
+        {"name": "Math.sign(numero): ", "id":33, "description": " para saber si un numero es negativo o positivo, (sus valores son -1 o +1)."}
       ],
 
       "results_arrayenjavascript":[

@@ -95,7 +95,8 @@ function Docker(){
           <p><strong>docker netowrk ls: </strong>crea un origen remoto de nuestros archivos.</p>
 
           <br/>
-          <hr></hr><br/>
+          <br/>
+          
 
         </div>
 

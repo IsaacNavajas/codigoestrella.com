@@ -41,14 +41,14 @@ html, body {
   height:200px;
   background-image: url(source/fondo.png);
   color:white;
-  margin-top:40px;
+
   width: 100%;
   transition: all 680ms;
 }
 
 .footer:hover{
   margin:auto;
-  margin-top:40px;
+
   transition: 680ms;
   filter: grayscale(150%); 
 }
@@ -279,6 +279,78 @@ font-size: 40px;
 
 .menubuttons ul li {
   color:white; 
+  z-index:9999999999999;
+}
+
+.posicion-caja-boton-presentacion{
+  position:absolute;
+  float: right;
+  margin-left:5%;
+  top:0;
+  margin-top: -100px;
+}
+
+.posicion-boton-presentacion{
+  position:relative;
+}
+.boton-presentacion{
+  position:absolute;
+  width: 85px;
+  height: 85px;
+  border-radius: 20%;
+  background-color: #000000;
+  color:white;
+  font-size: 40px;
+  z-index:200;
+  margin-top:-2px;
+  margin-left:-2px;
+  
+}
+
+/*star shadow*/
+.shadow{
+  position:absolute;
+  padding-top: 0px;
+  border-radius: 10%;
+  width: 77px;
+  height: 77px;
+  border-radius: 100%;
+  z-index:100;
+}
+.shadow:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  border-radius: 5%;
+  background: linear-gradient(45deg, #0019fb, #ff00f2, #ff0000, #fffb00, #1100fb, #ff0000, #f700ff, #0019fb);
+  background-size:6000%;
+  width: calc(100% );
+  height: calc(100% );
+  z-index:0;
+  animation:animate 100s linear infinite;
+  filter: blur(8px);
+}
+
+
+@keyframes animate{
+      0%{
+          background-position: 0 0;;
+      }
+      50%{
+          background-position: 400% 0;
+      }
+      100%{
+          background-position: 0 0;
+      }
+}
+/*finish shadow*/
+
+.diseñoimagenlogo{
+  width:60%;
+  margin-top: 15px;
+  margin-left: 3px;
+
 }
 
 .hover{
@@ -369,8 +441,6 @@ font{  font-family: englisht;
 
 .imagestart{
   display:block;
-  margin:auto;
-  width: 80%;
   margin-bottom: 90vh;
 }
 

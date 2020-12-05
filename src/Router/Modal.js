@@ -8,7 +8,7 @@ function Modal(props){
   if(props.isOpen === false){return null};
 
     return ReactDOM.createPortal(
-    <div className="model" tabIndex="-1" role="dialog">
+    <div className="model" tabIndex="-1" role="dialog" >
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title">{props.title}</h5>

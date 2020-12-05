@@ -58,7 +58,7 @@ function Pagereact(){
           <p><strong>ucfirst($text) :</strong> para transformar la primera letra del string a mayúsculas.</p>
           <p><strong>lcfirst($text) :</strong> para transformar la primera letra del string a minúsculas si esta el texto en mayúsculas.</p>
           <hr></hr>
-          <p><strong>str_remplace(' ', '-', $text) :</strong> para reemplazar un texto por otro, en este caso de la variable text vamos a reemplazar los espacios por guiones.</p>
+          <p><strong>str_replace(' ', '-', $text) :</strong> para reemplazar un texto por otro, en este caso de la variable text vamos a reemplazar los espacios por guiones.</p>
           <p><strong>str_pad($code, 8, '#') :</strong> completa el carácter con ocho numerales -> ########, este ejemplo se utiliza en facturas, podemos agregar otro argumentos mas que sirve para especificar su dirección, STR_PAD_BOTH -> para agregarlo entre los dos lados, STR_PAD_LEFT -> para agregarlo a la izquierda, STR_PAD_RIGHT -> para agregarlo a la derecha.</p>
           <p><strong>strip_tags($text) :</strong> nos elimina las etiquetas del string, es mas utilizado para trabajar con las bases de datos.</p>
           <hr></hr>
