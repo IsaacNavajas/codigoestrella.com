@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.d452ee60.chunk.css",
-    "main.js": "/static/js/main.e0b15be5.chunk.js",
-    "main.js.map": "/static/js/main.e0b15be5.chunk.js.map",
+    "main.css": "/static/css/main.7c05b07b.chunk.css",
+    "main.js": "/static/js/main.9c80a22c.chunk.js",
+    "main.js.map": "/static/js/main.9c80a22c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ec26966.js",
     "runtime-main.js.map": "/static/js/runtime-main.2ec26966.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.ae17ff50.chunk.js": "/static/js/2.ae17ff50.chunk.js",
-    "static/js/2.ae17ff50.chunk.js.map": "/static/js/2.ae17ff50.chunk.js.map",
+    "static/js/2.4aab31b7.chunk.js": "/static/js/2.4aab31b7.chunk.js",
+    "static/js/2.4aab31b7.chunk.js.map": "/static/js/2.4aab31b7.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5688381cedc04a6afac3804a691592d2.js": "/precache-manifest.5688381cedc04a6afac3804a691592d2.js",
+    "precache-manifest.b128def1aed99fd176ef123e6507db6b.js": "/precache-manifest.b128def1aed99fd176ef123e6507db6b.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.d452ee60.chunk.css.map": "/static/css/main.d452ee60.chunk.css.map",
-    "static/js/2.ae17ff50.chunk.js.LICENSE.txt": "/static/js/2.ae17ff50.chunk.js.LICENSE.txt",
+    "static/css/main.7c05b07b.chunk.css.map": "/static/css/main.7c05b07b.chunk.css.map",
+    "static/js/2.4aab31b7.chunk.js.LICENSE.txt": "/static/js/2.4aab31b7.chunk.js.LICENSE.txt",
     "static/media/archivocomprimido.png": "/static/media/archivocomprimido.b9863c69.png",
     "static/media/archivos.zip": "/static/media/archivos.ac33cf1e.zip",
     "static/media/codezen 1.png": "/static/media/codezen 1.49b3fc8c.png",
@@ -42,13 +42,16 @@
     "static/media/image 1.png": "/static/media/image 1.796742bd.png",
     "static/media/image html.png": "/static/media/image html.bd41e66a.png",
     "static/media/image javascript.png": "/static/media/image javascript.3d9495be.png",
-    "static/media/imagedocker.png": "/static/media/imagedocker.74c6bf10.png"
+    "static/media/imagedocker.png": "/static/media/imagedocker.74c6bf10.png",
+    "static/media/ntl.gif": "/static/media/ntl.af5fa96b.gif",
+    "static/media/tuplas.png": "/static/media/tuplas.731426fe.png",
+    "static/media/tuplasdos.png": "/static/media/tuplasdos.5313215f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2ec26966.js",
     "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.ae17ff50.chunk.js",
-    "static/css/main.d452ee60.chunk.css",
-    "static/js/main.e0b15be5.chunk.js"
+    "static/js/2.4aab31b7.chunk.js",
+    "static/css/main.7c05b07b.chunk.css",
+    "static/js/main.9c80a22c.chunk.js"
   ]
 }
