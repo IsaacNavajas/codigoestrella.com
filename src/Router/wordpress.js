@@ -19,7 +19,8 @@ class Wordpress extends React.Component{
 
           <p><strong>Instalar Wordpress desde XAMPP: </strong> entrar en www.word.press.org y descargar Get Wordpress, descomprimirlo en la carpeta de htdocs de XAMPP, y escribir la ruta /localhost/(nombre de la carpeta) y desde ahi comenzar la instalación. </p>
           <p><strong>Utilizar interfaz antigua de wordpress:</strong> vamos a plugins y buscamos - Editor clásico - lo activamos y automáticamente cambiara su interfaz.</p>
-   
+
+          <a href="#linkelementor" className="Link">↓↓ Elementor ↓↓</a>
 
           <br/>
           <hr></hr><br/><br/>
@@ -27,11 +28,11 @@ class Wordpress extends React.Component{
           <h2  className="bigtitle">Temas</h2>
 
           <br/><br/>
-          <p><strong>Understrap:</strong> Es el tema que viene completamente vació, para configurarlo a tu gusto.</p>
+          <p><strong>Understrap:</strong> Es el tema que viene completamente vació, para configurarlo a tu gusto. Viene con la implementacion de Bootstrap.</p>
           
           <p><strong>Colibri WP:</strong> Tema recomendado para editar por su gran extensión para editar.</p>
           <p><strong>themeforest.net:</strong> Para comprar temas de pago.</p>
-          <p><strong>Crear un tema hijo / plugin:</strong> Para modificar a nivel código es bueno crear un tema hijo sino no es necesario crear un hijo, vamos a crear desntro de la carpeta theme una nueva carpeta con el nombre del tema hijo y dentro el siguiente archivo style.css;</p>
+          <p><strong>Crear un tema hijo / plugin:</strong> Para modificar a nivel código es bueno crear un tema hijo sino no es necesario crear un hijo, codearemos siempre dentro del tema hijo, vamos a crear desntro de la carpeta theme una nueva carpeta con el nombre del tema hijo y dentro el siguiente archivo style.css;</p>
           
           <img src={imageone} alt="imagen del modal" className="imagewordpress"></img>
           <p>En el import llamamos al style.css del tema padre en este caso colibri-wp.</p>
@@ -93,7 +94,7 @@ class Wordpress extends React.Component{
           <br/>
           <hr></hr><br/><br/>
 
-          <h2  className="bigtitle"><strong>plugin:</strong> Elementor Page Builder</h2>
+          <h2  className="bigtitle" id="linkelementor"><strong>plugin:</strong> Elementor Page Builder</h2>
           <br/>
           <br/>
 

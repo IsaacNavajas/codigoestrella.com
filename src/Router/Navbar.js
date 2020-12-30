@@ -12,12 +12,12 @@ class Navbar extends React.Component{
 
           <div className="imag col-12 container-fluid">
 
-            <div className="position col-7">
+            <div className="position col-6">
 
                     {
                      this.props.verifyLanguage && <h1 className="title-codigoestrella-spanish col-12" id="title">Codigoestrella.com</h1>
                       ||
-                       <h1 className="title-codigoestrella-english col-12" id="title">Codigoestrella.com</h1>
+                      <h1 className="title-codigoestrella-english col-12" id="title">Codigoestrella.com</h1>
                     }
 
                   <div className="position_button col-12">
@@ -26,7 +26,7 @@ class Navbar extends React.Component{
                   </div>
 
             </div>
-              <img src={image} className="imagen col-5" alt="imagen robot"></img>
+              <img src={image} className="imagen col-6" alt="imagen robot"></img>
             </div>
 
         <nav className="menu col-12">
@@ -95,11 +95,11 @@ class Navbar extends React.Component{
                 <div className="posicion-boton-presentacion">
                   <div className="shadow">
                     <div>
+                    <Link className="" to="/ruta-apple">
                       <div className="boton-presentacion"> 
-                      <Link className="" to="/ruta-apple">
                         <img src={imagelogo} className="diseñoimagenlogo" alt="logo apple"></img>
-                      </Link>
                       </div>
+                      </Link>
                     </div>
                   </div>
                 </div>

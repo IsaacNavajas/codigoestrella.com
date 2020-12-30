@@ -6,28 +6,30 @@ import imagethree from "../source/diagramadevenn3.png";
 import imagefour from "../source/diagramadevenn4.png";
 import imagefive from "../source/diagramadevenn5.png";
 
-
-
+import imagetuplas from "../source/tuplas.png";
+import imagetuplasdos from "../source/tuplasdos.png";
+import imagetuplastres from "../source/tuplastres.png";
 
 function Mysql(){
   
-
     return (
 
       <React.Fragment>
         <div className="container">
-
+          <h2  className="bigtitle font">Instalación</h2><br/>
+          <p><strong>Descargar Mysql Windows :</strong> <a href="https://dev.mysql.com/downloads/windows/installer/" target="https://dev.mysql.com/downloads/windows/installer/" className="Link">Descargar Mysql aqui</a>, tambien podemos elegir una version anterior como /downloads/windows/installer/5.6.html para dercargar la version 5.6.</p>
+          <hr></hr><br/>
           <h2  className="bigtitle font">Normalización</h2><br/>
-  
 
           <p><strong>Diagrama físico: </strong>para hacer la Normalización, tienen que tener todas las tablas una cardinalidad de uno a muchos. La normalización nos ayuda a dejar todo de una forma normal, hay cuatro reglas de Cold para lograr esto;</p>
           <ul>
           <li><p><strong>-Primera forma normal: sin campos repetidos. </strong></p></li>
           <li><p><strong>-Segunda forma normal: cada campo de la tabla debe depender de un id único. (Primary key) </strong></p></li>
           <li><p><strong>-Tercera forma normal: campos que no son clave no deben de tener dependencias. </strong></p></li>
-          <li> <p><strong>-Cuarta forma normal: los campos multivaluados se identifican por una llave única. (Foreign key) </strong></p></li>
+          <li> <p><strong>-Cuarta forma normal: los campos multivaluados se identifican por una llave única. Donde es muchos a muchos hay que meter entre las dos tablas una <strong>tabla intermedia</strong> con un identificador propio y los id´s de cada tabla independiente. (Foreign key) </strong></p></li>
           <li> <span className="subrayado"> En la normalización la tabla que tiene muchos es donde se meten las llaves foráneas. (se concatena con la otra tabla. ej; Usuario_id).</span></li>
           </ul>
+
           <br/>
           <hr></hr><br/>
           <h2  className="bigtitle">Ddl</h2><br/>
@@ -61,19 +63,16 @@ function Mysql(){
           
           <br/><br/><br/><br/><br/>
 
-
           <img src={imagethree} className="Vendiagram"></img>
           <p><strong>SELECT * FROM Usuarios INNER JOIN Post ON usuarios_id = Post.Usuario_id: </strong></p>
           <p><strong>INNER JOIN:</strong> nos trae solo lo que esta ligado, trae solo los que tienen dependencias de ambos lados, (los que no están huérfanos).</p>
           
           <br/><br/><br/><br/><br/>
 
-
           <img src={imagefour} className="Vendiagram"></img>
           <p><strong>SELECT * FROM Usuarios LEFT JOIN Post ON usuarios_id = Post.Usuario_id UNION SELECT * FROM Usuarios RIGHT JOIN Post ON usuarios_id = Post.Usuario_id: </strong></p>
           <p><strong>UNION:</strong> junta las dos tablas de right join y left join.</p>
 
-          
           <br/><br/><br/><br/><br/>
 
           <img src={imagefive} className="Vendiagram"></img>
@@ -82,32 +81,26 @@ function Mysql(){
           
           <br/><br/><br/><br/><br/>
 
-
-
           <br/>
           <hr></hr><br/>
  
-
-
-
-
           <h2  className="bigtitle">Métodos de un query</h2><br/>
           <br/>
           <span className="subrayado"> El orden de colocar los métodos son los siguientes.</span><br/><br/>
           <p><strong>SELECT: </strong>lo que quieres mostrar.</p>
           <li><p><strong>-AS: para poner un sub-nombre. </strong></p></li>
           <li><p><strong>-* : un atajo para seleccionar todos los atributos. </strong></p></li>
-          <li><p><strong>-AVG: calcula el promedio. </strong></p></li>
-          <li><p><strong>-COUNT: cuenta los registros de un campo. </strong></p></li>
-          <li><p><strong>-SUM: suma los valores de un campo. </strong></p></li>
-          <li><p><strong>-MAX: devuelve el máximo de un campo. </strong></p></li>
-          <li> <p><strong>-MIN: devuelve el mínimo de un campo. </strong></p></li>
-          <li> <p><strong>-GROUP_CONCAT: devuelve su resultado separándolos por comas. </strong></p></li>
-  
+          <li><p><strong>-AVG(): calcula el promedio. </strong></p></li>
+          <li><p><strong>-COUNT(): cuenta los registros de un campo. </strong></p></li>
+          <li><p><strong>-SUM(): suma los valores de un campo. </strong></p></li>
+          <li><p><strong>-MAX(): devuelve el máximo de un campo. </strong></p></li>
+          <li> <p><strong>-MIN(): devuelve el mínimo de un campo. </strong></p></li>
+          <li> <p><strong>-YEAR(): para mostrar solo el año de la fecha, tambien podemos usar MONTHNAME() para saber solo el mes. </strong></p></li>
+          <li> <p><strong>-GROUP_CONCAT(): devuelve su resultado separándolos por comas. </strong></p></li>
           
           <p><strong>FROM:</strong> de donde voy a tomar los datos.</p>
           <p><strong>WHERE:</strong> los filtros de los datos que quieres mostrar.</p>
-          <li><p><strong>-LIKE %algo%: para los que contengan el valor algo. </strong></p></li>
+          <li><p><strong>-LIKE %algo%: para los que contengan el valor algo. %algo traera los que terminen por el valor algo, algo% traera los que empiecen con el valor algo.  </strong></p></li>
           <li><p><strong>-BETWEEN: donde estén entre dos valores, where fecha_publicacion between '2020-01-01' an '2020-12-13'. </strong></p></li>
           <li><p><strong>-IS NULL: donde el valor es nulo. </strong></p></li>
           <li><p><strong>-IS NOT NULL: donde el valor no es nulo. </strong></p></li>
@@ -116,21 +109,25 @@ function Mysql(){
           <li><p><strong>-ASC: sirve para ordenar de forma ascendente. </strong></p></li>
           <li><p><strong>-DESC: sirve para ordenar de forma descendente. </strong></p></li>
           <li><p><strong>-LIMIT: se usa para limitar la cantidad de resultados que arroja el query. </strong></p></li>
-          <p><strong>GROUP BY: </strong>los grupos por los que me interesa agrupar la información. Por ejemplo; SELECT apellido, avg(nota) FROM alumnos GROUP BY apellido -> haz una media de las notas agrupando los que se apelliden igual.</p>
-          
-          <p><strong>HAVING: </strong>los filtros que quiero que tengan mis datos, son dependientes del ORDER BY, se pone después de group by.</p>
-          <br/>
-          <br/>
 
+          
+          <p><strong>GROUP BY: </strong>agrupa conjuntos del mismo valor de la tupla asignada. Por ejemplo; <spam className="subrayado">SELECT apellido, avg(nota) AS conjunto FROM alumnos GROUP BY apellido</spam> -> haz una media de las notas agrupando los que se apelliden igual.</p>
+          <img src={imagetuplasdos} ></img>
+          <img src={imagetuplas}></img>
+          
+          <br/><br/>
+          <p><strong>HAVING: </strong>los filtros que quiero que tengan mis datos pertenecientes y con dependiencia de ORDER BY, se pone después de group by. (Funciona como WHERE pero en el capsulamiento de GROUP BY). 
+          <spam className="subrayado"> SELECT apellido, avg(nota) AS conjunto FROM alumnos GROUP BY apellido HAVING apellido="jaime"</spam>.</p>
+          <img src={imagetuplastres}></img>
+          <br/><br/>
+          <hr></hr><br/>
+          <p><strong>NESTED QUERIES: </strong> son queries anidados, es decir una consulta dentro de otra, dentro de el metodo que elijamos lo encapsularemos dentro de parentesis y dentro iniciaremos otra consulta. FROM( SELECT ...). WHERE date_public = ( SELECT ...).</p>
+          
           <br/>
           <hr></hr><br/>
- 
 
           <h2  className="bigtitle font">Exportar la base de datos</h2><br/>
-  
 
-          <p><strong>Diagrama físico: </strong>para hacer la Normalización, tienen que tener todas las tablas una cardinalidad de uno a muchos. la normalización nos ayuda a dejar todo de una forma normal, hay cuatro reglas de Cold para lograr esto;</p>
-          
           <span className="subrayado">En la parte derecha de Workbench buscamos Administrador, a la izquierda de schemas y le damos a <strong>Data Export</strong> y buscamos la base de datos que queramos exportar.</span>
           <p><strong>Export to self-contained File: </strong>Aquí vamos a elegir el nombre y la ruta donde queremos guardar nuestra base de datos exportada. <span className="subrayado"> Es recomendable utilizar esta opcion, ya que nos lo exporta en un archivo SQL.</span></p>
           <p><strong>Include Create Schema: </strong>Para crear un esquema que nos permita crear la base de datos, si queremos insertar la base de datos antes de insertar los valores de la base de datos. <span className="subrayado"> Es recomnendable utilizarla si vamos a exportar para crear esa base de datos, NO para cuando queramos agregar esos valores a una base de datos ya creada.</span></p>
@@ -142,7 +139,6 @@ function Mysql(){
       </React.Fragment>
 
     );
-
 
 }
 

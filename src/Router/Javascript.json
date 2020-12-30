@@ -36,7 +36,10 @@
         {"name": "Typeof :", "id":30, "description": " es para saber que tipo de variable es. "},
         {"name": ".preventdefault: ", "id":31, "description": " para anular la acción por defecto."},
         {"name": ".split(): ", "id":32, "description": " para transformar una cadena de strings en un mismo array. ej=> let valor = new string(hola, adios), valor.split(',') -> [hola, adios]"},
-        {"name": "Math.sign(numero): ", "id":33, "description": " para saber si un numero es negativo o positivo, (sus valores son -1 o +1)."}
+        {"name": "Math.sign(numero): ", "id":33, "description": " para saber si un numero es negativo o positivo, (sus valores son -1 o +1)."},
+        {"name": "let badge = new Array(10).fill(0).map(() => Math.floor(Math.random() * 8)); ", "id":34, "description": " crear un nuevo array con diez valores distintos con numeros random."},
+        {"name": ".target: ", "id":35, "description": " el elemento que recibe el evento."},
+        {"name": ".value: ", "id":35, "description": " para recoger el valor de un elemento como un input."}
       ],
 
       "results_arrayenjavascript":[
@@ -48,21 +51,17 @@
         {"name": ".unshift() : ", "id":6, "description": " Agrega un elemento al principio del array."},
         {"name": ".shift() : ", "id":7, "description": " borra el primer elemento del array."},
         {"name": ".indexOf() : ", "id":8, "description": " Nos dice la posición del elemento del array."}
-        
-
-
       ],
 
       "results_mapjavascript":[
         {"name": ".bind(): ", "id":1, "description": " enviamos la referencia a la función sin ejecutarla. Pasando el contexto por parámetro."}, 
         {"name": ".call(): ", "id":2, "description": " ejecuta inmediatamente la función con el contexto indicado. "},
         {"name": ".apply(): ", "id":3, "description": " es similar a .call() pero los parámetros adicionales se pasan como un arreglo de valores. (array)."}
-
       ],
+      
       "results_installjavascript":[
         {"name": "<script src=''js/myscript.js''></script>: ", "id":1, "description": " se pasa la ruta del javascript con el que se va a concatenar en el html principal que sera el layout. Es recomendable enlazarlo al final del body."},
         {"name": "npm install ", "id":2, "description": " para instalar el package.json en tu app javascript"}
-      
       ]
       
   }

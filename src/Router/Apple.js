@@ -1,23 +1,19 @@
 import React from 'react';
 import imagelogo from '../source/otroapple.png';
 
-
-
 class Apple extends React.Component{
   state={
     temporizador: 0,
     desaparecer : false
   }
 
-  
   componentDidMount = () => {
     this.primertemporizador = setTimeout(()=>{  this.setState({temporizador:1}) }, 1000);
     this.segundotemporizador = setTimeout(()=>{  this.setState({temporizador:2}) }, 1200);
     this.tercertemporizador = setTimeout(()=>{  this.setState({temporizador:3}) }, 3000);
     this.cuartotemporizador = setTimeout(()=>{  this.setState({temporizador:4}) }, 3090);
-    this.quintotemporizador = setTimeout(()=>{  this.setState({temporizador:5, desaparecer:true}) }, 4000);
+    this.quintotemporizador = setTimeout(()=>{  this.setState({temporizador:5, desaparecer:true}) }, 3600);
   }
-
 
   componentWillUnmount= () => {
     clearTimeout( this.primertemporizador );
@@ -28,7 +24,6 @@ class Apple extends React.Component{
  }
       
   render(){
-
     return (
     <React.Fragment>
       <div className="apple">
@@ -37,7 +32,11 @@ class Apple extends React.Component{
       {this.state.desaparecer == true & this.props.lenguaje == "Spanish" && 
         <div>
           <br/> 
+          <h2>Apple</h2>
+          <h6>S W I F T</h6>
+          <br/> 
           <p className="aparecer">Pagina de apple en construccion.</p>
+ 
         </div>
         ||
         <div className="desaparecer"></div>
@@ -69,21 +68,13 @@ class Apple extends React.Component{
           this.state.desaparecer == true && <div id="lineagris" className="lineagrisdesaparecer"></div>}
           
         </center>
-
-        
-        
-
         <br/>
         <br/>
       </div>
       </div>
-      
     </React.Fragment>
-
   );
-
-}
-    
+}   
 }
 
 export default Apple;

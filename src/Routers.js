@@ -42,7 +42,6 @@ class Router extends React.Component {
 
     this.handleClick = () => {
 
-      
       this.setState(state => ({
         count : state.count +1,
         
@@ -81,7 +80,7 @@ class Router extends React.Component {
 
                   <React.Fragment>
                     <div className="col-12 ">
-                      <div className="col-7">
+                      <div className="col-6">
                         <div className=" toggle custom-control custom-switch  ">
                           <a href={Archivos} download><img src={Image} className="ImageDescarga"/></a>
                

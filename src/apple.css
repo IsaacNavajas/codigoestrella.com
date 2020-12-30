@@ -1,8 +1,6 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Pacifico&family=Sacramento&display=swap');*/
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Pacifico&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Duru+Sans&family=Open+Sans+Condensed:wght@300&display=swap');
 
 
 .apple {
@@ -11,6 +9,7 @@
   color:white;
   background-color: black;
   padding-bottom: 1000px;
+  font-family: 'Duru Sans', sans-serif;
 }
 
 .logoapple{

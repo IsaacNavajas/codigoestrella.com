@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from '../source/codezen 15.png';
-import Archivos from '../source/archivos.zip';
+import ImageTCP from '../source/imageTCP.png';
+import ImageDNS from '../source/imagenExplicacionDNS.png';
 
 class Inicio extends React.Component{
 
@@ -24,9 +25,61 @@ class Inicio extends React.Component{
 
          
           </ul>
+          <br/>
           <hr></hr> 
-          <hr className="imagestart"></hr> 
-          
+          <br/>
+
+
+      <h2 className="bigtitle font">PC </h2>    
+      
+        <p><strong>- CPU :</strong> es el corazon de la maquina y una de las partes mas caras, se encarga de procesar todos los datos.</p>
+        <p><strong>- RAM :</strong> en ella se utiliza la informacion que esta utilizando en el momento.</p>
+        <p><strong>- PLACA BASE :</strong> va acorde con la CPU y tendremos que colocar una con el mismo socket que ella.</p>
+        <p><strong>- DISCO DURO :</strong> donde se guarda la informacion de manera permanente, afecta al rendimiento a la hora de abrir y cargar archivos, hay dos tipos HDD (mecanicos y SDD).</p>
+        <p><strong>- TARJETAS GRAFICAS :</strong> dedicada exclusivamente a la interfaz grafica.</p>
+        <p><strong>- FUENTE DE ALIMENTACION :</strong> estabilidad en el equipo y una vida mas larga de los componentes.</p>
+
+          <br/>
+          <hr></hr> 
+          <br/>
+
+        <p><strong>- RSS :</strong> para distribuir cntenido en la web a otras plataformas, para difundir informacion actualizada frecuentemente.</p>
+        <p><strong>- HTTPS / SSL :</strong> SSL certificado para dominio, permite autentificar, encriptacion y desencriptacion. HTTPS protocolo de transferencia de hipertexto, la version segura HTTP.</p>
+        <p><strong>- HOSTING :</strong> es el espacio donde se aloja una pagina web para poder verse a traves de un dominio, es el uso de los servidores web con todos sus recursos.</p>
+        <p><strong>- DNS :</strong> es el sistema de nomenclatura jerarquico que se ocupa de la administracion del espacio de nombre del dominio, resuelve las peticiones de asignacion de nombres, usa los navegadores web para saber el sitio (ip) por su nombre (www.ejemplo.com).</p>
+        <p><strong>- DOMINIO :</strong> es el nombre unico que se le da a un sitio web.</p>
+
+        <br/>
+        <br/>
+          <center><div><img src={ImageDNS} ></img></div></center>
+
+        <br/>
+        <hr></hr> 
+        <br/>
+        
+        
+      <h2 className="bigtitle font">Protocolos de red </h2> 
+
+      <div><img src={ImageTCP} className="col-5 mitad"></img></div>
+
+      <div className="col-7 mitad">
+      
+      <p><strong>- FTP :</strong> protocolo de transferencia de archivos, proporciona una interfaz y servicios para la transferencia de archivos en la red.</p>
+      <p><strong>- SMTP :</strong> protocolo simple de transferencia de correo, proporciona servicios de correo electronico en las redes de internet e IP.</p>
+      <p><strong>- TCP :</strong> protocolo de control de transmision, orientado a la conexion, gestion la conexion entre las computadoras emisora y receptora de forma parecida al desarrollo de llamadas telefonicas.</p>
+      <p><strong>- UDP :</strong> El protocolo UDP se utiliza para transmitir datagramas de forma rápida en redes IP y funciona como una alternativa sencilla y sin retardos del protocolo TCP. Se usa principalmente para consultas DNS, conexiones VPN y para el streaming de audio y vídeo.</p>
+      <p><strong>- IP :</strong> protocolo de internet, es la base para todo el direccionamiento que se produce en las redes TCP / IP y proporciona un protocolo orientado a la capa de red sin conexion.</p>
+      <p><strong>- ARP :</strong> protocolo de resolucion de direcciones, hace corresponder las direcciones IP con las direcciones MAC de hadware.</p>
+      <p><strong>- Dirección MAC :</strong> identificador de 48 bits que corresponde de forma única a una tarjeta o dispositivo de red. Se la conoce también como dirección física, y es única para cada dispositivo.</p>
+      <p><strong>- IPX / SPX :</strong> intercambio de paquetes entre redes.</p>
+
+      <br/>
+      <br/>
+
+      </div>   
+
+
+
         </div >
       </React.Fragment>
 

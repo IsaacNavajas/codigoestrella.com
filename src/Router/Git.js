@@ -1,8 +1,5 @@
 import React from 'react';
 
-
-
-
 function Git(){
 
     return (
@@ -106,7 +103,7 @@ function Git(){
           </p>
           <br/>
           <br/>
-          <br/>
+          
         
           
         </div>
