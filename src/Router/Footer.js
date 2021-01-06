@@ -14,6 +14,7 @@ class Footer extends React.Component{
       <footer className="col-12 footer"> 
  
           <div className=" col-5 footerpago">
+
             <img src={image} className="imagefooter"></img>
           </div>
 

@@ -23,7 +23,6 @@ import InicioEnglish from './Router/English/InicioEnglish';
 import ApiLumen from './Router/ApiLumen';
 import Docker from './Router/Docker';
 import Vue from './Router/Vue';
-import Apple from './Router/Apple';
 
 import Image from './source/archivocomprimido.png';
 import Archivos from './source/archivos.zip';
@@ -116,7 +115,6 @@ class Router extends React.Component {
 
 
        
-                      <Route exact path="/ruta-apple"><Apple lenguaje= {this.state.language}/></Route>
 
                       {this.state.verifyLanguage && <Route exact path="/json" component={Json}/>}
 

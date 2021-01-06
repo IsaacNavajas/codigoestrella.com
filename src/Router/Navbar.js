@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles.css';
 import image from '../source/image 1.png';
 import {Link} from "react-router-dom";
-import imagelogo from '../source/otroapple.png';
+
 
 class Navbar extends React.Component{
   
@@ -91,19 +91,7 @@ class Navbar extends React.Component{
                       <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-seis">OTHER</Link></li>
                     </ul>
                 }   
-              <div className="posicion-caja-boton-presentacion">
-                <div className="posicion-boton-presentacion">
-                  <div className="shadow">
-                    <div>
-                    <Link className="" to="/ruta-apple">
-                      <div className="boton-presentacion"> 
-                        <img src={imagelogo} className="diseñoimagenlogo" alt="logo apple"></img>
-                      </div>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
+               
         </nav>
       </React.Fragment>
     );
