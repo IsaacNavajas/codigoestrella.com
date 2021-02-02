@@ -3,6 +3,7 @@ import Modal from './Modal';
 
 import data from './Javascript.json';
 import JQuery from './JQuery';
+import TypescriptModal from './TypescriptModal';
 
 import image from "../source/image javascript.png";
 
@@ -56,14 +57,21 @@ class Javascript extends React.Component{
           </div>
         </ul>)}
 
-          <br/><br/>
+          <br/>
+
+        <TypescriptModal/><br/>
+
+     
+            <button 
+                        className="buttonphp btn btn-dark" 
+                        onClick={this.openModal}
+                      >
+                      JQuery
+            </button>
+
           
-          <button 
-                      className="buttonphp btn btn-dark" 
-                      onClick={this.openModal}
-                    >
-                     JQuery
-          </button>
+          
+
 
         <hr></hr>
         

@@ -50,7 +50,8 @@
         {"name": ".pop() : ", "id":5, "description": " Elimina el ultimo elemento del array."},
         {"name": ".unshift() : ", "id":6, "description": " Agrega un elemento al principio del array."},
         {"name": ".shift() : ", "id":7, "description": " borra el primer elemento del array."},
-        {"name": ".indexOf() : ", "id":8, "description": " Nos dice la posición del elemento del array."}
+        {"name": ".indexOf() : ", "id":8, "description": " Nos dice la posición del elemento del array."},
+        {"name": ".forEach(()=> ...) : ", "id":9, "description": " Ejecuta la funcion por cada elemento del vector o array."}
       ],
 
       "results_mapjavascript":[

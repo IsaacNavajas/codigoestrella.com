@@ -61,7 +61,7 @@ function Git(){
           <p><strong>git rm --force: </strong>elimina los archivos de git y del disco duro.</p>
           <p><strong>git reset: </strong>nos ayuda a volver en el tiempo, (SIN LA POSIBILIDAD DE VOLVER a un commit futuro).</p>
           <p><strong>git rm --soft:</strong> borramos el historial y los registros de git pero mantenemos los estados de staging.</p>
-          <p><strong>git rm --hard:</strong> borra TODO.</p>
+          <p><strong>git rm --hard:</strong> borra TODO. Git reset --hard "branch" para ir y guardar la rama, es una buena practica primero con checkout ir a la rama que se quiere y despues de testearla y ver que queremos volver a una rama anterior hacer el reset --hard.</p>
           <p><strong>git checkout:</strong> para cambiar entre ramas, también podemos usarlo para ir a otro estado de memoria de git show para ver ese commit y volver después al master. También podemos volver a otro commit, trackearlo, hacer otro commit para guardar un commit anterior como nuevo, sin tener que borrar los commits anteriores.</p>
           <br/>
           <hr></hr><br/>
