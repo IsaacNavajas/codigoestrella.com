@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.cebc6290.chunk.css",
-    "main.js": "/static/js/main.d920b96b.chunk.js",
-    "main.js.map": "/static/js/main.d920b96b.chunk.js.map",
+    "main.css": "/static/css/main.af9f4e8f.chunk.css",
+    "main.js": "/static/js/main.6cf549d8.chunk.js",
+    "main.js.map": "/static/js/main.6cf549d8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ec26966.js",
     "runtime-main.js.map": "/static/js/runtime-main.2ec26966.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.f30b0907.chunk.js": "/static/js/2.f30b0907.chunk.js",
-    "static/js/2.f30b0907.chunk.js.map": "/static/js/2.f30b0907.chunk.js.map",
+    "static/js/2.4ab9e0a1.chunk.js": "/static/js/2.4ab9e0a1.chunk.js",
+    "static/js/2.4ab9e0a1.chunk.js.map": "/static/js/2.4ab9e0a1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.952c22421a3939e42a0e45585689d654.js": "/precache-manifest.952c22421a3939e42a0e45585689d654.js",
+    "precache-manifest.a0a0d9021066706507e53c30463f8259.js": "/precache-manifest.a0a0d9021066706507e53c30463f8259.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.cebc6290.chunk.css.map": "/static/css/main.cebc6290.chunk.css.map",
-    "static/js/2.f30b0907.chunk.js.LICENSE.txt": "/static/js/2.f30b0907.chunk.js.LICENSE.txt",
+    "static/css/main.af9f4e8f.chunk.css.map": "/static/css/main.af9f4e8f.chunk.css.map",
+    "static/js/2.4ab9e0a1.chunk.js.LICENSE.txt": "/static/js/2.4ab9e0a1.chunk.js.LICENSE.txt",
     "static/media/archivocomprimido.png": "/static/media/archivocomprimido.b9863c69.png",
     "static/media/archivos.zip": "/static/media/archivos.ac33cf1e.zip",
     "static/media/codezen 1.png": "/static/media/codezen 1.49b3fc8c.png",
@@ -23,6 +23,7 @@
     "static/media/codezen 13.png": "/static/media/codezen 13.90df5efa.png",
     "static/media/codezen 14.png": "/static/media/codezen 14.54a04eb4.png",
     "static/media/codezen 15.png": "/static/media/codezen 15.dd335623.png",
+    "static/media/codezen 16.png": "/static/media/codezen 16.b52c5ec8.png",
     "static/media/codezen 2.png": "/static/media/codezen 2.36528f3f.png",
     "static/media/codezen 3.png": "/static/media/codezen 3.6b1d471c.png",
     "static/media/codezen 4.png": "/static/media/codezen 4.69b91aef.png",
@@ -52,8 +53,8 @@
   "entrypoints": [
     "static/js/runtime-main.2ec26966.js",
     "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.f30b0907.chunk.js",
-    "static/css/main.cebc6290.chunk.css",
-    "static/js/main.d920b96b.chunk.js"
+    "static/js/2.4ab9e0a1.chunk.js",
+    "static/css/main.af9f4e8f.chunk.css",
+    "static/js/main.6cf549d8.chunk.js"
   ]
 }
