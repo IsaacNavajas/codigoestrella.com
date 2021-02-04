@@ -15,6 +15,7 @@ function Typescript(){
           <p><strong>npm install -g typescript: </strong>instalar el compilador tsc de typescript de manera global. <br/></p>
           <p><strong>tsc --version: </strong>Para ver la version del compilador tsc instalada. <br/></p>
 
+
           <br/>
           <hr></hr><br/>
           <h2  className="bigtitle">Usando el compilador tsc</h2><br/>
@@ -25,9 +26,11 @@ function Typescript(){
           <br/>
           <p><strong>tsc --init</strong> para inicializar el archivo tsconfig.ts, una vez instalado el tsconfig.ts podemos copilar todo un proyecto llendo dentro del tsconfig.ts y buscamos el outdir y creamos una carpeta, <strong>"outDir": "./Dist",</strong> y solo con iniciar el comando <strong>tsc</strong> se compilara todo el proyecto dentro de la carpeta /Dist. O <strong>tsc --watch</strong> para automatizar el compilado.</p>
           <br/>
+          <p><strong>Para evitar posibles errores vamos a inicializar el proyecto con un export de un objeto vacion</strong>.</p>
+          
           <hr></hr><br/>
 
-          <h2  className="bigtitle">Tipos de valores en typescript</h2><br/>
+          <h2  className="bigtitle">Tipos en typescript</h2><br/>
 
           <p>Los valores son; <strong>Number, Boolean, String, Array, Tuple, Enum, Any, Void, Null, Undefined, Never, Object</strong>; </p>
           
@@ -69,63 +72,24 @@ function Typescript(){
           <p><strong>Funciones:</strong> Hay varias formas de de tipar una function .</p>
           <ul>
             <li><p>+ function codigoestrella<strong>(color:string, codigo:string, visible?:boolean):</strong> El uso de colocar <strong>?</strong> despues de valor, como es en el caso de visible? quiere decir que puede que ese valor no llegue a estar definido. Codigoestrella('red', 'typescript').</p></li>
+            <li><p>+ Interface User => <strong>readonly id: number; username:string;</strong> El uso de colocar <strong>readonly</strong> despues de valor, como es en el caso de readonly id: number; se usa para definir solo el valor dado y no poder ser sobrescrito varias veces.</p></li>
           </ul>
 
+          <hr></hr><br/>
 
-
-
-
-
+          <p>En typescript desde la version 3.8, si queremos tener un encapsulamiento de private podemos usar <strong>#</strong> como pseudonimo, haciendo anotacionn en todos y cada uno de sus usos.</p>
 
           <hr></hr><br/>
 
 
-          <div  className="bigtitle">Libreria</div><br/>
+          <div  className="bigtitle">Webpack</div><br/>
           <br/>
-          <strong>$('ul').text():</strong> .<br/>
-          <strong>$('ul').html():</strong> .<br/>
-          <strong>$('ul').remove(): </strong>.<br/>
-          <strong>$('ul').replaceWith(): </strong>.<br/>
-          <hr></hr><br/>
 
-          <strong>$('ul').append():</strong> .<br/>
-          <strong>$('ul').before():</strong> .<br/>
-          <strong>$('ul').after():</strong> .<br/>
-          <strong>$('ul').prepend):</strong> .<br/>
-          <hr></hr><br/>
 
-          <strong>attr():</strong> .<br/>
-          <strong>removeAttr():</strong> .<br/>
-          <strong>addClass():</strong> .<br/>
-          <strong>removeClass():</strong> .<br/>
-          <hr></hr><br/>
+          <p><strong>npm install typescript webpack webpack-cli --save-dev: </strong>Instalación de typescript y webpack. Primero iniciar el comando <strong>npm init -y</strong> y despues <strong>npm install typescript webpack webpack-cli --save-dev</strong> y dentro de script escribir "build": "webpack", guardar y meter otro comando <strong>npm run build</strong> <br/><br/></p>
+          <p><strong>npm install ts-loader --save-dev :</strong> Para cargar proyectos typescript en webpack...</p>
 
-          <strong>.each():</strong> .<br/>
-          <strong>this <code>or</code> $(this):</strong> .<br/>
-          <hr></hr><br/>
 
-          <strong>.find():</strong> .<br/>
-          <strong>.closets():</strong> .<br/>
-          <strong>.parent():</strong> .<br/>
-          <strong>.parents():</strong> .<br/>
-          <strong>.children():</strong> .<br/>
-          <strong>.siblings():</strong> .<br/>
-          <strong>.next():</strong> .<br/>
-          <strong>.pnextAll():</strong> .<br/>
-          <strong>.prev():</strong> .<br/>
-          <strong>.prevAll():</strong> .<br/>
-          <strong>.add():</strong> .<br/>
-          <strong>.filter():</strong> .<br/>
-          <strong>.parent():</strong> .<br/>
-          <strong>.parents():</strong> .<br/>
-          <hr></hr><br/>
-
-          <div  className="bigtitle">Selectores</div><br/>
-          <br/>
-          <strong>:button:</strong> .<br/>
-          <strong>:checkbox:</strong> .<br/>
-          <strong>:checked: </strong>.<br/>
-          <strong>:disabled: </strong>.<br/>
           <hr></hr><br/>
 
           <br/>
