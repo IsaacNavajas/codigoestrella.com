@@ -1,6 +1,6 @@
 import React from 'react';
 import image1 from "../source/codezen 16.png";
-
+import image2 from "../source/codezen static.png";
 
 function Typescript(){
 
@@ -54,12 +54,12 @@ function Typescript(){
             <li><p><strong>+ Array"menor que"string, number"mayor que":</strong> Crea un tipo de array de diferentes tipos number, string, booleano...</p></li>
           </ul>
           <p><strong>Tupla:</strong> Una tupla sirve para darle a un array diferentes tipos -> <strong>[string, booleano]</strong> definiendo cada uno de estos valores.</p>
-          <p><strong>Enum:</strong> cuando queremos enumerar un conjunto de valores a traves de un objeto.</p>
+          <p><strong>Enum:</strong> cuando queremos enumerar para anidar constantes a traves de un objeto, podemos acceder a las instancias pero no sobrescribirlas.</p>
 
         
           <strong>Unión de Tipos, Alias y Tipos Literales :</strong> <br/>
           <ul>
-            <li><p><strong>+ Unión de Tipos:</strong> Para unir tipos lo aremos a tra ves de |. let User: number | string =. </p></li>
+            <li><p><strong>+ Unión de Tipos:</strong> Para unir tipos lo aremos a traves de | "pipe" o &. let User: number | string =... let User: number & string =... (Son los Operadores de typescript & es como && y | es como || en javascript pero con tipeados). </p></li>
             <li><p><strong>+ Alias:</strong> Los alias suelen ser usados para concatenar una union de tipos con un nuevo nombre que conforman ese conjunto de tipos se hace a traves de <strong>type</strong> -> type Idvar= number|string; let IdUser:Idvar=  .</p></li>
             <li><p><strong>+ Tipos Literales:</strong> Para definir solo valores que ya tengamos definidos, por ejemplo; type Ej: '100x100' | '200x200; let ejercicio:Ej = '100x100' -> En este ejemplo no puede tener otro valor que no sea 100x100 o 200x200, si nos da cualquier otro valor nos saldra error.</p></li>
           </ul>
@@ -69,7 +69,7 @@ function Typescript(){
             <li><p>+ let username:any=<strong>(username as string)</strong>.lenght.</p></li>
           </ul>
 
-          <p><strong>Funciones:</strong> Hay varias formas de de tipar una function .</p>
+          <p><strong>Funciones:</strong> Hay varias formas de tipar una function, en base a los parametros y tipando cada parametro y tambien el tipo de dato que retorna ( string, boolean... ) si nuestra funcion no retorna ningun valor agregaremos el tipado void.</p>
           <ul>
             <li><p>+ function codigoestrella<strong>(color:string, codigo:string, visible?:boolean):</strong> El uso de colocar <strong>?</strong> despues de valor, como es en el caso de visible? quiere decir que puede que ese valor no llegue a estar definido. Codigoestrella('red', 'typescript').</p></li>
             <li><p>+ Interface User => <strong>readonly id: number; username:string;</strong> El uso de colocar <strong>readonly</strong> despues de valor, como es en el caso de readonly id: number; se usa para definir solo el valor dado y no poder ser sobrescrito varias veces.</p></li>
@@ -78,7 +78,9 @@ function Typescript(){
           <hr></hr><br/>
 
           <p>En typescript desde la version 3.8, si queremos tener un encapsulamiento de private podemos usar <strong>#</strong> como pseudonimo, haciendo anotacionn en todos y cada uno de sus usos.</p>
-
+          <hr></hr>
+          <img src={image2} className="col-12 imagehtml"></img>
+          <p><strong>static: </strong>Los metodos static son dependientes de su propia clase y no de su instancia, en vez de anteponer la nomenclatura this. usaremos la clase. (Circle.) </p>
           <hr></hr><br/>
 
 

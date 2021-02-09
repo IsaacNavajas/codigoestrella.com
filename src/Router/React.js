@@ -42,8 +42,7 @@ class Pagereact extends React.Component{
 
           <p><strong>npm rm --save package-name:</strong> para desinstalar un paquete instalado en Node (npm), con --save lo elimina también del package.json .</p>
 
-          
-          <br/><br/>
+          <br/>
           <button 
                       className="buttonphp btn btn-dark" 
                       onClick={this.openModal}
@@ -52,7 +51,17 @@ class Pagereact extends React.Component{
           </button>
 
 
+          <hr></hr>
           <br/>
+          <a 
+            href="https://gpolanco.com/proyecto-react-con-typescript/#:~:text=Agregar%20TypeScript%20en%20create%20react,de%20las%20dependencias%20de%20react.&text=Una%20vez%20instalada%20las%20dependencias,desarrollo%20para%20aplicar%20los%20cambios." 
+            target="https://gpolanco.com/proyecto-react-con-typescript/#:~:text=Agregar%20TypeScript%20en%20create%20react,de%20las%20dependencias%20de%20react.&text=Una%20vez%20instalada%20las%20dependencias,desarrollo%20para%20aplicar%20los%20cambios." 
+            className="Link">
+              Usar_Typescript_con_React.
+          </a><br/><br/>
+
+          <p><strong>npx create-react-app mi-app --template typescript:</strong> para instalar un nuevo proyecto react de nombre mi-app con typescript, los archivos de react dentro del proyecto cambiaran la nomenclatura automaticamente => ejemplo.tsx.</p>
+
           <hr></hr><br/>
 
           <h2  className="bigtitle">Componentes de React</h2><br/>

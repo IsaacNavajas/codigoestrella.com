@@ -41,6 +41,8 @@ function Pagereact(){
           <hr></hr>
           <h4 className="bigtitle font">Constructor, get y set</h4>
           <div className=" col-12"><img src={imagecarbon2} className="imagecarbon"></img></div>
+          <p className="subrayado"> Los miembros estáticos de una clase son métodos y propiedades que residen en el objeto del constructor y no en cada uno de los objetos creados a partir de ella.
+          .</p>   
           <hr></hr>
         </div>
         <div>
