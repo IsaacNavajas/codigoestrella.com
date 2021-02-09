@@ -223,6 +223,7 @@ font-size: 40px;
 .position_button{
   padding-right:0px;
   padding-top:110px;
+  margin-top: -205px;
 }
 
 .titulo{
@@ -238,7 +239,7 @@ font-size: 40px;
   margin:auto;
   margin-left:3%;
   margin-right:30%;
-  margin-top: 57px;
+  margin-top: 50px;
 }
 
 .h1{

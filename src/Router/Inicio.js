@@ -3,15 +3,42 @@ import Image from '../source/codezen 15.png';
 import ImageTCP from '../source/imageTCP.png';
 import ImageDNS from '../source/imagenExplicacionDNS.png';
 
+import imagelogo from '../source/spam.png';
+
 class Inicio extends React.Component{
+  state={
+    temporizador: 0,
+    desaparecer : false
+  }
 
-  render(){
+  componentDidMount = () => {
+    this.primertemporizador = setTimeout(()=>{  this.setState({temporizador:1}) }, 1000);
+    this.segundotemporizador = setTimeout(()=>{  this.setState({temporizador:2}) }, 1200);
+    this.tercertemporizador = setTimeout(()=>{  this.setState({temporizador:3}) }, 3000);
+    this.cuartotemporizador = setTimeout(()=>{  this.setState({temporizador:4}) }, 3090);
+    this.quintotemporizador = setTimeout(()=>{  this.setState({temporizador:5, desaparecer:true}) }, 3600);
+  }
 
-    return (
+  componentWillUnmount= () => {
+    clearTimeout( this.primertemporizador );
+    clearTimeout( this.segundotemporizador );
+    clearTimeout( this.tercertemporizador );
+    clearTimeout( this.cuartotemporizador );
+    clearTimeout( this.quintotemporizador );
+ }
       
-      <React.Fragment>
-        <div className="container">
-      <h2 className="bigtitle font">Expresiones regulares </h2>    
+  render(){
+    return (
+    <React.Fragment>
+      
+      <div className="inicio">
+      <div className="container">
+      
+    
+      {this.state.desaparecer == true && 
+        <div>
+          <br/> 
+          <h2 className="bigtitleWhite font">Expresiones regulares </h2>    
       
           <div className=" col-12"><img src={Image} className="imagecarbon"></img></div>
           <ul>
@@ -30,7 +57,7 @@ class Inicio extends React.Component{
           <br/>
 
 
-      <h2 className="bigtitle font">PC </h2>    
+      <h2 className="bigtitleWhite font">PC </h2>    
       
         <p><strong>- CPU :</strong> es el corazon de la maquina y una de las partes mas caras, se encarga de procesar todos los datos.</p>
         <p><strong>- RAM :</strong> en ella se utiliza la informacion que esta utilizando en el momento.</p>
@@ -58,7 +85,7 @@ class Inicio extends React.Component{
         <br/>
         
         
-      <h2 className="bigtitle font">Protocolos de red </h2> 
+      <h2 className="bigtitleWhite font">Protocolos de red </h2> 
 
       <div><img src={ImageTCP} className="col-5 mitad"></img></div>
 
@@ -79,16 +106,51 @@ class Inicio extends React.Component{
       </div>   
 
 
-
-        </div >
-      </React.Fragment>
-
-    );
-    
-  }
+ 
+        </div>
+        ||
+        <div className="desaparecer"></div>
+      }
 
 
+  
 
+        <center>
+          {this.state.desaparecer == false && <img src={imagelogo} className="logoCodigoEstrellla " alt="imagen robot"/>}
+          {this.state.desaparecer == true && <img src={imagelogo} className=" desaparecerimagen" />}
+          
+          {this.state.desaparecer == false &&
+          <div id="lineagris" className="lineagris" >
+          {this.state.temporizador == 0 && <div className="linea-amarilla-primera"></div>}
+          {this.state.temporizador == 1 && <div className="linea-amarilla-segunda"></div>}
+          {this.state.temporizador == 2 && <div className="linea-amarilla-tercera"></div>}
+          {this.state.temporizador == 3 && <div className="linea-amarilla-cuarta"></div>}
+          {this.state.temporizador == 4 && <div className="linea-amarilla-quinta"></div>}
+          {this.state.temporizador == 5 && <div className="linea-amarilla-sexta"></div>}
+          
+        </div>
+        
+          ||
+          this.state.desaparecer == true && <div id="lineagris" className="lineagrisdesaparecer"></div>}
+          
+        </center>
+
+        <br/>
+        <br/>
+      </div>
+      </div>
+    </React.Fragment>
+  );
+}   
 }
 
 export default Inicio;
+
+
+
+
+
+
+
+
+

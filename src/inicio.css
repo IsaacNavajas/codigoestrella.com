@@ -3,27 +3,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Duru+Sans&family=Open+Sans+Condensed:wght@300&display=swap');
 
 
-.apple {
+.inicio {
   max-width: 100%;
   text-align: justify;
   color:white;
   background-color: black;
-  padding-bottom: 1000px;
+  padding-bottom: 0%;
   font-family: 'Duru Sans', sans-serif;
+  z-index:-10;
 }
 
-.logoapple{
+.logoCodigoEstrellla{
   visibility: visible;
   margin-top: 90px;
   width: 120px;
 }
 
+.bottomCodigoEstrellla{
+    display: inline;
+    margin-bottom: 90%;
+}
+
 .lineagris{
   position:relative;
-  margin-top: 60px;
+  margin-top: 100px;
   width: 400px;
   height: 4px;
-
+  margin-bottom: 180%;
   background-color: rgb(78, 78, 78);
 
 }
@@ -38,52 +44,52 @@
 
 }
 
-.lineablanca-primera{
+.linea-amarilla-primera{
   position:relative;
   float:left;
   width: 40px;
   height: 4px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 230, 0);
   transition: all 2s;
 }
 
-.lineablanca-segunda{
+.linea-amarilla-segunda{
   position:relative;
   float:left;
   width: 150px;
   height: 4px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 230, 0);
   transition: all 2s;
 }
 
-.lineablanca-tercera{
+.linea-amarilla-tercera{
   position:relative;
   float:left;
   width: 250px;
   height: 4px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 230, 0);
   transition: all 2s;
 }
 
-.lineablanca-cuarta{
+.linea-amarilla-cuarta{
   position:relative;
   float:left;
   width: 370px;
   height: 4px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 230, 0);
   transition: all 2s;
 }
 
-.lineablanca-quinta{
+.linea-amarilla-quinta{
   position:relative;
   float:left;
   width: 410px;
   height: 4px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 230, 0);
   transition: all 2s;
 }
 
-.lineablanca-sexta{
+.linea-amarilla-sexta{
   position:relative;
   float:left;
   width: 0px;
@@ -106,4 +112,16 @@
 .aparecer{
   transition: all 2s;
 }
+
+.bigtitleWhite{
+    font-size: 50px;
+    color:transparent;
+    font-family: 'Fredericka the Great', cursive;
+    background-image: url("https://i.ibb.co/mq7vPkz/star-3.jpg");
+    background-position: center;
+    -webkit-background-clip: text;
+  
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
 

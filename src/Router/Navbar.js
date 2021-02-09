@@ -20,10 +20,7 @@ class Navbar extends React.Component{
                       <h1 className="title-codigoestrella-english col-12" id="title">Codigoestrella.com</h1>
                     }
 
-                  <div className="position_button col-12">
-                      {this.props.verifyLanguage && <Link to="/ruta-siete"><button type="submit" className="button btn btn-secondary" >Javascript</button></Link>}
-                      {!this.props.verifyLanguage && <Link to="/ruta-siete"><button type="submit" className="button btn btn-secondary" >Answers</button></Link>}
-                  </div>
+
 
             </div>
               <img src={image} className="imagen col-6" alt="imagen robot"></img>
