@@ -21,8 +21,7 @@ class Laravel extends React.Component{
 
 
   render(){
-console.log(this.props.verifyLanguage)
-    
+
     return (
 
       
@@ -177,7 +176,7 @@ console.log(this.props.verifyLanguage)
           <h2  className="bigtitle">Factories</h2>
           <br/>
           <br/>
-          <p><strong>php artisan make:factory:</strong> para crear un factory, se va a guardar en database/factories/, hay que señalar que modelo asignamos a ese factory -> protected $model = Post::class; <spam className="subrayado">php artisan make:factory PostFactory --model=Post</spam> para asignar el model al que queremos concatenarlo directamente.</p>
+          <p><strong>php artisan make:factory:</strong> para crear un factory, se va a guardar en database/factories/, hay que señalar que modelo asignamos a ese factory -> protected $model = Post::class; <u className="subrayado">php artisan make:factory PostFactory --model=Post</u> para asignar el model al que queremos concatenarlo directamente.</p>
           <p><strong>factory(App\Post::class, 30)->create():</strong> entramos a Tinker y desde ahi creamos 30 factories.</p>
           <p><strong>Post::factory()->count(12)->create():</strong> para crear un factory() desde codigo.</p>
 
@@ -227,9 +226,9 @@ console.log(this.props.verifyLanguage)
           <h2  className="bigtitle">Accesores y mutadores</h2>
           <br/>
           <br/>
-          <p><strong>get(Attribute)Attribute:</strong> crearemos un accesor dandole como nombre de function dentro de get(crear_accesor)Attribute, en el modelo elegido y meteremos la logica deseada ejemplo <spam className="subrayado">getNombreEnMayusculasAttribute</spam> separaremos entre mayusculas cada palabra.</p>
+          <p><strong>get(Attribute)Attribute:</strong> crearemos un accesor dandole como nombre de function dentro de get(crear_accesor)Attribute, en el modelo elegido y meteremos la logica deseada ejemplo <u className="subrayado">getNombreEnMayusculasAttribute</u> separaremos entre mayusculas cada palabra.</p>
           <p><strong>$firstName = $user->nombre_en_mayusculas:</strong> para llamar a la function separaremos siempre entre ( _ ) las palabras, para saber como se separan unas de otras se usan mayusculas.</p>
-          <p>Los mutadores son iguales que los accesores pero recibe el valor del atributo. ejemplo: $this->attributes['first_name'] = strtolower($attributeValue); y se definen como <spam class="subrayado">set(crear_mutadores)Attribute</spam> varia el metodo set en vez del get.</p>
+          <p>Los mutadores son iguales que los accesores pero recibe el valor del atributo. ejemplo: $this->attributes['first_name'] = strtolower($attributeValue); y se definen como <u class="subrayado">set(crear_mutadores)Attribute</u> varia el metodo set en vez del get.</p>
          
           <br/>
           <hr></hr>

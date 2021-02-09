@@ -18,7 +18,6 @@ class Laravel extends React.Component{
 
 
   render(){
-console.log(this.props.verifyLanguage)
     
     return (
 

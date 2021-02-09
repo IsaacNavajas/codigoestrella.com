@@ -56,7 +56,7 @@ function Docker(){
 
           <p><strong>docker pull redis:</strong> lo que va hacer docker pull es traerno una imagen que no tenemos. Por defecto nos va a instalar la ultima version pero podemos instalar una imagen con la version que elijamos de hub.docker; docker pull ubuntu:18.04</p>
           <p><strong>docker image ls:</strong> nos va a mostrar las imagenes que tenemos en nuestra computadora y las que podemos instalar, si necesitamoss alguna otra lo haremos con docker pull eligiendo la imagen existente del repositorio <a href="https://hub.docker.com/search?type=image" target="https://hub.docker.com/search?type=image" className="Link">Hub.docker</a></p>
-          <p><strong>Crear una imagen: </strong> touch Dockerfile para crear el archivo;
+          <p><strong>Crear una imagen: </strong> touch Dockerfile para crear el archivo;</p>
           <br/>
           <img src={image} className="imagehtml col-12"></img> <br/>
           <ul>
@@ -64,7 +64,7 @@ function Docker(){
             <li><p><strong>+ docker run -it ubuntu:hola-mundo:</strong> para crear un nuevo contenedor de nuestra imagen creada. Si vamos a ls -lac /usr/src veremos nuestro hola mundo, que es lo que hemos creado en la imagen.</p></li>
             <li><p><strong>+ (docker tag ubuntu:hola-mundo gvilarino/ubuntu:hola-mundo) + (docker push "nombre del hub.docker"/ubuntu:hola-mundo):</strong> para mandar una imagen a hub.docker, primero creamos un atajo, un tag y despues lo puseamos.</p></li>
           </ul>
-          </p>
+  
           <br/>
           <p><strong>docker history ubuntu:hola-mundo: </strong>nos muestra todas las capas que tiene esta imagen .</p>
           <p><strong><a href="https://github.com/wagoodman/dive" target="https://github.com/wagoodman/dive" className="Link">--> dive</a>:</strong> dive es un plugin open source, <strong>dive ubuntu:hola-mundo</strong> para analizar en varias vistas como esta contruida esa imagen, si pulsamos <strong> cntrol + u</strong> podemos ver que archivos han cambiado.</p>

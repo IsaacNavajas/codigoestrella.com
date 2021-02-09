@@ -111,13 +111,13 @@ function Mysql(){
           <li><p><strong>-LIMIT: se usa para limitar la cantidad de resultados que arroja el query. </strong></p></li>
 
           
-          <p><strong>GROUP BY: </strong>agrupa conjuntos del mismo valor de la tupla asignada. Por ejemplo; <spam className="subrayado">SELECT apellido, avg(nota) AS conjunto FROM alumnos GROUP BY apellido</spam> -> haz una media de las notas agrupando los que se apelliden igual.</p>
+          <p><strong>GROUP BY: </strong>agrupa conjuntos del mismo valor de la tupla asignada. Por ejemplo; <u className="subrayado">SELECT apellido, avg(nota) AS conjunto FROM alumnos GROUP BY apellido</u> -> haz una media de las notas agrupando los que se apelliden igual.</p>
           <img src={imagetuplasdos} ></img>
           <img src={imagetuplas}></img>
           
           <br/><br/>
           <p><strong>HAVING: </strong>los filtros que quiero que tengan mis datos pertenecientes y con dependiencia de ORDER BY, se pone después de group by. (Funciona como WHERE pero en el capsulamiento de GROUP BY). 
-          <spam className="subrayado"> SELECT apellido, avg(nota) AS conjunto FROM alumnos GROUP BY apellido HAVING apellido="jaime"</spam>.</p>
+          <u className="subrayado"> SELECT apellido, avg(nota) AS conjunto FROM alumnos GROUP BY apellido HAVING apellido="jaime"</u>.</p>
           <img src={imagetuplastres}></img>
           <br/><br/>
           <hr></hr><br/>

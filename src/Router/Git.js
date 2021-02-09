@@ -47,7 +47,7 @@ function Git(){
           <p><strong>git branch -d:</strong> para borrar la rama.</p>
           <p><strong>git merge:</strong> para juntar mas de una rama. Primero posicionarte en la ramaque queremos juntar las ramas y después llamar a la otra rama; $master: git marge supercabecera</p>
           <br/>
-          <p><span className="subrayado"><strong>--help</strong> podemos agregar el parámetro help para buscar un comando o interpretar su funcionamiento.</span></p>
+          <p><u className="subrayado"><strong>--help</strong> podemos agregar el parámetro help para buscar un comando o interpretar su funcionamiento.</u></p>
           <p><strong>gitk:</strong> nos TODOS los detalles de los commits con una interfaz gráfica.</p>
           <p><strong>git rebase:</strong> es una mala practica. Agarra toda la rama y la agrega a la otra rama, al hacer rebase se solapan TODOS los archivos. Siempre es mejor hacer un git merge.</p>
           <p>Directorio ---------------------------- Staging ---------------------------- Repositorio</p>
@@ -84,7 +84,7 @@ function Git(){
           <hr></hr><br/>
           <h2  className="bigtitle">GitHub (comandos elitistas)</h2><br/>
           <br/>
-          <p><strong>git stash:</strong> crea un estado de memoria. Se utiliza por ejemplo cuando queremos ir a otro hash pero no queremos hacer commit.<p/>
+          <p><strong>git stash:</strong> crea un estado de memoria. Se utiliza por ejemplo cuando queremos ir a otro hash pero no queremos hacer commit.</p>
           <p><strong>git stash drop: </strong>para borrar un stash.</p>
           <p><strong>git stash pop:</strong> abrimos el stash.</p>
           <p><strong>git stash list:</strong> nos enseña nuestros stash.</p>
@@ -100,7 +100,7 @@ function Git(){
           <p><strong>git grep -n gato:</strong> aparecerá un output diciéndonos en que linea esta la palabra gato.</p>
           <p><strong>git grep -c gato: </strong>aparecerá un output diciéndonos cuantas veces se repíte la palabra gato.</p>
 
-          </p>
+      
           <br/>
           <br/>
           

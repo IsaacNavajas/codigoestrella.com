@@ -25,7 +25,7 @@ function Vue(){
           <div className="col-6 mitad">
             <center>En Html</center>
             <hr className="linea-discontinua" />
-          <p><strong>"condicional" ? "Opcion True" : "Opcion False"</strong> es el <spam class="subrayado">operador ternario</spam> y se utiliza entre doble corcheas para meter condicionales como valores.</p>
+          <p><strong>"condicional" ? "Opcion True" : "Opcion False"</strong> es el <u class="subrayado">operador ternario</u> y se utiliza entre doble corcheas para meter condicionales como valores.</p>
           <p><strong>v-bind:</strong> v-bind:src="", v-bind:alt="name"... v-bind: sirve para bindear desde el html los valores de data() de dentro de new Vue. data() return name: 'Bitcoin'. Si queremos bindear un valor directamente lo englobaremos dentro de 'doble corcheas'.</p>
           <p><strong>v-if=""</strong> para bindear una condicional, los valores los cogera desde data().</p>
           <ul>
@@ -54,8 +54,8 @@ function Vue(){
           
             <li><p><strong>+ properties y watchers:</strong> Les podemos dar a estas funciones el nombre que prefiramos;</p></li>
             <ul>
-              <li><li><p><strong>- properties:</strong> son funciones que siempre devuelven un valor, podemos agregar un nuevo objeto dentro de la propiedad de data().</p></li></li>
-              <li><li><p><strong>- watchers:</strong> en vez de ser funciones que devuelven un valor estas ejecutan un codigo.</p></li></li>
+              <li><p><strong>- properties:</strong> son funciones que siempre devuelven un valor, podemos agregar un nuevo objeto dentro de la propiedad de data().</p></li>
+              <li><p><strong>- watchers:</strong> en vez de ser funciones que devuelven un valor estas ejecutan un codigo.</p></li>
             </ul>
 
           </ul>

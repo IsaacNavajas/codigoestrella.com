@@ -39,7 +39,7 @@
         {"name": "Math.sign(numero): ", "id":33, "description": " para saber si un numero es negativo o positivo, (sus valores son -1 o +1)."},
         {"name": "let badge = new Array(10).fill(0).map(() => Math.floor(Math.random() * 8)); ", "id":34, "description": " crear un nuevo array con diez valores distintos con numeros random."},
         {"name": ".target: ", "id":35, "description": " el elemento que recibe el evento."},
-        {"name": ".value: ", "id":35, "description": " para recoger el valor de un elemento como un input."}
+        {"name": ".value: ", "id":36, "description": " para recoger el valor de un elemento como un input."}
       ],
 
       "results_arrayenjavascript":[

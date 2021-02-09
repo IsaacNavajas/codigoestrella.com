@@ -1,7 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom";
-import imagecarbon1 from "../source/codezen 1.png";
-import imagecarbon2 from "../source/codezen 2.png";
+
 
 function Pagereact(){
 

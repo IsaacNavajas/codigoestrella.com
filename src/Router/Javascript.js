@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from './Modal';
 
-import data from './Javascript.json';
+import data from './DataJavascript.json';
 import JQuery from './JQuery';
 import TypescriptModal from './TypescriptModal';
 
@@ -59,16 +59,18 @@ class Javascript extends React.Component{
 
           <br/>
 
-        <TypescriptModal/><br/>
+        <ul>
+          <li><TypescriptModal/></li><br/>
 
-     
+          <li>
             <button 
                         className="buttonphp btn btn-dark" 
                         onClick={this.openModal}
                       >
                       JQuery
             </button>
-
+          </li>
+        </ul>
           
           
 
