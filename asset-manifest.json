@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf6e600b.chunk.css",
-    "main.js": "/static/js/main.884f09d8.chunk.js",
-    "main.js.map": "/static/js/main.884f09d8.chunk.js.map",
+    "main.css": "/static/css/main.6d8b8bcd.chunk.css",
+    "main.js": "/static/js/main.13a87de5.chunk.js",
+    "main.js.map": "/static/js/main.13a87de5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ec26966.js",
     "runtime-main.js.map": "/static/js/runtime-main.2ec26966.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.0272c24b.chunk.js": "/static/js/2.0272c24b.chunk.js",
-    "static/js/2.0272c24b.chunk.js.map": "/static/js/2.0272c24b.chunk.js.map",
+    "static/js/2.e7953244.chunk.js": "/static/js/2.e7953244.chunk.js",
+    "static/js/2.e7953244.chunk.js.map": "/static/js/2.e7953244.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.30a7d98f1d20b4650a91f790536516a0.js": "/precache-manifest.30a7d98f1d20b4650a91f790536516a0.js",
+    "precache-manifest.b79c6ad2d657a033195bb9b29bad80f1.js": "/precache-manifest.b79c6ad2d657a033195bb9b29bad80f1.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.bf6e600b.chunk.css.map": "/static/css/main.bf6e600b.chunk.css.map",
-    "static/js/2.0272c24b.chunk.js.LICENSE.txt": "/static/js/2.0272c24b.chunk.js.LICENSE.txt",
+    "static/css/main.6d8b8bcd.chunk.css.map": "/static/css/main.6d8b8bcd.chunk.css.map",
+    "static/js/2.e7953244.chunk.js.LICENSE.txt": "/static/js/2.e7953244.chunk.js.LICENSE.txt",
     "static/media/archivocomprimido.png": "/static/media/archivocomprimido.b9863c69.png",
     "static/media/archivos.zip": "/static/media/archivos.ac33cf1e.zip",
+    "static/media/celtics.png": "/static/media/celtics.f488f496.png",
     "static/media/codezen 1.png": "/static/media/codezen 1.49b3fc8c.png",
     "static/media/codezen 10.png": "/static/media/codezen 10.82931b6d.png",
     "static/media/codezen 11.png": "/static/media/codezen 11.1cd951ad.png",
@@ -53,8 +54,8 @@
   "entrypoints": [
     "static/js/runtime-main.2ec26966.js",
     "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.0272c24b.chunk.js",
-    "static/css/main.bf6e600b.chunk.css",
-    "static/js/main.884f09d8.chunk.js"
+    "static/js/2.e7953244.chunk.js",
+    "static/css/main.6d8b8bcd.chunk.css",
+    "static/js/main.13a87de5.chunk.js"
   ]
 }

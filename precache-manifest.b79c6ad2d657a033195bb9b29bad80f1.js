@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0b926e501fb0a01a07e15b6b3d11bf23",
+    "revision": "818a7d3cc458dd30bcce2cb1408e5d5b",
     "url": "/index.html"
   },
   {
-    "revision": "e5df7abaca951314b3ba",
+    "revision": "a87193e54e17ba415a67",
     "url": "/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "3f9a40dec53b3bf0b02a",
-    "url": "/static/css/main.bf6e600b.chunk.css"
+    "revision": "d8de4075c6b52f46a8b9",
+    "url": "/static/css/main.6d8b8bcd.chunk.css"
   },
   {
-    "revision": "e5df7abaca951314b3ba",
-    "url": "/static/js/2.0272c24b.chunk.js"
+    "revision": "a87193e54e17ba415a67",
+    "url": "/static/js/2.e7953244.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/static/js/2.0272c24b.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.e7953244.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3f9a40dec53b3bf0b02a",
-    "url": "/static/js/main.884f09d8.chunk.js"
+    "revision": "d8de4075c6b52f46a8b9",
+    "url": "/static/js/main.13a87de5.chunk.js"
   },
   {
     "revision": "3c3f1816a6eeafdc4489",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ac33cf1ee3b05d275727525697bca680",
     "url": "/static/media/archivos.ac33cf1e.zip"
+  },
+  {
+    "revision": "f488f49669adbd8f2f8a7a8e668f0946",
+    "url": "/static/media/celtics.f488f496.png"
   },
   {
     "revision": "49b3fc8cd83e09e9b1c8d1d35c30ae89",
