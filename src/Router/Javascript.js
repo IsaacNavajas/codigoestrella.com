@@ -6,6 +6,8 @@ import JQuery from './JQuery';
 import TypescriptModal from './TypescriptModal';
 
 import image from "../source/image javascript.png";
+import imagePromise from "../source/codezen promesas.png";
+import callbacks from "../source/codezen callbacks.png";
 
 class Javascript extends React.Component{
   state = {
@@ -130,9 +132,26 @@ class Javascript extends React.Component{
             <p> <strong>{badge.name} </strong> {badge.description}</p>
           </div>
         </ul>)}
+        
+        <hr></hr><br/>
+        <div className="bigtitle">Multiples promesas</div>
+          <center>
+            <div className="mitad col-12">
+              <img src={imagePromise}></img>
+              <hr></hr><br/>
+            </div>
+          </center>
 
+        <div className="bigtitle">Callbacks</div>
+          <center>
+            <div className="mitad col-12">
+              <img src={callbacks}></img>
+              <br/><br/>
+            </div>
+          </center>
 
         </div>
+
 
 
         

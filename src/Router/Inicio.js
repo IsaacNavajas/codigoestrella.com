@@ -5,6 +5,7 @@ import ImageDNS from '../source/imagenExplicacionDNS.png';
 
 import imagelogo from '../source/spam.png';
 
+
 class Inicio extends React.Component{
   state={
     temporizador: 0,
@@ -38,6 +39,7 @@ class Inicio extends React.Component{
       {this.state.desaparecer == true && 
         <div>
           <br/> 
+
           <h2 className="bigtitleWhite font">Expresiones regulares </h2>    
       
           <div className=" col-12"><img src={Image} className="imagecarbon"></img></div>

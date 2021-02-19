@@ -4,7 +4,8 @@ import PhpUnit from './PhpUnit';
 import Modal from './Modal';
 import Php from './Php';
 import ControllerLaravel from './controllerLaravel.js';
-import ntl from "../source/ntl.gif";
+
+import imagecarbon1 from "../source/codezen 19.png";
 
 
 class Laravel extends React.Component{
@@ -117,7 +118,10 @@ class Laravel extends React.Component{
           <h2  className="bigtitle">Controller</h2>
           <br/>
           <br/>
-          <p>Para encapsular lógica de control.</p>
+          <p><strong>Model Biding :</strong>Laravel tiene la opcion de llamar como argumento el modelo directamente, a esta tecnica se le llama Model Biding. </p> 
+
+          <div className=" col-12"><img src={imagecarbon1} className="imagecarbon"  title="imagen api externa"></img></div>
+
           <br/>
 
           <div><ControllerLaravel 
@@ -130,8 +134,6 @@ class Laravel extends React.Component{
           <br/>
           <hr></hr>
           <br/><br/>
-
-          
 
           
 
@@ -157,6 +159,8 @@ class Laravel extends React.Component{
             className="Link">
               enlace_de_la_documentación
           </a>
+          <br/><br/>
+          <u className="subrayado">Con Eloquent podemos trabajar con datos con <strong>colecciones y serialización</strong>, colecciones es la forma de trabajar con muchos metodos para poder trabajar facilmente todos nuestros datos, serialización es la manera de convertir estos datos, ya sea en un array, un json... </u>
           <br/>
           <br/>
           <hr></hr>
@@ -231,19 +235,10 @@ class Laravel extends React.Component{
           <p>Los mutadores son iguales que los accesores pero recibe el valor del atributo. ejemplo: $this->attributes['first_name'] = strtolower($attributeValue); y se definen como <u class="subrayado">set(crear_mutadores)Attribute</u> varia el metodo set en vez del get.</p>
          
           <br/>
-          <hr></hr>
+     
           <br/><br/>
         
-          <h2  className="bigtitle">ntl (npm task list)</h2>
-          <br/>
-          <br/>
-          
-          <p className="col-12">para seleccionar la tarea de forma más interactiva (npm run start, npm run dev, npm run serve, npm run build, npm run test, npm run deploy.)</p>
-          <img src={ntl} className="col-8 imagentl"></img>
-       
-          <br/>
-         
-          <br/><br/>
+
         </div>
 
 

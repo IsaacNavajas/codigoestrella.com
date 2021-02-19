@@ -9,6 +9,9 @@ import imagecarbon4 from "../source/codezen 4.png";
 import imagecarbon5 from "../source/codezen 5.png";
 import imagecarbon6 from "../source/codezen 6.png";
 
+import imagecarbon7 from "../source/codezen 17.png";
+import imagecarbon8 from "../source/codezen 18.png";
+
 class Pagereact extends React.Component{
   state={
     openModal: false
@@ -141,8 +144,23 @@ class Pagereact extends React.Component{
             <br/>
             </div>
           
+            <br/>
+          <hr></hr><br/>
+          <br/>
+
+          <h2  className="bigtitle">Llamadas Api con const</h2><br/>
+          <br/>
+          <div  className="imagecarbon col-12">
+ 
+
+          <div className=" col-6"><img src={imagecarbon7} className="imagecarbon"  title="imagen api llamada const"></img></div>
+          <div className=" col-6"><img src={imagecarbon8} className="imagecarbon"  title="imagen api const"></img></div>
 
 
+          <br/>
+          </div> <br/>
+          <hr></hr><br/>
+          <br/>
 
           <h2  className="bigtitle">Hooks</h2><br/>
           <br/>

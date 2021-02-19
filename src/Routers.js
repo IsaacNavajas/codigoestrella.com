@@ -21,6 +21,7 @@ import Reactrouter from './Router/Reactrouter';
 import BuildEnglish from './Router/English/buildEnglish';
 import InicioEnglish from './Router/English/InicioEnglish';
 import ApiLumen from './Router/ApiLumen';
+import Node from './Router/Node';
 import Docker from './Router/Docker';
 import Vue from './Router/Vue';
 
@@ -114,6 +115,8 @@ class Router extends React.Component {
                       {this.state.verifyLanguage && <Route exact path="/ruta-tres/laravel" component={Laravel}/> || <Route exact path="/ruta-tres" component={BuildEnglish}/>}
 
                       {this.state.verifyLanguage && <Route exact path="/ruta-tres/api-lumen" component={ApiLumen}/>}
+
+                      {this.state.verifyLanguage && <Route exact path="/ruta-tres/node" component={Node}/>}
 
                       {this.state.verifyLanguage && <Route exact path="/ruta-dos" component={htmlyCss}/> || <Route exact path="/ruta-dos" component={BuildEnglish}/>}
 

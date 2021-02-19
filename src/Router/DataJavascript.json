@@ -43,19 +43,21 @@
       ],
 
       "results_arrayenjavascript":[
-        {"name": "variable.filter(()=> ...): ", "id":1, "description": " Nos va a filtrar lo que necesitamos y nos devuelve un array."}, 
-        {"name": "variable.map(()=> ...): ", "id":2, "description": " Ejecuta los elementos de un array y devuelve un array con los elementos modificados. "},
+        {"name": "variable.filter(()=> ...): ", "id":1, "description": " Nos va a filtrar lo que necesitamos y nos devuelve un nuevo array."}, 
+        {"name": "variable.map(()=> ...): ", "id":2, "description": " Ejecuta los elementos de un array y devuelve un nuevo array con los elementos modificados a traves de una funcion. "},
         {"name": "variable.reduce(()=> ... ,0): ", "id":3, "description": " Sirve para reducir a un valor. Hay que darle una function y un valor inicial. "},
         {"name": ".push() : ", "id":4, "description": " Añade un elemento al final del array."},
         {"name": ".pop() : ", "id":5, "description": " Elimina el ultimo elemento del array."},
         {"name": ".unshift() : ", "id":6, "description": " Agrega un elemento al principio del array."},
         {"name": ".shift() : ", "id":7, "description": " borra el primer elemento del array."},
         {"name": ".indexOf() : ", "id":8, "description": " Nos dice la posición del elemento del array."},
-        {"name": ".forEach(()=> ...) : ", "id":9, "description": " Ejecuta la funcion por cada elemento del vector o array."}
+        {"name": ".find(()=> ...) : ", "id":9, "description": " Nos va a buscar el elementos que deseemos encontrar en el array."},
+        {"name": ".forEach(()=> ...) : ", "id":10, "description": " Ejecuta la funcion por cada elemento del vector o array, no va a crear un nuevo array sino que va a modificar el indicado."},
+        {"name": ".some(()=> ...) : ", "id":11, "description": " Nos va a dar una respuesta de verdadero o falso para la condicion que le indiquemos en el closure."}
       ],
 
       "results_mapjavascript":[
-        {"name": ".bind(): ", "id":1, "description": " enviamos la referencia a la función sin ejecutarla. Pasando el contexto por parámetro."}, 
+        {"name": ".bind(): ", "id":1, "description": " enviamos la referencia a la función sin ejecutarla. Pasando el contexto por parámetro. Ej; this.example.bind(this) Esto se suele utilizar para acceder a un this dentro de otro this."}, 
         {"name": ".call(): ", "id":2, "description": " ejecuta inmediatamente la función con el contexto indicado. "},
         {"name": ".apply(): ", "id":3, "description": " es similar a .call() pero los parámetros adicionales se pasan como un arreglo de valores. (array)."}
       ],

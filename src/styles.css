@@ -76,6 +76,31 @@ html, body {
   margin-right:15px;
 }
 
+.celtics{
+  width: 120px;
+  display:block;
+  padding-top:150px;
+  margin:auto;
+}
+
+.banderaverde{
+  margin-top:-100px;
+  height: 400px;
+  width: 100%;
+  background-color: #008141;
+  margin-bottom: 50px;
+}
+
+.listaceltics{
+  position:relative;
+  color:white;
+  font-size: 20px;
+  margin-left:70%;
+  text-align: left;
+  margin-top:-220px;
+
+}
+
 .linea{
   position:relative;
   width:2px;
@@ -87,7 +112,7 @@ html, body {
   border-radius: 10%;
   margin-top: 22px;
 }
-.linea-discontinua{border-top: 1px dashed rgb(204, 204, 204);}
+.linea-discontinua{border-top: 2px dashed rgb(204, 204, 204);}
 
 .footerdescripcion{
   position:relative;
@@ -498,13 +523,6 @@ font{  font-family: englisht;
   border : 5px solid black;
 }
 
-.imagentl{
-  border : solid rgba(255, 238, 0, 0.726);
-  margin-bottom: 40px;
-  margin-top: 20px;
-  margin-left: 10%;
-}
-
 .textoderecho{
   margin-left: 10%;
 }
@@ -555,6 +573,10 @@ font{  font-family: englisht;
 }
 
 li{
+  margin-left: 2%;
+}
+
+.nido{
   margin-left: 3%;
 }
 

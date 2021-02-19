@@ -12,7 +12,7 @@ function Pagereact(){
           <hr></hr>      
           <p><strong>Herencia :</strong> para crear hijos entre clases, usaremos la palabra extends en la clase hija para heredar la clase padre, en php solo se puede heredar de un padre. Una vez echa la herencia vamos a compartir sus métodos o a sobreescribirlos. Para heredar vamos a utilizar la palabra reservada <span className="subrayado"> extends</span> entre clases.</p>
           <p><strong>Abstracción :</strong> para aislar un elemento de su contexto o elementos (Interface, abstract, describir los metodos de una clase...).</p>
-          <p><strong>Polimorfismo :</strong> la habilidad que tienen los métodos para dar distintos resultados entre clases.</p>
+          <p><strong>Polimorfismo :</strong> cuando un mismo elemento se comporta de diferentes maneras y otorga tambien distintos resultados, la habilidad que tienen los métodos para dar distintos resultados entre clases.</p>
           <p><strong>Encapsulamiento :</strong> es el alcance; y puede ser public private y protected. Public habilitado para cualquier clase, private con un alcance único de la clase en la que se define y protected con un alcance de su clase y sus hijas.</p>
           <p><strong>Modularidad :</strong> dividir todo el sistema en diferentes módulos para simplificar el código.</p>
           <hr></hr>

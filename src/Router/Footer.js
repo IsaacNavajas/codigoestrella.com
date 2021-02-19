@@ -1,6 +1,6 @@
 import React from 'react';
 import image from "../source/spam.png";
-import {Link} from 'react-router-dom';
+
 
 
 
