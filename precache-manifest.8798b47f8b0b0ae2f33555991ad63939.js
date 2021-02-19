@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "818a7d3cc458dd30bcce2cb1408e5d5b",
+    "revision": "5c1cef0ba31ddbcb2b8e41f4d698ebe3",
     "url": "/index.html"
   },
   {
-    "revision": "a87193e54e17ba415a67",
+    "revision": "84e4d7cd62ef6e34359a",
     "url": "/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "d8de4075c6b52f46a8b9",
-    "url": "/static/css/main.6d8b8bcd.chunk.css"
+    "revision": "b7dafb7c805416343a6a",
+    "url": "/static/css/main.1115ffc6.chunk.css"
   },
   {
-    "revision": "a87193e54e17ba415a67",
-    "url": "/static/js/2.e7953244.chunk.js"
+    "revision": "84e4d7cd62ef6e34359a",
+    "url": "/static/js/2.0bf0529d.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/static/js/2.e7953244.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.0bf0529d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d8de4075c6b52f46a8b9",
-    "url": "/static/js/main.13a87de5.chunk.js"
+    "revision": "b7dafb7c805416343a6a",
+    "url": "/static/js/main.3a90f060.chunk.js"
   },
   {
     "revision": "3c3f1816a6eeafdc4489",
@@ -68,6 +68,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/codezen 16.b52c5ec8.png"
   },
   {
+    "revision": "ba8a3177ed3e91f7159625e4d7f549b2",
+    "url": "/static/media/codezen 17.ba8a3177.png"
+  },
+  {
+    "revision": "551cc9b5fc6d81afef278922c73eb12a",
+    "url": "/static/media/codezen 18.551cc9b5.png"
+  },
+  {
+    "revision": "9e5bddb225da9bca41583726d9ac4f83",
+    "url": "/static/media/codezen 19.9e5bddb2.png"
+  },
+  {
     "revision": "36528f3fb9e7d962def847018741dc10",
     "url": "/static/media/codezen 2.36528f3f.png"
   },
@@ -100,6 +112,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/codezen 9.422bacc9.png"
   },
   {
+    "revision": "77726c7c2a67bdbd0c01e263f80c8944",
+    "url": "/static/media/codezen callbacks.77726c7c.png"
+  },
+  {
     "revision": "5eccf8713662f40da12d1d16ed6752cd",
     "url": "/static/media/codezen codigo wordpress.5eccf871.png"
   },
@@ -110,6 +126,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0adafa8441f94af91e08a741afbbbdfb",
     "url": "/static/media/codezen docker 2.0adafa84.png"
+  },
+  {
+    "revision": "663edb0d63e8b85fecbaf55c5e8fcb89",
+    "url": "/static/media/codezen promesas.663edb0d.png"
   },
   {
     "revision": "3d31f05a7710222b8b2fcb6e27cb64a8",
@@ -158,10 +178,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "90a4d1d86fb9999bd985cc89fe4c4cdd",
     "url": "/static/media/imagenExplicacionDNS.90a4d1d8.png"
-  },
-  {
-    "revision": "af5fa96bf548753e2d771d46614dea71",
-    "url": "/static/media/ntl.af5fa96b.gif"
   },
   {
     "revision": "731426fe72ec57a2100b474a0a7a769d",
