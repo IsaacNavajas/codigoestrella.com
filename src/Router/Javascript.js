@@ -8,6 +8,7 @@ import TypescriptModal from './TypescriptModal';
 import image from "../source/image javascript.png";
 import imagePromise from "../source/codezen promesas.png";
 import callbacks from "../source/codezen callbacks.png";
+import imageprettierrc from "../source/prettierrc.png";
 
 class Javascript extends React.Component{
   state = {
@@ -146,9 +147,28 @@ class Javascript extends React.Component{
           <center>
             <div className="mitad col-12">
               <img src={callbacks}></img>
-              <br/><br/>
+              <hr></hr><br/>
+              
             </div>
           </center>
+
+     
+          <div className=" col-12">
+          
+          <div className="bigtitle">.prettierrc.js</div>
+          <br/>
+          <p>Se usa para asegurarse para que el comportamiento de Prettier sigue siendo el mismo entre distintas computadoras, se crea un archivo .prettierrc.js en el proyecto.</p>
+          
+
+          <center>
+            <div className="mitad col-12">
+            <img src={imageprettierrc}></img>
+              <hr></hr><br/>
+            </div>
+          </center>
+
+  
+        </div><br/>
 
         </div>
 
