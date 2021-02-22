@@ -46,6 +46,7 @@ class Node extends React.Component{
 
           <br/><br/>
           <p>console.log(<strong>global</strong>):  Node tiene el objeto global que contiene los metodos y propiedades de Node, que en el navegador tiene una igualdad en referencia a this.</p>
+          <p><strong>console.time(code)</strong>:  nos va a contar en ms lo que tarda en ejecutarse una trea asincrona, la parte de codigo que queremos contar la cerraremos con un <strong>console.timeEnd(code)</strong>.</p>
           <br/>
           <hr className="linea-discontinua" /><br/>
           <p>ARCHIVOS DE SISTEMA:</p>
@@ -109,6 +110,38 @@ class Node extends React.Component{
  
           <br/>
 
+
+
+
+          <hr></hr><br/><br/>
+
+          <h2  className="bigtitle">Modules</h2>
+
+          <br/><br/>
+
+      
+          <p><strong>const llamar = require('./llamada');:</strong>llamar al componente que queremos mencinar para soltar el valor como por ejemplo llamar.hola(). es semejante al export default de es6. Los archivos de node_modules podemos llamarlo directamente como const llamar = require('bcrypt'); a los archivos creado habra que llamarlos como el del titulo..</p>
+        
+          <p><strong>module.exports="abre_llaves" hola "cierra_llaves":</strong> para exportar los mmodulos que queramos de ese mismo componente;  una funcion, una constnte... es semejante al import llamar from './llamada'; de es6</p>
+       
+          <br/><br/>
+
+          <p><strong>Un buffer es un montón de datos y un stream es un proceso donde pasan un montón de datos.</strong> </p>
+
+          <p><strong>Buffers:</strong> Nos permite trabajar con el dato en su forma mas pura antes de ser modificado, cada espacio de buffer contiene dos digitos 00.</p>
+          <ul>
+            <li><p><strong>Buffer.alloc(1):</strong> Nos va a traer los espacios en memoria que les indiquemos, en este caso un espacio en memoria.</p></li>
+            <li><p><strong>Buffer.from([1, 2, 3]):</strong> La informacion que queremos guardar en nuestro espacio de buffer.</p></li>
+            <li><p><strong>Buffer.alloc(10):</strong> nos va a traer diez espacios de memoria.</p></li>
+          </ul>
+          <p><strong>Streams:</strong> un paso de datos desde un punto a otro.</p>
+          <ul>
+            <li><p><strong>createReadStream():</strong> Para empezar a leer los datos.</p></li>
+            <li><p><strong>readFile():</strong> Para leer los archivos.</p></li>
+          </ul>
+         
+          <br/>
+         
 
 
         </div>

@@ -157,7 +157,7 @@ class Javascript extends React.Component{
           
           <div className="bigtitle">.prettierrc.js</div>
           <br/>
-          <p>Se usa para asegurarse para que el comportamiento de Prettier sigue siendo el mismo entre distintas computadoras, se crea un archivo .prettierrc.js en el proyecto.</p>
+          <p>Se usa para sobrescribir normas del proyecto, para asegurarse que el comportamiento de Prettier sigue siendo el mismo entre distintas computadoras, se crea un archivo .prettierrc.js en el proyecto.</p>
           
 
           <center>

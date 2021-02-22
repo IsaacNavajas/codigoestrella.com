@@ -586,3 +586,10 @@ li{
   background-image: url(source/fondo.png);
   
 }
+
+.centrarTexto{
+  font-family: 'Balsamiq Sans', cursive;
+  margin-left:auto;
+  text-align-last: center;
+
+}
