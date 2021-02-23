@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f97d147.chunk.css",
-    "main.js": "/static/js/main.63130dee.chunk.js",
-    "main.js.map": "/static/js/main.63130dee.chunk.js.map",
+    "main.css": "/static/css/main.6e28fc68.chunk.css",
+    "main.js": "/static/js/main.177e8e6e.chunk.js",
+    "main.js.map": "/static/js/main.177e8e6e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ec26966.js",
     "runtime-main.js.map": "/static/js/runtime-main.2ec26966.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.5a8d45b4.chunk.js": "/static/js/2.5a8d45b4.chunk.js",
-    "static/js/2.5a8d45b4.chunk.js.map": "/static/js/2.5a8d45b4.chunk.js.map",
+    "static/js/2.364e5953.chunk.js": "/static/js/2.364e5953.chunk.js",
+    "static/js/2.364e5953.chunk.js.map": "/static/js/2.364e5953.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e1c4c67c622d2ff1c6b4e55ee23183a0.js": "/precache-manifest.e1c4c67c622d2ff1c6b4e55ee23183a0.js",
+    "precache-manifest.198c54fbb27c36fba10959bc56f80c70.js": "/precache-manifest.198c54fbb27c36fba10959bc56f80c70.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.5f97d147.chunk.css.map": "/static/css/main.5f97d147.chunk.css.map",
-    "static/js/2.5a8d45b4.chunk.js.LICENSE.txt": "/static/js/2.5a8d45b4.chunk.js.LICENSE.txt",
+    "static/css/main.6e28fc68.chunk.css.map": "/static/css/main.6e28fc68.chunk.css.map",
+    "static/js/2.364e5953.chunk.js.LICENSE.txt": "/static/js/2.364e5953.chunk.js.LICENSE.txt",
     "static/media/archivocomprimido.png": "/static/media/archivocomprimido.b9863c69.png",
     "static/media/archivos.zip": "/static/media/archivos.ac33cf1e.zip",
     "static/media/celtics.png": "/static/media/celtics.f488f496.png",
@@ -35,6 +35,8 @@
     "static/media/codezen 7.png": "/static/media/codezen 7.36b58313.png",
     "static/media/codezen 8.png": "/static/media/codezen 8.c10c4393.png",
     "static/media/codezen 9.png": "/static/media/codezen 9.422bacc9.png",
+    "static/media/codezen Vue_1.png": "/static/media/codezen Vue_1.187e4fd6.png",
+    "static/media/codezen Vue_2.png": "/static/media/codezen Vue_2.0389206f.png",
     "static/media/codezen callbacks.png": "/static/media/codezen callbacks.77726c7c.png",
     "static/media/codezen codigo wordpress.png": "/static/media/codezen codigo wordpress.5eccf871.png",
     "static/media/codezen docker 1.png": "/static/media/codezen docker 1.57a21084.png",
@@ -59,8 +61,8 @@
   "entrypoints": [
     "static/js/runtime-main.2ec26966.js",
     "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.5a8d45b4.chunk.js",
-    "static/css/main.5f97d147.chunk.css",
-    "static/js/main.63130dee.chunk.js"
+    "static/js/2.364e5953.chunk.js",
+    "static/css/main.6e28fc68.chunk.css",
+    "static/js/main.177e8e6e.chunk.js"
   ]
 }
