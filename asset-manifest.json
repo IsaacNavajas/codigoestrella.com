@@ -1,22 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.6e28fc68.chunk.css",
-    "main.js": "/static/js/main.177e8e6e.chunk.js",
-    "main.js.map": "/static/js/main.177e8e6e.chunk.js.map",
+    "main.js": "/static/js/main.1654a991.chunk.js",
+    "main.js.map": "/static/js/main.1654a991.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ec26966.js",
     "runtime-main.js.map": "/static/js/runtime-main.2ec26966.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.364e5953.chunk.js": "/static/js/2.364e5953.chunk.js",
-    "static/js/2.364e5953.chunk.js.map": "/static/js/2.364e5953.chunk.js.map",
+    "static/js/2.5fcbe202.chunk.js": "/static/js/2.5fcbe202.chunk.js",
+    "static/js/2.5fcbe202.chunk.js.map": "/static/js/2.5fcbe202.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.198c54fbb27c36fba10959bc56f80c70.js": "/precache-manifest.198c54fbb27c36fba10959bc56f80c70.js",
+    "precache-manifest.a2fc3f19fbac6b11bab4c72951deaece.js": "/precache-manifest.a2fc3f19fbac6b11bab4c72951deaece.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
     "static/css/main.6e28fc68.chunk.css.map": "/static/css/main.6e28fc68.chunk.css.map",
-    "static/js/2.364e5953.chunk.js.LICENSE.txt": "/static/js/2.364e5953.chunk.js.LICENSE.txt",
+    "static/js/2.5fcbe202.chunk.js.LICENSE.txt": "/static/js/2.5fcbe202.chunk.js.LICENSE.txt",
     "static/media/archivocomprimido.png": "/static/media/archivocomprimido.b9863c69.png",
     "static/media/archivos.zip": "/static/media/archivos.ac33cf1e.zip",
-    "static/media/celtics.png": "/static/media/celtics.f488f496.png",
     "static/media/codezen 1.png": "/static/media/codezen 1.49b3fc8c.png",
     "static/media/codezen 10.png": "/static/media/codezen 10.82931b6d.png",
     "static/media/codezen 11.png": "/static/media/codezen 11.1cd951ad.png",
@@ -28,6 +27,7 @@
     "static/media/codezen 18.png": "/static/media/codezen 18.551cc9b5.png",
     "static/media/codezen 19.png": "/static/media/codezen 19.9e5bddb2.png",
     "static/media/codezen 2.png": "/static/media/codezen 2.36528f3f.png",
+    "static/media/codezen 20.png": "/static/media/codezen 20.1b2972eb.png",
     "static/media/codezen 3.png": "/static/media/codezen 3.6b1d471c.png",
     "static/media/codezen 4.png": "/static/media/codezen 4.69b91aef.png",
     "static/media/codezen 5.png": "/static/media/codezen 5.2c66f1ff.png",
@@ -43,6 +43,10 @@
     "static/media/codezen docker 2.png": "/static/media/codezen docker 2.0adafa84.png",
     "static/media/codezen promesas.png": "/static/media/codezen promesas.663edb0d.png",
     "static/media/codezen static.png": "/static/media/codezen static.3d31f05a.png",
+    "static/media/codezenApiJs.png": "/static/media/codezenApiJs.df084693.png",
+    "static/media/codezenElectron.png": "/static/media/codezenElectron.577ff2e6.png",
+    "static/media/codezenHomeJs.png": "/static/media/codezenHomeJs.8a76e9a8.png",
+    "static/media/codezenPxAssetsTableVue.png": "/static/media/codezenPxAssetsTableVue.06fadeb3.png",
     "static/media/diagramadevenn1.png": "/static/media/diagramadevenn1.d8ead7b0.png",
     "static/media/diagramadevenn2.png": "/static/media/diagramadevenn2.526b0735.png",
     "static/media/diagramadevenn3.png": "/static/media/diagramadevenn3.4f86454c.png",
@@ -61,8 +65,8 @@
   "entrypoints": [
     "static/js/runtime-main.2ec26966.js",
     "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.364e5953.chunk.js",
+    "static/js/2.5fcbe202.chunk.js",
     "static/css/main.6e28fc68.chunk.css",
-    "static/js/main.177e8e6e.chunk.js"
+    "static/js/main.1654a991.chunk.js"
   ]
 }

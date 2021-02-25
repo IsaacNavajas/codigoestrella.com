@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4ff77e1dc89c227d4dd5d1264dff5073",
+    "revision": "f70ebb88b61b6207e6ea6adca04333c4",
     "url": "/index.html"
   },
   {
-    "revision": "697f9e2148b6a0c75ab8",
+    "revision": "68fcf223f0c12bc453a4",
     "url": "/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "a19422bf8f085100cd4e",
+    "revision": "50295cc6307e4ed1b483",
     "url": "/static/css/main.6e28fc68.chunk.css"
   },
   {
-    "revision": "697f9e2148b6a0c75ab8",
-    "url": "/static/js/2.364e5953.chunk.js"
+    "revision": "68fcf223f0c12bc453a4",
+    "url": "/static/js/2.5fcbe202.chunk.js"
   },
   {
     "revision": "dd207babaeb913476be46155cc504ef5",
-    "url": "/static/js/2.364e5953.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.5fcbe202.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a19422bf8f085100cd4e",
-    "url": "/static/js/main.177e8e6e.chunk.js"
+    "revision": "50295cc6307e4ed1b483",
+    "url": "/static/js/main.1654a991.chunk.js"
   },
   {
     "revision": "3c3f1816a6eeafdc4489",
@@ -34,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ac33cf1ee3b05d275727525697bca680",
     "url": "/static/media/archivos.ac33cf1e.zip"
-  },
-  {
-    "revision": "f488f49669adbd8f2f8a7a8e668f0946",
-    "url": "/static/media/celtics.f488f496.png"
   },
   {
     "revision": "49b3fc8cd83e09e9b1c8d1d35c30ae89",
@@ -82,6 +78,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "36528f3fb9e7d962def847018741dc10",
     "url": "/static/media/codezen 2.36528f3f.png"
+  },
+  {
+    "revision": "1b2972eb086b4cf9b550ea5f52fba78e",
+    "url": "/static/media/codezen 20.1b2972eb.png"
   },
   {
     "revision": "6b1d471c0a682ad75894482ff1d99da8",
@@ -142,6 +142,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3d31f05a7710222b8b2fcb6e27cb64a8",
     "url": "/static/media/codezen static.3d31f05a.png"
+  },
+  {
+    "revision": "df0846938134c80553447c06ae59be53",
+    "url": "/static/media/codezenApiJs.df084693.png"
+  },
+  {
+    "revision": "577ff2e63bc72d7c008b3ac3b86633f4",
+    "url": "/static/media/codezenElectron.577ff2e6.png"
+  },
+  {
+    "revision": "8a76e9a83bb789a1b2fa10cc45e9358e",
+    "url": "/static/media/codezenHomeJs.8a76e9a8.png"
+  },
+  {
+    "revision": "06fadeb32c260b148f5729ff2b8f5907",
+    "url": "/static/media/codezenPxAssetsTableVue.06fadeb3.png"
   },
   {
     "revision": "d8ead7b05eabfe252bbae786beb4d92d",
