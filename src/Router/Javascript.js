@@ -137,16 +137,16 @@ class Javascript extends React.Component{
         <hr></hr><br/>
         <div className="bigtitle">Multiples promesas</div>
           <center>
-            <div className="mitad col-12">
-              <img src={imagePromise}></img>
+            <div >
+              <img src={imagePromise} className="col-12"></img>
               <hr></hr><br/>
             </div>
           </center>
 
         <div className="bigtitle">Callbacks</div>
           <center>
-            <div className="mitad col-12">
-              <img src={callbacks}></img>
+            <div >
+              <img src={callbacks} className="col-12"></img>
               <hr></hr><br/>
               
             </div>
@@ -161,11 +161,27 @@ class Javascript extends React.Component{
           
 
           <center>
-            <div className="mitad col-12">
-            <img src={imageprettierrc}></img>
+            <div className="col-12">
+            <img className="col-12" src={imageprettierrc}></img>
               <hr></hr><br/>
             </div>
           </center>
+
+          
+          <h2  className="bigtitle">Javascript avanzado</h2><br/>
+  
+          <br/><br/>
+        
+          <p><strong>.options :</strong> para saber cuántas opciones hay en una lista desplegable específica; let x = array.options.length -> x = 44. </p>
+          <p><strong>new Proxy():</strong> nos va a cargar en memoria diferentes datos con los que trabajar, trabaja con los datos que se cargan después de haber iniciado la pagina, como por ejemplo un this.setTiout();</p>
+            <ul>
+              <li><p><strong>+ PevProps =</strong> trabaja con props actualizados o de ciclo.</p></li>
+              <li><p><strong>+ PrevState = </strong>trabaja con states actualizados o de ciclo.</p></li>
+              <li><p><strong>+ Snapshot =</strong> si tu componente tiene un ciclo de getSnapshotBeforeUpdate() el valor que devuelve se actualiza con snapshot, (es una forma de trabajo que raramente se utiliza).</p></li>
+            </ul>
+          <p><strong>componentWillUnmount(): </strong>sirve para trabajar con lo que queremos hacer cuando se cierre la pagina como por ejemplo terminar un interval.</p>
+          <br/>
+          <hr></hr><br/>
 
   
         </div><br/>

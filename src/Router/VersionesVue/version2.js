@@ -1,8 +1,16 @@
 import React from 'react';
 
+import image1 from '../../source/codezenPxAssetsTableVue.png';
+import image2 from '../../source/codezenHomeJs.png';
+import image3 from '../../source/codezenApiJs.png';
+
+import image4 from '../../source/codezenVueProps1.png';
+import image5 from '../../source/codezenVueProps2.png';
+import image6 from '../../source/codezenVueProps3.png';
+import image7 from '../../source/codezenVueProps4.png';
+
 
 function Version2(){
-
 
     return (
 
@@ -15,7 +23,11 @@ function Version2(){
           <p><strong>La extension recomendada para VS Code es Vetur y las Vue.js devtools para el navegador.</strong></p>
           <p><strong>vue ui:</strong> crea una interfaz grafica con todo lo instalado es nuestro proyecto.</p>
           <p><strong>vue add:</strong> agregar pluyins a vue.js.</p>
-          <p><strong>npm run lint:</strong> Detectar errores de linteo. Un linter revisa tu código buscando errores y problemas de sintaxis, se asegura también que el código que escribes siga un estilo.</p>
+
+          <u className="subrayado">
+            <p><strong>npm run lint:</strong> Detectar errores de linteo. Un linter revisa tu código buscando errores y problemas de sintaxis, se asegura también que el código que escribes siga un estilo.</p>
+          </u>
+          
           <p><strong>npm run build:</strong> Generar la aplicación en modo producción. Genera una carpeta dist.</p>
           <p><strong>npm i -g serve:</strong> Permite generar un servidor web local.</p>
           <p><strong>serve -s dist:</strong> Levanta un localhost de nuestro Dist.</p>
@@ -25,7 +37,6 @@ function Version2(){
           <br/>
           <hr></hr><br/>
           <h2  className="bigtitle col-12">Atributos de Vue.js</h2><br/>
-
 
           <div className="col-lg-6 col-sm-12 mitad">
             <center>En Html (y directivas)</center>
@@ -72,8 +83,8 @@ function Version2(){
           
             <li><p>+ Properties <strong>computed y watchers:</strong> Les podemos dar a estas funciones el nombre que prefiramos, <ul className="subrayado">La diferencia con <strong>methods</strong> y <strong>computed</strong> es que las propiedades computadas tienen caché es decir que van a ser definidas cuando queremos que cambien su valor, las propiedades computadas tampoco tienen parametros ni pueden ser llamadas por que se despliegan como instancias y no como metodos.</ul></p></li>
             <ul className="nido">
-              <li><p><strong>- computed:</strong> son funciones que siempre devuelven un valor, podemos agregar un nuevo objeto dentro de la propiedad de data(). </p></li>
-              <li><p><strong>- watchers:</strong> en vez de ser funciones que devuelven un valor estas ejecutan un codigo. Se define como watch:.</p></li>
+              <li><p><strong>- computed:</strong> son funciones que siempre devuelven un valor, podemos agregar un nuevo objeto dentro de la propiedad de data(). Se pasa entre doble llave como valor de la etiqueta HTML </p></li>
+              <li><p><strong>- watchers:</strong> en vez de ser funciones que devuelven un valor estas ejecutan un codigo. Se define como watch:. El nombre de la funcion de dentro de watch tiene que ser un metodo de dentro de data(). Se UTILIZA para modificar o dar logica a metodos de dentro de data(), podemos usar dos parametros dentro de estas funciones para coger el valor nuevo y el anterior function (val, oldval).  </p></li>
             </ul>
 
           </ul>
@@ -81,11 +92,11 @@ function Version2(){
           <ul>
             <li><p><strong>+ data():</strong> vamos a retornnar todos los valores del componente.</p></li>
             <li><p><strong>+ template:</strong> para pasar el html como string invertido, todos el template ira dentro de un mismo div.</p></li>
-            <li><p><strong>+ methods:</strong> para definir funciones del componente nuevo.</p></li>
+            <li><p><strong>+ methods:</strong> para definir funciones del componente nuevo. Las funciones se definen como referencia del parametro dentro de la etiqueta del HTML.</p></li>
             <li><p><strong>+ props:[] :</strong> cuales son las propiedades que se pueden enviar <strong>del componente padre al componente hijo</strong> simplemente definiendolo dentro del array. Para finalizar hay que bindear los props en el componente de html, b-vind:title="title" El primer valor es el del array y el que devuelve es el del componente padre. S tenemos muchos props que devolver podemos concatenar todos esos valores en el data() como un solo objeto del componente padre y devolverlo como un unico valor en el array.</p></li>
             <ul className="nido">
-                <li><p><strong>- del componente hijo al componente padre:</strong> la comunicacion de padres a hijos es a traves de eventos, dentro del componente del html vamos a asociar un evento para avisar al componente padre que tiene que cambiar con v-on:evento="Funcion-del-componente-padre" para definir el evento se puede usar this.$emit().</p></li>
-                <li><p><strong>- slots:</strong> nos va a permitir <strong>injectar contenido desde el componente padre al componente hijo</strong> en vez de propiedades como hasta haora por ejemplo html para esto usaremos los slots, para desplegarlo englosaremos entre llaves con la palabra reservada slot como si fuese una etiqueta dentro del template, y para generar el contenido del texto lo pasaremos directamente entre un p directamente al componente. Para definir vario slots en la parte del template generaremos un nombre slot name="text" y en la parte del componente del html tenemos que agregar otra etiqueta entre llaves al que llamaremos template v-slot:"text" dentro el contenido y cerramos el <strong>template</strong>. </p></li>
+                <li><p><strong>- del componente hijo al componente padre:</strong> la comunicacion de padres a hijos es a traves de eventos, dentro del componente hijo con un this.$emit(nombre_del_hijo_de_la_funcion_padre), con <strong>this.$emit( "funcion", "parametro_de_la_funcion_por_defecto")</strong> enviamos un evento para avisar al componente padre. En el componente padre donde desplgamos el componente hijo le pasamos como parametro <strong>v-on:nombre_del_hijo_de_la_funcion_padre = "nombre_de_la_funcion_del_componente_padre" </strong> .</p></li>
+                <li><p><u className="subrayado"><strong>- slots:</strong> nos va a permitir <strong>injectar contenido desde el componente padre al componente hijo</strong> en vez de propiedades como hasta haora, por ejemplo html para esto usaremos los slots,</u> para desplegarlo englosaremos entre llaves con la palabra reservada slot como si fuese una etiqueta dentro del template, y para generar el contenido del texto lo pasaremos directamente entre un p directamente al componente. Para definir vario slots en la parte del template generaremos un nombre slot name="text" y en la parte del componente del html tenemos que agregar otra etiqueta entre llaves al que llamaremos template v-slot:"text" dentro el contenido y cerramos el <strong>template</strong>. </p></li>
               
               </ul>
           </ul>
@@ -111,9 +122,9 @@ function Version2(){
               <li><p><strong>+ components:</strong> devuelve un objeto y aqui vamos a definir los componentes que queremos usar dentro de este template en forma de etiqueta que habremos importado.</p></li>
               <li><p><strong>+ props:</strong> nos devuelve un objeto, .</p></li>
               <ul className="nido">
-              <li><p><u className="subrayado">-  dentro de <strong>assets:</strong> podemos definir el tipo de props que esperamos dentro de otro objeto.</u></p></li>
+              <li><p><u className="subrayado">-  dentro del <strong>nombre del prop que has pasado:</strong> podemos definir el tipo de props que esperamos dentro de otro objeto.</u></p></li>
               <li><p><strong>- Type:</strong> el tipado esperado, como array, string...</p></li>
-              <li><p><strong>- default:</strong> el valor por defecto que esperamos, si esperamos un objeto o un array lo devolvemos en forma de funcion. -default: () => [].</p></li>
+              <li><p><strong>- default:</strong> el valor por defecto que esperamos, si esperamos un objeto o un array lo devolvemos en forma de funcion. -default: () =`&gt;` [].</p></li>
             </ul>
             </ul>
             
@@ -139,6 +150,49 @@ function Version2(){
             <br/>
             <hr></hr><br/>
           </div>
+
+
+          <div className="col-12">
+            
+            <h2  className="bigtitle">Enviar propiedades de un <strong>componente padre al hijo</strong> (props) "a traves de propiedades"</h2><br/>
+
+              <div className=" col-6"> 
+                <center><p>componente Hijo</p></center>  
+                <img src={image4} className="imagecarbon" alt="Componente hijo"></img>
+              </div>
+
+              <div className=" col-6"> 
+                <center><p>componente Padre</p></center> 
+                <img src={image5} className="imagecarbon" alt="Componente padre"></img>
+              </div>
+              
+            <br/>
+            
+          </div>
+
+          <div className="col-12">
+            
+            <h2  className="bigtitle">Enviar propiedades de un <strong>componente hijo al padre</strong> "a traves de eventos"</h2><br/>
+
+            <div className=" col-6"> 
+                <center><p>componente Hijo</p></center>  
+                <img src={image7} className="imagecarbon" alt="Componente hijo"></img>
+              </div>
+
+              <div className=" col-6"> 
+                <center><p>componente Padre</p></center> 
+                <img src={image6} className="imagecarbon" alt="Componente padre"></img>
+              </div>
+              
+            <p><strong>this.$emit():</strong> el primer valor es la funcion que vamos a pasar del v-on:"funcion" del componente padre al desplegar el hijo en este caso (click) (v-on:click) pero podemos darle cualquier otro nombre y el segundo es el valor que queremos enviar que se pasa al componente padre como parametro de la funcion "en este casso info", por eso tenemos que volver a llamar a la funcion en el componente padre y crear un v-on: en el componente hijo de llamada .</p>
+
+            <br/>
+            <hr></hr><br/>
+            <br/>
+            
+          </div>
+          
+
 
 
           
@@ -176,8 +230,8 @@ function Version2(){
             <p><strong>Router.js:</strong> vamos a crear un archivo roter.js para crear nuestro vue router, vamos a importar nuestro componentes. En nuestro archivo principal del proyecto, el main.js importamos nuestro router con import router from "@/router" y <strong>dentro de new Vue() definimos nuestro router con <u className="subrayado">router : "nombre_del_componente_que_hemos_importado",</u></strong> .</p>
               
               <ul className="nido">
-                  <p><strong>+ Vue.use(Router):</strong> lo escribimos despues de los imports de los componentes para poder utilizar el Router. Para utilizar Vue tenemos que impportarlo <strong>import Vue from 'vue'</strong> .</p>
-                  <p><strong>+ Export default new Router():</strong> devuelve un objeto para crear nuestro router.</p>
+                  <p><strong>+ Vue.use(VueRouter):</strong> lo escribimos despues de los imports de los componentes para poder utilizar el Router. Para utilizar Vue tenemos que impportarlo <strong>import Vue from "vue"; import VueRouter from 'vue-router'</strong> .</p>
+                  <p><strong>+ const router = new VueRouter():</strong> devuelve un objeto para crear nuestro router. necesitamos exportarlo <strong>export default router</strong></p>
               </ul>
 
             <ul className="nido">
@@ -188,7 +242,7 @@ function Version2(){
             <p>Etiqueta <strong>router-link:</strong> es una propiedad de vue router que en cualquier template podemos generar como si fuese un a reactivo y sustituiremos href= por to="/".</p>
             <p>Etiqueta <strong>router-view:</strong> es una propiedad de vue router que funciona como layout, por ejemplo en nuestro componente layout vamos a agregar esta etiqueta en medio del header y del footer.</p>
 
-            <p><strong>rutas dinamicas o con id:</strong> a la hora de crear el objeto de ruta dentro del array routes: el path llevara el valor dinamico -> <strong>path:'/ruta/:id'</strong> .</p>
+            <p><strong>rutas dinamicas o con id:</strong> a la hora de crear el objeto de ruta dentro del array routes: el path llevara el valor dinamico -`&gt;` <strong>path:'/ruta/:id'</strong> .</p>
             <ul >
                 <li><p><strong>+ params:</strong> la propiedad params nos va a definir la parte dinamica del route que pertenece al path del componente router y a quien hace referencia. La agregamos en un :to bindeado de router-link "entre llaves".<strong> router-link :to" "abrimos llaves" name:"name_del_componente_router", params:"id: f.id" "cerramos llaves" " </strong>.</p></li>
                 <li><p><strong>+ this.$shet(object, propertyName, value):</strong> para evitar problemas de reactividad en tareas asincronas, por ejemplo en una peticion fetch si encapsulamos un a con un metodo del fetch va a fallar . vm.$set() es un alias del global Vue.set()</p></li>
@@ -200,8 +254,27 @@ function Version2(){
           <div className="col-12">
             
             <h2  className="bigtitle">Api con Vue.js</h2><br/>
+            <br></br>
 
-            <p><strong>example:</strong> example.</p>
+            <div  className="imagecarbon col-12">
+
+              <div className=" col-6">
+                <center><p>tercero - PxAssetsTable.vue</p></center>  
+                <img src={image1} className="imagecarbon" alt="Imagen 1"></img>
+              </div>
+
+              <div className=" col-6">
+                <center><p>segundo - Home.js</p></center>  
+                <img src={image2} className="imagecarbon" alt="Imagen 2"></img>
+              </div>
+
+              <div className=" col-6">
+                <center><p>primero - api.js</p></center>  
+                <img src={image3} className="imagecarbon" alt="Imagen 3"></img>
+              </div>
+          
+            <br/>
+            </div>
 
             <br/>
             <hr></hr><br/>

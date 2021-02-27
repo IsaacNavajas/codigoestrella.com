@@ -4,6 +4,7 @@ import ImageTCP from '../source/imageTCP.png';
 import ImageDNS from '../source/imagenExplicacionDNS.png';
 
 import imagelogo from '../source/spam.png';
+import imageElectron from '../source/codezenElectron.png';
 
 
 class Inicio extends React.Component{
@@ -106,6 +107,29 @@ class Inicio extends React.Component{
       <br/>
 
       </div>   
+
+
+      <h2 className="bigtitleWhite font">ELECTRON </h2> 
+
+      <br/><br/>
+      <div className="col-12">
+
+      <p><strong>- Hola mundo :</strong> Creamos una nueva carpeta para electron.</p>
+      <p><strong>- npm init :</strong> inicializamos npm dentro de la nueva carpeta.</p>
+      <p><strong>- package.json :</strong> abrimos el package.json y dentro del script escribimos <strong>"start": "electron .",</strong> que nos va iniciar electron en esta misma carpeta.</p>
+      <p><strong>- npm i electron@latest :</strong> instalamos la nueva version de electron. (Si no sale error puede ser por el nombre del package.json, sino cambialo).</p>
+      <p><strong>- index.js :</strong> creamos un nuevo archivo javascript para programar la logica de electron.</p>
+      <div className=" col-12"><img src={imageElectron} className="image Electron Index.js"></img></div>
+      <p><strong>-  npm start:</strong> con npm start o electron . en la consola podremos ver nuestra aplicacion.</p>
+      <br/><br/>
+      <p><strong>- npm install -g electron-packager :</strong> Para empaquetar la aplicación vamos a instalar electron-packager con el siguiente comando.</p>
+      <p><strong>- npm install  :</strong> para instalar los módulos de nodejs y todas las dependencias.</p>
+      <p><strong>- electron-packager . :</strong> para terminar de empaquetar, nos va a crear una carpeta dependiendo el sistema, si por ejemplo lo hemos installado para windows nos creara una carpeta <strong>holamundo-win32-x64</strong> dentro de esta carpeta tendremos el ejecutable <strong>holamundo.exe</strong>.</p>
+
+      <br/>
+      <br/>
+
+      </div>  
 
 
  
