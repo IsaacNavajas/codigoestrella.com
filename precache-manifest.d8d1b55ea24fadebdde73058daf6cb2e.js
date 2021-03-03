@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7084a3257c419c60c9b6b99354d616dc",
+    "revision": "6a3bd74674f3090065282080f90c2686",
     "url": "/index.html"
   },
   {
-    "revision": "2961e0dff22d974ea25f",
+    "revision": "e9813638b44233861ebd",
     "url": "/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "abbf3f923ae97aaad11a",
-    "url": "/static/css/main.6e28fc68.chunk.css"
+    "revision": "efe73cf1a33a7b8d3291",
+    "url": "/static/css/main.4683fb22.chunk.css"
   },
   {
-    "revision": "2961e0dff22d974ea25f",
-    "url": "/static/js/2.b44e3530.chunk.js"
+    "revision": "e9813638b44233861ebd",
+    "url": "/static/js/2.d3a68c8c.chunk.js"
   },
   {
     "revision": "dd207babaeb913476be46155cc504ef5",
-    "url": "/static/js/2.b44e3530.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.d3a68c8c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "abbf3f923ae97aaad11a",
-    "url": "/static/js/main.8e98fc68.chunk.js"
+    "revision": "efe73cf1a33a7b8d3291",
+    "url": "/static/js/main.906c0505.chunk.js"
   },
   {
     "revision": "3c3f1816a6eeafdc4489",
@@ -196,8 +196,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/diagramadevenn5.169d627c.png"
   },
   {
-    "revision": "796742bd494b8c8b97ce965960c83c1c",
-    "url": "/static/media/image 1.796742bd.png"
+    "revision": "3118cde3ee293f2c024c417b9a202afd",
+    "url": "/static/media/image 1.3118cde3.png"
   },
   {
     "revision": "bd41e66a0e1c5837ca15ae5898aaa732",
@@ -224,11 +224,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/prettierrc.78862327.png"
   },
   {
+    "revision": "c551560691b53eb52eb72cb9ca56aee2",
+    "url": "/static/media/spam.c5515606.png"
+  },
+  {
     "revision": "731426fe72ec57a2100b474a0a7a769d",
     "url": "/static/media/tuplas.731426fe.png"
   },
   {
     "revision": "5313215f8f59a0f4d776b994c696db20",
     "url": "/static/media/tuplasdos.5313215f.png"
+  },
+  {
+    "revision": "3ce6996778757cb5991020b9baf32771",
+    "url": "/static/media/yetii_2.3ce69967.png"
   }
 ]);
