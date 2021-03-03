@@ -26,6 +26,7 @@ import Docker from './Router/Docker';
 import Vue from './Router/Vue';
 
 import Image from './source/archivocomprimido.png';
+import ImageYetii from './source/yetii.png';
 import Archivos from './source/archivos.zip';
 
 import {Link} from "react-router-dom";
@@ -86,7 +87,7 @@ class Router extends React.Component {
                           <a href={Archivos} download><img src={Image} className="ImageDescarga"/></a>
                
                           <input onClick={() => this.handleClick()} type="checkbox" className=" checkboxtoggle custom-control-input " id="customSwitches"></input>
-                          <label className="custom-control-label " for="customSwitches"> <img className=" America" src="https://i.postimg.cc/s2Xz8CmJ/40ab7a26c90ee682a23e2dd55f978a65.jpg"></img></label>
+                          <label className="custom-control-label " for="customSwitches"> <img className="yetii" src={ImageYetii}></img></label>
                           
                           <div className="position_button ">
                             {this.state.verifyLanguage && <Link to="/ruta-siete"><button type="submit" className="button btn btn-secondary" >Javascript</button></Link>}

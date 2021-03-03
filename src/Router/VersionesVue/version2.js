@@ -23,6 +23,7 @@ function Version2(){
           <p><strong>La extension recomendada para VS Code es Vetur y las Vue.js devtools para el navegador.</strong></p>
           <p><strong>vue ui:</strong> crea una interfaz grafica con todo lo instalado es nuestro proyecto.</p>
           <p><strong>vue add:</strong> agregar pluyins a vue.js.</p>
+          <p><strong>vue add electron-builder:</strong> para cargar Electron dentro del trabajo para mas informacion aqui. Primero instalar electron-builder npm i vue-cli-plugin-electron-builder despues instalar electron-builder en el proyecto vue add electron-builder despues instalar el proyecto, npm run electron:build para instalar en el ordenador. Para cambiar el icono del programa y del instalador creamos una carpeta en la raiz del proyecto build/icons/icon.ico y el icono "icon.ico" para windows y una imagen de 256 "256x256.png" para linux.</p>
 
           <u className="subrayado">
             <p><strong>npm run lint:</strong> Detectar errores de linteo. Un linter revisa tu código buscando errores y problemas de sintaxis, se asegura también que el código que escribes siga un estilo.</p>
@@ -254,7 +255,7 @@ function Version2(){
           <div className="col-12">
             
             <h2  className="bigtitle">Api con Vue.js</h2><br/>
-            <br></br>
+           
 
             <div  className="imagecarbon col-12">
 

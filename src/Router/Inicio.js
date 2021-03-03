@@ -119,7 +119,9 @@ class Inicio extends React.Component{
       <p><strong>- package.json :</strong> abrimos el package.json y dentro del script escribimos <strong>"start": "electron .",</strong> que nos va iniciar electron en esta misma carpeta.</p>
       <p><strong>- npm i electron@latest :</strong> instalamos la nueva version de electron. (Si no sale error puede ser por el nombre del package.json, sino cambialo).</p>
       <p><strong>- index.js :</strong> creamos un nuevo archivo javascript para programar la logica de electron.</p>
-      <div className=" col-12"><img src={imageElectron} className="image Electron Index.js"></img></div>
+        
+          <div><img src={imageElectron} className="col-12"></img></div>
+        
       <p><strong>-  npm start:</strong> con npm start o electron . en la consola podremos ver nuestra aplicacion.</p>
       <br/><br/>
       <p><strong>- npm install -g electron-packager :</strong> Para empaquetar la aplicación vamos a instalar electron-packager con el siguiente comando.</p>

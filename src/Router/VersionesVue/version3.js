@@ -48,7 +48,7 @@ function Version3(){
           <p><strong>const app = createApp( ):</strong> es la nueva forma de inicializar el proyecto de Vue 3 es equivalente a newVue() de Vue 2.</p>
           <p><strong>app.component():</strong> es la forma de crear un componente en vue 3 es equivalente a export default directamente de Vue 2, Creamos un return al final del componente donde vamos a ir llamando a los metodos.</p>
         
-          <p><strong>setup():</strong> La setup opción de nuevo componente se ejecuta antes de que se cree el componente, una vez que los props se resuelven, y sirve como punto de entrada para las API de composición, tiene dos argumentos. Es por esto que todo lo que este dentro de setup no hace falta englobarlo en el ciclo de vida de create o beforeCreated porque ya se esta ejecutando de esta manera.</p>
+          <p><strong>setup():</strong> La setup opción de nuevo componente se ejecuta antes de que se cree el componente, una vez que los props se resuelven, y sirve como punto de entrada para las API de composición, tiene dos argumentos. Es por esto que todo lo que este dentro de setup no hace falta englobarlo en el ciclo de vida de create o beforeCreated porque ya se esta ejecutando de esta manera. <strong>Es equivalente al data() de Vue.js 2 y dentro vamos a poder llamar tambien directamente a las funciones; codigoestrella().</strong></p>
           <ul>
               <li><p><strong>+ props:</strong> props va a hacer referencia a los props:[] en referencia. </p></li>
               <li><p><strong>+ context:</strong> context hace referencia a quien es this. ya que no podemos utilizar this. .</p></li>
