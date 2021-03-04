@@ -4,6 +4,8 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import md5 from 'md5';
+
 
 import Layout from './Router/Layout';
 import Error from './Router/load/Error';
@@ -18,16 +20,20 @@ import JQuery from './Router/JQuery';
 import Json from './Router/Json';
 import Wordpress from './Router/wordpress';
 import Reactrouter from './Router/Reactrouter';
-import BuildEnglish from './Router/English/buildEnglish';
-import InicioEnglish from './Router/English/InicioEnglish';
 import ApiLumen from './Router/ApiLumen';
 import Node from './Router/Node';
 import Docker from './Router/Docker';
 import Vue from './Router/Vue';
 
+//Modulos-yetii
+import buildEnglish from './Router/yetii/buildEnglish';
+import ModalYetii from './Router/yetii/Modal_yetii';
+import imageYetii from './source/yetii-2.png';
+
 import Image from './source/archivocomprimido.png';
 import ImageYetii from './source/yetii.png';
 import Archivos from './source/archivos.zip';
+
 
 import {Link} from "react-router-dom";
 
@@ -35,42 +41,63 @@ class Router extends React.Component {
   
   state={
     verifyLanguage: true,
-    count: 0,
-    language: 'Spanish'
+    count: 2,
+    openModal: false,
+    value: "",
+    result:"",
+    acceso:false,
   }
 
-  render(){
+  //abrir cerrar modal con logica de acceso al toggle
+  
+  closeModal = () => {
+    this.setState({openModal: false});
+  }
 
-    this.handleClick = () => {
-
+  openModal = () => {
+    if(this.state.acceso === false) {
+      this.setState({openModal: true})
+    }else if (this.state.acceso === true){
       this.setState(state => ({
         count : state.count +1,
         
-      }));
-
-      if(this.state.count === 0){
+       }));
+  
+      if(this.state.count % 2){
         this.setState(() => ({
-          language : 'English',
-          verifyLanguage : false
-        }));
-        }
-      
-      else if(this.state.count % 2){
-        this.setState(() => ({
-          language : 'Spanish',
+  
           verifyLanguage : true
         }));
       }
-
+  
       else if(this.state.count ** 1){
         this.setState(() => ({
-          language : 'English',
+    
           verifyLanguage : false
         }));
       }
-
-    }
   
+    
+    }}
+
+  //validacion 
+
+  handleClick = (event) => {
+    event.preventDefault();
+    if(this.state.result == md5(`fSherpa`)) {
+      this.setState({acceso: true});
+      setTimeout(() => this.closeModal(), 2000)
+      };
+
+    this.setState({value: ""});
+  }
+
+  handleChange = (event) => {
+    this.setState({value: event.target.value});
+    this.setState({result: md5(`${event.target.value}`)});
+  }
+
+  render(){
     return (
 
 
@@ -86,8 +113,8 @@ class Router extends React.Component {
                           
                           <a href={Archivos} download><img src={Image} className="ImageDescarga"/></a>
                
-                          <input onClick={() => this.handleClick()} type="checkbox" className=" checkboxtoggle custom-control-input " id="customSwitches"></input>
-                          <label className="custom-control-label " for="customSwitches"> <img className="yetii" src={ImageYetii}></img></label>
+                          <input onClick={this.openModal} type="checkbox" className=" checkboxtoggle custom-control-input " id="customSwitches"></input>
+                          <label  for="customSwitches"> <img className="yetii" src={ImageYetii}></img></label>
                           
                           <div className="position_button ">
                             {this.state.verifyLanguage && <Link to="/ruta-siete"><button type="submit" className="button btn btn-secondary" >Javascript</button></Link>}
@@ -102,29 +129,30 @@ class Router extends React.Component {
 
                     <Switch>
                       
-                      {this.state.verifyLanguage && <Route exact path="/" component={Inicio}/> || <Route exact path="/" component={InicioEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/" component={Inicio}/> || <Route exact path="/" component={buildEnglish}/>}
                       
-                      {this.state.verifyLanguage && <Route exact path="/ruta-cinco/git" component={Git}/> || <Route exact path="/ruta-cinco" component={BuildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-cinco/git" component={Git}/> || <Route exact path="/ruta-cinco" component={buildEnglish}/>}
                       {this.state.verifyLanguage && <Route exact path="/ruta-cinco/docker" component={Docker}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/ruta-siete" component={Javascript}/> || <Route exact path="/ruta-siete" component={BuildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-siete" component={Javascript}/> || <Route exact path="/ruta-siete" component={buildEnglish}/>}
                       
-                      {this.state.verifyLanguage && <Route exact path="/ruta-cuatro/react" component={Pagereact}/> || <Route exact path="/ruta-cuatro" component={BuildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-cuatro/react" component={Pagereact}/> || <Route exact path="/ruta-cuatro" component={buildEnglish}/>}
                       
                       {this.state.verifyLanguage && <Route exact path="/ruta-cuatro/vue" component={Vue}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/ruta-tres/laravel" component={Laravel}/> || <Route exact path="/ruta-tres" component={BuildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-tres/laravel" component={Laravel}/> || <Route exact path="/ruta-tres" component={buildEnglish}/>}
 
                       {this.state.verifyLanguage && <Route exact path="/ruta-tres/api-lumen" component={ApiLumen}/>}
 
                       {this.state.verifyLanguage && <Route exact path="/ruta-tres/node" component={Node}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/ruta-dos" component={htmlyCss}/> || <Route exact path="/ruta-dos" component={BuildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-dos" component={htmlyCss}/> || <Route exact path="/ruta-dos" component={buildEnglish}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/ruta-seis" component={Mysql}/> || <Route exact path="/ruta-seis" component={BuildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-seis" component={Mysql}/> || <Route exact path="/ruta-seis" component={buildEnglish}/>}
                       
                       {this.state.verifyLanguage && <Route exact path="/jquery" component={JQuery}/>}
 
+                      
 
        
 
@@ -132,7 +160,7 @@ class Router extends React.Component {
 
                       {this.state.verifyLanguage && <Route exact path="/react-router" component={Reactrouter}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/ruta-uno" component={Wordpress}/> || <Route exact path="/ruta-uno" component={BuildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-uno" component={Wordpress}/> || <Route exact path="/ruta-uno" component={buildEnglish}/>}
 
                       
                       
@@ -144,10 +172,26 @@ class Router extends React.Component {
           
             </BrowserRouter>
 
+                    
+        <ModalYetii
+            acces={this.state.acceso }
+            isOpen={this.state.openModal}
+            onClose={this.closeModal}
+            >
+
+              <img src={imageYetii} className="ImageModalYetii"/>
+                <form >
+                  <input type="password" className="input_yetii form-control form-control-lg" placeholder="password" onChange={this.handleChange} value={this.state.value}></input>
+                  <input type="button" className="button_yetii btn btn-light" value="Enviar" onClick={this.handleClick} name={this.state.value}></input>
+                </form>
+
+        </ModalYetii>
+
+
       </React.Fragment>
     );
   }
-  
+
 }
 
 export default Router;

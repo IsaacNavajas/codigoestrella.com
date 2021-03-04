@@ -125,3 +125,51 @@
     filter: invert(100%);
   }
 
+
+  .ModalYetiI{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width: 101%;
+    height: 101%;
+    background-color:rgba(6, 140, 145, 0.726);
+    z-index:100;
+    color:white;
+  }
+
+.modal-content-yetii{
+    position:absolute;
+    width: 50%;
+    height: 70%;
+    left: 25%;
+    top: 15% !important;
+}
+
+.modal-body-yetii{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.ImageModalYetii{
+  width: 30%;
+  border-radius: 90%;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1000);
+}
+.input_yetii{
+ 
+  margin-top:6%;
+  width: 70%;
+}
+.button_yetii{
+
+  margin-top:14px;
+  width: 70%;
+  text-align:center;
+}
+.aviso{
+  font-size: 30px;
+  margin-top:30px;
+  font-weight: bold;
+  color:red;
+}
