@@ -5,10 +5,12 @@ import imagetwo from "../source/diagramadevenn2.png";
 import imagethree from "../source/diagramadevenn3.png";
 import imagefour from "../source/diagramadevenn4.png";
 import imagefive from "../source/diagramadevenn5.png";
+import mysqlTabla from "../source/mysqlTabla.png";
 
 import imagetuplas from "../source/tuplas.png";
 import imagetuplasdos from "../source/tuplasdos.png";
 import imagetuplastres from "../source/tuplastres.png";
+
 
 function Mysql(){
   
@@ -27,7 +29,12 @@ function Mysql(){
           <li><p><strong>-Segunda forma normal: cada campo de la tabla debe depender de un id único. (Primary key) </strong></p></li>
           <li><p><strong>-Tercera forma normal: campos que no son clave no deben de tener dependencias. </strong></p></li>
           <li> <p><strong>-Cuarta forma normal: los campos multivaluados se identifican por una llave única. Donde es muchos a muchos hay que meter entre las dos tablas una <strong>tabla intermedia</strong> con un identificador propio y los id´s de cada tabla independiente. (Foreign key) </strong></p></li>
-          <li> <span className="subrayado"> En la normalización la tabla que tiene muchos es donde se meten las llaves foráneas. (se concatena con la otra tabla. ej; Usuario_id).</span></li>
+          <br/>
+          <center>
+            <img src={mysqlTabla} className="imagehtml col-12" title="imagen tablas"></img> <br/>
+          </center>
+          <li> <span className="subrayado"> En la normalización la tabla que tiene muchos es donde se meten las llaves foráneas. Otra forma de verlo es la tabla que tenga la normalizacion, la que concatene el id (user_id) es donde vamos a crear la llave foranea.</span></li>
+          
           </ul>
 
           <br/>
@@ -47,9 +54,19 @@ function Mysql(){
           <p><strong>SELECT first_name, Last_name FROM people: </strong>selecciona el first_name y el last_name de la tabla people. Mas adelante profundizaremos mas en el SELECT.</p>
           <br/>
           <hr></hr><br/>
+          <h2  className="bigtitle">Foreign keys</h2><br/>
+          <br/>
+          <p>Las Foreign Keys sirven para concatenar con la primary Key de otra tabla, deben ser NN, las foreign keys desde la interfaz grafica vamos a clickarlas en la cardinalidad de muchos,<u className="subrayado">esto lo hace autocaticamente pensando que donde vamos a concatenar <strong>la llave foranea del id</strong> de la otra tabla (user_id) <strong>va a ser la parte de a muchos.</strong></u> cuando una de las dos se borra o se actualiza se puede hacer;</p>
+          <p><strong>cascade: </strong> es para que cada vez que cambie un dato lo va a cambiar tambien tambien en la otra tabla por ejemplo un mismo id o para cuando lo vayamos a borrar que se borre en las dos tablas.</p>
+          <p><strong>restrict: </strong>es para cada vez que tenemos una tabla asociada no nos va a dejar borrarla hasta que borremos todos los pertenecientes a la otra tabla.</p>
+          <p><strong>set null: </strong>significa que cada vez que borremos un id el que pertenezca a esa tabla nos va a poner un null.</p>
+          <p>** En las tablas transitivas la llave foranea es donde tiene una cardinalidad de uno y a la tabla donde va es de muchos, </p>
+          <p>** database/Reverse engiener nos va a generar un grafico virtual de la bases de datos para poder diferenciar su cardinalidad y parametros.</p>
+          <br/>
+          <hr></hr><br/>
           <h2  className="bigtitle">Diagramas de Venn</h2><br/>
           <br/>
-          <span className="subrayado"> Toma como ejemplo las imágenes como tabla de la izquierda -> Usuario y la de la derecha -> Post</span><br/><br/>
+          <span className="subrayado"> Toma como ejemplo las imágenes como tabla de la izquierda -&gt; Usuario y la de la derecha -&gt; Post</span><br/><br/>
           <img src={imageone} className="Vendiagram"></img>
 
           <p><strong>SELECT * FROM Usuarios LEFT JOIN Post ON usuarios_id = Post.Usuario_id: </strong></p>
@@ -111,7 +128,7 @@ function Mysql(){
           <li><p><strong>-LIMIT: se usa para limitar la cantidad de resultados que arroja el query. </strong></p></li>
 
           
-          <p><strong>GROUP BY: </strong>agrupa conjuntos del mismo valor de la tupla asignada. Por ejemplo; <u className="subrayado">SELECT apellido, avg(nota) AS conjunto FROM alumnos GROUP BY apellido</u> -> haz una media de las notas agrupando los que se apelliden igual.</p>
+          <p><strong>GROUP BY: </strong>agrupa conjuntos del mismo valor de la tupla asignada. Por ejemplo; <u className="subrayado">SELECT apellido, avg(nota) AS conjunto FROM alumnos GROUP BY apellido</u> -&gt; haz una media de las notas agrupando los que se apelliden igual.</p>
           <img src={imagetuplasdos} ></img>
           <img src={imagetuplas}></img>
           
@@ -131,7 +148,7 @@ function Mysql(){
           <span className="subrayado">En la parte derecha de Workbench buscamos Administrador, a la izquierda de schemas y le damos a <strong>Data Export</strong> y buscamos la base de datos que queramos exportar.</span>
           <p><strong>Export to self-contained File: </strong>Aquí vamos a elegir el nombre y la ruta donde queremos guardar nuestra base de datos exportada. <span className="subrayado"> Es recomendable utilizar esta opcion, ya que nos lo exporta en un archivo SQL.</span></p>
           <p><strong>Include Create Schema: </strong>Para crear un esquema que nos permita crear la base de datos, si queremos insertar la base de datos antes de insertar los valores de la base de datos. <span className="subrayado"> Es recomnendable utilizarla si vamos a exportar para crear esa base de datos, NO para cuando queramos agregar esos valores a una base de datos ya creada.</span></p>
-          <p>* Error --> Para poder exportar la base de datos en Workbench es necesario tener una vérsion especifica para esto nos vamos a descargar la vérsion que nos especifica. Vamos a Edit - Preferences - Administration y en el Path to mysqldump Tool entramos dentro de la carpeta descargada de la versión indicada /bin/mysqldump</p>
+          <p>* Error --&gt; Para poder exportar la base de datos en Workbench es necesario tener una vérsion especifica para esto nos vamos a descargar la vérsion que nos especifica. Vamos a Edit - Preferences - Administration y en el Path to mysqldump Tool entramos dentro de la carpeta descargada de la versión indicada /bin/mysqldump</p>
           <br/>
           <br/>
           

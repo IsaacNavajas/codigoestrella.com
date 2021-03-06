@@ -1,10 +1,10 @@
 import React from 'react';
 
-import PhpUnit from './PhpUnit';
 import Modal from './Modal';
 import Php from './Php';
-import ControllerLaravel from './controllerLaravel.js';
-
+import BotonCrudApi from './botonCrudApi.js';
+import ApiLumen from './botonApiLumen';
+import PhpUnit from './botonPhpUnit';
 import imagecarbon1 from "../source/codezen 19.png";
 
 
@@ -45,12 +45,24 @@ class Laravel extends React.Component{
           <p><strong>old():</strong> devolver el valor que anterior.</p>
  
           <br/><br/>
-          <button 
-                      className="buttonphp btn btn-dark" 
-                      onClick={this.openModal}
-                      >
-                     Php
-          </button>
+          <ul>
+              
+                <li>
+                  <button className="buttonphp btn btn-dark" onClick={this.openModal}
+                            >
+                          Php
+                  </button>
+                </li>
+
+            <br/>
+
+                <li>
+                  <ApiLumen openModal ={this.openModal}/>
+                </li>
+
+            <br/>
+
+          </ul>
 
 
           <br/>
@@ -60,7 +72,7 @@ class Laravel extends React.Component{
 
           <br/><br/>
           <p><strong>Models:</strong> Representa el objeto del eloquent, sirve para trabajar en conjunto con el orm de laravel en forma de objeto y las bases de datos, para definir las tablas usaremos las migraciones.</p>
-          <p><strong>Views:</strong> Representa la parte de frontend de dentro del controlador y utilizaremos el template engine de laravel Blade. Si las vistas estan dentro de una carpeta -> view('carpeta.vista').</p>
+          <p><strong>Views:</strong> Representa la parte de frontend de dentro del controlador y utilizaremos el template engine de laravel Blade. Si las vistas estan dentro de una carpeta -&gt; view('carpeta.vista').</p>
           <p><strong>Controllers:</strong> Para agregar la logica del patron de arquitectura software.</p>
           <br/>
           <hr></hr><br/><br/>
@@ -96,9 +108,9 @@ class Laravel extends React.Component{
           <br/><br/>
           <span className="subrayado"> <strong>php artisan migrate</strong>, para crear las migraciones en tablas, una vez creadas no se podran modificar sin borrar los valores de la base de datos es por eso que se le agrega <strong>php artisan make:migration "nombre de la tabla modificadora" --table="nombre de la tabla a modificar" </strong>. </span>
 
-          <p><strong>$table->unsignedBigInteger('user_id'):</strong> crea un unsignedBigInteger en la tabla con el nombre user_id.</p>
-          <p><strong>$table->foreign(‘user_id’)->references(‘id’)->on(‘users’):</strong> para referenciar la id de users con el unsignedBigInteger user_id.</p>
-          <p><strong>$table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade'):</strong> que accion queremos que se logre en la llave forania al agregar o eliminar un id nuevo.</p>
+          <p><strong>$table-&gt;unsignedBigInteger('user_id'):</strong> crea un unsignedBigInteger en la tabla con el nombre user_id.</p>
+          <p><strong>$table-&gt;foreign(‘user_id’)-&gt;references(‘id’)-&gt;on(‘users’):</strong> para referenciar la id de users con el unsignedBigInteger user_id.</p>
+          <p><strong>$table-&gt;foreignId('user_id')-&gt;constrained()-&gt;onUpdate('cascade')-&gt;onDelete('cascade'):</strong> que accion queremos que se logre en la llave forania al agregar o eliminar un id nuevo.</p>
           <br/>
           <hr></hr><br/><br/>
 
@@ -124,7 +136,7 @@ class Laravel extends React.Component{
 
           <br/>
 
-          <div><ControllerLaravel 
+          <div><BotonCrudApi
             openModal ={this.openModal}
 
             /></div>
@@ -149,9 +161,9 @@ class Laravel extends React.Component{
 
           <h2  className="bigtitle">Relacciones de Eloquent</h2><br/>
           <br/>
-          <p><strong>return $this->hasMany(Expense::class); :</strong>Relaccionar <strong>uno a muchos</strong> con el Modal Expense. </p> 
+          <p><strong>return $this-&gt;hasMany(Expense::class); :</strong>Relaccionar <strong>uno a muchos</strong> con el Modal Expense. </p> 
           <br/>
-          <p><strong>return $this->belongsTo(Post::class); :</strong>Relaccionar <strong>muchos a uno</strong> con el Modal Post.</p>
+          <p><strong>return $this-&gt;belongsTo(Post::class); :</strong>Relaccionar <strong>muchos a uno</strong> con el Modal Post.</p>
          
           <a 
             href="http://laravel.com/docs/8.x/eloquent-relationships#one-to-many" 
@@ -180,9 +192,9 @@ class Laravel extends React.Component{
           <h2  className="bigtitle">Factories</h2>
           <br/>
           <br/>
-          <p><strong>php artisan make:factory:</strong> para crear un factory, se va a guardar en database/factories/, hay que señalar que modelo asignamos a ese factory -> protected $model = Post::class; <u className="subrayado">php artisan make:factory PostFactory --model=Post</u> para asignar el model al que queremos concatenarlo directamente.</p>
-          <p><strong>factory(App\Post::class, 30)->create():</strong> entramos a Tinker y desde ahi creamos 30 factories.</p>
-          <p><strong>Post::factory()->count(12)->create():</strong> para crear un factory() desde codigo.</p>
+          <p><strong>php artisan make:factory:</strong> para crear un factory, se va a guardar en database/factories/, hay que señalar que modelo asignamos a ese factory -&gt; protected $model = Post::class; <u className="subrayado">php artisan make:factory PostFactory --model=Post</u> para asignar el model al que queremos concatenarlo directamente.</p>
+          <p><strong>factory(App\Post::class, 30)-&gt;create():</strong> entramos a Tinker y desde ahi creamos 30 factories.</p>
+          <p><strong>Post::factory()-&gt;count(12)-&gt;create():</strong> para crear un factory() desde codigo.</p>
 
           
           <br/>
@@ -214,12 +226,12 @@ class Laravel extends React.Component{
           <br/><br/>
         
 
-          <h2  className="bigtitle">Compartir src´s</h2>
+          <h2  className="bigtitle">Compartir src´s</h2> 
           <br/>
           <br/>
           <p><strong>php artisan storage:link:</strong> creara un link simbolico desde storage / public a public / storage asi tus imagenes se veran de forma publica.</p>
-          <p><strong>url('storage/app/images/'.$article->image) }}:</strong> public / storage es un reflejo de storage / . Ahora puedes usar url() para obtener la imagen de public / storage .</p>
-          <p><strong>url(‘storage/posts/’.$post->image)}}:</strong> normalmente en produccion solo se debe acceder a tu carpeta public, no deberias dar permisos para que visualizen carpetas internas del app.</p>
+          <p><strong>url('storage/app/images/'.$article-&gt;image) :</strong> public / storage es un reflejo de storage / . Ahora puedes usar url() para obtener la imagen de public / storage .</p>
+          <p><strong>url(‘storage/posts/’.$post-&gt;image):</strong> normalmente en produccion solo se debe acceder a tu carpeta public, no deberias dar permisos para que visualizen carpetas internas del app.</p>
 
 
           <br/>
@@ -231,8 +243,8 @@ class Laravel extends React.Component{
           <br/>
           <br/>
           <p><strong>get(Attribute)Attribute:</strong> crearemos un accesor dandole como nombre de function dentro de get(crear_accesor)Attribute, en el modelo elegido y meteremos la logica deseada ejemplo <u className="subrayado">getNombreEnMayusculasAttribute</u> separaremos entre mayusculas cada palabra.</p>
-          <p><strong>$firstName = $user->nombre_en_mayusculas:</strong> para llamar a la function separaremos siempre entre ( _ ) las palabras, para saber como se separan unas de otras se usan mayusculas.</p>
-          <p>Los mutadores son iguales que los accesores pero recibe el valor del atributo. ejemplo: $this->attributes['first_name'] = strtolower($attributeValue); y se definen como <u class="subrayado">set(crear_mutadores)Attribute</u> varia el metodo set en vez del get.</p>
+          <p><strong>$firstName = $user-&gt;nombre_en_mayusculas:</strong> para llamar a la function separaremos siempre entre ( _ ) las palabras, para saber como se separan unas de otras se usan mayusculas.</p>
+          <p>Los mutadores son iguales que los accesores pero recibe el valor del atributo. ejemplo: $this-&gt;attributes['first_name'] = strtolower($attributeValue); y se definen como <u class="subrayado">set(crear_mutadores)Attribute</u> varia el metodo set en vez del get.</p>
          
           <br/>
      

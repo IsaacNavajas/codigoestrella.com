@@ -20,7 +20,7 @@ class Vue extends React.Component{
 
         <div className="container">
           
-          <h2  className="bigtitle font col-8">Instalación</h2><br/>
+          <h2  className="bigtitle font col-8">Instalación (CLI)</h2><br/>
 
             <select className="centrarTexto col-4" onChange={(e) => this.setState({value : e.target.value})}>
               <option id="Vue 2" value="2">Vue 2.0</option>

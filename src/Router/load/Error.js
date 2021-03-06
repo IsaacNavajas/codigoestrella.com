@@ -15,8 +15,8 @@ class Error extends React.Component{
 
             <p>Error: 404</p>
             
-            <div class="spinner-grow text-danger  Loading" role="status">
-              <span class="sr-only">Loading...</span>
+            <div className="spinner-grow text-danger  Loading" role="status">
+              <span className="sr-only">Loading...</span>
             </div>
 
             

@@ -13,7 +13,7 @@ function Modal_yetii(props){
               <center>
                 {props.children}
                 <input type="button" className="button_yetii btn btn-light" value="Salir" onClick={props.onClose} ></input>
-                <p>{props.acces == true && <p className="aviso">** Ya tienes acceso al toggle**</p>}</p>
+                {props.acces == true && <p className="aviso">** Ya tienes acceso al toggle**</p>}
               </center>
             
           </div>

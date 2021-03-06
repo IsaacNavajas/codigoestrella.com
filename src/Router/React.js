@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from './Modal';
-import ReactRouter from './Reactrouter';
-import ModalJson from './ModalJson';
+import BotonReactRouter from './BotonReactRouter';
+import BotonJson from './botonJson';
 
 import imagecarbon1 from "../source/codezen 1.png";
 import imagecarbon2 from "../source/codezen 2.png";
@@ -63,7 +63,7 @@ class Pagereact extends React.Component{
               Usar_Typescript_con_React.
           </a><br/><br/>
 
-          <p><strong>npx create-react-app mi-app --template typescript:</strong> para instalar un nuevo proyecto react de nombre mi-app con typescript, los archivos de react dentro del proyecto cambiaran la nomenclatura automaticamente => ejemplo.tsx.</p>
+          <p><strong>npx create-react-app mi-app --template typescript:</strong> para instalar un nuevo proyecto react de nombre mi-app con typescript, los archivos de react dentro del proyecto cambiaran la nomenclatura automaticamente =&gt; ejemplo.tsx.</p>
 
           <hr></hr><br/>
 
@@ -72,7 +72,7 @@ class Pagereact extends React.Component{
           <u className="subrayado"> La forma de pasar un componente dentro de otro es en forma de elemento, si le damos parámetros a estos elementos podemos pasarlos a esos componentes a través de <strong>this.props</strong>. También podemos heredar los props con <strong>this.props.children</strong>. </u> 
           <br/><br/>
           <p><strong>ReactDom.render(__que__, __donde__):</strong> nos va a renderizar un dom virtual donde le vamos a dar dos argumentos, el primero que queremos renderizar y el segundo donde.</p>
-          <p><strong>import confLogo from '../../images/image.png':</strong> es la forma en la que vamos a llamar a los documentos y para desglosarlo seria entre llaves usando la palabra de sub-nombre en este caso confLogo.</p>
+          <p><strong>import confLogo from '../../images/image.png':</strong> es la forma en la que vamos a llamar a los documentos y para desglosarlo seria entre llaves usando la palabra de sub-nombre en este caso confLogo. A este metodo se le llama <strong>ECMAScript modules</strong>.</p>
           <p><strong>import './Style/Style css':</strong> para agregar un css.</p>
           <p><strong>className="":</strong> para aplicar estilos con JSX no se hace con class por que es una palabra reservada para el class de javascript sino que se hace con className.</p>
           <p><strong>handlesubmit():</strong> función que es llamada desde el onSubmit="".</p>
@@ -80,7 +80,7 @@ class Pagereact extends React.Component{
           <p><strong>handlechange():</strong> función que es llamada desde el onChange="".</p>
           <p><strong>... this.state.form, [e.target.name]:e.target.value:</strong> cuando hacemos el levantamiento de estado recoge todos los name de los input y va redirigiendo su valor reaccionariamente, llamamos al spread para traer los valores que hemos ido guardando y la parte del state donde estamos guardando los estados de los inputs; esto lo hacemos para ir guardando los valores anteriores de lo contrario solo nos guardara un valor. Esto lo metemos dentro de un setState dentro de un handlecange().</p>
           <p><strong>state y setState:</strong> state nos define y enseña sus valores y setState sirve para actualizar estos valores. Se llaman a traves de this excepto state que se inicializa directamente justo después del return.</p>
-          <p><strong>LoremIpsum = () =>:</strong> Es una buena practica en React, definir las funciones con arrow functions y asi también olvidarnos del .bind(this).</p>
+          <p><strong>LoremIpsum = () =&gt;:</strong> Es una buena practica en React, definir las funciones con arrow functions y asi también olvidarnos del .bind(this).</p>
 
           <br/>
           <hr></hr><br/>
@@ -113,7 +113,7 @@ class Pagereact extends React.Component{
           <br/>
           <br/>
           
-          <div><ModalJson 
+          <div><BotonJson
             openModal ={this.openModal}
 
             /></div>
@@ -194,7 +194,7 @@ class Pagereact extends React.Component{
             onClose={this.closeModal}
             title = 'R e a c t - R o u t e r'
             >
-              <ReactRouter/>
+              <BotonReactRouter/>
         </Modal>
 
 

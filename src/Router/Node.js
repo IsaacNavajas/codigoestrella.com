@@ -1,5 +1,4 @@
 import React from 'react';
-import image from "../source/codezen 11.png";
 
 class Node extends React.Component{
 
@@ -12,7 +11,7 @@ class Node extends React.Component{
 
           <br/>
 
-          <h2  className="bigtitle font">Instalación</h2><br/>
+          <h2  className="bigtitle-2 font">Instalación</h2><br/>
   
           <br/>
           <p><strong>Instalación: </strong> 
@@ -32,17 +31,29 @@ class Node extends React.Component{
           <br/>
           <hr></hr><br/><br/>
 
-          <h2  className="bigtitle">Variables de entorno:</h2>
+          <h2  className="bigtitle-h2">Variables de entorno:</h2>
 
           <br/><br/>
           <p>let nombre = <strong>process.env.NOMBRE:</strong> Para acceder a las variables de entrono.</p>
-          <p><strong>$env:NOMBRE="Carlos":</strong> .</p>
+          <p><strong>$env:NOMBRE="Carlos":</strong> </p>
+          <p><strong>.env:</strong> creamos un archivo llamado .env donde vamos a meter directamente todas las variables de entorno, todas nuestras variables de entorno las escribimos directamente y en mayusculas (HOST = localhost, PORT = 5000,).</p>
+          <br/>
+          <ul>
+            <li>//CONFIG</li>
+            <li>PORT=8000</li>
+            <li>//MONGO</li>
+            <li>DB_USER=</li>
+            <li>DB_PASSWORD=</li>
+            <li>DB_HOST=</li>
+            <li>DB_PORT=</li>
+            <li>DB_NAME=</li>
+          </ul>
 
       
           <br/>
           <hr></hr><br/><br/>
 
-          <h2  className="bigtitle">General</h2>
+          <h2  className="bigtitle-h2">General</h2>
 
           <br/><br/>
           <p>console.log(<strong>global</strong>):  Node tiene el objeto global que contiene los metodos y propiedades de Node, que en el navegador tiene una igualdad en referencia a this.</p>
@@ -50,7 +61,7 @@ class Node extends React.Component{
           <br/>
           <hr className="linea-discontinua" /><br/>
           <p>ARCHIVOS DE SISTEMA:</p>
-          <p><strong>const fs = require('fs'):</strong> Para llamar como referencia fs a ese mismo archivo.</p>
+          <p><strong>const fs = require('fs'):</strong> Para llamar como referencia fs a ese mismo archivo, funciona como el Ecmascript module pero este es de Javascript, en node no se puede utilizar el Ecmascript module.</p>
 
           <p>fs.<strong>readFile():</strong> Para leer los archivos.</p>
           <p>fs.<strong>writeFile():</strong> Para escribir archivos.</p>
@@ -74,7 +85,7 @@ class Node extends React.Component{
           <hr className="linea-discontinua" /><br/><br/>
 
           <p>HTTP:</p>
-          <p><strong>http.createServer((req, res) => ...):</strong> Node nos ofrece un http para crear un sistema de rutas, uno de los metodos principales es createServer que nos permite abrir un puerto para crear un servidor. </p>
+          <p><strong>http.createServer((req, res) =&gt; ...):</strong> Node nos ofrece un http para crear un sistema de rutas, uno de los metodos principales es createServer que nos permite abrir un puerto para crear un servidor. </p>
           <ul>
             <li><p><strong>.listen(3000):</strong> para fijar el puerto.</p></li>
             <li><p><strong>res.end():</strong> terminará el proceso de respuesta.</p></li>
@@ -105,8 +116,8 @@ class Node extends React.Component{
           <p>PROOCESOS:</p>
           <p><strong>process.:</strong> Señales de procesos que puedes escuchar cuando pasen .</p>
 
-          <p><strong>process.on('exit', () => ...):</strong> Que quieres hacer cuando el proceso a terminado, no se puede usar un time dentro. Tambien podmeos usar <strong>process.on('beforeexit', () => ...):</strong> para justo antes de cuando termina.</p>
-          <p><strong>process.on('uncaughtException', (error, origen) => console.log(error, origen));:</strong> Permite capturar cualquier error que no fue caputurado previamente. Esto evita que Node cierre todos los hijos al encontrar un error no manejado. Tambien existe <strong>process.on('uncaughtRejecption', (error, origen)</strong>.</p>
+          <p><strong>process.on('exit', () =&gt; ...):</strong> Que quieres hacer cuando el proceso a terminado, no se puede usar un time dentro. Tambien podmeos usar <strong>process.on('beforeexit', () =&gt; ...):</strong> para justo antes de cuando termina.</p>
+          <p><strong>process.on('uncaughtException', (error, origen) =&gt; console.log(error, origen));:</strong> Permite capturar cualquier error que no fue caputurado previamente. Esto evita que Node cierre todos los hijos al encontrar un error no manejado. Tambien existe <strong>process.on('uncaughtRejecption', (error, origen)</strong>.</p>
  
           <br/>
 
@@ -115,7 +126,7 @@ class Node extends React.Component{
 
           <hr></hr><br/><br/>
 
-          <h2  className="bigtitle">Modules</h2>
+          <h2  className="bigtitle-h2">Modules</h2>
 
           <br/><br/>
 

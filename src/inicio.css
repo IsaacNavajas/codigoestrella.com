@@ -97,12 +97,10 @@
   transition: all 2s;
 }
 
-
 .desaparecer{
   display:none;
   transition: all 2s;
   opacity: 0;
-
 }
 
 .desaparecerimagen{
@@ -119,7 +117,7 @@
     font-family: 'Fredericka the Great', cursive;
     background-image: url("https://i.ibb.co/mq7vPkz/star-3.jpg");
     background-position: center;
-    -webkit-background-clip: text;
+    background-clip: text;
   
     -webkit-filter: invert(100%);
     filter: invert(100%);

@@ -3,6 +3,16 @@ import '../styles.css';
 import image from '../source/image 1.png';
 import {Link} from "react-router-dom";
 
+import logoExpress from '../source/logo-express.png';
+import logoVue from '../source/logo-vue.png';
+import logoLaravel from '../source/logo-laravel.png';
+import logoReact from '../source/logo-react.png';
+import logoDocker from '../source/logo-docker.png';
+import logoGit from '../source/logo-git.png';
+import logoMysql from '../source/logo-mysql.png';
+import logoMongo from '../source/logo-mongodb.png';
+
+
 
 class Navbar extends React.Component{
   
@@ -17,7 +27,7 @@ class Navbar extends React.Component{
                     {
                      this.props.verifyLanguage && <h1 className="title-codigoestrella-spanish col-12" id="title">Codigoestrella.com</h1>
                       ||
-                      <h1 className="title-codigoestrella-english col-12" id="title">Codigoestrella.com</h1>
+                      <h1 className="title-codigoestrella-english col-12" id="title">yetii.exe [root💀;]</h1>
                     }
 
 
@@ -30,17 +40,20 @@ class Navbar extends React.Component{
                 {this.props.verifyLanguage && 
                     <ul>
                       
-                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-uno">WORDPRESS</Link></li>
-                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-dos">HTML & CSS</Link></li>
+                      <li className=" col-2"><Link to="/ruta-uno" className="menubuttons btn btn-dark" >WORDPRESS</Link></li>
+                      <li className=" col-2"><Link to="/ruta-dos" className="menubuttons btn btn-dark" >HTML & CSS</Link></li>
                  
                       <div className="col-2">
                     <div className=" hover ">
                       {
                         //Submenu-backend
                         <ul>
-                          <li className=" col-12"><Link className="drop-down-menubuttons-nivelone btn btn-dark" to="/ruta-tres/laravel">LARAVEL</Link></li>
-                          <li className=" col-12"><Link className="drop-down-menubuttons-niveltwo btn btn-dark" to="/ruta-tres/api-lumen">API / LUMEN</Link></li>
-                          <li className=" col-12"><Link className="drop-down-menubuttons-nivelthree btn btn-dark" to="/ruta-tres/node">NODE.JS</Link></li>
+                          <li className=" col-12"><Link to="/ruta-tres/laravel" className="drop-down-menubuttons-nivelone btn btn-dark">
+                            <img src={logoLaravel} className="logo-nav" alt="logo Express"></img> LARAVEL</Link>
+                          </li>
+                          <li className=" col-12"><Link to="/ruta-tres/express" className="drop-down-menubuttons-niveltwo btn btn-dark" >
+                            <img src={logoExpress} className="logo-nav" alt="logo Express"></img> EXPRESS.JS</Link>
+                          </li>
                         </ul> 
                       }
                     </div>      
@@ -52,8 +65,12 @@ class Navbar extends React.Component{
                       {     
                         //Submenu-frontend
                         <ul>
-                          <li className=" col-12"><Link className=" drop-down-menubuttons-nivelone btn btn-dark" to="/ruta-cuatro/react">REACT.JS</Link></li>
-                          <li className=" col-12"><Link className=" drop-down-menubuttons-niveltwo btn btn-dark" to="/ruta-cuatro/vue">VUE.JS</Link></li>
+                          <li className=" col-12"><Link to="/ruta-cuatro/react" className=" drop-down-menubuttons-nivelone btn btn-dark" >
+                            <img src={logoReact} className="logo-nav" alt="logo Express"></img>REACT.JS</Link>
+                          </li>
+                          <li className=" col-12"><Link to="/ruta-cuatro/vue" className=" drop-down-menubuttons-niveltwo btn btn-dark" >
+                            <img src={logoVue} className="logo-nav" alt="logo Express"></img>VUE.JS</Link>
+                          </li>
                         </ul> 
                       }
                     </div>      
@@ -65,27 +82,45 @@ class Navbar extends React.Component{
                       {
                         //Submenu-backend
                         <ul>
-                          <li className=" col-12"><Link className="drop-down-menubuttons-nivelone btn btn-dark" to="/ruta-cinco/git">GIT</Link></li>
-                          <li className=" col-12"><Link className="drop-down-menubuttons-niveltwo btn btn-dark" to="/ruta-cinco/docker">DOCKER</Link></li>
+                          <li className=" col-12"><Link to="/ruta-cinco/docker" className="drop-down-menubuttons-nivelone btn btn-dark">
+                            <img src={logoDocker} className="logo-nav" alt="logo Express"></img>DOCKER</Link>
+                          </li>
+                          <li className=" col-12"><Link to="/ruta-cinco/git" className="drop-down-menubuttons-niveltwo btn btn-dark" >
+                            <img src={logoGit} className="logo-nav" alt="logo Express"></img>GIT</Link>
+                          </li>
                         </ul> 
                       }
                     </div>      
                     </div> 
-                      <li className=" col-2"><div className="hoveruno  menubuttons btn btn-dark " >CONSOLA ⇵</div></li>
+                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark " >CONSOLA ⇵</div></li>
           
-
-                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-seis">MYSQL</Link></li>
+                      <div className="col-2">
+                    <div className=" hover ">
+                      {
+                        //Submenu-backend
+                        <ul>
+                          <li className=" col-12"><Link to="/ruta-seis" className="drop-down-menubuttons-nivelone btn btn-dark" >
+                            <img src={logoMysql} className="logo-nav" alt="logo Express"></img>MYSQL</Link>
+                          </li>
+                          <li className=" col-12"><Link to="/ruta-seis" className="drop-down-menubuttons-niveltwo btn btn-dark" >
+                            <img src={logoMongo} className="logo-nav" alt="logo Express"></img>MONGO DB</Link>
+                          </li>
+                        </ul> 
+                      }
+                    </div>
+                    </div>
+                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >BBDD ⇵</div></li>
                     </ul>
                 }
 
                 {!this.props.verifyLanguage && 
                     <ul>
-                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-uno">ADVERBS</Link></li>
-                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-dos">VERBS</Link></li>
-                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-tres">ING / ED - WILL</Link></li>
-                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-cuatro">VOCABULARY</Link></li>
-                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-cinco">PREPOSITION</Link></li>
-                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-seis">OTHER</Link></li>
+                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-uno">WINDOWS</Link></li>
+                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-dos">LINUX</Link></li>
+                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-tres">CONSOLA</Link></li>
+                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-cuatro">BBDD</Link></li>
+                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-cinco">PROGRAMAS UTILES</Link></li>
+                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-seis">OTROS</Link></li>
                     </ul>
                 }   
                

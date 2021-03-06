@@ -2,8 +2,8 @@ import React from 'react';
 import Modal from './Modal';
 
 import data from './DataJavascript.json';
-import JQuery from './JQuery';
-import TypescriptModal from './TypescriptModal';
+import BotonJQuery from './botonJQuery';
+import BotonTypescript from './BotonTypescript';
 
 import image from "../source/image javascript.png";
 import imagePromise from "../source/codezen promesas.png";
@@ -63,7 +63,7 @@ class Javascript extends React.Component{
           <br/>
 
         <ul>
-          <li><TypescriptModal/></li><br/>
+          <li><BotonTypescript/></li><br/>
 
           <li>
             <button 
@@ -172,7 +172,7 @@ class Javascript extends React.Component{
   
           <br/><br/>
         
-          <p><strong>.options :</strong> para saber cuántas opciones hay en una lista desplegable específica; let x = array.options.length -> x = 44. </p>
+          <p><strong>.options :</strong> para saber cuántas opciones hay en una lista desplegable específica; let x = array.options.length -&gt; x = 44. </p>
           <p><strong>new Proxy():</strong> nos va a cargar en memoria diferentes datos con los que trabajar, trabaja con los datos que se cargan después de haber iniciado la pagina, como por ejemplo un this.setTiout();</p>
             <ul>
               <li><p><strong>+ PevProps =</strong> trabaja con props actualizados o de ciclo.</p></li>
@@ -196,7 +196,7 @@ class Javascript extends React.Component{
             onClose={this.closeModal}
             title = 'J Q u e r y'
             >
-              <JQuery/>
+              <BotonJQuery/>
         </Modal>
 
       </React.Fragment>

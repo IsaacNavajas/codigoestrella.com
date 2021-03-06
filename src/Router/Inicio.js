@@ -52,8 +52,6 @@ class Inicio extends React.Component{
             <li> <p><strong>- [] :</strong> Para delimitar un patron.</p></li>
             <li> <p><strong >- 'llaves' :</strong> Para definir una condición. 'llaves'6-9 -> seis elementos como minimo y nueve como maximo.</p></li>
     
-
-         
           </ul>
           <br/>
           <hr></hr> 

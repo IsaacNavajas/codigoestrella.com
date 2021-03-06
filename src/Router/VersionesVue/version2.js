@@ -125,7 +125,7 @@ function Version2(){
               <ul className="nido">
               <li><p><u className="subrayado">-  dentro del <strong>nombre del prop que has pasado:</strong> podemos definir el tipo de props que esperamos dentro de otro objeto.</u></p></li>
               <li><p><strong>- Type:</strong> el tipado esperado, como array, string...</p></li>
-              <li><p><strong>- default:</strong> el valor por defecto que esperamos, si esperamos un objeto o un array lo devolvemos en forma de funcion. -default: () =`&gt;` [].</p></li>
+              <li><p><strong>- default:</strong> el valor por defecto que esperamos, si esperamos un objeto o un array lo devolvemos en forma de funcion. -default: () =&gt; [].</p></li>
             </ul>
             </ul>
             
@@ -243,7 +243,7 @@ function Version2(){
             <p>Etiqueta <strong>router-link:</strong> es una propiedad de vue router que en cualquier template podemos generar como si fuese un a reactivo y sustituiremos href= por to="/".</p>
             <p>Etiqueta <strong>router-view:</strong> es una propiedad de vue router que funciona como layout, por ejemplo en nuestro componente layout vamos a agregar esta etiqueta en medio del header y del footer.</p>
 
-            <p><strong>rutas dinamicas o con id:</strong> a la hora de crear el objeto de ruta dentro del array routes: el path llevara el valor dinamico -`&gt;` <strong>path:'/ruta/:id'</strong> .</p>
+            <p><strong>rutas dinamicas o con id:</strong> a la hora de crear el objeto de ruta dentro del array routes: el path llevara el valor dinamico -&gt; <strong>path:'/ruta/:id'</strong> .</p>
             <ul >
                 <li><p><strong>+ params:</strong> la propiedad params nos va a definir la parte dinamica del route que pertenece al path del componente router y a quien hace referencia. La agregamos en un :to bindeado de router-link "entre llaves".<strong> router-link :to" "abrimos llaves" name:"name_del_componente_router", params:"id: f.id" "cerramos llaves" " </strong>.</p></li>
                 <li><p><strong>+ this.$shet(object, propertyName, value):</strong> para evitar problemas de reactividad en tareas asincronas, por ejemplo en una peticion fetch si encapsulamos un a con un metodo del fetch va a fallar . vm.$set() es un alias del global Vue.set()</p></li>
