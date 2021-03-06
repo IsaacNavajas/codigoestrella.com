@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.3013e088.chunk.css",
-    "main.js": "/static/js/main.7cd78b1c.chunk.js",
-    "main.js.map": "/static/js/main.7cd78b1c.chunk.js.map",
+    "main.css": "/static/css/main.7a70ad99.chunk.css",
+    "main.js": "/static/js/main.dd420228.chunk.js",
+    "main.js.map": "/static/js/main.dd420228.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ec26966.js",
     "runtime-main.js.map": "/static/js/runtime-main.2ec26966.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.7317bdc2.chunk.js": "/static/js/2.7317bdc2.chunk.js",
-    "static/js/2.7317bdc2.chunk.js.map": "/static/js/2.7317bdc2.chunk.js.map",
+    "static/js/2.818baafd.chunk.js": "/static/js/2.818baafd.chunk.js",
+    "static/js/2.818baafd.chunk.js.map": "/static/js/2.818baafd.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.26f110277b04cf1915a148e83a33e19f.js": "/precache-manifest.26f110277b04cf1915a148e83a33e19f.js",
+    "precache-manifest.5693f60ad8c0bcd817670f06c15e6142.js": "/precache-manifest.5693f60ad8c0bcd817670f06c15e6142.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.3013e088.chunk.css.map": "/static/css/main.3013e088.chunk.css.map",
-    "static/js/2.7317bdc2.chunk.js.LICENSE.txt": "/static/js/2.7317bdc2.chunk.js.LICENSE.txt",
+    "static/css/main.7a70ad99.chunk.css.map": "/static/css/main.7a70ad99.chunk.css.map",
+    "static/js/2.818baafd.chunk.js.LICENSE.txt": "/static/js/2.818baafd.chunk.js.LICENSE.txt",
     "static/media/archivos.zip": "/static/media/archivos.ac33cf1e.zip",
     "static/media/codezen 1.png": "/static/media/codezen 1.49b3fc8c.png",
     "static/media/codezen 10.png": "/static/media/codezen 10.82931b6d.png",
@@ -44,6 +44,7 @@
     "static/media/codezen static.png": "/static/media/codezen static.3d31f05a.png",
     "static/media/codezenApiJs.png": "/static/media/codezenApiJs.df084693.png",
     "static/media/codezenElectron.png": "/static/media/codezenElectron.577ff2e6.png",
+    "static/media/codezenExpressDos.png": "/static/media/codezenExpressDos.db90baec.png",
     "static/media/codezenExpressUno.png": "/static/media/codezenExpressUno.e8c3bbcb.png",
     "static/media/codezenHomeJs.png": "/static/media/codezenHomeJs.8a76e9a8.png",
     "static/media/codezenPxAssetsTableVue.png": "/static/media/codezenPxAssetsTableVue.06fadeb3.png",
@@ -62,6 +63,8 @@
     "static/media/imageTCP.png": "/static/media/imageTCP.626c04b5.png",
     "static/media/imagedocker.png": "/static/media/imagedocker.74c6bf10.png",
     "static/media/imagenExplicacionDNS.png": "/static/media/imagenExplicacionDNS.90a4d1d8.png",
+    "static/media/logo-mysql.png": "/static/media/logo-mysql.c6676c5f.png",
+    "static/media/mysqlTabla.png": "/static/media/mysqlTabla.e4855bf2.png",
     "static/media/prettierrc.png": "/static/media/prettierrc.78862327.png",
     "static/media/spam.png": "/static/media/spam.c5515606.png",
     "static/media/tuplas.png": "/static/media/tuplas.731426fe.png",
@@ -71,8 +74,8 @@
   "entrypoints": [
     "static/js/runtime-main.2ec26966.js",
     "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.7317bdc2.chunk.js",
-    "static/css/main.3013e088.chunk.css",
-    "static/js/main.7cd78b1c.chunk.js"
+    "static/js/2.818baafd.chunk.js",
+    "static/css/main.7a70ad99.chunk.css",
+    "static/js/main.dd420228.chunk.js"
   ]
 }

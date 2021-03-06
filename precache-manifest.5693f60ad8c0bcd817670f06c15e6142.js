@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "02433b4d1f28c32cf2bff7005651d902",
+    "revision": "86795d1d652518071fa9cd5b1ba73f9d",
     "url": "/index.html"
   },
   {
-    "revision": "4103d3cf272c63353b4a",
+    "revision": "91b206e456cb096eddca",
     "url": "/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "f36793e17578d2c33fcf",
-    "url": "/static/css/main.3013e088.chunk.css"
+    "revision": "557a39ad4d5d6bd9930c",
+    "url": "/static/css/main.7a70ad99.chunk.css"
   },
   {
-    "revision": "4103d3cf272c63353b4a",
-    "url": "/static/js/2.7317bdc2.chunk.js"
+    "revision": "91b206e456cb096eddca",
+    "url": "/static/js/2.818baafd.chunk.js"
   },
   {
     "revision": "28fa8ae9817b1f7a5dea7108e26b4348",
-    "url": "/static/js/2.7317bdc2.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.818baafd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f36793e17578d2c33fcf",
-    "url": "/static/js/main.7cd78b1c.chunk.js"
+    "revision": "557a39ad4d5d6bd9930c",
+    "url": "/static/js/main.dd420228.chunk.js"
   },
   {
     "revision": "3c3f1816a6eeafdc4489",
@@ -148,6 +148,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/codezenElectron.577ff2e6.png"
   },
   {
+    "revision": "db90baec7c48c43b43f0fb476a793adb",
+    "url": "/static/media/codezenExpressDos.db90baec.png"
+  },
+  {
     "revision": "e8c3bbcbc42f67c2658ef5b66d122732",
     "url": "/static/media/codezenExpressUno.e8c3bbcb.png"
   },
@@ -218,6 +222,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "90a4d1d86fb9999bd985cc89fe4c4cdd",
     "url": "/static/media/imagenExplicacionDNS.90a4d1d8.png"
+  },
+  {
+    "revision": "c6676c5fce75797727c65f4fec4ee115",
+    "url": "/static/media/logo-mysql.c6676c5f.png"
+  },
+  {
+    "revision": "e4855bf25d732863cce1c63f830e24ec",
+    "url": "/static/media/mysqlTabla.e4855bf2.png"
   },
   {
     "revision": "78862327be5506c584b855778133e3a9",
