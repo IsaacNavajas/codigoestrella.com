@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "86795d1d652518071fa9cd5b1ba73f9d",
+    "revision": "54e6b3d636629a5f6c5eee2dc94a8de7",
     "url": "/index.html"
   },
   {
-    "revision": "91b206e456cb096eddca",
+    "revision": "301a155a3d69e851d442",
     "url": "/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "557a39ad4d5d6bd9930c",
-    "url": "/static/css/main.7a70ad99.chunk.css"
+    "revision": "949580679bb4388777dd",
+    "url": "/static/css/main.82e8cc77.chunk.css"
   },
   {
-    "revision": "91b206e456cb096eddca",
-    "url": "/static/js/2.818baafd.chunk.js"
+    "revision": "301a155a3d69e851d442",
+    "url": "/static/js/2.f11287e4.chunk.js"
   },
   {
     "revision": "28fa8ae9817b1f7a5dea7108e26b4348",
-    "url": "/static/js/2.818baafd.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.f11287e4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "557a39ad4d5d6bd9930c",
-    "url": "/static/js/main.dd420228.chunk.js"
+    "revision": "949580679bb4388777dd",
+    "url": "/static/js/main.d800ee10.chunk.js"
   },
   {
     "revision": "3c3f1816a6eeafdc4489",
@@ -158,6 +158,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8a76e9a83bb789a1b2fa10cc45e9358e",
     "url": "/static/media/codezenHomeJs.8a76e9a8.png"
+  },
+  {
+    "revision": "a680b7e6961a7315a5f6bd490c221da5",
+    "url": "/static/media/codezenMongodbCuatro.a680b7e6.png"
+  },
+  {
+    "revision": "eb5b98e779552ea04a4420775a899846",
+    "url": "/static/media/codezenMongodbDos.eb5b98e7.png"
+  },
+  {
+    "revision": "1499f9d5c8e8544a75c16f9c0dff5a78",
+    "url": "/static/media/codezenMongodbTres.1499f9d5.png"
+  },
+  {
+    "revision": "9320d0fc4e7f551e62e59bbfaa6fe0ce",
+    "url": "/static/media/codezenMongodbUno.9320d0fc.png"
   },
   {
     "revision": "06fadeb32c260b148f5729ff2b8f5907",
