@@ -22,5 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-#uploaded fales
-src/
+#uploaded files
+/src/source/*.png
+/src/source/*.zip
