@@ -102,6 +102,17 @@ html, body {
   margin-left: 34%;
 }
 
+.tema_Yetii{
+  max-width: 100%;
+  text-align: justify;
+  color:white;
+  background-color: black;
+  padding-bottom: 10%;
+  font-family: 'Duru Sans', sans-serif;
+  z-index:-10;
+  color:#2bff00;
+}
+
 .marginbot{
   padding-top: 880px;;
 }
@@ -599,6 +610,7 @@ font{  font-family: englisht;
   font-size: 24px;
   color:rgba(4, 0, 255, 0.5);
   text-decoration: none;
+  cursor:pointer;
 }
 .Link-Express-red{
   font-size: 25px;
@@ -609,6 +621,7 @@ font{  font-family: englisht;
   font-size: 25px;
   color:rgb(255, 0, 0);
   text-decoration: none;
+  cursor:pointer;
 }
 
 li{

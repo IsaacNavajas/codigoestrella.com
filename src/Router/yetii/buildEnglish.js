@@ -6,18 +6,21 @@ function otro(){
     return (
 
       <React.Fragment>
+        <div className="tema_Yetii">
+          <div className="container ">
+            
 
-        <div className="container">
-          
+            <p >The English part is currently under construction..</p>
 
-          <p className="imagestart">The English part is currently under construction..</p>
+
+            
+            
+    
           
-   
-        
-          
+            
+          </div>
         </div>
-
-        
+          
       </React.Fragment>
 
     );

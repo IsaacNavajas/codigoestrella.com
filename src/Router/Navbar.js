@@ -14,6 +14,7 @@ import logoMongo from '../source/logo-mongodb.png';
 
 
 
+
 class Navbar extends React.Component{
   
   render(){
@@ -99,10 +100,10 @@ class Navbar extends React.Component{
                       {
                         //Submenu-backend
                         <ul>
-                          <li className=" col-12"><Link to="/ruta-seis" className="drop-down-menubuttons-nivelone btn btn-dark" >
+                          <li className=" col-12"><Link to="/ruta-seis/mysql" className="drop-down-menubuttons-nivelone btn btn-dark" >
                             <img src={logoMysql} className="logo-nav" alt="logo Express"></img>MYSQL</Link>
                           </li>
-                          <li className=" col-12"><Link to="/ruta-seis" className="drop-down-menubuttons-niveltwo btn btn-dark" >
+                          <li className=" col-12"><Link to="/ruta-seis/mongodb" className="drop-down-menubuttons-niveltwo btn btn-dark" >
                             <img src={logoMongo} className="logo-nav" alt="logo Express"></img>MONGO DB</Link>
                           </li>
                         </ul> 
