@@ -16,6 +16,7 @@ import Pagereact from './Router/React';
 import Laravel from './Router/Laravel';
 import htmlyCss from './Router/htmlyCss';
 import Mysql from './Router/Mysql';
+import MongoDb from './Router/MongoDb';
 import Wordpress from './Router/wordpress';
 import Express from './Router/Express';
 import Docker from './Router/Docker';
@@ -152,9 +153,10 @@ class Router extends React.Component {
 
                       {this.state.verifyLanguage && <Route exact path="/ruta-dos" component={htmlyCss}/> || <Route exact path="/ruta-dos" component={buildEnglish}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/ruta-seis" component={Mysql}/> || <Route exact path="/ruta-seis" component={buildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-seis/mysql" component={Mysql}/> }
                       
-
+                      {this.state.verifyLanguage && <Route exact path="/ruta-seis/mongodb" component={MongoDb}/> }
+                      
                       
 
        
