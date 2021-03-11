@@ -17,24 +17,7 @@ class botonMongodb extends React.Component{
     return (
 
       <React.Fragment>
-
-                <br/><h2  className="bigtitle">Tipados con Mongodb</h2><br/>
                   <br/>
-                  <p><strong>Strings :</strong> "algun texto".</p>
-                  <p><strong>Boolean :</strong> True / False.</p>
-                  <p><strong>ObjectId:</strong> ObjectId("athy9edfgt...").</p>
-                  <p><strong>Date:</strong> ISODate("2019-02-18T...").</p>
-                  <p><strong>Number;</strong> </p>
-                    <ul>
-                      <li><p><strong>Double:</strong> para guardar informacion que tenga punto decimal (su tamaño es de 64 bits).</p></li>
-                      <li><p><strong>Integer 32 bits:</strong> para guardar informacion entera (su tamaño es de 32 bits).</p></li>
-                      <li><p><strong>Integer 64 bits:</strong> para guardar informacion entera (su tamaño es de 64 bits).</p></li>
-                      <li><p><strong>Decimal:</strong> para guardar informacion de tipo financiera es decir cuando tenemos muchisimos datos que almacenar (son de 128 bits).</p></li>
-                    </ul>
-                  <p><strong>Documento embebido:</strong> es cuando encapsulamos un documento Bson dentro de otro documento, esto se hace encapsulando un objeto Json en un valor o si queremos varios objetos encapsulando un array y dentro varios objetos, los arrays nos ayudan de escribir uno a muchos de forma muy sencilla y no pueden ocupar mas de 16 mb.</p>
-                  <br/>
-                  <hr></hr><br/>
-
                   <h2  className="bigtitle">Operadores</h2><br/>
                   <br/>
                   <p><strong>$eq :</strong> = .</p>
@@ -71,6 +54,22 @@ class botonMongodb extends React.Component{
                     
                     
                   <hr></hr><br/>
+
+                  <br/><h2  className="bigtitle">Tipados con Mongodb</h2><br/>
+                  <br/>
+                  <p><strong>Strings :</strong> "algun texto".</p>
+                  <p><strong>Boolean :</strong> True / False.</p>
+                  <p><strong>ObjectId:</strong> ObjectId("athy9edfgt...").</p>
+                  <p><strong>Date:</strong> ISODate("2019-02-18T...").</p>
+                  <p><strong>Number;</strong> </p>
+                    <ul>
+                      <li><p><strong>Double:</strong> para guardar informacion que tenga punto decimal (su tamaño es de 64 bits).</p></li>
+                      <li><p><strong>Integer 32 bits:</strong> para guardar informacion entera (su tamaño es de 32 bits).</p></li>
+                      <li><p><strong>Integer 64 bits:</strong> para guardar informacion entera (su tamaño es de 64 bits).</p></li>
+                      <li><p><strong>Decimal:</strong> para guardar informacion de tipo financiera es decir cuando tenemos muchisimos datos que almacenar (son de 128 bits).</p></li>
+                    </ul>
+                  <p><strong>Documento embebido:</strong> es cuando encapsulamos un documento Bson dentro de otro documento, esto se hace encapsulando un objeto Json en un valor o si queremos varios objetos encapsulando un array y dentro varios objetos, los arrays nos ayudan de escribir uno a muchos de forma muy sencilla y no pueden ocupar mas de 16 mb.</p>
+                  <br/>
 
       </React.Fragment>
 

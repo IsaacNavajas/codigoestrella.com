@@ -47,12 +47,12 @@ class MongoDb extends React.Component{
           </ul>
           <p><u className="subrayado"><strong>Conectarnos despues de haber echo la configuracion: </strong> </u> </p>
           <ul>
-            <li><p>Desde mongo_atlas cluster - connecct - connect your application (copiamos el url y lo pegamos directamente en la consola de cmd desde el enrutamiento C:\Program Files\MongoDB\Server\4.4\bin) y ya estaremos conectados para trabajar en la consola.</p></li>
-            <li><p><strong>Interfaz grafica (Mongo_atlas): </strong>vamos a software - compass - try it now - download "lo descomprimimos y lo instalamos" "rellenamos el campo que nos demande el programa (localhot = cluster1.pdawh.mongodb.net)". . </p></li>
+            <li><p><strong>Mongo shell: </strong>Desde mongo_atlas cluster - connecct - connect your application (copiamos el url y lo pegamos directamente en la consola de cmd desde el enrutamiento C:\Program Files\MongoDB\Server\4.4\bin) y ya estaremos conectados para trabajar en la consola.</p></li>
+            <li><p><strong>Interfaz grafica (Mongo_atlas): </strong>vamos a software - compass - try it now - download "lo descomprimimos y lo instalamos" "rellenamos el campo que nos demande el programa (localhot = cluster1.pdawh.mongodb.net)", validamos el toggle de SRV RECORD y rellenamos el username y el password de la coleccion cluster1. Para salvaguardar el login tenemos que marcarlo como <strong>faboritos</strong> .</p></li>
           </ul>
           <hr></hr><br/>
           <p>los drivers son librerias que utilizamos para comunicar nuestra aplicacion con las dbs para esto usaremos un gestor de dependenciass como lo es en Node con; npm install mongodb --save</p>
-          <p>Mongo db internamente tiene bases de datos - colecciones (semejante en Mysql a tablas) - y "Documento" / Bson (es igual que Json pero con acceso de tipados mayor).</p>
+          <p>Mongo db internamente tiene bases de datos -&gt; <strong>colecciones</strong> (semejante en Mysql a tablas) -&gt; y <strong>"Documentos"</strong> / Bson (es igual que Json pero con acceso de tipados mayor).</p>
           
           <hr></hr><br/>
 
@@ -71,6 +71,9 @@ class MongoDb extends React.Component{
           <p><strong>db."nombre_de_la_coleccion".insertMany("_Json_"): </strong>sirve para meter un Json con muchos valores, mongodb tiene atomicidad lo que quiere decir que que si alguna operacion no se escribe hace rollback es decir que no se guarda el documento en la base de datos. </p>
           <p><strong>db."nombre_de_la_coleccion".help(): </strong>nos entrega los comandos que podemos utilizar.</p>
           <p><strong>db."nombre_de_la_coleccion".find("dentro de un _Json_ el valor_a_encontrar").pretty: </strong> par encontrar un valor que tengamos dentro del documento de esa coleccion, podemos utilizar el metodo <strong>pretty</strong> para que el Json se vea de forma mas amigable, podemos tambien utilizar <strong>.count()</strong> para ver cuantos filtros retorna. </p>
+          <ul>
+            <li><p><strong>- Projection: </strong>se añade como último parámetro del find() y sirve para devolver los campos de un documento que busquemos en su consulta, evaluando los campos que queramos filtrar con un 1 o un 0.</p></li>
+          </ul>
           <p><strong>db."nombre_de_la_coleccion".findOne("dentro de un _Json_ el valor_a_encontrar"): </strong>nos va a traer solo un valor, por ejemplo si le pedimos el valor de _id:objectId() nos va a traer solo ese documento donde _id es 1.</p>
           <p><strong>db."nombre_de_la_coleccion".updateOne("valor_que_queremos_cambiar", "valor_cambiado"): </strong>el valor <strong>$set</strong> es un paradigma para cambiar el valor. Tambien podemos usar <strong>db."nombre_de_la_coleccion".update</strong> para setear varios valores;</p>
 
@@ -109,7 +112,7 @@ class MongoDb extends React.Component{
           <h2  className="bigtitle">Esquemas y relacciones</h2><br/>
           <br/>
           <p><strong>one to one :</strong> cuando tengammos relacciones 1 a 1 las buenas practicas nos dice que dentro del documento tenemos que hacer documentos embebidos con una llave, .</p>
-          <p><strong>one to many :</strong> uando relacciones 1 a M haremos documentos embebidos con arrays cuando la información no va a cambiar muy frecuentemente y referencias cuando si. (Las referencias van a ser un arreglo de todas las entidades que vamos a referenciar por ejemplo books:[ObjectId("e34fgsz"), ObjectId("e357788z"), ObjectId("mcsc223")] ).</p>
+          <p><strong>one to many :</strong> uando relacciones 1 a M <u className="subrayado">haremos documentos embebidos con arrays cuando la información no va a cambiar muy frecuentemente <strong>(esquemas)</strong> y referencias cuando si <strong>(relacciones)</strong></u>. (Los embebidos van a ser un arreglo de todas las entidades que vamos a referenciar y las referencias vamos a colocarle un mismo valor de la coleccion a otra coleccion, de las referenciadas de la referencia, por ejemplo; <strong>books:[ObjectId("e34fgsz"), ObjectId("e357788z"), ObjectId("mcsc223")]</strong> una coleccion especifica que relacciona con las _id: de las referenciadas, y en todas las referenciadas agregar la coleccion de referencia ejemple; <strong>publisher_id:"oreilly"</strong>).</p>
           <p><strong>$addToSet :</strong> es un <a href="#Linkrelacciones" className="Link" onClick={this.openModal}>operador</a> que agrega un valor a un array solo en el caso de que este valor no exista, lo usamos para relacciones de uno a otro con metodo de agregar .</p>
           <p>en este ejemplo $addToSet lo que hace es agregar el objeto curso al arreglo cursos, si el arreglo cursos no existe lo crea.</p>
           <img src={imageTres} className="imagehtml col-12" title="imagen de $addToSet" id="Linkrelacciones"></img> <br/>

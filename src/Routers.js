@@ -40,7 +40,6 @@ class Router extends React.Component {
   
   state={
     verifyLanguage: true,
-    count: 2,
     openModal: false,
     value: "",
     result:"",
@@ -52,34 +51,23 @@ class Router extends React.Component {
   closeModal = () => {
     this.setState({openModal: false});
     if(this.state.acceso === true) {
-      this.setState({verifyLanguage: false, count: 3})}
+      this.setState({verifyLanguage: false})}
   }
 
   openModal = () => {
     if(this.state.acceso === false) {
       this.setState({openModal: true})
+
     }else if (this.state.acceso === true){
-      this.setState(state => ({
-        count : state.count +1,
-        
-       }));
+      console.log(this.verifyLanguage)
+      this.setState(() => ({
+        verifyLanguage : !this.state.verifyLanguage
+      }))
   
-      if(this.state.count % 2){
-        this.setState(() => ({
-  
-          verifyLanguage : true
-        }));
       }
   
-      else if(this.state.count ** 1){
-        this.setState(() => ({
-    
-          verifyLanguage : false
-        }));
-      }
+    }
   
-    
-    }}
 
   //validacion 
 
@@ -117,15 +105,14 @@ class Router extends React.Component {
                           
                           <a href={Archivos} download><img src={Image} className="ImageDescarga"/></a>
                
-                          <input onClick={this.openModal} type="checkbox" className=" checkboxtoggle custom-control-input " id="customSwitches"></input>
-                          <label  htmlFor="customSwitches"> <img className="yetii" src={ImageYetii}></img></label>
-                          
+
+                          <img onClick={this.openModal} className="yetii" src={ImageYetii}></img>
+
                           <div className="position_button ">
                             {this.state.verifyLanguage && <Link to="/ruta-siete"><button type="submit" className="button btn btn-secondary" >Javascript</button></Link>}
                             {!this.state.verifyLanguage && 
-                              <Link to="/ruta-siete"><button type="submit" className="button btn btn-secondary" >
-                                <img src={logoKaliLinux} className="logo-nav" alt="logo Express"></img> Kali Linux</button>
-                              </Link>}
+                              <div className="button btn btn-secondary" >-</div>
+                            }
                          </div>
                        
                        
@@ -138,20 +125,20 @@ class Router extends React.Component {
                       
                       {this.state.verifyLanguage && <Route exact path="/" component={Inicio}/> || <Route exact path="/" component={buildEnglish}/>}
                       
-                      {this.state.verifyLanguage && <Route exact path="/ruta-cinco/git" component={Git}/> || <Route exact path="/ruta-cinco" component={buildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-cinco/git" component={Git}/> }
                       {this.state.verifyLanguage && <Route exact path="/ruta-cinco/docker" component={Docker}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/ruta-siete" component={Javascript}/> || <Route exact path="/ruta-siete" component={buildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-siete" component={Javascript}/> }
                       
-                      {this.state.verifyLanguage && <Route exact path="/ruta-cuatro/react" component={Pagereact}/> || <Route exact path="/ruta-cuatro" component={buildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-cuatro/react" component={Pagereact}/> }
                       
                       {this.state.verifyLanguage && <Route exact path="/ruta-cuatro/vue" component={Vue}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/ruta-tres/laravel" component={Laravel}/> || <Route exact path="/ruta-tres" component={buildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-tres/laravel" component={Laravel}/> }
 
                       {this.state.verifyLanguage && <Route exact path="/ruta-tres/express" component={Express}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/ruta-dos" component={htmlyCss}/> || <Route exact path="/ruta-dos" component={buildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-dos" component={htmlyCss}/> }
 
                       {this.state.verifyLanguage && <Route exact path="/ruta-seis/mysql" component={Mysql}/> }
                       
@@ -161,7 +148,7 @@ class Router extends React.Component {
 
        
 
-                      {this.state.verifyLanguage && <Route exact path="/ruta-uno" component={Wordpress}/> || <Route exact path="/ruta-uno" component={buildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-uno" component={Wordpress}/> }
 
                       
                       

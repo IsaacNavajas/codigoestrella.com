@@ -13,8 +13,6 @@ import logoMysql from '../source/logo-mysql.png';
 import logoMongo from '../source/logo-mongodb.png';
 
 
-
-
 class Navbar extends React.Component{
   
   render(){
@@ -116,12 +114,12 @@ class Navbar extends React.Component{
 
                 {!this.props.verifyLanguage && 
                     <ul>
-                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-uno">WINDOWS</Link></li>
-                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-dos">LINUX</Link></li>
-                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-tres">CONSOLA</Link></li>
-                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-cuatro">BBDD</Link></li>
-                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-cinco">PROGRAMAS UTILES</Link></li>
-                      <li className=" col-2"><Link className="menubuttons btn btn-dark" to="/ruta-seis">OTROS</Link></li>
+                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >-</div></li>
+                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >-</div></li>
+                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >-</div></li>
+                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >-</div></li>
+                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >-</div></li>
+                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >-</div></li>
                     </ul>
                 }   
                
