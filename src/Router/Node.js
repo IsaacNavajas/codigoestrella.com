@@ -36,6 +36,7 @@ class Node extends React.Component{
           <br/><br/>
           <p>let nombre = <strong>process.env.NOMBRE:</strong> Para acceder a las variables de entrono.</p>
           <p><strong>$env:NOMBRE="Carlos":</strong> </p>
+          <p><strong>npm install dotenv:</strong> sirve para generar y configrar el archivo .env, tenemos que crear el archivo .env y generar las variables de entorno y el el archivo raiz del proyecto importar el dotenv con <strong>require('dotenv/config');</strong>. La forma de interactuar con estas variables es con <strong>process.env.DB_CONNECTION</strong> .</p>
           <p><strong>.env:</strong> creamos un archivo llamado .env donde vamos a meter directamente todas las variables de entorno, todas nuestras variables de entorno las escribimos directamente y en mayusculas (HOST = localhost, PORT = 5000,).</p>
           <br/>
           <ul>

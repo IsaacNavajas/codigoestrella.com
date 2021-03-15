@@ -155,6 +155,7 @@ html, body {
   font-family: 'Pacifico', cursive;
   font-size: 49px;
   padding-right:80px;
+  margin-left:40px;
   color:#a8a9a5;
   text-shadow: 2px 2px #525252;
   transition:  0.8s linear 0.3s;
@@ -167,13 +168,14 @@ html, body {
   font-family: 'Pacifico', cursive;
   font-size: 49px;
   padding-right:100px;
+  margin-left:70px;
   text-shadow: 2px 2px rgba(110, 110, 110, 0.349);
   color:transparent;
-  background-image: url(source/yetii-2.png);
   height: 100px;
   background-size: 49%;
-  background-clip: text;
   transition:  0.4s linear 1.0s;
+  background-image: url(source/yetii-2.png);
+  background-clip: text;
 }
 
 .Navbar{
@@ -181,15 +183,18 @@ html, body {
   height:80px;
   background-color: #ffffff;
   font-size: 50px;
-  display: flex; 
-  
-  
+  display: flex;   
 }
 
 .logo-nav{
-  width: 18px;
-  margin-right:18px;
+  width: 19px;
+  margin-right: 20px;
+  margin-top:-5px;
+}
 
+.logo-nav-america{
+  width: 29px;
+  margin-top:-5px;
 }
 
 .titulo{
@@ -219,7 +224,7 @@ font-size: 40px;
   position:relative;
   z-index:10;
   display: block;
-  padding-right:257.5px;
+  padding-right:200px;
   margin-top:-180px;
 }
 
@@ -246,6 +251,25 @@ font-size: 40px;
   background-color: transparent;
   filter: drop-shadow(0px 0px 7px rgb(255, 238, 6));
   transition: 800ms;
+}
+
+.button-america{
+  width: 200px;
+  float:right;
+  transition: all 5000ms;
+  background-image: url(source/america.jpg);
+  filter: grayscale(100%);
+}
+.button-america:hover{
+  background-color: transparent;
+  filter: drop-shadow(0px 0px 7px rgba(255, 6, 6, 0.692));
+}
+.button-america:focus{
+  background-color: transparent;
+  filter: drop-shadow(0px 0px 7px rgb(0, 89, 255));
+  transition: 800ms;
+  background-image: url(source/america.jpg);
+    filter: grayscale(10%);
 }
 
 .button:active{

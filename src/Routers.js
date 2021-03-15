@@ -31,7 +31,7 @@ import Image from './source/archivocomprimido.png';
 import ImageYetii from './source/yetii.png';
 import Archivos from './source/archivos.zip';
 
-import logoKaliLinux from './source/logo-kali-linux.png';
+import America from './source/america.jpg';
 
 
 import {Link} from "react-router-dom";
@@ -57,17 +57,13 @@ class Router extends React.Component {
   openModal = () => {
     if(this.state.acceso === false) {
       this.setState({openModal: true})
-
     }else if (this.state.acceso === true){
-      console.log(this.verifyLanguage)
-      this.setState(() => ({
+      this.setState(({
         verifyLanguage : !this.state.verifyLanguage
-      }))
-  
-      }
-  
-    }
-  
+        
+       }));
+
+    }}
 
   //validacion 
 
@@ -105,14 +101,15 @@ class Router extends React.Component {
                           
                           <a href={Archivos} download><img src={Image} className="ImageDescarga"/></a>
                
-
-                          <img onClick={this.openModal} className="yetii" src={ImageYetii}></img>
-
+                          <input onClick={this.openModal} type="checkbox" className=" checkboxtoggle custom-control-input " id="customSwitches"></input>
+                          <label  htmlFor="customSwitches"> <img className="yetii" src={ImageYetii}></img></label>
+                          
                           <div className="position_button ">
                             {this.state.verifyLanguage && <Link to="/ruta-siete"><button type="submit" className="button btn btn-secondary" >Javascript</button></Link>}
                             {!this.state.verifyLanguage && 
-                              <div className="button btn btn-secondary" >-</div>
-                            }
+                              <Link to="/english"><button type="submit" className="button-america btn btn-secondary" >
+                                <img src={America} className="logo-nav-america" alt="logo Express"></img> </button>
+                              </Link>}
                          </div>
                        
                        
@@ -124,33 +121,35 @@ class Router extends React.Component {
                     <Switch>
                       
                       {this.state.verifyLanguage && <Route exact path="/" component={Inicio}/> || <Route exact path="/" component={buildEnglish}/>}
+
+                      {this.state.verifyLanguage && <Route exact path="/ruta-uno" component={Wordpress}/>}
                       
-                      {this.state.verifyLanguage && <Route exact path="/ruta-cinco/git" component={Git}/> }
+                      {this.state.verifyLanguage && <Route exact path="/ruta-cinco/git" component={Git}/> || <Route exact path="/ruta-cinco" component={buildEnglish}/>}
                       {this.state.verifyLanguage && <Route exact path="/ruta-cinco/docker" component={Docker}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/ruta-siete" component={Javascript}/> }
+                      {this.state.verifyLanguage && <Route exact path="/ruta-siete" component={Javascript}/> || <Route exact path="/ruta-siete" component={buildEnglish}/>}
                       
-                      {this.state.verifyLanguage && <Route exact path="/ruta-cuatro/react" component={Pagereact}/> }
+                      {this.state.verifyLanguage && <Route exact path="/ruta-cuatro/react" component={Pagereact}/> || <Route exact path="/ruta-cuatro" component={buildEnglish}/>}
                       
                       {this.state.verifyLanguage && <Route exact path="/ruta-cuatro/vue" component={Vue}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/ruta-tres/laravel" component={Laravel}/> }
+                      {this.state.verifyLanguage && <Route exact path="/ruta-tres/laravel" component={Laravel}/> || <Route exact path="/ruta-tres" component={buildEnglish}/>}
 
                       {this.state.verifyLanguage && <Route exact path="/ruta-tres/express" component={Express}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/ruta-dos" component={htmlyCss}/> }
+                      {this.state.verifyLanguage && <Route exact path="/ruta-dos" component={htmlyCss}/> || <Route exact path="/ruta-dos" component={buildEnglish}/>}
 
                       {this.state.verifyLanguage && <Route exact path="/ruta-seis/mysql" component={Mysql}/> }
                       
                       {this.state.verifyLanguage && <Route exact path="/ruta-seis/mongodb" component={MongoDb}/> }
                       
-                      
-
-       
-
-                      {this.state.verifyLanguage && <Route exact path="/ruta-uno" component={Wordpress}/> }
+                      {this.state.verifyLanguage && this.state.acceso && <Route exact path="/ruta-uno" component={Wordpress}/> }
 
                       
+                      
+                      {!this.state.verifyLanguage && <Route exact path="/english" component={buildEnglish}/>}
+                      {!this.state.verifyLanguage && <Route exact path="/ruta-uno" component={buildEnglish}/>}
+
                       
                       <Route path="*" component={Error}/>
             
