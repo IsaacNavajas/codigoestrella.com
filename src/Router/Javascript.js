@@ -85,10 +85,10 @@ class Javascript extends React.Component{
           <div className="mitad col-5">
   
             <p><strong>Memory heap: </strong>Es donde se van a guardar los datos (variables, functions ...), se va a guardar de forma aleatoria.</p>
-            <p><strong>Call stack:</strong> como se va a comportar nuestro codigo en el navegador, siguiendo la sincronia de javascript se almacenara una pila de tareas, siempre una encima de otra por cada function, la primera de estas es el objeto global, .</p>
+            <p><strong>Call stack:</strong> como se va a comportar nuestro código en el navegador, siguiendo la sincronía de javascript se almacenara una pila de tareas, siempre una encima de otra por cada function, la primera de estas es el objeto global, .</p>
             <p><strong>Garbage Collection:</strong> limpia la memoria de los datos para no sobrecargarla y que no se genere un stack overflow, para poder seguir trabajando de manera optima.</p>
-            <p><strong>Js runtime:</strong> es la parte de asincronía en js, lso metodos del DOM, axaj y times van a cargar estos dato y los va a desplegar al final del call stack por orden.</p>
-            <p><strong>event loop: </strong>Es el metodo que usa js para decidir que tareas las deja en el stack y que tareas deja de forma paralela (js runtime) para desplegarlas al final del stack de forma sincrona.</p>
+            <p><strong>Js runtime:</strong> es la parte de sincronía en js, lso métodos del DOM, axaj y times van a cargar estos dato y los va a desplegar al final del call stack por orden.</p>
+            <p><strong>event loop: </strong>Es el método que usa js para decidir que tareas las deja en el stack y que tareas deja de forma paralela (js runtime) para desplegarías al final del stack de forma sincronía.</p>
             <hr></hr><br/>
             
           </div>

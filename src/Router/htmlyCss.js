@@ -41,7 +41,7 @@ class htmlyCss extends React.Component{
                     <p><strong>footer:</strong> Es donde se almacena el pie de pagina.</p>
                     <p><strong>nav:</strong> Sirve para poner los enlaces de navegación de dentro de la pila o fuera como menús...</p>
                     <p><strong>main:</strong> Representa la parte principal del cuerpo.</p>
-                    <p><strong>article:</strong> Sirve para un solo uso o ser reusada como articulo, una entrada, un blog, un widget ...</p>
+                    <p><strong>article:</strong> Sirve para un solo uso o ser rehusada como articulo, una entrada, un blog, un widget ...</p>
                     <p><strong>aside:</strong> Sirve para contener información indispuesta a la pagina como un biografía, publicidad, cosas relacionadas...</p>
                     <p><strong>section:</strong> Sirve para elegir una sección de un elemento, por ejemplo el despliegue de un navegador en varios niveles, o el despliegue de un h1 y un p.</p>
                     <p><strong>hgroup:</strong> Sirve para concatenar títulos secundarios sin perjudicar el documento, se engloba siempre dentro de los h1, h2, h3, h4, h5, h6.</p>
@@ -64,8 +64,8 @@ class htmlyCss extends React.Component{
                     <p><strong>p:</strong> Para escribir párrafos.</p>
                     <p><strong>cites:</strong> Para crear citas.</p>
                     <p><strong>blockquote:</strong> Para crear citas en bloques.</p>
-                    <p><strong>hr:</strong> Es una etiqueta autocerrada y sirve para colocar un separador..</p>
-                    <p><strong>br:</strong> Es una etiqueta autocerrada y sirve para hacer un salto de linea.</p>
+                    <p><strong>hr:</strong> Es una etiqueta auto-cerrada y sirve para colocar un separador..</p>
+                    <p><strong>br:</strong> Es una etiqueta auto-cerrada y sirve para hacer un salto de linea.</p>
                     <p><strong>strong:</strong> Sirve para poner el texto en negrita.</p>
                     <p><strong>b:</strong> Sirve para poner el texto en negrita.</p>
                     <p><strong>i:</strong> Sirve para poner el texto en cursiva.</p>
@@ -73,7 +73,7 @@ class htmlyCss extends React.Component{
                     <p><strong>u:</strong> Sirve para poner el texto subrayado.</p>
                     <p><strong>small:</strong> Sirve para poner el texto mas pequeño.</p>
                     <p><strong>big:</strong> Coloca el texto mas grande.</p>
-                    <p><strong>sub:</strong> Para colocar un subíndice.</p>
+                    <p><strong>sub:</strong> Para colocar subindices.</p>
                     <p><strong>del:</strong> Para poner texto como tachado.</p>
                     <p><strong>q:</strong> Para escribir citas cortas. (" ").</p>
                     <p><strong>abbr:</strong> Para escribir abreviaciones.</p>

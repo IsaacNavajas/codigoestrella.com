@@ -29,7 +29,7 @@ function Git(){
 
           <br/>
           <hr></hr><br/>
-          <h2  className="bigtitle">Comandos basicos de Git</h2><br/>
+          <h2  className="bigtitle">Comandos básicos de Git</h2><br/>
       
           <p><strong>git init:</strong> da inicio al repositorio de git.</p>
           <p><strong>git add . :</strong> agrega el archivo al entorno de memoria staging. con git add . Agregamos todos los archivos. También podemos agregar un solo archivo; git add index.html</p>
@@ -38,14 +38,14 @@ function Git(){
           <p><strong>git config --global user.name: </strong>la primera vez que hagamos un commit tenemos que definir nuestro email y nombre; git config --global user.name "suma" git config --global user.email "suma@gmail.com". si queremos cambiar estos valores una vez metidos; git config --global --unset user.name para borrar un dato de config global o git config --global -replace-all user.name "NEW_USER_NAME" para reemplazar un valor.</p>
           <p><strong>git status: </strong>nos enseña el estado de la base de datos del repositorio.</p>
           <p><strong>git show: </strong>muestra toda la historia del archivo; git show index.html.</p>
-          <p><strong>git log:</strong> nos muestra el historial de commits encriptados en hash.</p>
+          <p><strong>git log:</strong> nos muestra el historial de commits encrestados en hash.</p>
           <p><strong>git diff: </strong>nos muestra las diferencias entre dos hash de commits distintos.</p>
           <p><strong>git push:</strong> envía el archivo a un repositorio remoto.</p>
           <p><strong>git pull:</strong> nos permite borrar un archivo.</p>
           <br/>
           <p><strong>git branch: </strong>para crear una rama nueva. Podemos agregar una rama de pruebas como fix-typo.</p>
           <p><strong>git branch -d:</strong> para borrar la rama.</p>
-          <p><strong>git merge:</strong> para juntar mas de una rama. Primero posicionarte en la ramaque queremos juntar las ramas y después llamar a la otra rama; $master: git marge supercabecera</p>
+          <p><strong>git merge:</strong> para juntar mas de una rama. Primero posicionarte en la rama que queremos juntar las ramas y después llamar a la otra rama; $master: git marge supercabecera</p>
           <br/>
           <p><u className="subrayado"><strong>--help</strong> podemos agregar el parámetro help para buscar un comando o interpretar su funcionamiento.</u></p>
           <p><strong>gitk:</strong> nos TODOS los detalles de los commits con una interfaz gráfica.</p>
@@ -61,7 +61,7 @@ function Git(){
           <p><strong>git rm --force: </strong>elimina los archivos de git y del disco duro.</p>
           <p><strong>git reset: </strong>nos ayuda a volver en el tiempo, (SIN LA POSIBILIDAD DE VOLVER a un commit futuro).</p>
           <p><strong>git rm --soft:</strong> borramos el historial y los registros de git pero mantenemos los estados de staging.</p>
-          <p><strong>git rm --hard:</strong> borra TODO. Git reset --hard "branch" para ir y guardar la rama, es una buena practica primero con checkout ir a la rama que se quiere y despues de testearla y ver que queremos volver a una rama anterior hacer el reset --hard.</p>
+          <p><strong>git rm --hard:</strong> borra TODO. Git reset --hard "branch" para ir y guardar la rama, es una buena practica primero con checkout ir a la rama que se quiere y después de testearla y ver que queremos volver a una rama anterior hacer el reset --hard.</p>
           <p><strong>git checkout:</strong> para cambiar entre ramas, también podemos usarlo para ir a otro estado de memoria de git show para ver ese commit y volver después al master. También podemos volver a otro commit, trackearlo, hacer otro commit para guardar un commit anterior como nuevo, sin tener que borrar los commits anteriores.</p>
           <br/>
           <hr></hr><br/>

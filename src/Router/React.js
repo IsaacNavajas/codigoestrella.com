@@ -63,7 +63,7 @@ class Pagereact extends React.Component{
               Usar_Typescript_con_React.
           </a><br/><br/>
 
-          <p><strong>npx create-react-app mi-app --template typescript:</strong> para instalar un nuevo proyecto react de nombre mi-app con typescript, los archivos de react dentro del proyecto cambiaran la nomenclatura automaticamente =&gt; ejemplo.tsx.</p>
+          <p><strong>npx create-react-app mi-app --template typescript:</strong> para instalar un nuevo proyecto react de nombre mi-app con typescript, los archivos de react dentro del proyecto cambiaran la nomenclatura automáticamente =&gt; ejemplo.tsx.</p>
 
           <hr></hr><br/>
 
@@ -72,7 +72,7 @@ class Pagereact extends React.Component{
           <u className="subrayado"> La forma de pasar un componente dentro de otro es en forma de elemento, si le damos parámetros a estos elementos podemos pasarlos a esos componentes a través de <strong>this.props</strong>. También podemos heredar los props con <strong>this.props.children</strong>. </u> 
           <br/><br/>
           <p><strong>ReactDom.render(__que__, __donde__):</strong> nos va a renderizar un dom virtual donde le vamos a dar dos argumentos, el primero que queremos renderizar y el segundo donde.</p>
-          <p><strong>import confLogo from '../../images/image.png':</strong> es la forma en la que vamos a llamar a los documentos y para desglosarlo seria entre llaves usando la palabra de sub-nombre en este caso confLogo. A este metodo se le llama <strong>ECMAScript modules</strong>.</p>
+          <p><strong>import confLogo from '../../images/image.png':</strong> es la forma en la que vamos a llamar a los documentos y para desglosarlo seria entre llaves usando la palabra de sub-nombre en este caso confLogo. A este método se le llama <strong>ECMAScript modules</strong>.</p>
           <p><strong>import './Style/Style css':</strong> para agregar un css.</p>
           <p><strong>className="":</strong> para aplicar estilos con JSX no se hace con class por que es una palabra reservada para el class de javascript sino que se hace con className.</p>
           <p><strong>handlesubmit():</strong> función que es llamada desde el onSubmit="".</p>
@@ -128,7 +128,7 @@ class Pagereact extends React.Component{
           <p><strong>- Api interna con fetch (json):</strong> se usan dos comandos el <strong>npx json-server --watch archivo.json</strong> y <strong>json-server archivo.json</strong> y se guarda el url del servidor json en el fetch.</p>
           
           <p><strong>- Api CRUD:</strong> haremos la llamada de igual forma que una api externa, utilizando imports pero para llamarla dentro de la lógica lo haremos de la misma forma que al desglosarla es decir concatenando con puntos. Ejemplo; await <strong>api.badges.list()</strong></p>
-          <u className="subrayado"> Vamos a utilizar fetch() en el momento de llamar a las apis, por defecto tiene un método html get pero podemos implementarle mas opciones agregando un request al fetch().</u>
+          <u className="subrayado"> Vamos a utilizar fetch() en el momento de llamar a las apis, por defecto tiene un método html get pero podemos implementarla mas opciones agregando un request al fetch().</u>
           
           <br/><br/>
 

@@ -28,11 +28,11 @@ class Wordpress extends React.Component{
           <h2  className="bigtitle">Temas</h2>
 
           <br/><br/>
-          <p><strong>Understrap:</strong> Es el tema que viene completamente vació, para configurarlo a tu gusto. Viene con la implementacion de Bootstrap.</p>
+          <p><strong>Understrap:</strong> Es el tema que viene completamente vació, para configurado a tu gusto. Viene con la implementación de Bootstrap.</p>
           
           <p><strong>Colibri WP:</strong> Tema recomendado para editar por su gran extensión para editar.</p>
           <p><strong>themeforest.net:</strong> Para comprar temas de pago.</p>
-          <p><strong>Crear un tema hijo / plugin:</strong> Para modificar a nivel código es bueno crear un tema hijo sino no es necesario crear un hijo, codearemos siempre dentro del tema hijo, vamos a crear desntro de la carpeta theme una nueva carpeta con el nombre del tema hijo y dentro el siguiente archivo style.css;</p>
+          <p><strong>Crear un tema hijo / plugin:</strong> Para modificar a nivel código es bueno crear un tema hijo sino no es necesario crear un hijo, codearemos siempre dentro del tema hijo, vamos a crear dentro de la carpeta theme una nueva carpeta con el nombre del tema hijo y dentro el siguiente archivo style.css;</p>
           
           <img src={imageone} alt="imagen del modal" className="imagewordpress"></img>
           <p>En el import llamamos al style.css del tema padre en este caso colibri-wp.</p>
@@ -56,7 +56,7 @@ class Wordpress extends React.Component{
           <h2  className="bigtitle">Medios:</h2>
           <br/><br/>
           <p><strong>Biblioteca:</strong> Muestra la librería de imágenes y desde aquí también podremos eliminarlas y editarlas, si entramos a editarlas podremos agregar información para mejorar nuestro SEO de las imágenes de nuestro proyecto.</p>
-          <p><strong>Añadir nuevo:</strong> Para subir una nueva imagen, tambien podemos subir varias imágenes a la vez para mantenerlas guardadas en nuestro poryecto.</p>
+          <p><strong>Añadir nuevo:</strong> Para subir una nueva imagen, también podemos subir varias imágenes a la vez para mantenerlas guardadas en nuestro proyecto.</p>
           <br/>
           <hr></hr><br/><br/>
 
@@ -82,7 +82,7 @@ class Wordpress extends React.Component{
               <li><p><strong>+ Yoast SEO =</strong> Para hacer SEO en nuestra pagina web.</p></li>
               <li><p><strong>+ WooCommerce = </strong>Sirve para añadir una tienda completa dentro de nuestra pagina web.</p></li>
               <li><p><strong>+ Really simple SSL =</strong> Para añadir el certificado ssl a nuestra pagina web, hay que activarlo después de tener la pagina subida con nuestro certificado de ssl.</p></li>
-              <li><p><strong>+ Elementor Page Builder =</strong> Para crear paginas en wordpress con una interfraz mas intuitiva, arrastrando y editando.</p></li>
+              <li><p><strong>+ Elementor Page Builder =</strong> Para crear paginas en wordpress con una interfaz mas intuitiva, arrastrando y editando.</p></li>
               <li><p><strong>+ Duplicate Post = </strong>Para duplicar un post.</p></li>
               <li><p><strong>+ TintMCE Avanced = </strong>Coge el editor básico de wordpress y ampliar sus funcionalidades para que tenga muchas mas funciones, es recomendable utilizarlo cuando generamos post.</p></li>
               <li><p><strong>+ Wp super cache =</strong> Para cachear nuestra pagina web (para mejorar la velocidad de la pagina).</p></li>
@@ -138,11 +138,11 @@ class Wordpress extends React.Component{
           <br/>
 
           
-          <p><strong>Instalar :</strong> Lo activaremos desde plugins, es recomendable tener instalado y configurado google Analitics.</p>
+          <p><strong>Instalar :</strong> Lo activaremos desde plugins, es recomendable tener instalado y configurado google Analytics.</p>
          
           <p>Lo primero que vamos a hacer es googlear google search y crearnos una cuenta nueva, una vez registrados vamos a crear una nueva propiedad y copiamos el url de nuestra web, verificamos la propiedad (podemos hacerlo a traves de google analytics), obtenemos el código de verificación desde wordpress y asi ya tendríamos el plugin bien configurado.</p>
            <p>A partir de aquí ya solo queda configurar YOASTseo con nuestra configuración preferida.</p>
-           <p>Si vamos a paginas y bajamos hasta abajo podremos configurar el cuadro de google de SEO (podemos configurar el SEO con emogis que no va a cambiar su posicionamiento y queda mas visible, es una buena practica poner un emogic de un stick por que queda mas profesional).</p>
+           <p>Si vamos a paginas y bajamos hasta abajo podremos configurar el cuadro de google de SEO (podemos configurar el SEO con emogis que no va a cambiar su posicionamiento y queda mas visible, es una buena practica poner un emojis de un stick por que queda mas profesional).</p>
 
           <br/>
           <hr></hr>
@@ -152,7 +152,7 @@ class Wordpress extends React.Component{
           <br/><br/>
           <p>Este plugin lo vamos a utilizar cuando queramos entrar en producción, es decir trabajar en la pagina sin que se vea las actualizaciones que estamos haciendo.</p>
           <p><strong>instalación:</strong> Vamos activar el plugin desde plugins, una vez dentro del plugin accedemos a ajustes y dentro podremos cambiar el estado de encendido a pagado para trabajar en producción o no y muchas mas opciones como que pagina queremos que este en producción.</p>
-          <p><strong>Modulos:</strong> Podemos crear un temporizador que nos cuente el tiempo restante hasta el final del mantenimiento, crear botoneras, suscripción...</p>
+          <p><strong>Módulos:</strong> Podemos crear un temporizador que nos cuente el tiempo restante hasta el final del mantenimiento, crear botoneras, suscripción...</p>
           <br/>
           <hr></hr><br/><br/>
 
@@ -184,7 +184,7 @@ class Wordpress extends React.Component{
           <h2  className="bigtitle">Migrar WOrdpress de localhost a un servidor</h2>
           <br/>
           <br/>
-          <p><strong>Preparacion:</strong></p>
+          <p><strong>Preparación:</strong></p>
           <p>- vamos a la carpeta que tenemos en nuestra carpeta htdocs de xampp y la vamos a comprimir a parte.</p>
           <p>- entramos en nuestra base de datos y exportamos toda la base de datos.</p>
           <p>- metemos la carpeta comprimida y el archivo sql exportado dentro de la misma carpeta.</p>
@@ -195,10 +195,10 @@ class Wordpress extends React.Component{
           <p>- Entramos en Manage y PhpMyAdmin e introducimos el usuario y contraseña que nos dan, entramos a nuestra base de datos con el mismo nombre y una vez dentro le damos a importar y seleccionamos nuestro archivo sql.</p>
           <br/>
           <p><strong>Enlazar los datos del hosting:</strong></p>
-          <p>+ buscamos en nuestra base de datos con wp_ config (el wp puede cambiar dependiendo como lo hayamos configurado) y clickamos al unico que nos aparece</p>
+          <p>+ buscamos en nuestra base de datos con wp_ config (el wp puede cambiar dependiendo como lo hayamos configurado) y clickamos al único que nos aparece</p>
           <p>- en el primer valor que sera el siteurl lo cambiaremos por la url que nos da el hosting.</p>
           <p>- en el segundo valor que sera home lo volveremos a cambiar por la misma url que nos da el hosting.</p>
-          <p>+ haora vamos dentro de la base de datos de nuestro hosting y buscamos tmabién wp_config.</p>
+          <p>+ ahora vamos dentro de la base de datos de nuestro hosting y buscamos también wp_config.</p>
           <p>- cambiamos el DB_NAME por el que nos da el hosting y lo mismo hacemos con DB_USER, PASSWORD, DB_HOST.</p>
 
           <br/>

@@ -19,7 +19,7 @@ function Pagereact(){
 
           <div  className="bigtitle">Componentes de React-router</div><br/>
           <br/>
-           <strong>BrowserRouter:</strong> es el primer elemento de react router que vamos a utilizar y va servir para especificar que lo que vamso a escribir dentro va a ser un react router.<br/>
+           <strong>BrowserRouter:</strong> es el primer elemento de react router que vamos a utilizar y va servir para especificar que lo que vamos a escribir dentro va a ser un react router.<br/>
           <strong>Layout:</strong> el layout como tal no existe es un elemento que vamos a crear, dentro del layout vamos a meter una function y le pasaremos como parámetros los props, metemos en este elemento lo que queramos (navbar, ...) y después desglosamos nuestros this.props.children para ir heredando lo que vamos a ir agregando en los routers.<br/>
           <strong>Switch:</strong> es el elemento que nos va a servir para transformar cada route con cada ruta distinta.<br/>
           <strong>Route exact path="/inicio" component=Inicio:</strong> exact path= es para darnos un valor exacto, sino ponemos exact aunque la url no sea igual nos va a llevar a ese componente, component= para concatenar el componente que queremos definir, para esto tenemos que importar el componente ; import Inicio from './pageone/Inicio'. Si queremos hacer un directorio que nos lleve a una pagina de error lo escribimos sin concatenar un componente y sin el atributo exact -> Route path="*";. Para pasar una id como url lo usaremos :, -> route exact path='badge/:badgeid/edit' component=... .<br/>

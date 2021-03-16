@@ -47,7 +47,7 @@ class PhpUnit extends React.Component{
               <h2  className="bigtitle">Instalar composer.json</h2><br/>
               <p>./composer.json</p>
               <div className=" col-12"><img src={image1} className="imagecarbon"></img></div>
-              <p><strong>composer dump-autoload -o :</strong> sirve para actualizar composer, instalando los parametros que hemos incorporado.</p>
+              <p><strong>composer dump-autoload -o :</strong> sirve para actualizar composer, instalando los parámetros que hemos incorporado.</p>
               <br/>
               <hr></hr><br/>
 
@@ -77,7 +77,7 @@ class PhpUnit extends React.Component{
               
               <p><strong> ./test/feature :</strong> Para escribir pruebas que van a simular peticiones HTTP al servidor.</p>
               
-              <p><strong> ./test/Unit :</strong> Donde vamos a escribir pruebas que van a probar partes individuales de nuestra aplicacion (clases, metodos ...) pero no peticiones HTTP.</p>
+              <p><strong> ./test/Unit :</strong> Donde vamos a escribir pruebas que van a probar partes individuales de nuestra aplicación (clases, metodos ...) pero no peticiones HTTP.</p>
               
               <p><strong> vendor/bin/phpunit :</strong> Para probar pruebas en consola.</p>
 

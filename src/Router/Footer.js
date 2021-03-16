@@ -29,7 +29,7 @@ class Footer extends React.Component{
             <a href="mailto:codigoestrella7a@gmail.com">
                
                 {!this.props.verifyLanguage && <button className="btn btn-secondary">Contact us ✉ </button>}
-                {this.props.verifyLanguage && <button className="btn btn-secondary">Contáctanos ✉ </button>}
+                {this.props.verifyLanguage && <button className="btn btn-secondary">Contactados ✉ </button>}
               
             </a>
                   

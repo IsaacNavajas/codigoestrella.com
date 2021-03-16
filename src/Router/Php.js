@@ -10,9 +10,9 @@ function Pagereact(){
         <div>
     <h2 className="bigtitle font">P.O.O </h2>    
           <hr></hr>      
-          <p><strong>Herencia :</strong> para crear hijos entre clases, usaremos la palabra extends en la clase hija para heredar la clase padre, en php solo se puede heredar de un padre. Una vez echa la herencia vamos a compartir sus métodos o a sobreescribirlos. Para heredar vamos a utilizar la palabra reservada <span className="subrayado"> extends</span> entre clases.</p>
-          <p><strong>Abstracción :</strong> para aislar un elemento de su contexto o elementos (Interface, abstract, describir los metodos de una clase...).</p>
-          <p><strong>Polimorfismo :</strong> cuando un mismo elemento se comporta de diferentes maneras y otorga tambien distintos resultados, la habilidad que tienen los métodos para dar distintos resultados entre clases.</p>
+          <p><strong>Herencia :</strong> para crear hijos entre clases, usaremos la palabra extends en la clase hija para heredar la clase padre, en php solo se puede heredar de un padre. Una vez echa la herencia vamos a compartir sus métodos o a sobrescribiréis. Para heredar vamos a utilizar la palabra reservada <span className="subrayado"> extends</span> entre clases.</p>
+          <p><strong>Abstracción :</strong> para aislar un elemento de su contexto o elementos (Interface, abstract, describir los métodos de una clase...).</p>
+          <p><strong>Polimorfismo :</strong> cuando un mismo elemento se comporta de diferentes maneras y otorga también distintos resultados, la habilidad que tienen los métodos para dar distintos resultados entre clases.</p>
           <p><strong>Encapsulamiento :</strong> es el alcance; y puede ser public private y protected. Public habilitado para cualquier clase, private con un alcance único de la clase en la que se define y protected con un alcance de su clase y sus hijas.</p>
           <p><strong>Modularidad :</strong> dividir todo el sistema en diferentes módulos para simplificar el código.</p>
           <hr></hr>
@@ -48,8 +48,8 @@ function Pagereact(){
         <div>
           <h2 className="bigtitle font">Sintaxis</h2>    
           <hr></hr>   
-          <p><strong>clase::metodo:</strong> con los operadores de ambito (::) podemos llamar a un solo metodo de una clase, primero llamando a su clase y despues a la function de esa clase que es su metodo.</p>   
-          <p><strong>substr($post, 0, 20):</strong> para substraer cuantos caracteres se quiere coger de dentro del parentesis.</p>
+          <p><strong>clase::método:</strong> con los operadores de ámbito (::) podemos llamar a un solo método de una clase, primero llamando a su clase y después a la function de esa clase que es su método.</p>   
+          <p><strong>substr($post, 0, 20):</strong> para substraer cuantos caracteres se quiere coger de dentro del paréntesis.</p>
           <p><strong>explode(', ', $data) :</strong> pasa de un texto a un array directamente. Cada vez que tengas un espacio en $data transfórmalo en un array.</p>
           <p><strong>implode(', ', $data) :</strong> pasa de un array a un texto directamente. Cada vez que tenga un array en el $data transfórmalo en un espacio.</p>
           <hr></hr>

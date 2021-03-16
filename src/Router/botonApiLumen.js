@@ -47,7 +47,7 @@ class botonApiLumen extends React.Component{
 
                           <p><strong>php -S localhost:8000 -t ./public:</strong> Para acceder al servidor virtual de Lumen.</p>`&gt;`
 
-                          <span className="subrayado"><strong>Activacion de Eloquent:</strong> Desplazarnos a la carpeta bootstrap y entrar en el archivo app.php y quitar el comentario (//) de la linea 26 y 28 ($app-`&gt;`withFacades();, $app-`&gt;`withEloquent();).</span>
+                          <span className="subrayado"><strong>Activación de Eloquent:</strong> Desplazarnos a la carpeta bootstrap y entrar en el archivo app.php y quitar el comentario (//) de la linea 26 y 28 ($app-`&gt;`withFacades();, $app-`&gt;`withEloquent();).</span>
                           <hr></hr>
 
                           <br/><br/>
@@ -61,7 +61,7 @@ class botonApiLumen extends React.Component{
 
                           <br/><br/>
                           <p>Una vez activado Eloquent ya podremos acceder a la consola artisan y crear el model de igual manera que en Laravel.</p>
-                          <p><strong>php artisan make:migration badges --create:</strong> Nos creara la migracion que va a ser la tabla de la base de datos en el proyecto (siempre en plural).</p>
+                          <p><strong>php artisan make:migration badges --create:</strong> Nos creara la migración que va a ser la tabla de la base de datos en el proyecto (siempre en plural).</p>
                           <p><strong>php artisan make:model badge:</strong> Para crear el model para trabajar como un objeto de la tabla en el proyecto (siempre en singular). En el model insertaremos; <span className="subrayado">protected $guarded = ['id'];</span>.</p>
 
 

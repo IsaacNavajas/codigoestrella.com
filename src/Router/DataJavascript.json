@@ -37,14 +37,14 @@
         {"name": ".preventdefault: ", "id":31, "description": " para anular la acción por defecto."},
         {"name": ".split(): ", "id":32, "description": " para transformar una cadena de strings en un mismo array. ej=> let valor = new string(hola, adios), valor.split(',') -> [hola, adios]"},
         {"name": "Math.sign(numero): ", "id":33, "description": " para saber si un numero es negativo o positivo, (sus valores son -1 o +1)."},
-        {"name": "let badge = new Array(10).fill(0).map(() => Math.floor(Math.random() * 8)); ", "id":34, "description": " crear un nuevo array con diez valores distintos con numeros random."},
+        {"name": "let badge = new Array(10).fill(0).map(() => Math.floor(Math.random() * 8)); ", "id":34, "description": " crear un nuevo array con diez valores distintos con números random."},
         {"name": ".target: ", "id":35, "description": " el elemento que recibe el evento."},
         {"name": ".value: ", "id":36, "description": " para recoger el valor de un elemento como un input."}
       ],
 
       "results_arrayenjavascript":[
         {"name": "variable.filter(()=> ...): ", "id":1, "description": " Nos va a filtrar lo que necesitamos y nos devuelve un nuevo array."}, 
-        {"name": "variable.map(()=> ...): ", "id":2, "description": " Ejecuta los elementos de un array y devuelve un nuevo array con los elementos modificados a traves de una funcion. "},
+        {"name": "variable.map(()=> ...): ", "id":2, "description": " Ejecuta los elementos de un array y devuelve un nuevo array con los elementos modificados a traves de una función. "},
         {"name": "variable.reduce(()=> ... ,0): ", "id":3, "description": " Sirve para reducir a un valor. Hay que darle una function y un valor inicial. "},
         {"name": ".push() : ", "id":4, "description": " Añade un elemento al final del array."},
         {"name": ".pop() : ", "id":5, "description": " Elimina el ultimo elemento del array."},
@@ -52,8 +52,8 @@
         {"name": ".shift() : ", "id":7, "description": " borra el primer elemento del array."},
         {"name": ".indexOf() : ", "id":8, "description": " Nos dice la posición del elemento del array."},
         {"name": ".find(()=> ...) : ", "id":9, "description": " Nos va a buscar el elementos que deseemos encontrar en el array."},
-        {"name": ".forEach(()=> ...) : ", "id":10, "description": " Ejecuta la funcion por cada elemento del vector o array, no va a crear un nuevo array sino que va a modificar el indicado."},
-        {"name": ".some(()=> ...) : ", "id":11, "description": " Nos va a dar una respuesta de verdadero o falso para la condicion que le indiquemos en el closure."}
+        {"name": ".forEach(()=> ...) : ", "id":10, "description": " Ejecuta la función por cada elemento del vector o array, no va a crear un nuevo array sino que va a modificar el indicado."},
+        {"name": ".some(()=> ...) : ", "id":11, "description": " Nos va a dar una respuesta de verdadero o falso para la condición que le indiquemos en el closure."}
       ],
 
       "results_mapjavascript":[
