@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5d77eb6b4113c965415e6780816e0de7",
+    "revision": "91493f58b46b3ad69eabe2dd159a3091",
     "url": "/index.html"
   },
   {
-    "revision": "df78ea167f1b517e69bc",
+    "revision": "1b387d107d931beabff2",
     "url": "/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "48f33763cdcf5f98cb48",
-    "url": "/static/css/main.0b4a441e.chunk.css"
+    "revision": "770938eae43ab46c9c70",
+    "url": "/static/css/main.a8970f1a.chunk.css"
   },
   {
-    "revision": "df78ea167f1b517e69bc",
-    "url": "/static/js/2.1158be00.chunk.js"
+    "revision": "1b387d107d931beabff2",
+    "url": "/static/js/2.4e0d2823.chunk.js"
   },
   {
     "revision": "28fa8ae9817b1f7a5dea7108e26b4348",
-    "url": "/static/js/2.1158be00.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.4e0d2823.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "48f33763cdcf5f98cb48",
-    "url": "/static/js/main.dbaab833.chunk.js"
+    "revision": "770938eae43ab46c9c70",
+    "url": "/static/js/main.c6239ce3.chunk.js"
   },
   {
     "revision": "3c3f1816a6eeafdc4489",
@@ -164,16 +164,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/codezenHomeJs.8a76e9a8.png"
   },
   {
-    "revision": "a680b7e6961a7315a5f6bd490c221da5",
-    "url": "/static/media/codezenMongodbCuatro.a680b7e6.png"
+    "revision": "1499f9d5c8e8544a75c16f9c0dff5a78",
+    "url": "/static/media/codezenMongodbCuatro.1499f9d5.png"
   },
   {
     "revision": "eb5b98e779552ea04a4420775a899846",
     "url": "/static/media/codezenMongodbDos.eb5b98e7.png"
   },
   {
-    "revision": "1499f9d5c8e8544a75c16f9c0dff5a78",
-    "url": "/static/media/codezenMongodbTres.1499f9d5.png"
+    "revision": "a680b7e6961a7315a5f6bd490c221da5",
+    "url": "/static/media/codezenMongodbTres.a680b7e6.png"
   },
   {
     "revision": "9320d0fc4e7f551e62e59bbfaa6fe0ce",
@@ -268,7 +268,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/tuplasdos.5313215f.png"
   },
   {
-    "revision": "4ead94245b577349b4edc11ecbe5b3d5",
-    "url": "/static/media/yetii-2.4ead9424.png"
+    "revision": "199ac1339290d570d2485322f10e43cb",
+    "url": "/static/media/yetii-2.199ac133.png"
   }
 ]);

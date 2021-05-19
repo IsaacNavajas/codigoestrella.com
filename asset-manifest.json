@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.0b4a441e.chunk.css",
-    "main.js": "/static/js/main.dbaab833.chunk.js",
-    "main.js.map": "/static/js/main.dbaab833.chunk.js.map",
+    "main.css": "/static/css/main.a8970f1a.chunk.css",
+    "main.js": "/static/js/main.c6239ce3.chunk.js",
+    "main.js.map": "/static/js/main.c6239ce3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ec26966.js",
     "runtime-main.js.map": "/static/js/runtime-main.2ec26966.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.1158be00.chunk.js": "/static/js/2.1158be00.chunk.js",
-    "static/js/2.1158be00.chunk.js.map": "/static/js/2.1158be00.chunk.js.map",
+    "static/js/2.4e0d2823.chunk.js": "/static/js/2.4e0d2823.chunk.js",
+    "static/js/2.4e0d2823.chunk.js.map": "/static/js/2.4e0d2823.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5f6e0f944077604f5c9f7ade4344bf00.js": "/precache-manifest.5f6e0f944077604f5c9f7ade4344bf00.js",
+    "precache-manifest.7841b6a1f694133cc27334eba3e25b71.js": "/precache-manifest.7841b6a1f694133cc27334eba3e25b71.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.0b4a441e.chunk.css.map": "/static/css/main.0b4a441e.chunk.css.map",
-    "static/js/2.1158be00.chunk.js.LICENSE.txt": "/static/js/2.1158be00.chunk.js.LICENSE.txt",
+    "static/css/main.a8970f1a.chunk.css.map": "/static/css/main.a8970f1a.chunk.css.map",
+    "static/js/2.4e0d2823.chunk.js.LICENSE.txt": "/static/js/2.4e0d2823.chunk.js.LICENSE.txt",
     "static/media/america.jpg": "/static/media/america.708b388a.jpg",
     "static/media/archivos.zip": "/static/media/archivos.78584997.zip",
     "static/media/codezen 1.png": "/static/media/codezen 1.49b3fc8c.png",
@@ -48,9 +48,9 @@
     "static/media/codezenExpressDos.png": "/static/media/codezenExpressDos.db90baec.png",
     "static/media/codezenExpressUno.png": "/static/media/codezenExpressUno.e8c3bbcb.png",
     "static/media/codezenHomeJs.png": "/static/media/codezenHomeJs.8a76e9a8.png",
-    "static/media/codezenMongodbCuatro.png": "/static/media/codezenMongodbCuatro.a680b7e6.png",
+    "static/media/codezenMongodbCuatro.png": "/static/media/codezenMongodbCuatro.1499f9d5.png",
     "static/media/codezenMongodbDos.png": "/static/media/codezenMongodbDos.eb5b98e7.png",
-    "static/media/codezenMongodbTres.png": "/static/media/codezenMongodbTres.1499f9d5.png",
+    "static/media/codezenMongodbTres.png": "/static/media/codezenMongodbTres.a680b7e6.png",
     "static/media/codezenMongodbUno.png": "/static/media/codezenMongodbUno.9320d0fc.png",
     "static/media/codezenPxAssetsTableVue.png": "/static/media/codezenPxAssetsTableVue.06fadeb3.png",
     "static/media/codezenVueProps1.png": "/static/media/codezenVueProps1.c8e69a0b.png",
@@ -74,13 +74,13 @@
     "static/media/spam.png": "/static/media/spam.c5515606.png",
     "static/media/tuplas.png": "/static/media/tuplas.731426fe.png",
     "static/media/tuplasdos.png": "/static/media/tuplasdos.5313215f.png",
-    "static/media/yetii-2.png": "/static/media/yetii-2.4ead9424.png"
+    "static/media/yetii-2.png": "/static/media/yetii-2.199ac133.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2ec26966.js",
     "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.1158be00.chunk.js",
-    "static/css/main.0b4a441e.chunk.css",
-    "static/js/main.dbaab833.chunk.js"
+    "static/js/2.4e0d2823.chunk.js",
+    "static/css/main.a8970f1a.chunk.css",
+    "static/js/main.c6239ce3.chunk.js"
   ]
 }
