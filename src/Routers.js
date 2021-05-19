@@ -72,7 +72,7 @@ class Router extends React.Component {
   }
 
   handleClick = () => {
-    if(this.state.result == md5(`fSherpa`)) {
+    if(this.state.result == md5(`%Satirion%44`)) {
       this.setState({acceso: true});
       setTimeout(() => this.closeModal(), 1300)
       };

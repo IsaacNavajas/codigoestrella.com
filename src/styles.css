@@ -174,7 +174,6 @@ html, body {
   height: 100px;
   background-size: 49%;
   transition:  0.4s linear 1.0s;
-  background-image: url(source/yetii-2.png);
   background-clip: text;
 }
 
