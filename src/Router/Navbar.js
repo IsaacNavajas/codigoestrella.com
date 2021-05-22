@@ -11,6 +11,11 @@ import logoDocker from '../source/logo-docker.png';
 import logoGit from '../source/logo-git.png';
 import logoMysql from '../source/logo-mysql.png';
 import logoMongo from '../source/logo-mongodb.png';
+import logowordpress from '../source/logo-wordpress.png';
+import logoprestashop from '../source/logo-prestashop.png';
+
+
+import logoyetii from '../source/avatar-2.png';
 
 
 class Navbar extends React.Component{
@@ -26,7 +31,7 @@ class Navbar extends React.Component{
                     {
                      this.props.verifyLanguage && <h1 className="title-codigoestrella-spanish col-12" id="title">Codigoestrella.com</h1>
                       ||
-                      <h1 className="title-codigoestrella-english col-12" id="title">yetii.exe [root💀;]</h1>
+                      <h1 className="title-codigoestrella-english col-12" id="title"><img src={logoyetii} className="logo-nav-yetii" alt="logo Express"></img> yetii.exe </h1>
                     }
 
 
@@ -39,9 +44,27 @@ class Navbar extends React.Component{
                 {this.props.verifyLanguage && 
                     <ul>
                       
-                      <li className=" col-2"><Link to="/ruta-uno" className="menubuttons btn btn-dark" >WORDPRESS</Link></li>
+                      <div className="col-2">
+                    <div className=" hover ">
+                      {
+                        //Submenu-solverkey
+                        <ul>
+                          <li className=" col-12"><Link to="/ruta-uno" className="drop-down-menubuttons-nivelone btn btn-dark">
+                            <img src={logowordpress} className="logo-nav" alt="logo Express"></img> WORDPRESS Y MÁS</Link>
+                          </li>
+                          <li className=" col-12"><Link to="/ruta-tres/express" className="drop-down-menubuttons-niveltwo btn btn-dark" >
+                            <img src={logoprestashop} className="logo-nav" alt="logo Express"></img> PRESTASHOP</Link>
+                          </li>
+                        </ul> 
+                      }
+                    </div>      
+                    </div> 
+                      <li className=" col-2"><div className="menubuttons btn btn-dark" >SOLVERKEY ⇵</div></li>
+          
+
                       <li className=" col-2"><Link to="/ruta-dos" className="menubuttons btn btn-dark" >HTML & CSS</Link></li>
                  
+
                       <div className="col-2">
                     <div className=" hover ">
                       {
@@ -114,12 +137,12 @@ class Navbar extends React.Component{
 
                 {!this.props.verifyLanguage && 
                     <ul>
-                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >-</div></li>
-                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >-</div></li>
-                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >-</div></li>
-                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >-</div></li>
-                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >-</div></li>
-                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >-</div></li>
+                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >EJEMPLO 1</div></li>
+                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >EJEMPLO 2</div></li>
+                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >EJEMPLO 3</div></li>
+                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >EJEMPLO 4</div></li>
+                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >EJEMPLO 5</div></li>
+                      <li className=" col-2"><div className="hoveruno menubuttons btn btn-dark" >EJEMPLO6</div></li>
                     </ul>
                 }   
                

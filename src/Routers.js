@@ -23,11 +23,12 @@ import Docker from './Router/Docker';
 import Vue from './Router/Vue';
 
 //Modulos-yetii
-import buildEnglish from './Router/yetii/buildEnglish';
+import buildEnglish from './Router/yetii/Inicio.js';
 import ModalYetii from './Router/yetii/Modal_yetii';
-import imageYetii from './source/yetii-2.png';
+
 
 import Image from './source/archivocomprimido.png';
+import ImageKali from './source/archivokali.png';
 import ImageYetii from './source/yetii.png';
 import Archivos from './source/archivos.zip';
 
@@ -72,7 +73,7 @@ class Router extends React.Component {
   }
 
   handleClick = () => {
-    if(this.state.result == md5(`%Satirion%44`)) {
+    if(this.state.result == md5(`Blaster EE4`)) {
       this.setState({acceso: true});
       setTimeout(() => this.closeModal(), 1300)
       };
@@ -98,7 +99,9 @@ class Router extends React.Component {
                     <div className="col-12 ">
                       <div className="col-6">
                         <div className=" toggle custom-control custom-switch  ">
-                          
+
+                          <a href="https://kali.training/downloads/Kali-Linux-Revealed-2021-edition.pdf" target="https://kali.training/downloads/Kali-Linux-Revealed-2021-edition.pdf"><img src={ImageKali} className="ImageKali"/></a>
+
                           <a href={Archivos} download><img src={Image} className="ImageDescarga"/></a>
                
                           <input onClick={this.openModal} type="checkbox" className=" checkboxtoggle custom-control-input " id="customSwitches"></input>
@@ -107,9 +110,7 @@ class Router extends React.Component {
                           <div className="position_button ">
                             {this.state.verifyLanguage && <Link to="/ruta-siete"><button type="submit" className="button btn btn-secondary" >Javascript</button></Link>}
                             {!this.state.verifyLanguage && 
-                              <Link to="/english"><button type="submit" className="button-america btn btn-secondary" >
-                                <img src={America} className="logo-nav-america" alt="logo Express"></img> </button>
-                              </Link>}
+                              <Link to="/english"><button type="submit" className="button  btn btn-secondary" >English </button> </Link>}
                          </div>
                        
                        
@@ -166,11 +167,9 @@ class Router extends React.Component {
             onClose={this.closeModal}
             >
 
-              <img src={imageYetii} className="ImageModalYetii"/>
-
                 <form onSubmit={this.handleSubmit}>
                   <input type="password" className="input_yetii form-control form-control-lg" placeholder="password" onChange={this.handleChange} value={this.state.value}></input>
-                  <input type="button" className="button_yetii btn btn-light" value="Enviar" onClick={this.handleClick} name={this.state.value}></input>
+                  <input type="button" className="button_yetii btn btn-light" value="Entrar" onClick={this.handleClick} name={this.state.value}></input>
                 </form>
 
         </ModalYetii>

@@ -167,7 +167,7 @@ html, body {
   font-family: 'Open Sans Condensed', sans-serif;
   font-family: 'Pacifico', cursive;
   font-size: 49px;
-  padding-right:100px;
+  padding-right:210px;
   margin-left:70px;
   text-shadow: 2px 2px rgba(110, 110, 110, 0.349);
   color:transparent;
@@ -196,6 +196,13 @@ html, body {
   margin-top:-5px;
 }
 
+.logo-nav-yetii{
+  width: 80px;
+  margin-top:-5px;
+  filter: grayscale(100%);
+  opacity:0.38;
+}
+
 .titulo{
 position:absolute;
 font-size: 40px;
@@ -218,6 +225,14 @@ font-size: 40px;
   transition:all 2s;
 }
 
+.ImageKali{
+  width: 69px;
+  margin-right:-51px;
+  margin-left:60px;
+  margin-top:-26px;
+  transition:all 2s;
+}
+
 .toggle{
   float:right;
   position:relative;
@@ -229,8 +244,8 @@ font-size: 40px;
 
 .yetii{
   width: 70px;
-  margin-top: -30px;
-  margin-left:-65.5px;
+  margin-top: -28px;
+  margin-left:-64.5px;
   margin-right:-15px;
   cursor: pointer;
 }

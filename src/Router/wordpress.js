@@ -1,217 +1,137 @@
 import React from 'react';
+import Modal from './Modal';
 
-
-import imageone from "../source/codezen codigo wordpress.png";
+import BotonWordpress from "./botonwordpress";
 
 class Wordpress extends React.Component{
-
-  state={
-    openModal: false
+  state = {
+    openModal: false,
   };
+
+  
   closeModal = () => {this.setState({openModal: false})}
   openModal = () => {this.setState({openModal: true})}
+
+
+
+
   render(){
+  
     return (
+
       <React.Fragment>
         <div className="container">
-          <br/>
-          <h2  className="bigtitle font">Instalación</h2><br/>
-
-          <p><strong>Instalar Wordpress desde XAMPP: </strong> entrar en www.word.press.org y descargar Get Wordpress, descomprimirlo en la carpeta de htdocs de XAMPP, y escribir la ruta /localhost/(nombre de la carpeta) y desde ahi comenzar la instalación. </p>
-          <p><strong>Utilizar interfaz antigua de wordpress:</strong> vamos a plugins y buscamos - Editor clásico - lo activamos y automáticamente cambiara su interfaz.</p>
-
-          <a href="#linkelementor" className="Link">↓↓ Elementor ↓↓</a>
-
-          <br/>
-          <hr></hr><br/><br/>
-
-          <h2  className="bigtitle">Temas</h2>
-
-          <br/><br/>
-          <p><strong>Understrap:</strong> Es el tema que viene completamente vació, para configurado a tu gusto. Viene con la implementación de Bootstrap.</p>
-          
-          <p><strong>Colibri WP:</strong> Tema recomendado para editar por su gran extensión para editar.</p>
-          <p><strong>themeforest.net:</strong> Para comprar temas de pago.</p>
-          <p><strong>Crear un tema hijo / plugin:</strong> Para modificar a nivel código es bueno crear un tema hijo sino no es necesario crear un hijo, codearemos siempre dentro del tema hijo, vamos a crear dentro de la carpeta theme una nueva carpeta con el nombre del tema hijo y dentro el siguiente archivo style.css;</p>
-          
-          <img src={imageone} alt="imagen del modal" className="imagewordpress"></img>
-          <p>En el import llamamos al style.css del tema padre en este caso colibri-wp.</p>
-          <p>- Se puede agregar código de otras formas; como instalando un theme con la opción de modificar código desde él, apariencia -> Editor, utilizando el plugin code snippets o haciendo un require desde el archivo functions.php del proyecto. También podemos ayudarnos a trabajar con Hooks para inyectar codigo sin modificar los archivos, podemos ver los hooks en <strong>hookr.io</strong>. </p>
-          <span className="subrayado"> Instalaremos el plugin en vidual studio code SFTP para poder ver los archivos del proyecto. </span> 
+          <h2  className="bigtitle font">Primeros pasos</h2><br/>
+          <p><strong>SiteGround :</strong> .</p>
+          <p><strong>Ajustes/Lectura/Disuadir a los motores de búsqueda de indexar este sitio :</strong> Activar esta casilla para <u className="subrayado"><strong>NO</strong> aparecer en los motores de búsqueda</u>, activarla mientras este en producción.</p>
+          <p><strong>Yoast SEO/General - WebMaster Tools/Código de verificación de Google - Search Console de Google:</strong> Para <u className="subrayado">aparecer en el motor de búsqueda de google</u> mas rápido, lo que hace es aligerar el tiempo de hacer el enlace (antes de hacer esto hay que activar la casilla del punto anterior).</p>
           
           <br/>
-          <hr></hr><br/><br/>
-
-
-          <h2  className="bigtitle">Entradas:</h2>
-          <br/><br/>
-          <span className="subrayado"> Las entradas en diferencia con las paginas son dinámicas esto quiere decir que el SEO en posicionamiento va variando dependiendo de la fecha de publicación </span> 
-          <p><strong>Todas las entradas:</strong> Muestra las entradas.</p>
-          <p><strong>Añadir nueva:</strong> Para crear nuevos post.</p>
-          <p><strong>Categorías:</strong> Para encapsular en categorías.</p>
-          <p><strong>Etiquetas:</strong> Para un buen SEO y posicionar en google aunque podemos crearla de manera rápida desde añadir nueva.</p>
+            <button 
+              className="buttonphp btn btn-dark" 
+              onClick={this.openModal}
+              >
+                Wordpress general
+            </button>
           <br/>
-          <hr></hr><br/><br/>
+          <br/><hr></hr><br/>
 
-          <h2  className="bigtitle">Medios:</h2>
-          <br/><br/>
-          <p><strong>Biblioteca:</strong> Muestra la librería de imágenes y desde aquí también podremos eliminarlas y editarlas, si entramos a editarlas podremos agregar información para mejorar nuestro SEO de las imágenes de nuestro proyecto.</p>
-          <p><strong>Añadir nuevo:</strong> Para subir una nueva imagen, también podemos subir varias imágenes a la vez para mantenerlas guardadas en nuestro proyecto.</p>
+
+          <h2  className="bigtitle font">Plugins</h2><br/>
           <br/>
-          <hr></hr><br/><br/>
-
-
-          <h2  className="bigtitle">Paginas</h2>
-          <br/>
-          <br/>
-          <span className="subrayado"> Las paginas en diferencia con las entradas son estáticas esto quiere decir que el SEO en posicionamiento no varia dependiendo de la fecha de publicación</span> 
-          <p><strong>Todas las paginas:</strong> Funciona de igual manera que en biblioteca para las entradas.</p>
-          <p><strong>Añadir nueva:</strong> Funciona de igual manera que en añadir nueva para las entradas.</p>
-          
-          <br/>
-          <hr></hr>
-          <br/><br/>
-
-          <h2  className="bigtitle">plugins:</h2>
-          <br/><br/>
-          <p><strong>widgets:</strong> Están en apariencia - widgets, son zonas de contenido que podemos agregar al rededor de distintas áreas de la pagina.</p>
-          <p><strong>plugins recomendables para instalar en nuestro proyecto:</strong> Funciona de igual manera que en biblioteca para las entradas.</p>
-
+          <p><u className="subrayado"><strong>Plugins con los que trabajar actualmente: </strong> </u> </p>
           <ul>
-              <li><p><strong>+ Contact Form 7 =</strong> Para crear formularios de contacto de forma rápida, para agregar un formulario lo haremos desde contacto - Añadir nuevo y lo meteremos en una nueva pagina con Essential Addons for Elementor.</p></li>
-              <li><p><strong>+ Yoast SEO =</strong> Para hacer SEO en nuestra pagina web.</p></li>
-              <li><p><strong>+ WooCommerce = </strong>Sirve para añadir una tienda completa dentro de nuestra pagina web.</p></li>
-              <li><p><strong>+ Really simple SSL =</strong> Para añadir el certificado ssl a nuestra pagina web, hay que activarlo después de tener la pagina subida con nuestro certificado de ssl.</p></li>
-              <li><p><strong>+ Elementor Page Builder =</strong> Para crear paginas en wordpress con una interfaz mas intuitiva, arrastrando y editando.</p></li>
-              <li><p><strong>+ Duplicate Post = </strong>Para duplicar un post.</p></li>
-              <li><p><strong>+ TintMCE Avanced = </strong>Coge el editor básico de wordpress y ampliar sus funcionalidades para que tenga muchas mas funciones, es recomendable utilizarlo cuando generamos post.</p></li>
-              <li><p><strong>+ Wp super cache =</strong> Para cachear nuestra pagina web (para mejorar la velocidad de la pagina).</p></li>
-              <li><p><strong>+ Redirection =</strong> Para redirigir a una pagina externa dentro de tu pagina wordpress.</p></li>
-              <li><p><strong>+ Smush - compress, Optimize and Lazy Load images = </strong>Mejora la velocidad de nuestra pagina optimizando las imágenes, es imprescindible si vamos a subir muchas imágenes.</p></li>
-              <li><p><strong>+ Font awesome 4 Menus =</strong> Es el único de todos los anteriores que no tiene soporte, sirve para agregar iconos en nuestro menú en yuxtaposición con sus valores, wordpress ya nos da esta opción pero estos iconos serán los de fontawesome.com.</p></li>
+            <li><p><strong>WPS Hide Login: </strong>Para cambiar el nombre de la carpeta de admin aunque es recomendable cambiar el nombre de la carpeta wp-admin de public_html.</p></li>
+            <li><p><strong>WP 2FA - Two-factor authentication for WordPress: </strong>Agregar el factor 2fa. </p></li>
+            <li><p><strong>SiteOrigin CSS: </strong>Para generar CSS usando las mismas clases. </p></li>
+            <li><p><strong>White label cms: </strong>Es el plugin que utilizamos para dar permisos y para editar el dashboard (la pagina principal del backoffice). </p></li>
+            <li><p><strong>WP 2FA - Two-factor authentication for WordPress: </strong>Agregar el factor 2fa. </p></li>
+            <li><p><strong>Salon Booking System: </strong>Plugin para pedir citas en Wordpress. </p></li>
+            <li><p><strong>Elementor: </strong>Es el maquetador mas famoso en Wordpress. </p></li>
+            <li><p><strong>SG Optimizer: </strong>para poder gestionar la configuración y mejorar la integración con el servicio SuperCacher de Siteground. </p></li>
+            <li><p><strong>Siteground migration: </strong>Para hacer una migracion del proyecto y la base de datos con el Hosting de Siteground en un solo click. </p></li>
+            <li><p><strong>Yoast-SEO: </strong>Es el plugin para dar SEO a nuestra pagina web. </p></li>
           </ul>
-          
           <br/>
-          <hr></hr><br/><br/>
+          <p><u className="subrayado"><strong>Plugins de WooCommerce: </strong> </u> </p>
+          <ul>
+            <li><p><strong>Woocommerce: </strong>Para implementar una tienda dentro de Wordpress.</p></li>
+            <li><p><strong>WooLentor - WooCommerce Elementor Addons + Builder: </strong>Para agregar nuevas funciones de Woocommerce a Elementor PRO.</p></li>
+            <li><p><strong>Yith Woocommerce catalog manager: </strong>Para crear un catálogo en woocommerce.</p></li>
+          </ul>
+          <br/>
+          <p><u className="subrayado"><strong>Plugins de Get Engine: </strong> </u> </p>
+          <ul>
+            <li><p><strong>Get Engine: </strong>Es un maquetador para trabajar en paralelo con Elementor es decir va a dar mas opciones desde dentro del plugin de Elementor.</p></li>
+          </ul>
+          <br/>
+          <p><u className="subrayado"><strong>Otros Plugins: </strong> </u> </p>
+          <ul>
+            <li><p><strong>Advanced acces manager: </strong>Otro plugin para dar permisos.</p></li>
+            <li><p><strong>Page Restrict: </strong>Para restringir solo con usuarios registrados ciertas páginas.</p></li>
+            <li><p><strong>Master Slider: </strong>Para crear un slider diferente.</p></li>
+            <li><p><strong>Smart Slider: </strong>para meter un slider mas complejo con efectos de movimiento discontinuos etc.</p></li>
+            <li><p><strong>Cookie notice & complance for GDPR/CCVA: </strong>Otro plugin para el aviso de Cookies.</p></li>
+            <li><p><strong>Ninja Forms: </strong> Para crear formularios en Wordpress.</p></li>
 
-          <h2  className="bigtitle" id="linkelementor"><strong>plugin:</strong> Elementor Page Builder</h2>
+          </ul>
           <br/>
-          <br/>
+          <hr></hr><br/>
 
-          <p><strong>Instalador :</strong> Vamos a plugins, buscamos elementor page builder y lo activamos, a partir de ahora cada vez que queramos crear algo en nuestro wordpress tendremos una botonera de editar con Elementor y de esta forma entraremos desde el editor del plugin.</p>
-          <p><strong>Essential Addons for Elementor :</strong> Es un plugin independiente de Elementor pero que trabaja con él, Elementor solo te permite añadir post a tu sitio en versión de pago pero con este plugin lo vamos hacer de forma gratuita, una vez activado dentro del editor de Elementor aparecerá una opción agregada a su menu : Essential Addons.</p>
-          <p><strong>Lectura :</strong> Vamos a poder configurar el modo de lectura en que se van a leer los post.</p>
-          <p><strong>Comentarios :</strong> Vamos a poder configurar los comentarios.</p>
-          <p><strong>Medios :</strong> Vamos a poder configurar todos los multimedia, por ejemplo los tamaños prefijados de las imágenes.</p>
-          <p><strong>Enlaces permanentes :</strong> Vamos a poder configurar nuestras urls por defecto.</p>
-          <p><strong>Privacidad :</strong> Definir una pagina como datos de privacidad.</p>
+          <h2  className="bigtitle">Paquetes de trabajo</h2><br/>
           <br/>
-          <hr></hr>
-          <br/><br/>
-
-          <h2  className="bigtitle"><strong>plugin:</strong> WooCommerce</h2>
-          <br/>
-          <br/>
-
-          <p><strong>Instalador :</strong> Vamos a plugins, buscamos WooCommerce y lo activamos, después de activarlo nos reconducirá para definir las preferencias, después de instalar sus preferencias tendremos instalada la tienda.</p>
-          <p><strong>WooCommerce :</strong> tiene pedidos, cupones, informes, ajustes, estado y extensiones.</p>
-          <p><strong>Productos :</strong> tiene todos los productos, añadir nuevo, categorías, etiquetas y atributos.</p>
-          <br/>
-          <hr></hr>
-          <br/><br/>
-
-
-          
-          <h2  className="bigtitle"><strong>plugin:</strong> Google Analytics</h2>
-          <br/>
-          <br/>
-
-          <p><strong>GA Google Analytics :</strong>es un plugin que vamos a utilizar para analizar cuanta gente entra, cuantas veces aparecemos en búsquedas de google, para poder aparecer en google...</p>
-          <p>Lo primero que vamos a hacer es googlear google analytics y crearnos una cuenta nueva, una vez registrados vamos a copiar el id de google analytics y pegarlo en el plugin de wordpress en GA Tracking ID.</p>
-          <p><strong>Google Analytics Dashboard for WP by ExactMetrics :</strong> Una vez bien configurado google analytics vamos a instalar este plugin para poder ver su interfaz desde wordpress sin tener que googlear google analytics, para activarlo validamos el código de acceso que nos muestre.</p>
-          <br/>
-          <hr></hr>
-          <br/><br/>
-
-          <h2  className="bigtitle"><strong>plugin:</strong> YoastSeo</h2>
-          <br/>
+          <p><u className="subrayado"><strong>Paquete de trabajo con Elementor: </strong> </u> </p>
+          <ul>
+            <li><p><strong>Theme Elementor: </strong>Utilizar el tema de Elementor.</p></li>
+            <li><p><strong>Elementor PRO: </strong>El maquetador Elementor PRO.</p></li>
+          </ul>
           <br/>
 
-          
-          <p><strong>Instalar :</strong> Lo activaremos desde plugins, es recomendable tener instalado y configurado google Analytics.</p>
-         
-          <p>Lo primero que vamos a hacer es googlear google search y crearnos una cuenta nueva, una vez registrados vamos a crear una nueva propiedad y copiamos el url de nuestra web, verificamos la propiedad (podemos hacerlo a traves de google analytics), obtenemos el código de verificación desde wordpress y asi ya tendríamos el plugin bien configurado.</p>
-           <p>A partir de aquí ya solo queda configurar YOASTseo con nuestra configuración preferida.</p>
-           <p>Si vamos a paginas y bajamos hasta abajo podremos configurar el cuadro de google de SEO (podemos configurar el SEO con emogis que no va a cambiar su posicionamiento y queda mas visible, es una buena practica poner un emojis de un stick por que queda mas profesional).</p>
-
+          <p><u className="subrayado"><strong>Paquete de trabajo con Colibri: </strong> </u> </p>
+          <ul>
+            <li><p><strong>Theme de Colibri: </strong>Instalar el tema de Colibri.</p></li>
+            <li><p><strong>Plugin Colibri Page Builder: </strong>Maquetador para el tema de Colibri (No influye con Elementor pero si hay anomalías desactivar colibri mientras se trabaja con Elementor).</p></li>
+            <li><p><strong>Elementor: </strong>Maquetador para trabajar en las paginas individuales.</p></li>
+          </ul>
           <br/>
-          <hr></hr>
-          <br/><br/>
 
-          <h2  className="bigtitle"><strong>plugin:</strong> WP Maintenance Mode</h2>
-          <br/><br/>
-          <p>Este plugin lo vamos a utilizar cuando queramos entrar en producción, es decir trabajar en la pagina sin que se vea las actualizaciones que estamos haciendo.</p>
-          <p><strong>instalación:</strong> Vamos activar el plugin desde plugins, una vez dentro del plugin accedemos a ajustes y dentro podremos cambiar el estado de encendido a pagado para trabajar en producción o no y muchas mas opciones como que pagina queremos que este en producción.</p>
-          <p><strong>Módulos:</strong> Podemos crear un temporizador que nos cuente el tiempo restante hasta el final del mantenimiento, crear botoneras, suscripción...</p>
+          <p><u className="subrayado"><strong>Paquete de trabajo con Neve: </strong> </u> </p>
+          <ul>
+            <li><p><strong>Theme de Neve: </strong>Utilizar el tema de Neve.</p></li>
+            <li><p><strong>Plugin Orbit Fox: </strong>Son un conjunto de plantillas a elegir con una interfaz mas destacada a la de un Wordpress habitual.</p></li>
+            <li><p><strong>Elementor: </strong>Maquetador para trabajar en las paginas individuales.</p></li>
+          </ul>
           <br/>
-          <hr></hr><br/><br/>
 
-
-          <h2  className="bigtitle"><strong>plugin:</strong> Rating-Widget: Star Review System (SEO)</h2>
-          <br/><br/>
-          <p>Este plugin lo vamos a utilizar para SEO y nos va a contar las estrellas del cuadro de SEO de google, la única norma es que no podemos agregar mas de uno por pagina.</p>
-
+          <p><u className="subrayado"><strong>Paquete de trabajo con Blocksy: </strong> </u> </p>
+          <ul>
+            <li><p><strong>Theme Blocksy: </strong>El tema de Blocksy.</p></li>
+            <li><p><strong>Blocksy Companion: </strong>cuando se este instalando conjuntamente elegir uno de los temas recomendado el 'Product Reviews'.</p></li>
+          </ul>
           <br/>
-          <hr></hr><br/><br/>
+          <br/>
+          <hr></hr><br/>
+
+
+
+
+
 
 
           
-          <h2  className="bigtitle">Ajustes</h2>
-          <br/>
-          <br/>
-
-          <p><strong>Ajustes :</strong> Vamos a poder configurar todos los datos internos del head.</p>
-          <p><strong>Escritura :</strong> Vamos a poder configurar el modo de enviar los posts.</p>
-          <p><strong>Lectura :</strong> Vamos a poder configurar el modo de lectura en que se van a leer los post.</p>
-          <p><strong>Comentarios :</strong> Vamos a poder configurar los comentarios.</p>
-          <p><strong>Medios :</strong> Vamos a poder configurar todos los multimedia, por ejemplo los tamaños prefijados de las imágenes.</p>
-          <p><strong>Enlaces permanentes :</strong> Vamos a poder configurar nuestras urls por defecto.</p>
-          <p><strong>Privacidad :</strong> Definir una pagina como datos de privacidad.</p>
-          
-          <br/>
-          <hr></hr><br/><br/>
-          
-          <h2  className="bigtitle">Migrar WOrdpress de localhost a un servidor</h2>
-          <br/>
-          <br/>
-          <p><strong>Preparación:</strong></p>
-          <p>- vamos a la carpeta que tenemos en nuestra carpeta htdocs de xampp y la vamos a comprimir a parte.</p>
-          <p>- entramos en nuestra base de datos y exportamos toda la base de datos.</p>
-          <p>- metemos la carpeta comprimida y el archivo sql exportado dentro de la misma carpeta.</p>
-          <br/>
-          <p><strong>Subir archivos al Hosting:</strong></p>
-          <p>- desde nuestro hosting vamos a subir el archivo comprimido y desde ahi lo vamos a descomprimir y la movemos a la carpeta principal (en este caso public_html).</p>
-          <p>- vamos a subir de forma independiente en la parte hosting el archivo de sql.</p>
-          <p>- Entramos en Manage y PhpMyAdmin e introducimos el usuario y contraseña que nos dan, entramos a nuestra base de datos con el mismo nombre y una vez dentro le damos a importar y seleccionamos nuestro archivo sql.</p>
-          <br/>
-          <p><strong>Enlazar los datos del hosting:</strong></p>
-          <p>+ buscamos en nuestra base de datos con wp_ config (el wp puede cambiar dependiendo como lo hayamos configurado) y clickamos al único que nos aparece</p>
-          <p>- en el primer valor que sera el siteurl lo cambiaremos por la url que nos da el hosting.</p>
-          <p>- en el segundo valor que sera home lo volveremos a cambiar por la misma url que nos da el hosting.</p>
-          <p>+ ahora vamos dentro de la base de datos de nuestro hosting y buscamos también wp_config.</p>
-          <p>- cambiamos el DB_NAME por el que nos da el hosting y lo mismo hacemos con DB_USER, PASSWORD, DB_HOST.</p>
-
-          <br/>
-          <br/>
         </div>
 
+            <Modal
+                isOpen={this.state.openModal}
+                onClose={this.closeModal}
+                title = 'W O R D P R E S S - G E N E R A L'
+                >
+                  <BotonWordpress/>
+            </Modal>
 
       </React.Fragment>
 
     );
-
-
-
   }
 
 }

@@ -114,7 +114,8 @@
 .bigtitleWhite{
     font-size: 50px;
     color:transparent;
-    font-family: 'Fredericka the Great';
+    font-family: 'Fredericka the Great', cursive;
+    background-image: url("https://i.ibb.co/mq7vPkz/star-3.jpg");
     background-position: center;
     background-clip: text;
   

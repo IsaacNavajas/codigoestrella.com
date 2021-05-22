@@ -41,7 +41,7 @@ class Inicio extends React.Component{
         <div>
           <br/> 
 
-          <h2 className="bigtitleWhite font">Expresiones regulares </h2>    
+          <h2 className="bigtitleWhite">Expresiones regulares </h2>    
       
           <div className=" col-12"><img src={Image} className="imagecarbon"></img></div>
           <ul>
