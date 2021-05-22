@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8e62bd3796ced75a0899baaf99e2af26",
+    "revision": "e76ef27087bb56a0ff142ba5643f3e2e",
     "url": "/index.html"
   },
   {
-    "revision": "1b387d107d931beabff2",
+    "revision": "9c68ed2159ae313015ea",
     "url": "/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "9656ba30ec236925bce6",
-    "url": "/static/css/main.a8970f1a.chunk.css"
+    "revision": "bc92f7f4494bcad53b67",
+    "url": "/static/css/main.8a8fbf8a.chunk.css"
   },
   {
-    "revision": "1b387d107d931beabff2",
-    "url": "/static/js/2.4e0d2823.chunk.js"
+    "revision": "9c68ed2159ae313015ea",
+    "url": "/static/js/2.e9fc54ca.chunk.js"
   },
   {
     "revision": "28fa8ae9817b1f7a5dea7108e26b4348",
-    "url": "/static/js/2.4e0d2823.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.e9fc54ca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9656ba30ec236925bce6",
-    "url": "/static/js/main.d4027226.chunk.js"
+    "revision": "bc92f7f4494bcad53b67",
+    "url": "/static/js/main.ecd24d08.chunk.js"
   },
   {
     "revision": "3c3f1816a6eeafdc4489",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "78584997c95937c8eb82df45025cef89",
     "url": "/static/media/archivos.78584997.zip"
+  },
+  {
+    "revision": "256404de1ae7c0973381241bad9a405f",
+    "url": "/static/media/avatar-2.256404de.png"
   },
   {
     "revision": "49b3fc8cd83e09e9b1c8d1d35c30ae89",
@@ -248,6 +252,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/logo-mysql.c6676c5f.png"
   },
   {
+    "revision": "892c615597201703135e947c65dec2b5",
+    "url": "/static/media/logo-prestashop.892c6155.png"
+  },
+  {
+    "revision": "60d4cba16a2e44b6338c35af050fa146",
+    "url": "/static/media/logo-wordpress.60d4cba1.png"
+  },
+  {
     "revision": "e4855bf25d732863cce1c63f830e24ec",
     "url": "/static/media/mysqlTabla.e4855bf2.png"
   },
@@ -266,9 +278,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5313215f8f59a0f4d776b994c696db20",
     "url": "/static/media/tuplasdos.5313215f.png"
-  },
-  {
-    "revision": "199ac1339290d570d2485322f10e43cb",
-    "url": "/static/media/yetii-2.199ac133.png"
   }
 ]);
