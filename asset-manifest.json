@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.8a8fbf8a.chunk.css",
-    "main.js": "/static/js/main.ecd24d08.chunk.js",
-    "main.js.map": "/static/js/main.ecd24d08.chunk.js.map",
+    "main.js": "/static/js/main.ee4183be.chunk.js",
+    "main.js.map": "/static/js/main.ee4183be.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ec26966.js",
     "runtime-main.js.map": "/static/js/runtime-main.2ec26966.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.e9fc54ca.chunk.js": "/static/js/2.e9fc54ca.chunk.js",
-    "static/js/2.e9fc54ca.chunk.js.map": "/static/js/2.e9fc54ca.chunk.js.map",
+    "static/js/2.2341cc06.chunk.js": "/static/js/2.2341cc06.chunk.js",
+    "static/js/2.2341cc06.chunk.js.map": "/static/js/2.2341cc06.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.486b4a788a6317a18c888f70ab711a78.js": "/precache-manifest.486b4a788a6317a18c888f70ab711a78.js",
+    "precache-manifest.fe54031804cfb1a34c2e9b8564d65310.js": "/precache-manifest.fe54031804cfb1a34c2e9b8564d65310.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
     "static/css/main.8a8fbf8a.chunk.css.map": "/static/css/main.8a8fbf8a.chunk.css.map",
-    "static/js/2.e9fc54ca.chunk.js.LICENSE.txt": "/static/js/2.e9fc54ca.chunk.js.LICENSE.txt",
+    "static/js/2.2341cc06.chunk.js.LICENSE.txt": "/static/js/2.2341cc06.chunk.js.LICENSE.txt",
     "static/media/america.jpg": "/static/media/america.708b388a.jpg",
     "static/media/archivos.zip": "/static/media/archivos.78584997.zip",
     "static/media/avatar-2.png": "/static/media/avatar-2.256404de.png",
@@ -76,13 +76,18 @@
     "static/media/prettierrc.png": "/static/media/prettierrc.78862327.png",
     "static/media/spam.png": "/static/media/spam.c5515606.png",
     "static/media/tuplas.png": "/static/media/tuplas.731426fe.png",
-    "static/media/tuplasdos.png": "/static/media/tuplasdos.5313215f.png"
+    "static/media/tuplasdos.png": "/static/media/tuplasdos.5313215f.png",
+    "static/media/wordpresspermisos.png": "/static/media/wordpresspermisos.bb3368cf.png",
+    "static/media/wordpresspermisos2.png": "/static/media/wordpresspermisos2.6198ac7d.png",
+    "static/media/wordpresspermisos3.png": "/static/media/wordpresspermisos3.e9b7190c.png",
+    "static/media/wordpresspermisos4.png": "/static/media/wordpresspermisos4.d5025a38.png",
+    "static/media/wordpresspermisos6.png": "/static/media/wordpresspermisos6.2886dae1.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2ec26966.js",
     "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.e9fc54ca.chunk.js",
+    "static/js/2.2341cc06.chunk.js",
     "static/css/main.8a8fbf8a.chunk.css",
-    "static/js/main.ecd24d08.chunk.js"
+    "static/js/main.ee4183be.chunk.js"
   ]
 }

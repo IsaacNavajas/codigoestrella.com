@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e76ef27087bb56a0ff142ba5643f3e2e",
+    "revision": "48ffc4d5c54a65bffc93b7f1ae7b2335",
     "url": "/index.html"
   },
   {
-    "revision": "9c68ed2159ae313015ea",
+    "revision": "8a82792515a8a820b23f",
     "url": "/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "bc92f7f4494bcad53b67",
+    "revision": "a8108e73c59bb7b62b2e",
     "url": "/static/css/main.8a8fbf8a.chunk.css"
   },
   {
-    "revision": "9c68ed2159ae313015ea",
-    "url": "/static/js/2.e9fc54ca.chunk.js"
+    "revision": "8a82792515a8a820b23f",
+    "url": "/static/js/2.2341cc06.chunk.js"
   },
   {
     "revision": "28fa8ae9817b1f7a5dea7108e26b4348",
-    "url": "/static/js/2.e9fc54ca.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.2341cc06.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bc92f7f4494bcad53b67",
-    "url": "/static/js/main.ecd24d08.chunk.js"
+    "revision": "a8108e73c59bb7b62b2e",
+    "url": "/static/js/main.ee4183be.chunk.js"
   },
   {
     "revision": "3c3f1816a6eeafdc4489",
@@ -278,5 +278,25 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5313215f8f59a0f4d776b994c696db20",
     "url": "/static/media/tuplasdos.5313215f.png"
+  },
+  {
+    "revision": "bb3368cf3a0747a98e660eab2c96a213",
+    "url": "/static/media/wordpresspermisos.bb3368cf.png"
+  },
+  {
+    "revision": "6198ac7d403db482972fd87d14751526",
+    "url": "/static/media/wordpresspermisos2.6198ac7d.png"
+  },
+  {
+    "revision": "e9b7190c982efb7e32e060f9e4aba644",
+    "url": "/static/media/wordpresspermisos3.e9b7190c.png"
+  },
+  {
+    "revision": "d5025a386eed4ae60507bdbb9e7ca2ff",
+    "url": "/static/media/wordpresspermisos4.d5025a38.png"
+  },
+  {
+    "revision": "2886dae1251d4f5b77d28620f81b7d75",
+    "url": "/static/media/wordpresspermisos6.2886dae1.png"
   }
 ]);
