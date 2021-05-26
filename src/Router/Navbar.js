@@ -50,7 +50,7 @@ class Navbar extends React.Component{
                         //Submenu-solverkey
                         <ul>
                           <li className=" col-12"><Link to="/ruta-uno" className="drop-down-menubuttons-nivelone btn btn-dark">
-                            <img src={logowordpress} className="logo-nav" alt="logo Express"></img> WORDPRESS Y MÁS</Link>
+                            <img src={logowordpress} className="logo-nav" alt="logo Express"></img> WORDPRESS</Link>
                           </li>
                           <li className=" col-12"><Link to="/ruta-tres/express" className="drop-down-menubuttons-niveltwo btn btn-dark" >
                             <img src={logoprestashop} className="logo-nav" alt="logo Express"></img> PRESTASHOP</Link>
