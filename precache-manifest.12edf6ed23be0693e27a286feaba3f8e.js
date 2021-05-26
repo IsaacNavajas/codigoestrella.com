@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "48ffc4d5c54a65bffc93b7f1ae7b2335",
+    "revision": "a327b87c96dbacb4beb32cd1d7f01618",
     "url": "/index.html"
   },
   {
-    "revision": "8a82792515a8a820b23f",
+    "revision": "2178cd2a82b93a413893",
     "url": "/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "a8108e73c59bb7b62b2e",
-    "url": "/static/css/main.8a8fbf8a.chunk.css"
+    "revision": "7dc4bb7f70c84e13d1c9",
+    "url": "/static/css/main.58709953.chunk.css"
   },
   {
-    "revision": "8a82792515a8a820b23f",
-    "url": "/static/js/2.2341cc06.chunk.js"
+    "revision": "2178cd2a82b93a413893",
+    "url": "/static/js/2.4245b8e6.chunk.js"
   },
   {
     "revision": "28fa8ae9817b1f7a5dea7108e26b4348",
-    "url": "/static/js/2.2341cc06.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.4245b8e6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a8108e73c59bb7b62b2e",
-    "url": "/static/js/main.ee4183be.chunk.js"
+    "revision": "7dc4bb7f70c84e13d1c9",
+    "url": "/static/js/main.a4485e01.chunk.js"
   },
   {
     "revision": "3c3f1816a6eeafdc4489",
@@ -292,8 +292,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/wordpresspermisos3.e9b7190c.png"
   },
   {
-    "revision": "d5025a386eed4ae60507bdbb9e7ca2ff",
-    "url": "/static/media/wordpresspermisos4.d5025a38.png"
+    "revision": "493b5268154c5d1c0d2e6bbbd320e771",
+    "url": "/static/media/wordpresspermisos4.493b5268.png"
   },
   {
     "revision": "2886dae1251d4f5b77d28620f81b7d75",
