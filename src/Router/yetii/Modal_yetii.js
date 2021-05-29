@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import md5 from 'md5';
 
 function Modal_yetii(props){
   if(props.isOpen === false){return null};
@@ -13,7 +14,7 @@ function Modal_yetii(props){
               <center>
                 {props.children}
                 <input type="button" className="button_yetii btn btn-light" value="Salir" onClick={props.onClose} ></input>
-                {props.acces == true && <p className="aviso">** Ya tienes acceso al toggle**</p>}
+                {props.acces == md5(true) && <p className="aviso">** Ya tienes acceso al toggle**</p>}
               </center>
             
           </div>

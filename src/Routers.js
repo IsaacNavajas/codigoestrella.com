@@ -43,21 +43,21 @@ class Router extends React.Component {
     openModal: false,
     value: "",
     result:"",
-    acceso:Boolean(false),
+    acceso:md5(false),
   }
 
   //abrir cerrar modal con logica de acceso al toggle
   
   closeModal = () => {
     this.setState({openModal: false});
-    if(this.state.acceso === true) {
+    if(this.state.acceso === md5(true)) {
       this.setState({verifyLanguage: false})}
   }
 
   openModal = () => {
-    if(this.state.acceso === false) {
+    if(this.state.acceso === md5(false)) {
       this.setState({openModal: true})
-    }else if (this.state.acceso === true){
+    }else if (this.state.acceso === md5(true)){
       this.setState(({
         verifyLanguage : !this.state.verifyLanguage
         
@@ -73,7 +73,7 @@ class Router extends React.Component {
 
   handleClick = () => {
     if(this.state.result == md5(`Blaster EE4`)) {
-      this.setState({acceso: true});
+      this.setState({acceso: md5(true)});
       setTimeout(() => this.closeModal(), 1300)
       };
 

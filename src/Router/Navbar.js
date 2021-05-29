@@ -47,7 +47,7 @@ class Navbar extends React.Component{
                       <div className="col-2">
                     <div className=" hover ">
                       {
-                        //Submenu-solverkey
+                        //Submenu-CMS´s
                         <ul>
                           <li className=" col-12"><Link to="/ruta-uno" className="drop-down-menubuttons-nivelone btn btn-dark">
                             <img src={logowordpress} className="logo-nav" alt="logo Express"></img> WORDPRESS</Link>
@@ -59,7 +59,7 @@ class Navbar extends React.Component{
                       }
                     </div>      
                     </div> 
-                      <li className=" col-2"><div className="menubuttons btn btn-dark" >SOLVERKEY ⇵</div></li>
+                      <li className=" col-2"><div className="menubuttons btn btn-dark" >CMS´s ⇵</div></li>
           
 
                       <li className=" col-2"><Link to="/ruta-dos" className="menubuttons btn btn-dark" >HTML & CSS</Link></li>
