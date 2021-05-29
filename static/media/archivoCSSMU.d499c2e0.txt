@@ -1,0 +1,39 @@
+/* Quitar el editor rapido de los productos */
+.wp-core-ui .button-link {
+	display: none!important;
+}
+
+/* Quitar opciones para que solo vea el cliente las imagenes que él sube */
+option[value="all"],option[value="unattached"],option[value="all"] {
+	visibility: hidden!important;
+	display: none!important;
+}
+
+.media-router .media-menu-item:last-child {
+	visibility: hidden!important;
+}
+
+/* Quitar opciones de voltear imagen... */
+.imgedit-rleft,.imgedit-rright,.imgedit-flipv,.imgedit-fliph {
+	display: none!important;
+}
+
+/* Quitar opciones de adaptar la imagen a miniatura... */
+.imgedit-label {
+	display: none!important;
+}
+
+/* Quitar opcion de cambiar url de imagen */
+.attachment-details-copy-link,.copy-attachment-url {
+	display: none!important;
+}
+
+/* Quitar filtros por estado de inventario */
+option[value="instock"],option[value="outofstock"],option[value="onbackorder"] {
+	visibility: hidden!important;
+	display: none!important;
+}
+
+.imgedit-crop-ratio {
+	display: none!important;
+}

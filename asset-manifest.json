@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.58709953.chunk.css",
-    "main.js": "/static/js/main.a4485e01.chunk.js",
-    "main.js.map": "/static/js/main.a4485e01.chunk.js.map",
+    "main.css": "/static/css/main.bcb6564c.chunk.css",
+    "main.js": "/static/js/main.1fc8c4d9.chunk.js",
+    "main.js.map": "/static/js/main.1fc8c4d9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ec26966.js",
     "runtime-main.js.map": "/static/js/runtime-main.2ec26966.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.4245b8e6.chunk.js": "/static/js/2.4245b8e6.chunk.js",
-    "static/js/2.4245b8e6.chunk.js.map": "/static/js/2.4245b8e6.chunk.js.map",
+    "static/js/2.d74334a6.chunk.js": "/static/js/2.d74334a6.chunk.js",
+    "static/js/2.d74334a6.chunk.js.map": "/static/js/2.d74334a6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.12edf6ed23be0693e27a286feaba3f8e.js": "/precache-manifest.12edf6ed23be0693e27a286feaba3f8e.js",
+    "precache-manifest.1baf2d2bb9f08f71075d7aa141f36e6a.js": "/precache-manifest.1baf2d2bb9f08f71075d7aa141f36e6a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.58709953.chunk.css.map": "/static/css/main.58709953.chunk.css.map",
-    "static/js/2.4245b8e6.chunk.js.LICENSE.txt": "/static/js/2.4245b8e6.chunk.js.LICENSE.txt",
+    "static/css/main.bcb6564c.chunk.css.map": "/static/css/main.bcb6564c.chunk.css.map",
+    "static/js/2.d74334a6.chunk.js.LICENSE.txt": "/static/js/2.d74334a6.chunk.js.LICENSE.txt",
     "static/media/america.jpg": "/static/media/america.708b388a.jpg",
+    "static/media/archivoCSSMU.txt": "/static/media/archivoCSSMU.d499c2e0.txt",
     "static/media/archivos.zip": "/static/media/archivos.78584997.zip",
     "static/media/avatar-2.png": "/static/media/avatar-2.256404de.png",
     "static/media/codezen 1.png": "/static/media/codezen 1.49b3fc8c.png",
@@ -81,13 +82,14 @@
     "static/media/wordpresspermisos2.png": "/static/media/wordpresspermisos2.6198ac7d.png",
     "static/media/wordpresspermisos3.png": "/static/media/wordpresspermisos3.e9b7190c.png",
     "static/media/wordpresspermisos4.png": "/static/media/wordpresspermisos4.493b5268.png",
-    "static/media/wordpresspermisos6.png": "/static/media/wordpresspermisos6.2886dae1.png"
+    "static/media/wordpresspermisos6.png": "/static/media/wordpresspermisos6.2886dae1.png",
+    "static/media/wordpresspermisos7.png": "/static/media/wordpresspermisos7.0bab56b4.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2ec26966.js",
     "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.4245b8e6.chunk.js",
-    "static/css/main.58709953.chunk.css",
-    "static/js/main.a4485e01.chunk.js"
+    "static/js/2.d74334a6.chunk.js",
+    "static/css/main.bcb6564c.chunk.css",
+    "static/js/main.1fc8c4d9.chunk.js"
   ]
 }

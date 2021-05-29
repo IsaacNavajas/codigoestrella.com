@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a327b87c96dbacb4beb32cd1d7f01618",
+    "revision": "3dfff96dd3b146c09e9154afc351e593",
     "url": "/index.html"
   },
   {
-    "revision": "2178cd2a82b93a413893",
+    "revision": "356880f784f9668ff582",
     "url": "/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "7dc4bb7f70c84e13d1c9",
-    "url": "/static/css/main.58709953.chunk.css"
+    "revision": "cb3f82a2f7324d8a33c9",
+    "url": "/static/css/main.bcb6564c.chunk.css"
   },
   {
-    "revision": "2178cd2a82b93a413893",
-    "url": "/static/js/2.4245b8e6.chunk.js"
+    "revision": "356880f784f9668ff582",
+    "url": "/static/js/2.d74334a6.chunk.js"
   },
   {
     "revision": "28fa8ae9817b1f7a5dea7108e26b4348",
-    "url": "/static/js/2.4245b8e6.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.d74334a6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7dc4bb7f70c84e13d1c9",
-    "url": "/static/js/main.a4485e01.chunk.js"
+    "revision": "cb3f82a2f7324d8a33c9",
+    "url": "/static/js/main.1fc8c4d9.chunk.js"
   },
   {
     "revision": "3c3f1816a6eeafdc4489",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "708b388a2e37022f5776157af57014d1",
     "url": "/static/media/america.708b388a.jpg"
+  },
+  {
+    "revision": "d499c2e04c16b10225b85b2094f9be70",
+    "url": "/static/media/archivoCSSMU.d499c2e0.txt"
   },
   {
     "revision": "78584997c95937c8eb82df45025cef89",
@@ -298,5 +302,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2886dae1251d4f5b77d28620f81b7d75",
     "url": "/static/media/wordpresspermisos6.2886dae1.png"
+  },
+  {
+    "revision": "0bab56b4d475613a691d6c1cd2068635",
+    "url": "/static/media/wordpresspermisos7.0bab56b4.png"
   }
 ]);
