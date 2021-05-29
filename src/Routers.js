@@ -28,7 +28,6 @@ import ModalYetii from './Router/yetii/Modal_yetii';
 
 
 import Image from './source/archivocomprimido.png';
-import ImageKali from './source/archivokali.png';
 import ImageYetii from './source/yetii.png';
 import Archivos from './source/archivos.zip';
 
@@ -100,8 +99,6 @@ class Router extends React.Component {
                       <div className="col-6">
                         <div className=" toggle custom-control custom-switch  ">
 
-                          <a href="https://kali.training/downloads/Kali-Linux-Revealed-2021-edition.pdf" target="https://kali.training/downloads/Kali-Linux-Revealed-2021-edition.pdf"><img src={ImageKali} className="ImageKali"/></a>
-
                           <a href={Archivos} download><img src={Image} className="ImageDescarga"/></a>
                
                           <input onClick={this.openModal} type="checkbox" className=" checkboxtoggle custom-control-input " id="customSwitches"></input>
@@ -123,7 +120,7 @@ class Router extends React.Component {
                       
                       {this.state.verifyLanguage && <Route exact path="/" component={Inicio}/> || <Route exact path="/" component={buildEnglish}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/ruta-uno" component={Wordpress}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-uno" onClick={this.openModal} component={Wordpress}/>}
                       
                       {this.state.verifyLanguage && <Route exact path="/ruta-cinco/git" component={Git}/> || <Route exact path="/ruta-cinco" component={buildEnglish}/>}
                       {this.state.verifyLanguage && <Route exact path="/ruta-cinco/docker" component={Docker}/>}
@@ -144,7 +141,6 @@ class Router extends React.Component {
                       
                       {this.state.verifyLanguage && <Route exact path="/ruta-seis/mongodb" component={MongoDb}/> }
                       
-                      {this.state.verifyLanguage && this.state.acceso && <Route exact path="/ruta-uno" component={Wordpress}/> }
 
                       
                       

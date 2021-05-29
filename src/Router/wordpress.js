@@ -1,17 +1,35 @@
-import { render } from '@testing-library/react';
-import React from 'react';
 
-import WPGeneral from './wordpress/general';
-import WPPlugins from './wordpress/plugins.js';
-import WPPermisos from './wordpress/permisos.js';
+import React from 'react';
+import md5 from 'md5';
+
+import Selector from './wordpress/selectorWordpress';
+import imagelogo from '../source/spam.png';
 
 class wordpress extends React.Component{
   
   state={
-
-    value : 1
-
+    acceso: md5(false),
+    value : ""
   };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+  }
+
+  handleClick = () => {
+    if(this.state.result == md5(`%Satirion%44`)) {
+      this.setState({acceso:md5(true)});
+      
+      };
+
+    this.setState({value: ""});
+  }
+
+  handleChange = (event) => {
+    this.setState({value: event.target.value});
+    this.setState({result: md5(`${event.target.value}`)});
+  }
+
 
   render(){
 
@@ -19,26 +37,35 @@ class wordpress extends React.Component{
 
       <React.Fragment>
 
+
         <div className="container">
-          
-          <h2  className="bigtitle font col-8">Wordpress</h2><br/>
 
-            <select className="centrarTexto col-4" onChange={(e) => this.setState({value : e.target.value})}>
-              <option id="wordpress1" value="1">WP General</option>
-              <option id="wordpress2" value="2">WP Plugins y metodologías</option>
-              <option id="wordpress3" value="3">WP Permisos al cliente</option>
-            </select>
+        {this.state.acceso == md5(false) &&
+          <div id="formulario" >
+            <center>
+            <img src={imagelogo} className="logoCodigoEstrelllados " alt="imagen robot"/>
+            <br/> <br/> 
+          <form onSubmit={this.handleSubmit}>
+                    <input type="password" className="input_yetii form-control form-control-lg" placeholder="password" onChange={this.handleChange} value={this.state.value}></input>
+                    <input type="button" className="button_yetii btn btn-dark" value="Entrar" onClick={this.handleClick} name={this.state.value}></input>
+          </form>
+          <br/> <br/> <br/> <br/> <br/> <br/>
+          <br/> <br/> <br/> <br/> <br/> <br/>
+          <br/> <br/> <br/> <br/> <br/> <br/>
+          </center>
+        </div>
+        
+          ||
+          this.state.acceso == md5(true) && <div id="formulario" className="lineagrisdesaparecer"></div>}
 
-              <div>
 
-                  {this.state.value == 1 && <WPGeneral/>}
-                  {this.state.value == 2 && <WPPlugins/>}
-                  {this.state.value == 3 && <WPPermisos/>}
 
-              </div>
+
+        {this.state.acceso== md5(true) && <Selector/>}
+
 
           </div>
-        
+    
       </React.Fragment>
 
     );

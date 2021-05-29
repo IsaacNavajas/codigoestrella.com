@@ -574,6 +574,15 @@ font{  font-family: englisht;
   padding-bottom:  2%;;
 }
 
+.image-permisos-wordpress{
+  margin-top:90px;
+  margin-bottom: 70px;
+  margin-left: auto; 
+
+  margin-right: auto;
+  width: 10%;;
+}
+
 .imagehtml{
   display:block;
   margin:auto;
