@@ -31,7 +31,7 @@ class Navbar extends React.Component{
                     {
                      this.props.verifyLanguage && <h1 className="title-codigoestrella-spanish col-12" id="title">Codigoestrella.com</h1>
                       ||
-                      <h1 className="title-codigoestrella-english col-12" id="title"><img src={logoyetii} className="logo-nav-yetii" alt="logo Express"></img> yetii.exe </h1>
+                      <h1 className="title-codigoestrella-english col-12" id="title"> Codigoestrella.com </h1>
                     }
 
 

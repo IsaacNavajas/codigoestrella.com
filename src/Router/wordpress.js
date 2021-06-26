@@ -3,7 +3,7 @@ import React from 'react';
 import md5 from 'md5';
 
 import Selector from './wordpress/selectorWordpress';
-import imagelogo from '../source/spam.png';
+
 
 class wordpress extends React.Component{
   
