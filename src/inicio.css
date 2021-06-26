@@ -22,7 +22,7 @@
 .logoCodigoEstrelllados{
   visibility: visible;
   margin-top: 60px;
-  width: 115px;
+  width: 180px;
 }
 
 .bottomCodigoEstrellla{
@@ -129,7 +129,9 @@
     filter: invert(100%);
   }
 
-
+#formulario{
+  margin-top:32%;
+}
   .ModalYetiI{
     position:fixed;
     top:50%;

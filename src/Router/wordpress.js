@@ -37,15 +37,18 @@ class wordpress extends React.Component{
 
       <React.Fragment>
 
-
+            
+            <br/> <br/> 
         <div className="container">
 
         {this.state.acceso == md5(false) &&
           <div id="formulario" >
             <center>
-            <img src={imagelogo} className="logoCodigoEstrelllados " alt="imagen robot"/>
-            <br/> <br/> 
+
+   
           <form onSubmit={this.handleSubmit}>
+          <br/><br/>
+          <br/><br/>
                     <input type="password" className="input_yetii form-control form-control-lg" placeholder="password" onChange={this.handleChange} value={this.state.value}></input>
                     <input type="button" className="button_yetii btn btn-dark" value="Entrar" onClick={this.handleClick} name={this.state.value}></input>
           </form>
