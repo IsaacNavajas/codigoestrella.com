@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.59b6f0d8.chunk.css",
-    "main.js": "/static/js/main.ffe29584.chunk.js",
-    "main.js.map": "/static/js/main.ffe29584.chunk.js.map",
+    "main.css": "/static/css/main.df23e0f0.chunk.css",
+    "main.js": "/static/js/main.86abe02b.chunk.js",
+    "main.js.map": "/static/js/main.86abe02b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ec26966.js",
     "runtime-main.js.map": "/static/js/runtime-main.2ec26966.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.88b3c921.chunk.js": "/static/js/2.88b3c921.chunk.js",
-    "static/js/2.88b3c921.chunk.js.map": "/static/js/2.88b3c921.chunk.js.map",
+    "static/js/2.0e5fa813.chunk.js": "/static/js/2.0e5fa813.chunk.js",
+    "static/js/2.0e5fa813.chunk.js.map": "/static/js/2.0e5fa813.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.31df89b1debf0d000c12bb262554bcad.js": "/precache-manifest.31df89b1debf0d000c12bb262554bcad.js",
+    "precache-manifest.d9bf9b9e33567eab6ccf42d559bdc375.js": "/precache-manifest.d9bf9b9e33567eab6ccf42d559bdc375.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/static/css/2.8aa5a7f8.chunk.css.map",
-    "static/css/main.59b6f0d8.chunk.css.map": "/static/css/main.59b6f0d8.chunk.css.map",
-    "static/js/2.88b3c921.chunk.js.LICENSE.txt": "/static/js/2.88b3c921.chunk.js.LICENSE.txt",
+    "static/css/main.df23e0f0.chunk.css.map": "/static/css/main.df23e0f0.chunk.css.map",
+    "static/js/2.0e5fa813.chunk.js.LICENSE.txt": "/static/js/2.0e5fa813.chunk.js.LICENSE.txt",
     "static/media/america.jpg": "/static/media/america.708b388a.jpg",
     "static/media/archivoCSSMU.txt": "/static/media/archivoCSSMU.d499c2e0.txt",
     "static/media/archivos.zip": "/static/media/archivos.78584997.zip",
@@ -75,7 +75,7 @@
     "static/media/logo-wordpress.png": "/static/media/logo-wordpress.60d4cba1.png",
     "static/media/mysqlTabla.png": "/static/media/mysqlTabla.e4855bf2.png",
     "static/media/prettierrc.png": "/static/media/prettierrc.78862327.png",
-    "static/media/spam.png": "/static/media/spam.c5515606.png",
+    "static/media/spam.png": "/static/media/spam.20ce0661.png",
     "static/media/tuplas.png": "/static/media/tuplas.731426fe.png",
     "static/media/tuplasdos.png": "/static/media/tuplasdos.5313215f.png",
     "static/media/wordpresspermisos.png": "/static/media/wordpresspermisos.bb3368cf.png",
@@ -88,8 +88,8 @@
   "entrypoints": [
     "static/js/runtime-main.2ec26966.js",
     "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.88b3c921.chunk.js",
-    "static/css/main.59b6f0d8.chunk.css",
-    "static/js/main.ffe29584.chunk.js"
+    "static/js/2.0e5fa813.chunk.js",
+    "static/css/main.df23e0f0.chunk.css",
+    "static/js/main.86abe02b.chunk.js"
   ]
 }
