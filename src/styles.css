@@ -252,8 +252,9 @@ font-size: 40px;
 
 .button{
   width: 200px;
-  float:right;
+  float:center;
   transition: all 5000ms;
+align-items: center;
 }
 .button:hover{
   background-color: transparent;

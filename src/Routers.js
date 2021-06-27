@@ -91,7 +91,7 @@ class Router extends React.Component {
 
       <React.Fragment>
       
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Layout verifyLanguage = {this.state.verifyLanguage} >
 
                   <React.Fragment>
