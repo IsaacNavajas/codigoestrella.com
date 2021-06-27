@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   BrowserRouter,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -91,7 +92,7 @@ class Router extends React.Component {
 
       <React.Fragment>
       
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Layout verifyLanguage = {this.state.verifyLanguage} >
 
                   <React.Fragment>
@@ -154,7 +155,7 @@ class Router extends React.Component {
 
                 </Layout>
           
-            </BrowserRouter>
+            </Router>
 
                     
         <ModalYetii
