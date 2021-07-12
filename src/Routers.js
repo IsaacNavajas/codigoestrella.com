@@ -32,12 +32,10 @@ import Image from './source/archivocomprimido.png';
 import ImageYetii from './source/yetii.png';
 import Archivos from './source/archivos.zip';
 
-import America from './source/america.jpg';
-
 
 import {Link} from "react-router-dom";
 
-class Router extends React.Component {
+class Routers extends React.Component {
   
   state={
     verifyLanguage: true,
@@ -178,4 +176,4 @@ class Router extends React.Component {
 
 }
 
-export default Router;
+export default Routers;

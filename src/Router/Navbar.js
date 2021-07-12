@@ -15,7 +15,6 @@ import logowordpress from '../source/logo-wordpress.png';
 import logoprestashop from '../source/logo-prestashop.png';
 
 
-import logoyetii from '../source/avatar-2.png';
 
 
 class Navbar extends React.Component{

@@ -38,7 +38,7 @@ html, body {
   bottom: 0;
   background:black;
   height:200px;
-  background-image: url(source/fondo.png);
+  background-image: url(./source/fondo.png);
   color:white;
   border-top: 2px yellow solid;
   width: 100%;
@@ -211,7 +211,7 @@ font-size: 40px;
 .imag{  
   position:relative;
   height:300px;
-  background-image: url(source/fondo.png);
+  background-image: url(./source/fondo.png);
   background-repeat: repeat;
   font-size: 50px;
   
@@ -272,7 +272,7 @@ align-items: center;
   width: 200px;
   float:right;
   transition: all 5000ms;
-  background-image: url(source/america.jpg);
+  background-image: url(./source/fondo.png);
   filter: grayscale(100%);
 }
 .button-america:hover{
@@ -283,7 +283,7 @@ align-items: center;
   background-color: transparent;
   filter: drop-shadow(0px 0px 7px rgb(0, 89, 255));
   transition: 800ms;
-  background-image: url(source/america.jpg);
+  background-image: url(./source/fondo.png);
     filter: grayscale(10%);
 }
 
@@ -581,7 +581,7 @@ font{  font-family: englisht;
   margin-left: auto; 
 
   margin-right: auto;
-  width: 10%;;
+  width: 70%;;
 }
 
 .imagehtml{
