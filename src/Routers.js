@@ -8,6 +8,8 @@ import {
 import md5 from 'md5';
 
 
+<u class="subrayado"></u>
+
 import Layout from './Router/Layout';
 import Error from './Router/load/Error';
 import Git from './Router/Git';
@@ -90,7 +92,7 @@ class Routers extends React.Component {
 
       <React.Fragment>
       
-            <Router basename={process.env.PUBLIC_URL}>
+     
                 <Layout verifyLanguage = {this.state.verifyLanguage} >
 
                   <React.Fragment>
@@ -153,7 +155,7 @@ class Routers extends React.Component {
 
                 </Layout>
           
-            </Router>
+        
 
                     
         <ModalYetii
