@@ -33,7 +33,7 @@ class Inicio extends React.Component{
     return (
     <React.Fragment>
       
-      <div className="inicio">
+  
       <div className="container">
       
     
@@ -164,7 +164,7 @@ class Inicio extends React.Component{
         <br/>
         <br/>
       </div>
-      </div>
+     
     </React.Fragment>
   );
 }   

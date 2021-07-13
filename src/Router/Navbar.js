@@ -15,9 +15,59 @@ import logowordpress from '../source/logo-wordpress.png';
 import logoprestashop from '../source/logo-prestashop.png';
 
 
-
+//Modulos-yetii
+import ModalYetii from '../Router/yetii/Modal_yetii';
+import md5 from 'md5';
+import Selector from './wordpress/selectorWordpress';
 
 class Navbar extends React.Component{
+
+  state={
+    verify: true,
+    openModal: false,
+    value: "",
+    result:"",
+    acceso:md5(false),
+  }
+
+  //abrir cerrar modal con logica de acceso al toggle
+  
+  closeModal = () => {
+    this.setState({openModal: false});
+    if(this.state.acceso === md5(true)) {
+      this.setState({verify: false})}
+  }
+
+  openModal = () => {
+    if(this.state.acceso === md5(false)) {
+      this.setState({openModal: true})
+    }else if (this.state.acceso === md5(true)){
+      this.setState(({
+        verify : !this.state.verify
+        
+       }));
+
+    }}
+
+  //validacion 
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+  }
+
+  handleClick = () => {
+    if(this.state.result == md5(`%Satirion%44`)) {
+      this.setState({acceso: md5(true)});
+      setTimeout(() => this.closeModal(), 1300)
+      };
+
+    this.setState({value: ""});
+  }
+
+  handleChange = (event) => {
+    this.setState({value: event.target.value});
+    this.setState({result: md5(`${event.target.value}`)});
+  }
   
   render(){
     return (
@@ -48,9 +98,24 @@ class Navbar extends React.Component{
                       {
                         //Submenu-CMS´s
                         <ul>
-                          <li className=" col-12"><Link to="/ruta-uno" className="drop-down-menubuttons-nivelone btn btn-dark">
+                          {this.state.acceso== md5(true) &&  
+                            <li className=" col-12">
+                            <Link to="/ruta-uno" className="drop-down-menubuttons-nivelone btn btn-dark">
+                            <img src={logowordpress} className="logo-nav" alt="logo Express"></img> WORDPRESS</Link> 
+                            </li>
+
+                            ||
+
+                            <li className=" col-12">
+                            <Link onClick={this.openModal} className="drop-down-menubuttons-nivelone btn btn-dark">
                             <img src={logowordpress} className="logo-nav" alt="logo Express"></img> WORDPRESS</Link>
-                          </li>
+                            </li>
+                            }
+
+                          
+                          
+
+
                           <li className=" col-12"><Link to="/ruta-tres/express" className="drop-down-menubuttons-niveltwo btn btn-dark" >
                             <img src={logoprestashop} className="logo-nav" alt="logo Express"></img> PRESTASHOP</Link>
                           </li>
@@ -146,6 +211,23 @@ class Navbar extends React.Component{
                 }   
                
         </nav>
+
+
+                            
+        <ModalYetii
+            acces={this.state.acceso }
+            isOpen={this.state.openModal}
+            onClose={this.closeModal}
+            >
+
+                <form onSubmit={this.handleSubmit}>
+                  <input type="password" className="input_yetii form-control form-control-lg" placeholder="password" onChange={this.handleChange} value={this.state.value}></input>
+                  <input type="button" className="button_yetii btn btn-light" value="Entrar" onClick={this.handleClick} name={this.state.value}></input>
+                </form>
+
+        </ModalYetii>
+
+
       </React.Fragment>
     );
   

@@ -39,58 +39,32 @@ class Routers extends React.Component {
   
   state={
     verifyLanguage: true,
-    openModal: false,
-    value: "",
-    result:"",
-    acceso:md5(false),
-  }
-
-  //abrir cerrar modal con logica de acceso al toggle
-  
-  closeModal = () => {
-    this.setState({openModal: false});
-    if(this.state.acceso === md5(true)) {
-      this.setState({verifyLanguage: false})}
-  }
-
-  openModal = () => {
-    if(this.state.acceso === md5(false)) {
-      this.setState({openModal: true})
-    }else if (this.state.acceso === md5(true)){
-      this.setState(({
-        verifyLanguage : !this.state.verifyLanguage
-        
-       }));
-
-    }}
-
-  //validacion 
-
-  handleSubmit = (event) => {
-    event.preventDefault();
-  }
-
-  handleClick = () => {
-    if(this.state.result == md5(`Blaster EE4`)) {
-      this.setState({acceso: md5(true)});
-      setTimeout(() => this.closeModal(), 1300)
-      };
-
-    this.setState({value: ""});
-  }
-
-  handleChange = (event) => {
-    this.setState({value: event.target.value});
-    this.setState({result: md5(`${event.target.value}`)});
+    count:2,
+    mode:'white',
   }
 
   render(){
+    this.handleClick = () => {
+      this.setState(state => ({
+        count:state.count + 1
+      }))
+      if(this.state.count%2){
+        this.setState(() => ({
+          verifyLanguage: false,
+        }))
+      }
+      if(this.state.count**2){
+        this.setState(() => ({
+          verifyLanguage: false,
+        }))
+      }
+    }
     return (
 
 
       <React.Fragment>
       
-            <Router basename={process.env.PUBLIC_URL}>
+          <Router basename={process.env.PUBLIC_URL}>
                 <Layout verifyLanguage = {this.state.verifyLanguage} >
 
                   <React.Fragment>
@@ -100,7 +74,7 @@ class Routers extends React.Component {
 
                           <a href={Archivos} download><img src={Image} className="ImageDescarga"/></a>
                
-                          <input onClick={this.openModal} type="checkbox" className=" checkboxtoggle custom-control-input " id="customSwitches"></input>
+                          <input onClick={this.handleClick} type="checkbox" className=" checkboxtoggle custom-control-input " id="customSwitches"></input>
                           <label  htmlFor="customSwitches"> <img className="yetii" src={ImageYetii}></img></label>
                           
                           <div className="position_button ">
@@ -154,21 +128,6 @@ class Routers extends React.Component {
                 </Layout>
           
             </Router>
-
-                    
-        <ModalYetii
-            acces={this.state.acceso }
-            isOpen={this.state.openModal}
-            onClose={this.closeModal}
-            >
-
-                <form onSubmit={this.handleSubmit}>
-                  <input type="password" className="input_yetii form-control form-control-lg" placeholder="password" onChange={this.handleChange} value={this.state.value}></input>
-                  <input type="button" className="button_yetii btn btn-light" value="Entrar" onClick={this.handleClick} name={this.state.value}></input>
-                </form>
-
-        </ModalYetii>
-
 
       </React.Fragment>
     );
