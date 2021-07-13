@@ -18,7 +18,7 @@ import Laravel from './Router/Laravel';
 import htmlyCss from './Router/htmlyCss';
 import Mysql from './Router/Mysql';
 import MongoDb from './Router/MongoDb';
-import Wordpress from './Router/wordpress';
+import Wordpress from './Router/wordpress/selectorWordpress';
 import Express from './Router/Express';
 import Docker from './Router/Docker';
 import Vue from './Router/Vue';
@@ -50,10 +50,10 @@ class Routers extends React.Component {
       }))
       if(this.state.count%2){
         this.setState(() => ({
-          verifyLanguage: false,
+          verifyLanguage: true,
         }))
       }
-      if(this.state.count**2){
+      else if(this.state.count**2){
         this.setState(() => ({
           verifyLanguage: false,
         }))
@@ -93,7 +93,7 @@ class Routers extends React.Component {
                       
                       {this.state.verifyLanguage && <Route exact path="/" component={Inicio}/> || <Route exact path="/" component={buildEnglish}/>}
 
-                      {this.state.verifyLanguage && <Route exact path="/ruta-uno" onClick={this.openModal} component={Wordpress}/>}
+                      {this.state.verifyLanguage && <Route exact path="/ruta-uno" component={Wordpress}/>}
                       
                       {this.state.verifyLanguage && <Route exact path="/ruta-cinco/git" component={Git}/> || <Route exact path="/ruta-cinco" component={buildEnglish}/>}
                       {this.state.verifyLanguage && <Route exact path="/ruta-cinco/docker" component={Docker}/>}
@@ -117,7 +117,7 @@ class Routers extends React.Component {
 
                       
                       
-                      {!this.state.verifyLanguage && <Route exact path="/english" component={buildEnglish}/>}
+                      {this.state.verifyLanguage && <Route exact path="/english" component={buildEnglish}/>}
                       {!this.state.verifyLanguage && <Route exact path="/ruta-uno" component={buildEnglish}/>}
 
                       

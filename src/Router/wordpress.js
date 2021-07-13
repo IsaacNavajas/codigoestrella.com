@@ -3,7 +3,7 @@ import React from 'react';
 import md5 from 'md5';
 
 import Selector from './wordpress/selectorWordpress';
-
+import { useHistory } from "react-router-dom";
 
 class wordpress extends React.Component{
   
@@ -17,8 +17,10 @@ class wordpress extends React.Component{
   }
 
   handleClick = () => {
+    let history = useHistory();
     if(this.state.result == md5(`%Satirion%44`)) {
       this.setState({acceso:md5(true)});
+      return this.props.history.push('/path')
       
       };
 
@@ -67,7 +69,9 @@ class wordpress extends React.Component{
 
 
 
-        {this.state.acceso== md5(true) && <Selector/>}
+ 
+        {this.state.acceso== md5(true) && this.useHistory().push('/ruta-uno')}
+
 
 
           </div>

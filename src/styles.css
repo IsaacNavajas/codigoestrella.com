@@ -158,7 +158,7 @@ html, body {
   margin-left:40px;
   color:#a8a9a5;
   text-shadow: 2px 2px #525252;
-  transition:  0.8s linear 0.3s;
+  transition:  0.4s linear 0.3s;
 }
 
 .title-codigoestrella-english{
@@ -173,7 +173,7 @@ html, body {
   color:transparent;
   height: 100px;
   background-size: 49%;
-  transition:  0.4s linear 1.0s;
+  transition:  0.4s linear 0.3s;
   background-clip: text;
 }
 
