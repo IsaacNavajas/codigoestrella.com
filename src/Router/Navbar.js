@@ -58,7 +58,6 @@ class Navbar extends React.Component{
   handleClick = () => {
     if(this.state.result == md5(`%Satirion%44`)) {
       this.setState({acceso: md5(true)});
-      setTimeout(() => this.closeModal(), 1300)
       };
 
     this.setState({value: ""});
@@ -221,9 +220,11 @@ class Navbar extends React.Component{
             >
 
                 <form onSubmit={this.handleSubmit}>
-                  <input type="password" className="input_yetii form-control form-control-lg" placeholder="password" onChange={this.handleChange} value={this.state.value}></input>
-                  <input type="button" className="button_yetii btn btn-light" value="Entrar" onClick={this.handleClick} name={this.state.value}></input>
-                </form>
+
+                    <input type="password" className="input_yetii form-control form-control-lg" placeholder="password" onChange={this.handleChange} value={this.state.value}></input>
+                    <input type="button" className="button_yetii btn btn-light" value="Entrar" onClick={this.handleClick} name={this.state.value}></input>
+
+                  </form>
 
         </ModalYetii>
 

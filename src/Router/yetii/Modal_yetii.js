@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import imagelogo from '../../source/spam.png';
-
+import {Link} from "react-router-dom";
 import md5 from 'md5';
 
 function Modal_yetii(props){
@@ -17,7 +17,14 @@ function Modal_yetii(props){
                 <img src={imagelogo} className="logoCodigoEstrelllados " alt="imagen robot"/>
                 {props.children}
                 <input type="button" className="button_yetii btn btn-light" value="Salir" onClick={props.onClose} ></input>
-                {props.acces == md5(true) && <p className="aviso">** Ya tienes acceso al toggle**</p>}
+                
+                <br></br>
+                <br></br>
+
+                {props.acces == md5(true) && 
+                    <Link to="/ruta-uno">
+                      <input type="button" className="button_yetii btn btn-dark" value="Acceso a Wordpress" onClick={props.onClose} ></input>
+                    </Link>}
               </center>
             
           </div>
