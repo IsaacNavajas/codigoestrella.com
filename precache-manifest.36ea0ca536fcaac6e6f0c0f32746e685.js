@@ -1,47 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4787740164c51772de9ad5e8d00b392e",
+    "revision": "ffb627312ee6a6e8a0f787052fe1fe28",
     "url": "/index.html"
   },
   {
-    "revision": "e73b5f744c498db9082a",
+    "revision": "1e71b1e6cbe0235aac9a",
     "url": "/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "01f0ea83b841ee7fa0d4",
-    "url": "/static/css/main.df23e0f0.chunk.css"
+    "revision": "f65a8cae19baca7cf522",
+    "url": "/static/css/main.5abca8e2.chunk.css"
   },
   {
-    "revision": "e73b5f744c498db9082a",
-    "url": "/static/js/2.0e5fa813.chunk.js"
+    "revision": "1e71b1e6cbe0235aac9a",
+    "url": "/static/js/2.70fb871a.chunk.js"
   },
   {
     "revision": "28fa8ae9817b1f7a5dea7108e26b4348",
-    "url": "/static/js/2.0e5fa813.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.70fb871a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "01f0ea83b841ee7fa0d4",
-    "url": "/static/js/main.86abe02b.chunk.js"
+    "revision": "f65a8cae19baca7cf522",
+    "url": "/static/js/main.bf43dff5.chunk.js"
   },
   {
     "revision": "3c3f1816a6eeafdc4489",
     "url": "/static/js/runtime-main.2ec26966.js"
   },
   {
-    "revision": "708b388a2e37022f5776157af57014d1",
-    "url": "/static/media/america.708b388a.jpg"
-  },
-  {
-    "revision": "d499c2e04c16b10225b85b2094f9be70",
-    "url": "/static/media/archivoCSSMU.d499c2e0.txt"
+    "revision": "b474ae5353fcde9e88c28e64837774c6",
+    "url": "/static/media/admin_css_mu.b474ae53.txt"
   },
   {
     "revision": "78584997c95937c8eb82df45025cef89",
     "url": "/static/media/archivos.78584997.zip"
-  },
-  {
-    "revision": "256404de1ae7c0973381241bad9a405f",
-    "url": "/static/media/avatar-2.256404de.png"
   },
   {
     "revision": "49b3fc8cd83e09e9b1c8d1d35c30ae89",
@@ -132,10 +124,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/codezen callbacks.77726c7c.png"
   },
   {
-    "revision": "5eccf8713662f40da12d1d16ed6752cd",
-    "url": "/static/media/codezen codigo wordpress.5eccf871.png"
-  },
-  {
     "revision": "57a21084e1d2d2cb49333e8b47aff9c3",
     "url": "/static/media/codezen docker 1.57a21084.png"
   },
@@ -206,6 +194,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "578893369f90848561e18ce9ca51d7b5",
     "url": "/static/media/codezenVueProps4.57889336.png"
+  },
+  {
+    "revision": "5eccf8713662f40da12d1d16ed6752cd",
+    "url": "/static/media/codezen_codigo_wordpress.5eccf871.png"
   },
   {
     "revision": "d8ead7b05eabfe252bbae786beb4d92d",
@@ -284,27 +276,27 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/tuplasdos.5313215f.png"
   },
   {
+    "revision": "0bab56b4d475613a691d6c1cd2068635",
+    "url": "/static/media/wordpresspermisos2.0bab56b4.png"
+  },
+  {
     "revision": "bb3368cf3a0747a98e660eab2c96a213",
-    "url": "/static/media/wordpresspermisos.bb3368cf.png"
-  },
-  {
-    "revision": "6198ac7d403db482972fd87d14751526",
-    "url": "/static/media/wordpresspermisos2.6198ac7d.png"
-  },
-  {
-    "revision": "e9b7190c982efb7e32e060f9e4aba644",
-    "url": "/static/media/wordpresspermisos3.e9b7190c.png"
-  },
-  {
-    "revision": "493b5268154c5d1c0d2e6bbbd320e771",
-    "url": "/static/media/wordpresspermisos4.493b5268.png"
+    "url": "/static/media/wordpresspermisos3.bb3368cf.png"
   },
   {
     "revision": "2886dae1251d4f5b77d28620f81b7d75",
-    "url": "/static/media/wordpresspermisos6.2886dae1.png"
+    "url": "/static/media/wordpresspermisos4.2886dae1.png"
   },
   {
-    "revision": "0bab56b4d475613a691d6c1cd2068635",
-    "url": "/static/media/wordpresspermisos7.0bab56b4.png"
+    "revision": "493b5268154c5d1c0d2e6bbbd320e771",
+    "url": "/static/media/wordpresspermisos5.493b5268.png"
+  },
+  {
+    "revision": "6198ac7d403db482972fd87d14751526",
+    "url": "/static/media/wordpresspermisos6.6198ac7d.png"
+  },
+  {
+    "revision": "e9b7190c982efb7e32e060f9e4aba644",
+    "url": "/static/media/wordpresspermisos7.e9b7190c.png"
   }
 ]);

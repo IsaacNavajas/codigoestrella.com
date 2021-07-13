@@ -1,0 +1,58 @@
+/* Quitar el editor rapido de los productos */
+.wp-core-ui .button-link {
+	display: none!important;
+}
+
+/* Quitar opciones para que solo vea el cliente las imagenes que él sube */
+option[value="all"],option[value="unattached"],option[value="all"] {
+	visibility: hidden!important;
+	display: none!important;
+}
+
+.media-router .media-menu-item:last-child {
+	visibility: hidden!important;
+}
+
+/* Quitar opciones de voltear imagen... */
+.imgedit-rleft,.imgedit-rright,.imgedit-flipv,.imgedit-fliph {
+	display: none!important;
+}
+
+/* Quitar opciones de adaptar la imagen a miniatura... */
+.imgedit-label {
+	display: none!important;
+}
+
+/* Quitar opcion de cambiar url de imagen (slug) */
+.attachment-details-copy-link,.copy-attachment-url {
+	display: none!important;
+}
+
+/* Quitar filtros por estado de inventario y filtro por tipos de productos */
+option[value="instock"],option[value="outofstock"],option[value="onbackorder"] {
+	visibility: hidden!important;
+	display: none!important;
+}
+
+.imgedit-crop-ratio {
+	display: none!important;
+}
+
+#dropdown_product_type {
+	display: none!important;
+}
+
+.imgedit-group-top {
+	display: none!important;
+}
+
+/* Quitar editar perfil del usuario y usuario (a la derecha arriba)*/
+#wp-admin-bar-edit-profile,#wp-admin-bar-user-info {
+	display: none!important;
+}
+
+/* Quitar todos los enlaces que te lleben a editar perfil*/
+/*nosotros podemos acceder desde https://gamarepro.irsoluciones.es/wp-admin/profile.php*/
+a[href="https://gamarepro.irsoluciones.es/wp-admin/profile.php"] {
+	pointer-events: none;
+}
