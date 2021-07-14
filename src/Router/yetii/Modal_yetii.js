@@ -23,7 +23,7 @@ function Modal_yetii(props){
 
                 {props.acces == md5(true) && 
                     <Link to="/ruta-uno">
-                      <input type="button" className="button_yetii btn btn-dark" value="Acceso a Wordpress" onClick={props.onClose} ></input>
+                      <input type="button" className="btn btn-secondary" value="Acceso a Wordpress" onClick={props.onClose} ></input>
                     </Link>}
               </center>
             
